@@ -143,12 +143,6 @@ body {
   clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 0 100%);
 }
 
-/* Fluid superhero backdrop watermark (scales gracefully from mobile to 4K) */
-.hero-backdrop-wordmark {
-  font-size: clamp(5.5rem, 19vw, 15rem);
-  line-height: 0.85;
-}
-
 /* Tabular figures for HUD and numerical statistics */
 .tabular-data {
   font-variant-numeric: tabular-nums;

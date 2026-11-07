@@ -15,8 +15,7 @@ export default function Hero() {
     offset: ["start start", "end start"],
   });
 
-  // Scroll Experience Parallax Layers (0.25x background, 0.5x midground)
-  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "28%"]);
+  // Scroll Experience Parallax Layers
   const portraitY = useTransform(scrollYProgress, [0, 1], ["0%", "14%"]);
   const contentFade = useTransform(scrollYProgress, [0, 0.8], [1, 0.25]);
 
@@ -29,17 +28,6 @@ export default function Hero() {
     >
       {/* Background Comic Halftone Texture */}
       <div className="absolute inset-0 halftone-dots opacity-20 pointer-events-none" />
-
-      {/* Giant Background Wordmark: "PORTFOLIO" with Parallax Depth */}
-      <motion.div
-        style={{ y: bgY }}
-        className="absolute top-[18%] sm:top-[16%] lg:top-[14%] left-1/2 -translate-x-1/2 w-full text-center pointer-events-none select-none z-0 overflow-hidden"
-        aria-hidden="true"
-      >
-        <span className="font-bebas font-black tracking-[-0.01em] text-[#ae040d]/85 lg:text-[#a50b13] hero-backdrop-wordmark block whitespace-nowrap drop-shadow-[0_0_60px_rgba(174,4,13,0.3)]">
-          PORTFOLIO
-        </span>
-      </motion.div>
 
       {/* Top Framing Bar */}
       <div className="relative z-20 max-w-7xl w-full mx-auto flex items-center justify-between pb-6 border-b border-white/5">
