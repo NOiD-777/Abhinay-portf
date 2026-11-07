@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   Brain,
@@ -50,13 +49,6 @@ const SHOWCASE_TECHS = [
 ];
 
 export default function Skills() {
-  const [activeCategory, setActiveCategory] = useState<string>("all");
-
-  const filteredCategories =
-    activeCategory === "all"
-      ? skillCategories
-      : skillCategories.filter((c) => c.title === activeCategory);
-
   return (
     <section id="skills" className="py-28 px-4 sm:px-6 lg:px-8 relative z-10 bg-black border-t border-white/5">
       <div className="max-w-6xl mx-auto space-y-12">
@@ -193,36 +185,9 @@ export default function Skills() {
           </div>
         </div>
 
-        {/* Category Tabs */}
-        <div className="flex flex-wrap gap-2 pt-1">
-          <button
-            onClick={() => setActiveCategory("all")}
-            className={`px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium transition-all ${
-              activeCategory === "all"
-                ? "bg-[#ae040d] text-white shadow-[-2px_0_0_rgba(0,240,255,0.4),2px_0_0_rgba(174,4,13,0.6)]"
-                : "bg-[#0c0c0e] text-zinc-400 hover:text-white border border-white/5 hover:border-white/15"
-            }`}
-          >
-            All Arsenal ({skillCategories.reduce((acc, cat) => acc + cat.skills.length, 0)})
-          </button>
-          {skillCategories.map((cat) => (
-            <button
-              key={cat.title}
-              onClick={() => setActiveCategory(cat.title)}
-              className={`px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium transition-all ${
-                activeCategory === cat.title
-                  ? "bg-[#ae040d] text-white shadow-[-2px_0_0_rgba(0,240,255,0.4),2px_0_0_rgba(174,4,13,0.6)]"
-                : "bg-[#0c0c0e] text-zinc-400 hover:text-white border border-white/5 hover:border-white/15"
-              }`}
-            >
-              {cat.title} ({cat.skills.length})
-            </button>
-          ))}
-        </div>
-
         {/* Skill Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {filteredCategories.map((category, idx) => {
+          {skillCategories.map((category, idx) => {
             const IconComponent = ICON_MAP[category.iconName] || Brain;
             const isPurple =
               category.title.includes("Data") ||
