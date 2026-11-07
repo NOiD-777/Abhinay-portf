@@ -6,6 +6,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowUpRight, FileDown } from "lucide-react";
 import { personal } from "@/data/personal";
 import HeroProfile from "./HeroProfile";
+import HeroStats from "./HeroStats";
 import GraffitiNameTag from "@/components/ui/GraffitiNameTag";
 import SpiderDoodleArrow from "@/components/ui/SpiderDoodleArrow";
 
@@ -117,71 +118,8 @@ export default function Hero() {
           <HeroProfile />
         </motion.div>
 
-        {/* Right Column (lg:col-span-4): Spark Tagline & Stacked Stat Counters */}
-        <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="lg:col-span-4 xl:col-span-4 flex flex-col justify-end text-left order-3 pb-2"
-        >
-          {/* Spark Tagline */}
-          <div className="flex items-start gap-3 mb-6 max-w-xs">
-            <div className="w-7 h-7 rounded-full bg-[#ae040d]/15 border border-[#ae040d]/30 flex items-center justify-center shrink-0 text-[#ae040d]">
-              <span className="text-sm font-bold">✦</span>
-            </div>
-            <p className="text-xs sm:text-sm text-zinc-300 font-normal leading-snug">
-              Spider-sense tingles whenever a pipeline fails. Good thing mine never do.
-            </p>
-          </div>
-
-          {/* Clean Stat Stack with Dividers */}
-          <div className="space-y-4 max-w-xs w-full">
-            {/* Stat 1: Experience */}
-            <div className="border-t border-white/10 pt-3">
-              <div className="flex items-baseline gap-2">
-                <span className="font-bebas text-4xl sm:text-5xl text-white tracking-tight leading-none">
-                  2+
-                </span>
-                <span className="text-xs font-mono text-zinc-400 uppercase tracking-widest">
-                  Years In The Forge
-                </span>
-              </div>
-              <p className="text-[11px] text-zinc-500 font-mono mt-0.5">
-                Data &amp; AI Engineering @ JMAN Group
-              </p>
-            </div>
-
-            {/* Stat 2: Projects / Repos */}
-            <div className="border-t border-white/10 pt-3">
-              <div className="flex items-baseline gap-2">
-                <span className="font-bebas text-4xl sm:text-5xl text-white tracking-tight leading-none">
-                  16+
-                </span>
-                <span className="text-xs font-mono text-zinc-400 uppercase tracking-widest">
-                  Battle-Tested Repos
-                </span>
-              </div>
-              <p className="text-[11px] text-zinc-500 font-mono mt-0.5">
-                Full-Stack, GenAI &amp; Distributed Systems
-              </p>
-            </div>
-
-            {/* Stat 3: Swecha Championship */}
-            <div className="border-t border-white/10 pt-3 border-b border-white/10 pb-3">
-              <div className="flex items-baseline gap-2">
-                <span className="font-bebas text-4xl sm:text-5xl text-[#00f0ff] tracking-tight leading-none">
-                  1st
-                </span>
-                <span className="text-xs font-mono text-zinc-400 uppercase tracking-widest">
-                  State Champions W
-                </span>
-              </div>
-              <p className="text-[11px] text-zinc-500 font-mono mt-0.5">
-                Swecha Telangana · BuildAI4India
-              </p>
-            </div>
-          </div>
-        </motion.div>
+        {/* Right Column (lg:col-span-4): Animated Interactive Telemetry & Stat Stack */}
+        <HeroStats />
       </div>
 
       {/* Bottom Section Framing Bar: Connects to Next Section */}
