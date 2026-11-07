@@ -1,11 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ExternalLink, ArrowUpRight, Workflow } from "lucide-react";
 import { GithubIcon as Github } from "@/components/ui/Icons";
-import { projects, projectCategories } from "@/data/projects";
+import { projects } from "@/data/projects";
 
 const PROJECT_FLOWS: Record<string, { steps: string[]; badge: string }> = {
   artyatra: {
@@ -39,13 +38,6 @@ const PROJECT_FLOWS: Record<string, { steps: string[]; badge: string }> = {
 };
 
 export default function Projects() {
-  const [activeCategory, setActiveCategory] = useState<string>("all");
-
-  const filteredProjects =
-    activeCategory === "all"
-      ? projects
-      : projects.filter((p) => p.category === activeCategory);
-
   return (
     <section id="projects" className="py-28 px-4 sm:px-6 lg:px-8 relative z-10 bg-black border-t border-white/5">
       <div className="max-w-6xl mx-auto space-y-12">
@@ -63,26 +55,9 @@ export default function Projects() {
           </p>
         </div>
 
-        {/* Filter Tabs with Antigravity Glass */}
-        <div className="flex flex-wrap gap-2">
-          {projectCategories.map((cat) => (
-            <button
-              key={cat.id}
-              onClick={() => setActiveCategory(cat.id)}
-              className={`px-4 py-2 rounded-xl text-xs font-medium transition-all duration-200 ${
-                activeCategory === cat.id
-                  ? "bg-[#ae040d] text-white shadow-[0_0_15px_rgba(174,4,13,0.5)]"
-                  : "bg-[#0c0c0e]/80 text-zinc-400 hover:text-white border border-white/5 hover:border-white/15"
-              }`}
-            >
-              {cat.label}
-            </button>
-          ))}
-        </div>
-
         {/* Projects Display */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {filteredProjects.map((project, idx) => (
+          {projects.map((project, idx) => (
             <motion.div
               key={project.slug}
               initial={{ opacity: 0, y: 20, scale: 0.98 }}
