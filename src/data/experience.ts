@@ -28,9 +28,9 @@ export const experiences: Experience[] = [
         mission:
           "Architecting high-throughput data platforms that convert high-volume financial transaction streams into unified Delta Lake intelligence.",
         milestones: [
-          "Engineered Databricks & PySpark batch ETL pipelines cutting processing latency across multi-cloud infrastructure.",
-          "Built resilient ingestion bridges connecting Microsoft Azure and AWS (Lambda, ECS, S3) with zero data loss SLAs.",
-          "Optimized PostgreSQL schema partitioning and query throughput for mission-critical client analytics.",
+          "Optimized query throughput by 30% and guaranteed 99.9% batch ETL reliability for global financial clients using Databricks & PySpark.",
+          "Constructed resilient REST API ingestion services connecting Microsoft Azure and AWS Lambda into Delta Lake with zero data drop.",
+          "Spearheaded GenAI automation POCs using LangChain & Python for tabular schema validation, cutting manual triage turnaround by 40%.",
         ],
       },
       {
@@ -38,10 +38,10 @@ export const experiences: Experience[] = [
         type: "Internship",
         period: "Feb 2026 – Apr 2026",
         mission:
-          "Completed an intensive five-track engineering crucible across Full-Stack, AI & ML, Power BI, and Platform Engineering.",
+          "Completed an intensive five-track software rotation across Data Science & AI, Full-Stack Web Development, and Cloud Platform Engineering.",
         milestones: [
-          "Developed core proof-of-concept services that accelerated team deployment cadence.",
-          "Implemented automated data quality validation scripts for enterprise reporting layers.",
+          "Engineered and shipped production-ready API endpoints and React/TypeScript UI modules for internal analytics tools.",
+          "Automated tabular data quality validation checks across enterprise reporting layers.",
         ],
       },
     ],
@@ -59,8 +59,8 @@ export const experiences: Experience[] = [
         mission:
           "Engineered reactive client telemetry interfaces where real-time accuracy dictates operational decisions.",
         milestones: [
-          "Delivered component-driven Angular & TypeScript dashboards with seamless WebSocket state synchronization.",
-          "Built modular charting components visualizing multi-parameter system health with sub-50ms render loops.",
+          "Developed responsive, component-driven web applications using modern Angular, TypeScript, HTML5, and CSS3.",
+          "Integrated RESTful APIs for real-time telemetry, data visualization, and seamless client-server state synchronization.",
         ],
       },
     ],
@@ -78,8 +78,8 @@ export const experiences: Experience[] = [
         mission:
           "Optimized computer vision models to execute real-time biometric verification directly on low-resource edge hardware.",
         milestones: [
-          "Achieved ~92% face recognition accuracy on constrained edge processors using FastAPI and OpenCV.",
-          "Slashed CPU consumption by 35% via custom frame-skipping algorithms and memory-mapped inference pipelines.",
+          "Engineered and deployed asynchronous Python backend microservices with FastAPI and OpenCV, achieving ~92% detection accuracy on edge chips.",
+          "Reduced CPU utilization by 35% and cut inference latency via asynchronous request batching and custom skip-frame processing.",
         ],
       },
     ],

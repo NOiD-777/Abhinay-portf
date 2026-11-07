@@ -14,15 +14,15 @@ export interface SkillCategory {
 export const skillCategories: SkillCategory[] = [
   {
     title: "Generative AI & LLMs",
-    description: "Multi-agent systems, prompt engineering, RAG, and production LLM orchestration.",
+    description: "Autonomous agent workflows, prompt engineering, RAG, and production LLM orchestration.",
     iconName: "Brain",
     skills: [
       { name: "Gemini API", icon: "SiGoogle" },
       { name: "OpenAI", icon: "SiOpenai" },
-      { name: "LangChain", icon: "SiLangchain" },
-      { name: "Prompt Engineering", icon: "SiOpenai" },
-      { name: "RAG Architectures", icon: "SiOpenai" },
-      { name: "Hugging Face", icon: "SiHuggingface" },
+      { name: "LangChain & LangGraph", icon: "SiLangchain" },
+      { name: "Agentic Tool Calling", icon: "SiOpenai" },
+      { name: "RAG & Vector Search", icon: "SiOpenai" },
+      { name: "Pydantic Schemas", icon: "SiPython" },
     ],
   },
   {

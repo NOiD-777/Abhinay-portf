@@ -41,6 +41,22 @@ export const projects: Project[] = [
     metrics: ["🏆 Swecha BuildAI4India Winner", "8 Art Styles Classified", "Sub-second Query Latency"],
   },
   {
+    slug: "autonomous-career-agent",
+    title: "Autonomous Career Agent",
+    subtitle: "Multi-Agent Intelligence System",
+    storyDirective: "Can autonomous agentic workflows eliminate manual friction across enterprise intelligence?",
+    description:
+      "Autonomous multi-agent workflow engine in Python orchestrating tool-calling, Pydantic schemas, and LLM chains with persistent state tracking.",
+    longDescription:
+      "Architected an autonomous multi-agent workflow engine in Python using FastAPI and LangChain. Discovers, parses, and evaluates enterprise opportunities against multi-variable constraints (compensation, experience, domain MX verification). Integrates LLM-driven prompt chains with Google Workspace APIs and python-docx to dynamically generate calibrated deliverables and execute verified email dispatches with Docker containerization.",
+    image: "/projects/resumeradar.png",
+    tech: ["Python", "FastAPI", "LangChain", "LLM APIs", "Multi-Tool Calling", "Docker", "Pydantic"],
+    category: "ai-ml",
+    githubUrl: "https://github.com/NOiD-777/ResumeRadar",
+    featured: true,
+    metrics: ["Multi-Agent Orchestration", "Pydantic Structured Output", "Tool/Function Calling"],
+  },
+  {
     slug: "twitter-sentiment-analysis",
     title: "Twitter Sentiment Analysis",
     subtitle: "Large-Scale NLP Pipeline",
@@ -73,22 +89,6 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/NOiD-777/Expense-tracker-angular",
     featured: true,
     metrics: ["📱 Mobile-First UI", "100% Offline Capability", "Live on Vercel"],
-  },
-  {
-    slug: "resumeradar",
-    title: "ResumeRadar",
-    subtitle: "AI Candidate Evaluation Engine",
-    storyDirective: "Eliminating recruitment bottlenecks with autonomous evaluation pipelines.",
-    description:
-      "Recruiter intelligence engine orchestrating Gemini 2.5 Flash API, automated n8n webhooks, and deep PDF extraction into MongoDB Atlas.",
-    longDescription:
-      "Developed to streamline tech recruiting, ResumeRadar parses complex resume PDFs, scores skills against job descriptions with Gemini 2.5 Flash, and orchestrates candidate evaluation pipelines through n8n automation webhooks and MongoDB Atlas storage.",
-    image: "/projects/resumeradar.png",
-    tech: ["React", "TypeScript", "Node.js", "Gemini API", "MongoDB Atlas", "n8n"],
-    category: "ai-ml",
-    githubUrl: "https://github.com/NOiD-777/ResumeRadar",
-    featured: false,
-    metrics: ["Automated n8n Workflows", "Gemini 2.5 Flash Scoring", "PDF Extraction"],
   },
   {
     slug: "legalmind-ai",
