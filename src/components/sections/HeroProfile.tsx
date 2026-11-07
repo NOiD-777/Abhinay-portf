@@ -7,20 +7,14 @@ import { SpiderIcon } from "@/components/ui/Icons";
 export default function HeroProfile() {
   return (
     <div className="relative w-full max-w-[440px] mx-auto flex items-center justify-center">
-      {/* Spider-Verse Ben-Day Comic Halftone Aura */}
-      <div className="absolute w-[280px] sm:w-[350px] aspect-square rounded-full halftone-dots-spider opacity-45 pointer-events-none -translate-y-6" />
+      {/* Spider-Verse Dimensional Aperture / Subtle Radial Halo */}
+      <div className="absolute w-[320px] sm:w-[380px] aspect-square rounded-full bg-gradient-to-b from-[#2a0845]/30 via-[#12071f]/15 to-transparent pointer-events-none blur-3xl -translate-y-4" />
 
-      {/* Background Michelangelo Creation of Adam — Atmospheric Art Motif */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none opacity-30 sm:opacity-40">
-        <Image
-          src="/creation-of-adam-clean.png"
-          alt="Atmospheric artwork"
-          width={1200}
-          height={863}
-          priority
-          className="w-full h-auto object-contain filter contrast-125 brightness-90"
-        />
-      </div>
+      {/* Subtle Ben-Day Comic Halftone Disc */}
+      <div className="absolute w-[260px] sm:w-[320px] aspect-square rounded-full halftone-dots-spider opacity-20 pointer-events-none -translate-y-4" />
+
+      {/* Spider-Verse Framing Ring */}
+      <div className="absolute w-[280px] sm:w-[340px] aspect-square rounded-3xl border border-white/5 pointer-events-none -translate-y-4 shadow-[-2px_0_0_rgba(0,240,255,0.2),2px_0_0_rgba(174,4,13,0.3)]" />
 
       {/* Frame Container */}
       <motion.div
@@ -29,15 +23,15 @@ export default function HeroProfile() {
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         className="relative z-10 w-full flex flex-col items-center"
       >
-        {/* Cutout Portrait Image with Spider-Verse Chromatic RGB Split Shadow */}
+        {/* Cutout Portrait Image with Refined Studio Dropshadow */}
         <div className="relative w-[300px] sm:w-[360px] lg:w-[400px] h-[380px] sm:h-[440px] lg:h-[480px] flex items-end justify-center overflow-hidden">
           <Image
             src="/profile-cutout.webp"
             alt="Abhinay Musku"
-            width={1200}
-            height={1200}
+            width={1400}
+            height={1400}
             priority
-            className="w-auto h-full object-contain object-bottom filter contrast-105 drop-shadow-[-3px_0_0_rgba(0,240,255,0.4)] drop-shadow-[3px_0_0_rgba(225,6,0,0.6)] drop-shadow-[0_20px_35px_rgba(42,8,69,0.5)] select-none pointer-events-none"
+            className="w-auto h-full object-contain object-bottom filter contrast-105 drop-shadow-[0_15px_30px_rgba(0,0,0,0.8)] drop-shadow-[-2px_0_0_rgba(0,240,255,0.2)] drop-shadow-[2px_0_0_rgba(174,4,13,0.3)] select-none pointer-events-none"
           />
         </div>
 
