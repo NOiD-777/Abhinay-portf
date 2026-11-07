@@ -74,7 +74,7 @@ export default function Contact() {
             LEAP OF FAITH // LET&apos;S TALK
           </h2>
           <p className="text-zinc-300 text-sm sm:text-base max-w-prose font-normal leading-relaxed">
-            Got an insane problem to solve? Need a data pipeline that doesn&apos;t melt under load, or an autonomous GenAI agent with maximum aura? Drop a line. We don&apos;t ghost.
+            Wanna have a chat or discuss things? Drop by here — always down to bounce ideas, talk tech, or collaborate on something exciting.
           </p>
         </div>
 
