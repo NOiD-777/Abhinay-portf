@@ -51,10 +51,19 @@ export default function About() {
 
               {/* Spider-Verse Centerpiece Graphic */}
               <div className="relative z-10 p-6 flex flex-col items-center text-center space-y-4">
-                <div className="relative w-28 h-28 rounded-2xl bg-gradient-to-br from-[#1b082e] via-[#0b0314] to-black border border-[#3b0764] flex items-center justify-center shadow-[0_0_30px_rgba(42,8,69,0.7)] group-hover:scale-105 transition-transform duration-300">
-                  <div className="absolute inset-0 rounded-2xl halftone-dots-cyan opacity-40 pointer-events-none" />
-                  <SpiderIcon className="w-14 h-14 text-[#ae040d] filter drop-shadow-[0_0_12px_rgba(225,6,0,0.8)] spider-glitch" />
-                  <span className="absolute -top-2 -right-2 px-1.5 py-0.5 rounded text-[10px] font-mono font-bold uppercase bg-[#ae040d] text-white">
+                {/* Real-World Portrait with Original Background (Transferred from Main Section) */}
+                <div className="relative w-28 h-28 rounded-2xl group-hover:scale-105 transition-transform duration-300">
+                  <div className="relative w-full h-full rounded-2xl overflow-hidden border border-[#3b0764] shadow-[0_0_30px_rgba(42,8,69,0.7)]">
+                    <Image
+                      src="/profile.webp"
+                      alt="Abhinay Musku"
+                      fill
+                      className="object-cover object-center filter contrast-105 brightness-95"
+                    />
+                    <div className="absolute inset-0 halftone-dots-cyan opacity-25 pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+                  </div>
+                  <span className="absolute -top-2 -right-2 px-1.5 py-0.5 rounded text-[10px] font-mono font-bold uppercase bg-[#ae040d] text-white shadow-md z-10">
                     SOL-3
                   </span>
                 </div>

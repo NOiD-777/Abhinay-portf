@@ -42,16 +42,16 @@ export default function HeroProfile() {
           {/* Target Anchor for the Spider-Doodle Arrow (Positioned Directly at Abhinay's Face) */}
           <div
             id="hero-face-target"
-            className="absolute top-[22%] left-[45%] w-4 h-4 pointer-events-none z-20"
+            className="absolute top-[28%] left-[60%] w-4 h-4 pointer-events-none z-20"
             aria-hidden="true"
           />
 
-          {/* User Portrait Cutout */}
+          {/* User Portrait Cutout (High-swag pointing pose) */}
           <Image
-            src="/profile-cutout.webp"
+            src="/profile-pointing.webp"
             alt="Abhinay Musku"
-            width={1400}
-            height={1400}
+            width={1024}
+            height={973}
             priority
             className="relative z-10 w-auto h-full object-contain object-bottom filter contrast-105 drop-shadow-[0_15px_30px_rgba(0,0,0,0.8)] select-none pointer-events-none"
           />
