@@ -1,20 +1,10 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight, FileDown, ArrowDown } from "lucide-react";
 import { personal } from "@/data/personal";
-
-// Dynamically load 3D Canvas
-const HeroScene = dynamic(() => import("@/components/three/HeroScene"), {
-  ssr: false,
-  loading: () => (
-    <div className="w-full h-[380px] sm:h-[460px] lg:h-[520px] flex items-center justify-center">
-      <div className="w-6 h-6 rounded-full border border-white/10 border-t-[#ae040d] animate-spin" />
-    </div>
-  ),
-});
+import HeroProfile from "./HeroProfile";
 
 export default function Hero() {
   return (
@@ -97,15 +87,10 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* Right Column: 3D Neural Network */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="lg:col-span-5 flex justify-center items-center"
-        >
-          <HeroScene />
-        </motion.div>
+        {/* Right Column: Hero Profile Cutout */}
+        <div className="lg:col-span-5 flex justify-center items-center">
+          <HeroProfile />
+        </div>
       </div>
 
       {/* Understated scroll prompt */}
