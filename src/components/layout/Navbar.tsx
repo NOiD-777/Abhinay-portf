@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowUpRight, Mail } from "lucide-react";
-import { GithubIcon as Github, LinkedinIcon as Linkedin, SpiderIcon } from "@/components/ui/Icons";
+import { GithubIcon as Github, LinkedinIcon as Linkedin } from "@/components/ui/Icons";
 import { personal } from "@/data/personal";
 
 const NAV_ITEMS = [
@@ -61,8 +61,10 @@ export default function Navbar() {
           href="/"
           className="group relative z-10 flex items-center gap-2 text-white focus:outline-none spider-glitch-hover"
         >
-          <div className="w-8 h-8 flex items-center justify-center rounded-xl bg-[#ae040d]/20 border border-[#ae040d]/40 text-[#ae040d] shadow-[0_0_12px_rgba(174,4,13,0.3)] group-hover:scale-105 transition-all duration-200">
-            <SpiderIcon className="w-4 h-4 text-[#ae040d] transition-transform duration-200 group-hover:scale-125" />
+          <div className="w-8 h-8 flex items-center justify-center rounded-xl bg-[#ae040d]/20 border border-[#ae040d]/40 text-[#ae040d] shadow-[0_0_12px_rgba(174,4,13,0.3)] group-hover:scale-105 group-hover:border-[#ae040d]/60 transition-all duration-200">
+            <span className="font-mono text-xs sm:text-sm font-bold tracking-tight text-[#ae040d] select-none transition-transform duration-200 group-hover:scale-125 group-hover:text-white leading-none">
+              ;)
+            </span>
           </div>
           <span className="font-spiderman text-base sm:text-lg tracking-[0.16em] text-white">ABHINAY MUSKU</span>
           <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ae040d] shadow-[0_0_8px_#ae040d]" />
