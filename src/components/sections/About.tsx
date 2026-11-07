@@ -189,7 +189,7 @@ export default function About() {
                               ? "aspect-[835/568]"
                               : idx === 1
                               ? "aspect-[865/587]"
-                              : "aspect-[568/660]")
+                              : "aspect-[800/1011]")
                           } overflow-hidden bg-black`}
                           style={{
                             aspectRatio: beat.aspectRatio
@@ -201,7 +201,7 @@ export default function About() {
                               ? "835 / 568"
                               : idx === 1
                               ? "865 / 587"
-                              : "568 / 660",
+                              : "800 / 1011",
                           }}
                         >
                           <Image

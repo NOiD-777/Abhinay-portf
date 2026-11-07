@@ -116,7 +116,7 @@ export const personal = {
       accent: "crimson",
       image: "/images/jman-abhinay.webp",
       imageCaption: "Abhinay on-site at JMAN Group — 'Most overnight successes took a long time' (Steve Jobs)",
-      aspectRatio: "aspect-[568/660]",
+      aspectRatio: "aspect-[800/1011]",
       badge: {
         logo: "/logos/jman-logo.svg",
         logoAlt: "JMAN Group",
