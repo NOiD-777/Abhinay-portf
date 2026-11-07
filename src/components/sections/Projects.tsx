@@ -17,7 +17,7 @@ const PROJECT_FLOWS: Record<string, { steps: string[]; badge: string }> = {
     steps: ["Opportunity Telemetry", "Tool Calling", "Pydantic Schemas", "Automated Dispatch"],
   },
   "twitter-sentiment-analysis": {
-    badge: "SPIDER-RADAR // NLP",
+    badge: "SOCIAL RADAR // NLP",
     steps: ["1.6M Social Stream", "NLTK Tokenizer", "Classifier Benchmark", "City Sentiment Decoded"],
   },
   "upi-offline-vault": {

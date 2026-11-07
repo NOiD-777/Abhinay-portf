@@ -11,7 +11,7 @@ const CHAPTERS: Record<string, string> = {
   projects: "03 // MISSIONS",
   experience: "04 // CHRONICLES",
   education: "05 // ACADEMICS",
-  contact: "06 // SPIDER-SIGNAL",
+  contact: "06 // FREQUENCY",
 };
 
 export default function ScrollProgress() {

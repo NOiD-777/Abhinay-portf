@@ -59,8 +59,8 @@ export const projects: Project[] = [
   {
     slug: "twitter-sentiment-analysis",
     title: "Twitter Sentiment Analysis",
-    subtitle: "Spider-Radar // Tracking What The City Thinks About Me",
-    storyDirective: "Is the city vibing with Spider-Man or is J. Jonah Jameson running slander campaigns? Tapped into 1.6M tweets to understand what people actually think about me.",
+    subtitle: "SOCIAL TELEMETRY // TRACKING WHAT THE CITY THINKS ABOUT ME",
+    storyDirective: "Is the city vibing or is there a slander campaign running? Tapped into 1.6M tweets to understand what people actually think about me in real-time.",
     description:
       "Trained NLP statistical classifiers on 1.6M unfiltered tweets to understand what people think about me in real-time. Whether the city is hyping up my latest save or cooking me in the comments, I know the exact public sentiment with +25% higher accuracy and zero cap.",
     longDescription:
@@ -94,9 +94,9 @@ export const projects: Project[] = [
     slug: "legalmind-ai",
     title: "LegalMind",
     subtitle: "Multi-Model Contract Risk Scanner",
-    storyDirective: "Reading 50-page legal terms of service so nobody gets trapped in a canon event.",
+    storyDirective: "Reading 50-page legal terms of service so nobody gets trapped in a bad deal.",
     description:
-      "Asynchronous audit engine cross-examining risky contract clauses in parallel across Claude, Gemini, and Groq. If there's a shady clause, the spider-sense sounds the alarm.",
+      "Asynchronous audit engine cross-examining risky contract clauses in parallel across Claude, Gemini, and Groq. If there's a shady clause, the automated scanner sounds the alarm.",
     longDescription:
       "LegalMind automates lengthy contract reviews by ingesting legal PDFs/DOCX agreements, extracting liability and indemnification clauses, and running parallel multi-model risk evaluations to highlight red flags with high confidence.",
     image: "/projects/legalmind.png",
@@ -109,10 +109,10 @@ export const projects: Project[] = [
   {
     slug: "face-recognition-edge",
     title: "Edge CCTV Criminal Detection",
-    subtitle: "Spider-Vision // Scanning The Streets To Identify Criminals",
+    subtitle: "COMPUTER VISION // SCANNING THE PERIMETER TO IDENTIFY CRIMINALS",
     storyDirective: "Gotta keep the streets safe — tapping into live CCTV camera feeds to scan the perimeter and identify criminals before they do damage.",
     description:
-      "Spider-vision for the city. Built lightweight computer vision models deployed on CCTV cameras and edge silicon to identify criminals and flagged targets in real-time with ~92% accuracy while chopping CPU overhead by 35%.",
+      "Real-time visual intelligence for the city. Built lightweight computer vision models deployed on CCTV cameras and edge silicon to identify criminals and flagged targets in real-time with ~92% accuracy while chopping CPU overhead by 35%.",
     longDescription:
       "Engineered during internship at Brihaspathi Technologies. Tapped into live camera and CCTV video feeds to perform real-time biometric detection and threat identification for security surveillance, helping pinpoint criminals on constrained edge hardware. Optimized using OpenCV frame-skipping algorithms and asynchronous FastAPI microservices.",
     image: "/projects/face-recognition.png",

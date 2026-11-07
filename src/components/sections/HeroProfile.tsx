@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { SpiderIcon } from "@/components/ui/Icons";
 
 export default function HeroProfile() {
   return (

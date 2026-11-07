@@ -38,7 +38,7 @@ export default function Hero() {
       <div className="relative z-20 max-w-7xl w-full mx-auto flex items-center justify-between pb-6 border-b border-white/5">
         <div className="flex flex-col text-left">
           <span className="font-mono text-[11px] sm:text-xs font-bold text-[#ae040d] tracking-widest uppercase">
-            ABHINAY MUSKU // SOL-3 SPIDER-ENGINEER
+            ABHINAY MUSKU // SOL-3 SYSTEMS ARCHITECT
           </span>
           <span className="font-mono text-[10px] sm:text-[11px] text-zinc-400 tracking-wider uppercase">
             DATA SLINGER @ JMAN GROUP // HYDERABAD
@@ -79,7 +79,7 @@ export default function Hero() {
 
           {/* Editorial Paragraph */}
           <p className="text-xs sm:text-sm text-zinc-300 font-normal leading-relaxed max-w-sm mt-3">
-            Anyone can wear the mask — but I&apos;m out here slinging multi-terabyte Databricks pipelines with one hand and cooking autonomous GenAI agents with the other. High aura, zero data drop, and yeah... the Jordan 1s are untied. It&apos;s a choice.
+            Talk is cheap — I&apos;m out here slinging multi-terabyte Databricks pipelines with one hand and cooking autonomous GenAI agents with the other. High aura, zero data drop, and yeah... the Jordan 1s are untied. It&apos;s a choice.
           </p>
 
           {/* Location / Origin Tag */}

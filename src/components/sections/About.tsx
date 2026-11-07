@@ -43,7 +43,7 @@ export default function About() {
               <div className="relative z-10 px-4 py-2.5 bg-black/90 border-b border-white/10 flex items-center justify-between text-[11px] font-mono tracking-widest uppercase">
                 <div className="flex items-center gap-1.5 text-[#00f0ff]">
                   <SpiderIcon className="w-3.5 h-3.5 text-[#ae040d]" />
-                  <span className="font-spiderman tracking-[0.12em] text-white">SPIDER-MAN</span>
+                  <span className="font-spiderman tracking-[0.12em] text-white">CHRONICLES</span>
                   <span className="text-zinc-400">// ISSUE #01</span>
                 </div>
                 <span className="text-zinc-400 font-mono">VOL. 2026</span>
@@ -74,7 +74,7 @@ export default function About() {
                     ABHINAY MUSKU
                   </h3>
                   <p className="text-xs font-spiderman text-[#00f0ff] uppercase tracking-[0.14em]">
-                    DATA SLINGER // SPIDER-ENGINEER
+                    DATA SLINGER // SYSTEMS ARCHITECT
                   </p>
                 </div>
 
@@ -84,10 +84,10 @@ export default function About() {
                     // NARRATIVE CAPTION:
                   </p>
                   <p className="text-xs text-zinc-200 font-mono italic leading-relaxed">
-                    &ldquo;You&apos;re the one. The only Spider-Man... well, plus a bunch of distributed pipelines. We&apos;re gonna do this our way.&rdquo;
+                    &ldquo;When everyone else is following the textbook, we write our own blueprint. Multi-terabyte pipelines, zero dropped bytes, our way.&rdquo;
                   </p>
                   <p className="text-[10px] font-mono text-[#00f0ff] uppercase pt-0.5">
-                    Status: Locked In · Venom Blast Armed · Zero Data Drop
+                    Status: Locked In · Maximum Aura · Zero Data Drop
                   </p>
                 </div>
               </div>
@@ -105,7 +105,7 @@ export default function About() {
                 <div className="w-5 h-4 shrink-0 flex items-center justify-center">
                   <Image src="/logos/gdgc-mark.svg" alt="GDGC" width={20} height={16} className="w-full h-full object-contain" />
                 </div>
-                <span>GDGC MLRIT · Spider-Campus Lead</span>
+                <span>GDGC MLRIT · Technical Lead</span>
               </div>
               <div className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-lg border border-white/5 bg-[#09090b]">
                 <div className="w-4 h-4 shrink-0 flex items-center justify-center">

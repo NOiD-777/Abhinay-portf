@@ -18,7 +18,7 @@ export default function Education() {
             WHERE THE POWERS GOT FORGED
           </h2>
           <p className="text-zinc-300 text-sm sm:text-base max-w-prose font-normal leading-relaxed">
-            Where the spider-powers got weaponized: Computer Science foundations at MLRIT, leading hundreds of student builders, and bagging state-level championships.
+            Where the core instincts got forged: Computer Science foundations at MLRIT, leading hundreds of student builders, and bagging state-level championships.
           </p>
         </div>
 

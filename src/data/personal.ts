@@ -14,17 +14,17 @@ export const personal = {
   name: "Abhinay Musku",
   firstName: "Abhinay",
   lastName: "Musku",
-  title: "Sol-3 Spider-Engineer",
+  title: "Sol-3 Systems Architect",
   roles: [
     "Full-Stack & AI Engineer",
     "Data Slinger @ JMAN Group",
     "GenAI Agent Orchestrator",
-    "Sol-3 Multiverse Glitch Hunter",
+    "Sol-3 Glitch Hunter & Builder",
   ],
   tagline:
     "By day, wrestling multi-terabyte data lakehouses at JMAN Group. By night, slinging autonomous GenAI agents across the multiverse. Untied Jordan 1s? Yeah, it's a choice.",
   storyMotto:
-    "anyone can wear the mask — but not everyone can tame a PySpark cluster at 3am with zero data drop.",
+    "anyone can write code — but not everyone can tame a PySpark cluster at 3am with zero data drop.",
   location: "Hyderabad / Chennai, India",
   email: "abhinay.musku.reddy@gmail.com",
   phone: "+91 9398707418",
@@ -32,18 +32,18 @@ export const personal = {
   github: "https://github.com/NOiD-777",
   resumeUrl: "/resume.pdf",
   bio: [
-    "Look, nobody told me getting bitten by the distributed systems bug would mean juggling Delta Lake pipelines with one hand while training agentic LLMs with the other. But here we are, and honestly? We ball.",
-    "From turning campus auditoriums upside down as GDGC Lead to shipping enterprise-grade financial data engines at JMAN Group, I treat production like my personal web-swing through Brooklyn and Hyderabad. High aura, zero data drop, maximum impact.",
+    "Look, nobody told me getting hooked on distributed systems would mean juggling Delta Lake pipelines with one hand while training agentic LLMs with the other. But here we are, and honestly? We ball.",
+    "From turning campus auditoriums upside down as GDGC Lead to shipping enterprise-grade financial data engines at JMAN Group, I treat production like a high-stakes sprint through Brooklyn and Hyderabad. High aura, zero data drop, maximum impact.",
   ],
   storyBeats: [
     {
       act: "ACT I",
       codename: "THE SPARK",
-      title: "Bitten by the Builder Bug",
+      title: "Hooked on the Builder High",
       location: "Hyderabad // MLRIT Campus",
       narrative:
-        "Started out tinkering with code in dorm rooms, trying to figure out why systems tick. Next thing I know, I'm on stage leading GDGC MLRIT, turning 500-seat auditoriums into high-voltage hack rooms. Felt like putting on the mask for the first time: terrifying, electrifying, totally locked in.",
-      milestone: "Technical Lead · GDGC MLRIT (The Suit Fits)",
+        "Started out tinkering with code in dorm rooms, trying to figure out why systems tick. Next thing I know, I'm on stage leading GDGC MLRIT, turning 500-seat auditoriums into high-voltage hack rooms. Felt like stepping onto the main stage for the first time: terrifying, electrifying, totally locked in.",
+      milestone: "Technical Lead · GDGC MLRIT (Locked In)",
       accent: "cyan",
       image: "/images/narrative-technical-lead.webp",
       imageCaption: "Abhinay Musku on stage presenting as Core Team Technical Lead at MLRIT auditorium",
@@ -54,7 +54,7 @@ export const personal = {
       title: "What's Up Danger // Enterprise Chaos",
       location: "Chennai // JMAN Group",
       narrative:
-        "Leaped straight from the sandbox into the enterprise deep end at JMAN Group. Multi-cloud financial pipelines? Big data chaos? Hand me the web-shooters. Tamed Databricks, PySpark, and Delta Lake into a zero-data-drop beast. When production spikes hit at 3am, my spider-sense starts tingling — and we don't drop a single byte.",
+        "Leaped straight from the sandbox into the enterprise deep end at JMAN Group. Multi-cloud financial pipelines? Big data chaos? Hand me the controls. Tamed Databricks, PySpark, and Delta Lake into a zero-data-drop beast. When production spikes hit at 3am, my instinct kicks in — and we don't drop a single byte.",
       milestone: "Data Engineer @ JMAN Group · In the Forge",
       accent: "crimson",
       image: "/images/jman-abhinay.webp",

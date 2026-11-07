@@ -56,10 +56,10 @@ export default function Skills() {
         <div className="flex flex-col items-start gap-2 text-left">
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
             <span className="text-[#00f0ff]">//</span>
-            <span>THE SUIT &amp; GADGETS // OFFICIAL ARSENAL</span>
+            <span>SYSTEMS &amp; TOOLING // OFFICIAL ARSENAL</span>
           </p>
           <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
-            WHAT&apos;S IN MY WEB-SHOOTERS
+            WHAT&apos;S IN THE ARSENAL
           </h2>
           <p className="text-zinc-300 text-sm sm:text-base max-w-prose font-normal leading-relaxed">
             Every technology in my arsenal, backed by production code and battle-tested pipelines. Featuring official vector emblems for every stack from my dossier.
