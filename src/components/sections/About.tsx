@@ -38,8 +38,7 @@ export default function About() {
                 className="w-full h-full object-cover object-center grayscale contrast-115 hover:grayscale-0 transition-all duration-500"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80" />
-              <div className="absolute bottom-4 left-4 right-4 text-left">
+              <div className="absolute bottom-0 inset-x-0 bg-black/90 px-4 py-3 border-t border-white/10 text-left">
                 <p className="text-white font-medium text-sm">Abhinay Musku</p>
                 <p className="text-xs text-zinc-400 font-mono">Data Engineer · JMAN Group</p>
               </div>
