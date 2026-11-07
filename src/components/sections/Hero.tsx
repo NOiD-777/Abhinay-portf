@@ -93,7 +93,7 @@ export default function Hero() {
             {/* Location / Origin Tag */}
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#ae040d]/40 bg-[#ae040d]/10 text-[10px] sm:text-[11px] font-mono text-[#ff4d5a] mt-4">
               <span className="w-1.5 h-1.5 rounded-full bg-[#ae040d] animate-pulse" />
-              <span>#BEYOURSELF · SOL-3 · HYDERABAD</span>
+              <span>#BUILTDIFF · SOL-3 · HYDERABAD</span>
             </div>
 
             {/* Superhero CTA Buttons */}
