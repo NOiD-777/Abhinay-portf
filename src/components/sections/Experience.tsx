@@ -12,12 +12,12 @@ export default function Experience() {
         <div className="flex flex-col items-start gap-2 text-left">
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
             <span className="text-[#00f0ff]">//</span>
-            <span>CHRONICLES</span>
+            <span>CHRONICLES: EARTH-1610</span>
           </p>
-          <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em] spider-glitch-hover cursor-default">
-            The Crucible &amp; Impact
+          <h2 className="font-bebas text-4xl sm:text-6xl text-white tracking-wider spider-glitch-hover cursor-default">
+            THE CRUCIBLE &amp; IMPACT
           </h2>
-          <p className="text-zinc-400 text-sm sm:text-base max-w-xl font-normal">
+          <p className="text-zinc-300 text-sm sm:text-base max-w-prose font-normal leading-relaxed">
             Where theory meets production: architecting multi-cloud data platforms, sub-second telemetry, and edge silicon intelligence.
           </p>
         </div>

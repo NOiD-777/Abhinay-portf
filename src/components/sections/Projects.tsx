@@ -24,10 +24,10 @@ export default function Projects() {
             <span className="text-[#00f0ff]">//</span>
             <span>MISSIONS &amp; DISPATCHES</span>
           </p>
-          <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em] spider-glitch-hover cursor-default">
-            Featured Systems &amp; Case Studies
+          <h2 className="font-bebas text-4xl sm:text-6xl text-white tracking-wider spider-glitch-hover cursor-default">
+            FEATURED SYSTEMS &amp; CASE STUDIES
           </h2>
-          <p className="text-zinc-400 text-sm sm:text-base max-w-xl font-normal">
+          <p className="text-zinc-300 text-sm sm:text-base max-w-prose font-normal leading-relaxed">
             Every project is a mission to solve what matters: cultural preservation with AI, high-throughput social telemetry, and offline-first finance.
           </p>
         </div>
@@ -111,7 +111,7 @@ export default function Projects() {
                     href={`/projects/${project.slug}`}
                     className="group-hover:text-[#ae040d] transition-colors"
                   >
-                    <h3 className="text-xl sm:text-2xl font-semibold text-white group-hover:text-[#ff0055] transition-colors flex items-center gap-2 tracking-[-0.02em] group-hover:spider-glitch">
+                    <h3 className="font-bebas text-2xl sm:text-3xl text-white group-hover:text-[#ff0055] transition-colors flex items-center gap-2 tracking-wide group-hover:spider-glitch">
                       <span>{project.title}</span>
                       <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-[#00f0ff]" />
                     </h3>

@@ -71,10 +71,10 @@ export default function Contact() {
             <span className="text-[#00f0ff]">//</span>
             <span>NEXT CHAPTER: LEAP OF FAITH</span>
           </p>
-          <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em] spider-glitch-hover cursor-default">
-            Call the Spider-Signal
+          <h2 className="font-bebas text-4xl sm:text-6xl text-white tracking-wider spider-glitch-hover cursor-default">
+            CALL THE SPIDER-SIGNAL
           </h2>
-          <p className="text-zinc-400 text-sm sm:text-base max-w-xl font-normal">
+          <p className="text-zinc-300 text-sm sm:text-base max-w-prose font-normal leading-relaxed">
             Every story needs a bold next act. When your team needs enterprise data platforms or autonomous AI systems, let&apos;s build what&apos;s next.
           </p>
         </div>
@@ -191,7 +191,7 @@ export default function Contact() {
               onSubmit={handleSubmit}
               className="rounded-2xl p-7 sm:p-8 border border-white/5 bg-[#09090b] space-y-5"
             >
-              <h3 className="text-lg font-semibold text-white">Send a Message</h3>
+              <h3 className="font-bebas text-2xl text-white tracking-wide">SEND A MESSAGE</h3>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1.5">

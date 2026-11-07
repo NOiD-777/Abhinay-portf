@@ -14,10 +14,10 @@ export default function Education() {
             <span className="text-[#00f0ff]">//</span>
             <span>THE GUILD &amp; ACADEMY</span>
           </p>
-          <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em] spider-glitch-hover cursor-default">
-            Education &amp; Credentials
+          <h2 className="font-bebas text-4xl sm:text-6xl text-white tracking-wider spider-glitch-hover cursor-default">
+            EDUCATION &amp; CREDENTIALS
           </h2>
-          <p className="text-zinc-400 text-sm sm:text-base max-w-xl font-normal">
+          <p className="text-zinc-300 text-sm sm:text-base max-w-prose font-normal leading-relaxed">
             Academic rigor in Information Technology, developer community stewardship, and verified cloud architecture.
           </p>
         </div>
@@ -47,7 +47,7 @@ export default function Education() {
                   <p className="text-xs font-mono text-[#ae040d]">
                     {edu.degree} in {edu.field}
                   </p>
-                  <h3 className="text-xl sm:text-2xl font-semibold text-white mt-0.5">
+                  <h3 className="font-bebas text-2xl sm:text-3xl text-white tracking-wide mt-0.5">
                     {edu.institution}
                   </h3>
                 </div>

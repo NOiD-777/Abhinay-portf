@@ -40,12 +40,14 @@ export default function Navbar() {
         {/* Typographic Wordmark with Spider-Verse Glitch & Dimension Identifier */}
         <Link
           href="/"
-          className="group flex items-center gap-1.5 font-semibold text-lg tracking-tight text-white focus:outline-none spider-glitch-hover"
+          className="group flex items-center gap-2 text-white focus:outline-none spider-glitch-hover"
         >
-          <SpiderIcon className="w-4 h-4 text-[#ae040d] transition-transform duration-200 group-hover:scale-125" />
-          <span>Abhinay</span>
+          <div className="w-7 h-7 flex items-center justify-center rounded-lg bg-[#ae040d]/15 border border-[#ae040d]/30 text-[#ae040d] group-hover:bg-[#ae040d]/25 transition-all duration-200">
+            <SpiderIcon className="w-4 h-4 text-[#ae040d] transition-transform duration-200 group-hover:scale-125" />
+          </div>
+          <span className="font-spiderman text-base sm:text-lg tracking-[0.18em] text-white">ABHINAY</span>
           <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ae040d]" />
-          <span className="ml-2 hidden lg:inline-block px-2 py-0.5 rounded text-[10px] font-mono tracking-widest text-zinc-500 bg-white/5 border border-white/5">
+          <span className="ml-1 hidden lg:inline-block px-2 py-0.5 rounded text-[10px] font-mono tracking-widest text-zinc-400 bg-white/5 border border-white/5">
             EARTH-1610
           </span>
         </Link>

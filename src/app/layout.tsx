@@ -1,9 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
+import { Bebas_Neue, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 import ScrollProgress from "@/components/ui/ScrollProgress";
 import Cursor from "@/components/ui/Cursor";
+
+const spiderFont = localFont({
+  src: "../../public/fonts/spiderman.woff2",
+  variable: "--font-spiderman",
+  display: "swap",
+});
+
+const bebasNeue = Bebas_Neue({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-bebas",
+  display: "swap",
+});
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -45,7 +59,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} dark`}
+      className={`${geistSans.variable} ${geistMono.variable} ${spiderFont.variable} ${bebasNeue.variable} dark`}
     >
       <body className="bg-black text-[#ededed] font-sans antialiased selection:bg-[#ae040d]/40 selection:text-white">
         <ScrollProgress />

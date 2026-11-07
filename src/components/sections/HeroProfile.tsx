@@ -53,7 +53,7 @@ export default function HeroProfile() {
           </div>
           <div className="text-left border-l border-white/10 pl-2.5">
             <p className="text-xs font-semibold text-white tracking-tight flex items-center gap-1.5">
-              <span>Abhinay Musku</span>
+              <span className="font-spiderman tracking-[0.14em] text-sm">ABHINAY</span>
               <span className="text-[10px] text-[#00f0ff] font-mono">// 1610</span>
             </p>
             <p className="text-[10px] text-zinc-400 font-mono">Data Engineer · JMAN Group</p>

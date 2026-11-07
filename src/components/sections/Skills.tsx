@@ -38,10 +38,10 @@ export default function Skills() {
             <span className="text-[#00f0ff]">//</span>
             <span>THE SUIT &amp; ARSENAL</span>
           </p>
-          <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em] spider-glitch-hover cursor-default">
-            Technical Stack &amp; Tooling
+          <h2 className="font-bebas text-4xl sm:text-6xl text-white tracking-wider spider-glitch-hover cursor-default">
+            TECHNICAL STACK &amp; TOOLING
           </h2>
-          <p className="text-zinc-400 text-sm sm:text-base max-w-xl font-normal">
+          <p className="text-zinc-300 text-sm sm:text-base max-w-prose font-normal leading-relaxed">
             Weapons of choice across enterprise data lakehouses, generative AI agent protocols, and high-concurrency microservices.
           </p>
         </div>
@@ -113,7 +113,7 @@ export default function Skills() {
                   </div>
 
                   <div>
-                    <h3 className="text-base font-semibold text-white">
+                    <h3 className="font-bebas text-xl sm:text-2xl text-white tracking-wide">
                       {category.title}
                     </h3>
                     <p className="text-xs text-zinc-400 mt-1 leading-relaxed">

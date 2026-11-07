@@ -79,7 +79,7 @@ export default async function ProjectDetailPage({
             )}
           </div>
 
-          <h1 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em]">
+          <h1 className="font-bebas text-4xl sm:text-6xl text-white tracking-wide">
             {project.title}
           </h1>
 
@@ -87,7 +87,7 @@ export default async function ProjectDetailPage({
             {project.subtitle}
           </p>
 
-          <p className="text-base sm:text-lg text-zinc-300 leading-relaxed max-w-2xl font-normal">
+          <p className="text-base sm:text-lg text-zinc-300 leading-relaxed max-w-prose font-normal">
             {project.description}
           </p>
 
@@ -177,7 +177,7 @@ export default async function ProjectDetailPage({
               <span className="text-[10px] font-mono uppercase tracking-wider text-zinc-500">
                 Next Project
               </span>
-              <h3 className="text-lg font-semibold text-white group-hover:text-[#ff3b47] transition-colors">
+              <h3 className="font-bebas text-2xl text-white group-hover:text-[#ff3b47] transition-colors tracking-wide">
                 {nextProject.title}
               </h3>
               <p className="text-xs text-zinc-400">{nextProject.subtitle}</p>

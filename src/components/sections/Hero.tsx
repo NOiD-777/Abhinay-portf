@@ -25,26 +25,26 @@ export default function Hero() {
           {/* Spider-Verse Role Tag */}
           <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#ae040d]">
             <span className="w-1.5 h-1.5 rounded-full bg-[#ae040d] animate-pulse" />
-            <span className="text-zinc-500">EARTH-1610 //</span>
-            <span className="text-white font-semibold">Full-Stack &amp; AI Engineer</span>
+            <span className="text-zinc-400">EARTH-1610 //</span>
+            <span className="text-white font-semibold font-bebas text-sm tracking-wider">FULL-STACK &amp; AI ENGINEER</span>
           </div>
 
-          {/* Crisp, Strong Name with Spider-Verse Glitch Hover */}
+          {/* Crisp, Strong Name with Spider-Man Font & Spider-Verse Glitch */}
           <div className="space-y-3">
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-semibold tracking-[-0.035em] text-white leading-[1.05] spider-glitch-hover cursor-default">
-              Abhinay Musku
+            <h1 className="font-spiderman text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-[0.14em] text-white leading-[1.05] spider-glitch-hover cursor-default uppercase">
+              ABHINAY MUSKU
             </h1>
-            <p className="text-xl sm:text-2xl text-zinc-300 font-normal leading-snug max-w-xl tracking-[-0.015em]">
+            <p className="text-lg sm:text-xl text-zinc-200 font-normal leading-relaxed max-w-prose">
               Turning raw data into intelligence, and human intent into living autonomous systems.
             </p>
           </div>
 
           {/* Story Hook */}
-          <div className="border-l border-[#ae040d]/60 pl-4 py-1 space-y-1">
+          <div className="border-l border-[#ae040d]/60 pl-4 py-1 space-y-1 max-w-prose">
             <p className="text-sm sm:text-base text-zinc-300 font-normal leading-relaxed">
-              Data Engineer at <span className="text-white font-medium">JMAN Group</span> · GDG Tech Lead · Hackathon Winner.
+              Data Engineer at <span className="text-white font-medium">JMAN Group</span> · GDG Tech Lead · Swecha Winner.
             </p>
-            <p className="text-xs text-zinc-500 font-mono">
+            <p className="text-xs text-zinc-400 font-mono tracking-wide">
               From campus hackrooms to enterprise lakehouses — building for scale and the leap of faith.
             </p>
           </div>

@@ -11,9 +11,9 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Brand & Tagline */}
         <div className="flex flex-col items-center md:items-start gap-1">
-          <Link href="/" className="flex items-center gap-1.5 font-semibold text-base text-white spider-glitch-hover">
-            <SpiderIcon className="w-3.5 h-3.5 text-[#ae040d]" />
-            <span>Abhinay</span>
+          <Link href="/" className="flex items-center gap-2 text-white spider-glitch-hover">
+            <SpiderIcon className="w-4 h-4 text-[#ae040d]" />
+            <span className="font-spiderman tracking-[0.16em] text-base">ABHINAY</span>
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ae040d]" />
             <span className="ml-1 text-[10px] font-mono text-[#00f0ff]">// 1610</span>
           </Link>

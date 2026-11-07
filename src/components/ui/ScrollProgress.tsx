@@ -45,7 +45,7 @@ export default function ScrollProgress() {
       >
         <SpiderIcon className="w-3.5 h-3.5 text-[#ae040d] animate-pulse" />
         <span className="text-zinc-500">EARTH-1610 //</span>
-        <span className="text-[#00f0ff]">{percent}%</span>
+        <span className="text-[#00f0ff] tabular-data font-semibold">{percent}%</span>
         <span className="text-zinc-600">·</span>
         <span className="text-zinc-400">LEAP OF FAITH</span>
       </motion.div>
