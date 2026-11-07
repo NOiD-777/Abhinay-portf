@@ -14,7 +14,7 @@ export default function Experience() {
             <span className="text-[#00f0ff]">//</span>
             <span>CHRONICLES</span>
           </p>
-          <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em]">
+          <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em] spider-glitch-hover cursor-default">
             The Crucible &amp; Impact
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base max-w-xl font-normal">
@@ -96,7 +96,7 @@ export default function Experience() {
                     </div>
 
                     {/* Mission Directive */}
-                    <p className="text-xs sm:text-sm text-zinc-300 font-normal leading-relaxed border-l-2 border-[#ae040d] pl-3 py-0.5">
+                    <p className="text-xs sm:text-sm text-zinc-300 font-normal leading-relaxed border-l border-[#ae040d]/60 pl-3 py-0.5">
                       {role.mission}
                     </p>
 

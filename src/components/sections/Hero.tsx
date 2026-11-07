@@ -40,7 +40,7 @@ export default function Hero() {
           </div>
 
           {/* Story Hook */}
-          <div className="border-l-2 border-[#ae040d] pl-4 py-1 space-y-1">
+          <div className="border-l border-[#ae040d]/60 pl-4 py-1 space-y-1">
             <p className="text-sm sm:text-base text-zinc-300 font-normal leading-relaxed">
               Data Engineer at <span className="text-white font-medium">JMAN Group</span> · GDG Tech Lead · Hackathon Winner.
             </p>

@@ -24,7 +24,7 @@ export default function Projects() {
             <span className="text-[#00f0ff]">//</span>
             <span>MISSIONS &amp; DISPATCHES</span>
           </p>
-          <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em]">
+          <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em] spider-glitch-hover cursor-default">
             Featured Systems &amp; Case Studies
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base max-w-xl font-normal">

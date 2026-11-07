@@ -60,7 +60,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="text-xs text-zinc-600 text-center md:text-right font-normal">
-          © 2026 Abhinay Musku. Crafted with Next.js &amp; Tailwind.
+          © 2026 Abhinay Musku. Earth-1610 // Leap of Faith.
         </p>
       </div>
     </footer>

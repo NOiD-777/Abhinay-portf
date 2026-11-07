@@ -36,13 +36,13 @@ export default function Skills() {
         <div className="flex flex-col items-start gap-2 text-left">
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
             <span className="text-[#00f0ff]">//</span>
-            <span>THE ARSENAL</span>
+            <span>THE SUIT &amp; ARSENAL</span>
           </p>
-          <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em]">
+          <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em] spider-glitch-hover cursor-default">
             Technical Stack &amp; Tooling
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base max-w-xl font-normal">
-            Weapons of choice across enterprise data platforms, generative AI reasoning, and high-concurrency interfaces.
+            Weapons of choice across enterprise data lakehouses, generative AI agent protocols, and high-concurrency microservices.
           </p>
         </div>
 

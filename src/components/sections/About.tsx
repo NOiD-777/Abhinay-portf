@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Database, Cpu, Code2, MapPin, GraduationCap, Users } from "lucide-react";
+import { Database, Cpu, Code2, MapPin } from "lucide-react";
+import { SpiderIcon } from "@/components/ui/Icons";
 import { personal } from "@/data/personal";
 
 export default function About() {
@@ -25,30 +26,64 @@ export default function About() {
 
         {/* Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* Portrait Photo Frame with Spider-Verse Comic Panel */}
+          {/* Earth-1610 Spider-Verse Dossier Card (No Duplicate Photo) */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="lg:col-span-5 flex flex-col items-center gap-6"
+            className="lg:col-span-5 flex flex-col items-center gap-5"
           >
-            <div className="relative w-72 sm:w-80 aspect-square rounded-2xl overflow-hidden border border-white/10 bg-[#09090b] shadow-[-3px_0_0_rgba(0,240,255,0.3),3px_0_0_rgba(174,4,13,0.5)]">
-              <Image
-                src="/profile.webp"
-                alt="Abhinay Musku"
-                width={600}
-                height={600}
-                className="w-full h-full object-cover object-center grayscale contrast-115 hover:grayscale-0 transition-all duration-500"
-                priority
-              />
-              <div className="absolute bottom-0 inset-x-0 bg-black/90 px-4 py-3 border-t border-white/10 text-left">
-                <p className="text-white font-medium text-sm">Abhinay Musku</p>
-                <p className="text-xs text-zinc-400 font-mono">Data Engineer · JMAN Group</p>
+            {/* Comic Cover Dossier Box */}
+            <div className="relative w-full max-w-sm rounded-2xl overflow-hidden border border-white/10 bg-[#09090b] shadow-[-3px_0_0_rgba(0,240,255,0.35),3px_0_0_rgba(174,4,13,0.55)] group">
+              {/* Halftone Comic Dots Pattern */}
+              <div className="absolute inset-0 halftone-dots-spider opacity-25 pointer-events-none" />
+
+              {/* Comic Book Header Banner */}
+              <div className="relative z-10 px-4 py-2.5 bg-black/90 border-b border-white/10 flex items-center justify-between text-[10px] font-mono tracking-widest uppercase">
+                <div className="flex items-center gap-1.5 text-[#00f0ff]">
+                  <SpiderIcon className="w-3.5 h-3.5 text-[#ae040d]" />
+                  <span>EARTH-1610 // ISSUE #01</span>
+                </div>
+                <span className="text-zinc-500">VOL. 2026</span>
+              </div>
+
+              {/* Spider-Verse Centerpiece Graphic */}
+              <div className="relative z-10 p-6 flex flex-col items-center text-center space-y-4">
+                <div className="relative w-28 h-28 rounded-2xl bg-gradient-to-br from-[#1b082e] via-[#0b0314] to-black border border-[#3b0764] flex items-center justify-center shadow-[0_0_30px_rgba(42,8,69,0.7)] group-hover:scale-105 transition-transform duration-300">
+                  <div className="absolute inset-0 rounded-2xl halftone-dots-cyan opacity-40 pointer-events-none" />
+                  <SpiderIcon className="w-14 h-14 text-[#ae040d] filter drop-shadow-[0_0_12px_rgba(225,6,0,0.8)] spider-glitch" />
+                  <span className="absolute -top-2 -right-2 px-1.5 py-0.5 rounded text-[10px] font-mono font-bold uppercase bg-[#ae040d] text-white">
+                    1610
+                  </span>
+                </div>
+
+                {/* Identity & Status */}
+                <div className="space-y-1">
+                  <h3 className="text-xl font-bold text-white tracking-tight spider-glitch-hover cursor-default">
+                    Abhinay Musku
+                  </h3>
+                  <p className="text-xs font-mono text-[#00f0ff] uppercase tracking-wider">
+                    Full-Stack &amp; AI Engineer
+                  </p>
+                </div>
+
+                {/* Comic Narration Monologue Box (Miles Morales Style) */}
+                <div className="w-full text-left p-3.5 rounded-lg bg-black/80 border border-white/10 space-y-1">
+                  <p className="text-[10px] font-mono uppercase tracking-wider text-zinc-500">
+                    // NARRATIVE CAPTION:
+                  </p>
+                  <p className="text-xs text-zinc-200 font-mono italic leading-relaxed">
+                    &ldquo;That&apos;s all it is, Miles. A leap of faith.&rdquo;
+                  </p>
+                  <p className="text-[10px] font-mono text-[#ae040d] uppercase pt-0.5">
+                    Status: Active · Multi-Cloud Streaming
+                  </p>
+                </div>
               </div>
             </div>
 
-            {/* Quick Metadata with Real Logos */}
+            {/* Quick Metadata with Real Brand Vector Logos */}
             <div className="w-full max-w-sm flex flex-col gap-2 text-xs text-zinc-400">
               <div className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-lg border border-white/5 bg-[#09090b]">
                 <div className="w-14 h-4 shrink-0 flex items-center justify-center">

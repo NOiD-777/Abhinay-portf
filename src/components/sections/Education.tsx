@@ -14,7 +14,7 @@ export default function Education() {
             <span className="text-[#00f0ff]">//</span>
             <span>THE GUILD &amp; ACADEMY</span>
           </p>
-          <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em]">
+          <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em] spider-glitch-hover cursor-default">
             Education &amp; Credentials
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base max-w-xl font-normal">
