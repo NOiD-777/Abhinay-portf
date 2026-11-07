@@ -10,14 +10,15 @@ export default function Experience() {
       <div className="max-w-4xl mx-auto space-y-16">
         {/* Header */}
         <div className="flex flex-col items-start gap-2 text-left">
-          <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d]">
-            Experience
+          <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
+            <span className="text-[#00f0ff]">//</span>
+            <span>CHRONICLES</span>
           </p>
           <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em]">
-            Career History &amp; Impact
+            The Crucible &amp; Impact
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base max-w-xl font-normal">
-            Building enterprise-scale data infrastructure and deploying production machine learning on edge hardware.
+            Where theory meets production: architecting multi-cloud data platforms, sub-second telemetry, and edge silicon intelligence.
           </p>
         </div>
 
@@ -41,31 +42,36 @@ export default function Experience() {
                 />
               </div>
 
-              {/* Company Info */}
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-3">
-                <div className="flex items-center gap-3">
-                  {exp.company.includes("JMAN") ? (
-                    <div className="w-20 h-9 rounded-lg bg-white/5 border border-white/10 px-2 py-1 shrink-0 flex items-center justify-center">
-                      <Image
-                        src="/logos/jman-logo.svg"
-                        alt="JMAN Group Official Logo"
-                        width={72}
-                        height={32}
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                  ) : (
-                    <div className="w-8 h-8 rounded-lg bg-[#140824] border border-[#3b0764]/70 shrink-0 flex items-center justify-center text-xs font-mono font-bold text-purple-300">
-                      {exp.company.slice(0, 2).toUpperCase()}
-                    </div>
-                  )}
-                  <h3 className="text-xl sm:text-2xl font-semibold text-white">
-                    {exp.company}
-                  </h3>
-                </div>
-                <span className="text-xs text-zinc-400 font-mono">
-                  {exp.location}
+              {/* Chapter Telemetry + Company Info */}
+              <div className="space-y-2 border-b border-white/5 pb-3">
+                <span className="text-[10px] font-mono tracking-widest text-[#00f0ff] uppercase">
+                  {exp.chapter}
                 </span>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div className="flex items-center gap-3">
+                    {exp.company.includes("JMAN") ? (
+                      <div className="w-20 h-9 rounded-lg bg-white/5 border border-white/10 px-2 py-1 shrink-0 flex items-center justify-center">
+                        <Image
+                          src="/logos/jman-logo.svg"
+                          alt="JMAN Group Official Logo"
+                          width={72}
+                          height={32}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                    ) : (
+                      <div className="w-8 h-8 rounded-lg bg-[#140824] border border-[#3b0764]/70 shrink-0 flex items-center justify-center text-xs font-mono font-bold text-purple-300">
+                        {exp.company.slice(0, 2).toUpperCase()}
+                      </div>
+                    )}
+                    <h3 className="text-xl sm:text-2xl font-semibold text-white">
+                      {exp.company}
+                    </h3>
+                  </div>
+                  <span className="text-xs text-zinc-400 font-mono">
+                    {exp.location}
+                  </span>
+                </div>
               </div>
 
               {/* Roles */}
@@ -73,7 +79,7 @@ export default function Experience() {
                 {exp.roles.map((role, roleIdx) => (
                   <div
                     key={roleIdx}
-                    className="rounded-xl p-6 border border-white/5 bg-[#09090b] space-y-3"
+                    className="spider-panel rounded-xl p-6 border border-white/5 bg-[#09090b] space-y-4"
                   >
                     <div className="flex flex-wrap items-center justify-between gap-2">
                       <div className="flex items-center gap-2.5">
@@ -89,15 +95,20 @@ export default function Experience() {
                       </span>
                     </div>
 
-                    {/* Bullet Points */}
-                    <ul className="space-y-2 pt-1 text-sm text-zinc-300 font-normal">
-                      {role.bullets.map((bullet, bIdx) => (
-                        <li key={bIdx} className="flex items-start gap-3 leading-relaxed">
-                          <span className="text-[#ae040d] font-mono text-xs mt-0.5">•</span>
-                          <span>{bullet}</span>
-                        </li>
+                    {/* Mission Directive */}
+                    <p className="text-xs sm:text-sm text-zinc-300 font-normal leading-relaxed border-l-2 border-[#ae040d] pl-3 py-0.5">
+                      {role.mission}
+                    </p>
+
+                    {/* Key Milestones */}
+                    <div className="space-y-2 pt-1">
+                      {role.milestones.map((milestone, mIdx) => (
+                        <div key={mIdx} className="flex items-start gap-2.5 text-xs text-zinc-400 font-normal leading-relaxed">
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] shrink-0 mt-1.5" />
+                          <span>{milestone}</span>
+                        </div>
                       ))}
-                    </ul>
+                    </div>
                   </div>
                 ))}
               </div>

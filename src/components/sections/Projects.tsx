@@ -20,14 +20,15 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto space-y-12">
         {/* Header */}
         <div className="flex flex-col items-start gap-2 text-left">
-          <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d]">
-            Projects
+          <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
+            <span className="text-[#00f0ff]">//</span>
+            <span>MISSIONS &amp; DISPATCHES</span>
           </p>
           <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em]">
             Featured Systems &amp; Case Studies
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base max-w-xl font-normal">
-            Real-world systems spanning Generative AI applications, high-throughput NLP pipelines, and production mobile-first platforms.
+            Every project is a mission to solve what matters: cultural preservation with AI, high-throughput social telemetry, and offline-first finance.
           </p>
         </div>
 
@@ -116,7 +117,12 @@ export default function Projects() {
                   </p>
                 </div>
 
-                {/* Description */}
+                {/* Story Directive / Mission Question */}
+                <p className="text-xs font-mono text-zinc-400 italic border-l border-[#00f0ff]/40 pl-2.5 py-0.5">
+                  &ldquo;{project.storyDirective}&rdquo;
+                </p>
+
+                {/* Description Logline */}
                 <p className="text-sm text-zinc-300 leading-relaxed font-normal">
                   {project.description}
                 </p>

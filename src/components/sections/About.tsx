@@ -13,11 +13,14 @@ export default function About() {
         <div className="flex flex-col items-start gap-2 text-left">
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
             <span className="text-[#00f0ff]">//</span>
-            <span>Origin Story</span>
+            <span>STORY ARC: EARTH-1610</span>
           </p>
           <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em] spider-glitch-hover cursor-default">
-            Background &amp; Engineering Focus
+            The Story So Far
           </h2>
+          <p className="text-sm sm:text-base text-zinc-400 max-w-xl font-normal">
+            Three defining acts. From campus hackrooms to enterprise data crucibles and autonomous AI frontiers.
+          </p>
         </div>
 
         {/* Content Grid */}
@@ -72,50 +75,102 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Bio & Core Pillars */}
+          {/* Narrative Story Beats */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="lg:col-span-7 flex flex-col gap-8 text-left"
+            className="lg:col-span-7 flex flex-col gap-6 text-left"
           >
-            {/* Story Paragraphs */}
-            <div className="space-y-4 text-zinc-300 text-base sm:text-lg leading-relaxed font-normal">
-              {personal.bio.map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
-              ))}
+            {/* 3 Story Panels */}
+            <div className="space-y-3.5">
+              {personal.storyBeats.map((beat, idx) => {
+                const isCyan = beat.accent === "cyan";
+                const isCrimson = beat.accent === "crimson";
+
+                const badgeStyle = isCyan
+                  ? "text-[#00f0ff] border-[#00f0ff]/40 bg-[#00f0ff]/10"
+                  : isCrimson
+                  ? "text-[#ff4d5a] border-[#ae040d]/50 bg-[#ae040d]/10"
+                  : "text-[#c084fc] border-[#a855f7]/40 bg-[#a855f7]/10";
+
+                const panelBorder = isCyan
+                  ? "hover:border-[#00f0ff]/40 shadow-[-2px_0_0_rgba(0,240,255,0.25)]"
+                  : isCrimson
+                  ? "hover:border-[#ae040d]/60 shadow-[-2px_0_0_rgba(174,4,13,0.45)]"
+                  : "hover:border-[#a855f7]/50 shadow-[-2px_0_0_rgba(168,85,247,0.35)]";
+
+                return (
+                  <motion.div
+                    key={beat.act}
+                    initial={{ opacity: 0, y: 12 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: idx * 0.08 }}
+                    className={`relative rounded-xl p-5 border border-white/5 bg-[#09090b] space-y-2.5 transition-all duration-200 spider-panel ${panelBorder}`}
+                  >
+                    {/* Chapter Header */}
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <div className="flex items-center gap-2">
+                        <span className={`px-2 py-0.5 rounded text-[10px] font-mono uppercase tracking-widest border ${badgeStyle}`}>
+                          {beat.act} · {beat.codename}
+                        </span>
+                        <h3 className="text-sm sm:text-base font-semibold text-white tracking-[-0.01em]">
+                          {beat.title}
+                        </h3>
+                      </div>
+                      <span className="text-[11px] font-mono text-zinc-500">
+                        {beat.location}
+                      </span>
+                    </div>
+
+                    {/* Concise Narrative */}
+                    <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed font-normal">
+                      {beat.narrative}
+                    </p>
+
+                    {/* Milestone Chip */}
+                    <div className="pt-2 border-t border-white/5 flex items-center justify-between">
+                      <span className="text-[11px] font-mono text-zinc-400 flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#ae040d]" />
+                        <span>{beat.milestone}</span>
+                      </span>
+                    </div>
+                  </motion.div>
+                );
+              })}
             </div>
 
             {/* Core Capability Pillars */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
-              <div className="p-5 rounded-xl border border-white/5 bg-[#09090b] flex flex-col gap-3">
-                <div className="p-2 rounded-md bg-[#ae040d]/10 text-[#ae040d] w-fit">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+              <div className="p-4 rounded-xl border border-white/5 bg-[#09090b] flex flex-col gap-2">
+                <div className="p-1.5 rounded-md bg-[#ae040d]/10 text-[#ae040d] w-fit">
                   <Database className="w-4 h-4" />
                 </div>
-                <h3 className="font-semibold text-white text-sm">Enterprise Data</h3>
-                <p className="text-xs text-zinc-400 leading-relaxed font-normal">
-                  Scalable Databricks &amp; PySpark pipelines ingesting multi-cloud financial streams into Delta Lake.
+                <h4 className="font-semibold text-white text-xs">Enterprise Data</h4>
+                <p className="text-[11px] text-zinc-400 leading-relaxed font-normal">
+                  Databricks, PySpark &amp; Delta Lake for multi-cloud financial streaming.
                 </p>
               </div>
 
-              <div className="p-5 rounded-xl border border-white/5 bg-[#09090b] flex flex-col gap-3">
-                <div className="p-2 rounded-md bg-[#ae040d]/10 text-[#ae040d] w-fit">
+              <div className="p-4 rounded-xl border border-white/5 bg-[#09090b] flex flex-col gap-2">
+                <div className="p-1.5 rounded-md bg-[#a855f7]/15 text-[#c084fc] w-fit">
                   <Cpu className="w-4 h-4" />
                 </div>
-                <h3 className="font-semibold text-white text-sm">GenAI &amp; Agents</h3>
-                <p className="text-xs text-zinc-400 leading-relaxed font-normal">
-                  Production LLM applications with Gemini API, LangChain, RAG architectures, and agent protocols.
+                <h4 className="font-semibold text-white text-xs">GenAI &amp; Agents</h4>
+                <p className="text-[11px] text-zinc-400 leading-relaxed font-normal">
+                  Gemini API, LangChain &amp; agentic reasoning architectures.
                 </p>
               </div>
 
-              <div className="p-5 rounded-xl border border-white/5 bg-[#09090b] flex flex-col gap-3">
-                <div className="p-2 rounded-md bg-[#ae040d]/10 text-[#ae040d] w-fit">
+              <div className="p-4 rounded-xl border border-white/5 bg-[#09090b] flex flex-col gap-2">
+                <div className="p-1.5 rounded-md bg-[#00f0ff]/10 text-[#00f0ff] w-fit">
                   <Code2 className="w-4 h-4" />
                 </div>
-                <h3 className="font-semibold text-white text-sm">Full-Stack Scale</h3>
-                <p className="text-xs text-zinc-400 leading-relaxed font-normal">
-                  Responsive React/Next.js and Angular apps backed by high-throughput FastAPI and Node.js microservices.
+                <h4 className="font-semibold text-white text-xs">Full-Stack Core</h4>
+                <p className="text-[11px] text-zinc-400 leading-relaxed font-normal">
+                  Next.js, Angular, TypeScript &amp; high-concurrency microservices.
                 </p>
               </div>
             </div>

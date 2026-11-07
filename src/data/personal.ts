@@ -1,3 +1,13 @@
+export interface StoryBeat {
+  act: string;
+  codename: string;
+  title: string;
+  location: string;
+  narrative: string;
+  milestone: string;
+  accent: "cyan" | "crimson" | "purple";
+}
+
 export const personal = {
   name: "Abhinay Musku",
   firstName: "Abhinay",
@@ -11,6 +21,8 @@ export const personal = {
   ],
   tagline:
     "Architecting scalable enterprise data pipelines and production Generative AI applications.",
+  storyMotto:
+    "Turning raw data into intelligence, and human intent into living autonomous systems.",
   location: "Hyderabad / Chennai, India",
   email: "abhinay.musku.reddy@gmail.com",
   phone: "+91 9398707418",
@@ -18,10 +30,41 @@ export const personal = {
   github: "https://github.com/NOiD-777",
   resumeUrl: "/resume.pdf",
   bio: [
-    "I'm a Full-Stack & AI Engineer with hands-on production experience architecting scalable data pipelines and backend microservices using Python, PostgreSQL, Databricks, and PySpark across Azure and AWS.",
-    "Currently at JMAN Group as a Data Engineer, I develop enterprise-grade pipelines for financial services clients, optimizing high-volume batch ETL reliability and building resilient cloud ingestion bridges.",
-    "Beyond enterprise data engineering, I build production Generative AI applications with Google Gemini API, OpenAI, LangChain, and modern React/TypeScript. I also lead developer communities as the Technical Lead at Google Developers Group on Campus MLRIT and won the BuildAI4India Hackathon for cultural preservation with AI.",
+    "From campus hackathons to enterprise data lakehouses, every breakthrough begins with one question: how far can we push the system?",
+    "At JMAN Group, I engineer high-throughput Databricks & PySpark pipelines. At GDG MLRIT, I mobilize builders. In hackathons, I prove that autonomous AI can bridge cultural legacy with tomorrow's web.",
   ],
+  storyBeats: [
+    {
+      act: "ACT I",
+      codename: "THE SPARK",
+      title: "From Curiosity to Community Catalyst",
+      location: "Hyderabad // MLRIT Campus",
+      narrative:
+        "Started with a drive to understand systems from the metal up. Stepped up to lead Google Developer Groups on Campus MLRIT, turning classrooms into hackrooms and rallying hundreds of student builders.",
+      milestone: "Technical Lead · Google Developers Group",
+      accent: "cyan",
+    },
+    {
+      act: "ACT II",
+      codename: "THE CRUCIBLE",
+      title: "Taming Enterprise Data Chaos",
+      location: "Chennai // JMAN Group",
+      narrative:
+        "Left the sandbox behind to architect mission-critical financial pipelines. Harnessing Databricks and PySpark, transforming multi-cloud ingestion streams into high-throughput Delta Lake intelligence with zero data drop.",
+      milestone: "Data Engineer · Enterprise Scale",
+      accent: "crimson",
+    },
+    {
+      act: "ACT III",
+      codename: "THE LEAP",
+      title: "Autonomous Frontiers & Cultural Legacy",
+      location: "Swecha // BuildAI4India",
+      narrative:
+        "Crossed dimensions into Generative AI. Built ArtYatra with Google Gemini API & LangChain to autonomously classify and preserve 8 endangered Indian art styles — taking 1st place and proving AI can safeguard living history.",
+      milestone: "Winner · BuildAI4India Hackathon",
+      accent: "purple",
+    },
+  ] as StoryBeat[],
   stats: [
     { label: "Production Projects", value: "6+" },
     { label: "Technologies Mastered", value: "30+" },
@@ -29,4 +72,3 @@ export const personal = {
     { label: "Enterprise Pipelines", value: "100%" },
   ],
 };
-

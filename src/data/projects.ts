@@ -2,6 +2,7 @@ export interface Project {
   slug: string;
   title: string;
   subtitle: string;
+  storyDirective: string;
   description: string;
   longDescription: string;
   image: string;
@@ -18,8 +19,9 @@ export const projects: Project[] = [
     slug: "artyatra",
     title: "ArtYatra",
     subtitle: "AI Cultural Heritage Platform",
+    storyDirective: "Can generative models rescue endangered cultural heritage before it's lost?",
     description:
-      "Full-stack AI cultural platform that analyzes and classifies 8 traditional Indian art styles using Gemini API, LangChain, interactive maps, and confidence scoring.",
+      "Autonomous vision platform classifying 8 traditional Indian art styles with Google Gemini API, LangChain reasoning, and geospatial provenance mapping.",
     longDescription:
       "ArtYatra is an award-winning full-stack application built to preserve and explore India's artistic heritage. It leverages Google Gemini API with structured prompt orchestration to analyze user-uploaded artwork images and accurately classify traditional art forms including Warli, Madhubani, Thanjavur, and Kalamkari. Features contextual history retrieval, confidence scoring, and interactive geographical mapping.",
     image: "/projects/artyatra.png",
@@ -42,8 +44,9 @@ export const projects: Project[] = [
     slug: "twitter-sentiment-analysis",
     title: "Twitter Sentiment Analysis",
     subtitle: "Large-Scale NLP Pipeline",
+    storyDirective: "Extracting actionable signal from 1.6M noisy real-time social streams.",
     description:
-      "Machine learning sentiment classification pipeline trained over 1.6M tweets from the Sentiment140 dataset with 25% accuracy improvement.",
+      "High-throughput NLP pipeline benchmarking statistical classifiers against 1.6M unstructured tweets, achieving +25% accuracy and -20% false positives.",
     longDescription:
       "Engineered an end-to-end NLP sentiment pipeline for massive social streams. Applied hyperparameter tuning, refined tokenization and stemming via NLTK, and benchmarked Logistic Regression against Naive Bayes models to minimize false positive predictions by 20%. Includes interactive Google Colab notebook.",
     image: "/projects/twitter-sentiment.png",
@@ -58,8 +61,9 @@ export const projects: Project[] = [
     slug: "expense-tracker-angular",
     title: "Expense Tracker (ExWise)",
     subtitle: "Mobile-First Personal Finance App",
+    storyDirective: "Financial sovereignty with zero cloud latency and total local privacy.",
     description:
-      "Production-grade mobile-first expense manager featuring interactive analytics dashboards, calendar tracking, and local storage state persistence.",
+      "Lightning-fast personal finance manager engineered for mobile screens with local-first persistence, reactive budget alerts, and zero tracking.",
     longDescription:
       "ExWise is tailored specifically for smartphone screens, delivering lightning-fast expense tracking without cloud latency. Features monthly budget alerts, category-wise breakdowns, interactive calendar history, and dark mode UI built with Angular and Tailwind CSS.",
     image: "/projects/expense-tracker.png",
@@ -74,8 +78,9 @@ export const projects: Project[] = [
     slug: "resumeradar",
     title: "ResumeRadar",
     subtitle: "AI Candidate Evaluation Engine",
+    storyDirective: "Eliminating recruitment bottlenecks with autonomous evaluation pipelines.",
     description:
-      "Recruiter intelligence application integrating Gemini 2.5 Flash API, automated n8n workflows, PDF parsing, and candidate scoring in MongoDB Atlas.",
+      "Recruiter intelligence engine orchestrating Gemini 2.5 Flash API, automated n8n webhooks, and deep PDF extraction into MongoDB Atlas.",
     longDescription:
       "Developed to streamline tech recruiting, ResumeRadar parses complex resume PDFs, scores skills against job descriptions with Gemini 2.5 Flash, and orchestrates candidate evaluation pipelines through n8n automation webhooks and MongoDB Atlas storage.",
     image: "/projects/resumeradar.png",
@@ -89,8 +94,9 @@ export const projects: Project[] = [
     slug: "legalmind-ai",
     title: "LegalMind",
     subtitle: "Multi-Model Contract Risk Assessment",
+    storyDirective: "Uncovering hidden contractual liabilities through multi-model consensus.",
     description:
-      "Legal document risk evaluation platform with FastAPI and Next.js, comparing clause risks across Anthropic Claude, Gemini, and Groq.",
+      "Asynchronous legal audit engine comparing clause indemnity risks in parallel across Claude, Gemini, and Groq with FastAPI and Next.js.",
     longDescription:
       "LegalMind automates lengthy contract reviews by ingesting legal PDFs/DOCX agreements, extracting liability and indemnification clauses, and running parallel multi-model risk evaluations to highlight red flags with high confidence.",
     image: "/projects/legalmind.png",
@@ -104,8 +110,9 @@ export const projects: Project[] = [
     slug: "face-recognition-edge",
     title: "Edge Face Recognition",
     subtitle: "Optimized Computer Vision Deployment",
+    storyDirective: "Pushing computer vision to real-world edge hardware with tight thermal budgets.",
     description:
-      "Lightweight edge face detection & verification system achieving 92% accuracy with 35% CPU usage reduction through skip-frame pipelines.",
+      "Lightweight biometric verification engine achieving ~92% accuracy with 35% reduced CPU overhead on constrained edge hardware via skip-frame algorithms.",
     longDescription:
       "Engineered during internship at Brihaspathi Technologies. Deployed on constrained edge devices using OpenCV and FastAPI. Implemented custom frame-skipping and resolution downscaling algorithms to ensure reliable real-time face verification with minimal compute overhead.",
     image: "/projects/face-recognition.png",
@@ -117,9 +124,8 @@ export const projects: Project[] = [
 ];
 
 export const projectCategories = [
-  { id: "all", label: "All Projects" },
+  { id: "all", label: "All Missions" },
   { id: "ai-ml", label: "AI & Machine Learning" },
   { id: "web", label: "Web & Full-Stack" },
   { id: "data", label: "Data & Systems" },
 ];
-

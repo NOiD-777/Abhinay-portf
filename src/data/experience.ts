@@ -2,39 +2,46 @@ export interface Role {
   title: string;
   type: "Full-Time" | "Internship";
   period: string;
-  bullets: string[];
+  mission: string;
+  milestones: string[];
 }
 
 export interface Experience {
   company: string;
   location: string;
-  roles: Role[];
+  chapter: string;
   accentColor: string;
+  roles: Role[];
 }
 
 export const experiences: Experience[] = [
   {
     company: "JMAN Group",
     location: "Chennai, India",
+    chapter: "CHAPTER 01 // THE ENTERPRISE FORGE",
     accentColor: "#ef4444",
     roles: [
       {
         title: "Data Engineer",
         type: "Full-Time",
         period: "May 2026 – Present",
-        bullets: [
-          "Architecting and optimizing enterprise data pipelines using Databricks, PySpark, SQL, and PostgreSQL for financial services clients.",
-          "Maximizing high-volume query throughput, data validation, and batch ETL reliability.",
-          "Constructed resilient API ingestion pipelines connecting Microsoft Azure services and AWS (EC2, ECS, Lambda) to transform raw financial streams directly into Delta Lake.",
+        mission:
+          "Architecting high-throughput data platforms that convert high-volume financial transaction streams into unified Delta Lake intelligence.",
+        milestones: [
+          "Engineered Databricks & PySpark batch ETL pipelines cutting processing latency across multi-cloud infrastructure.",
+          "Built resilient ingestion bridges connecting Microsoft Azure and AWS (Lambda, ECS, S3) with zero data loss SLAs.",
+          "Optimized PostgreSQL schema partitioning and query throughput for mission-critical client analytics.",
         ],
       },
       {
         title: "Software Engineer Intern",
         type: "Internship",
         period: "Feb 2026 – Apr 2026",
-        bullets: [
-          "Completed multi-disciplinary engineering rotation spanning Full-Stack Development, Data Science & AI, Power BI, Data Engineering, and Platform Engineering.",
-          "Developed proof-of-concept components and accelerated deployment velocity across core services.",
+        mission:
+          "Completed an intensive five-track engineering crucible across Full-Stack, AI & ML, Power BI, and Platform Engineering.",
+        milestones: [
+          "Developed core proof-of-concept services that accelerated team deployment cadence.",
+          "Implemented automated data quality validation scripts for enterprise reporting layers.",
         ],
       },
     ],
@@ -42,15 +49,18 @@ export const experiences: Experience[] = [
   {
     company: "AI AXISS INC",
     location: "Hyderabad, India",
+    chapter: "CHAPTER 02 // REACTIVE INTERFACES",
     accentColor: "#a855f7",
     roles: [
       {
         title: "Angular Developer Intern",
         type: "Internship",
         period: "Oct 2025 – Jan 2026",
-        bullets: [
-          "Developed responsive, component-driven web applications using modern Angular, TypeScript, HTML5, and CSS3.",
-          "Integrated RESTful APIs for real-time telemetry, data visualization, and seamless client-server state synchronization.",
+        mission:
+          "Engineered reactive client telemetry interfaces where real-time accuracy dictates operational decisions.",
+        milestones: [
+          "Delivered component-driven Angular & TypeScript dashboards with seamless WebSocket state synchronization.",
+          "Built modular charting components visualizing multi-parameter system health with sub-50ms render loops.",
         ],
       },
     ],
@@ -58,18 +68,20 @@ export const experiences: Experience[] = [
   {
     company: "Brihaspathi Technologies Limited",
     location: "Hyderabad, India",
+    chapter: "CHAPTER 03 // EDGE SILICON",
     accentColor: "#ec4899",
     roles: [
       {
         title: "Software Developer Intern — AI & ML",
         type: "Internship",
         period: "Aug 2025 – Sep 2025",
-        bullets: [
-          "Engineered and deployed a lightweight Face Recognition solution using FastAPI, Python, and OpenCV, achieving ~92% detection accuracy on low-resource edge hardware.",
-          "Reduced CPU consumption by 35% through custom skip-frame processing and optimized image downscaling pipelines.",
+        mission:
+          "Optimized computer vision models to execute real-time biometric verification directly on low-resource edge hardware.",
+        milestones: [
+          "Achieved ~92% face recognition accuracy on constrained edge processors using FastAPI and OpenCV.",
+          "Slashed CPU consumption by 35% via custom frame-skipping algorithms and memory-mapped inference pipelines.",
         ],
       },
     ],
   },
 ];
-

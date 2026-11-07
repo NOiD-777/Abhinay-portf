@@ -35,14 +35,19 @@ export default function Hero() {
               Abhinay Musku
             </h1>
             <p className="text-xl sm:text-2xl text-zinc-300 font-normal leading-snug max-w-xl tracking-[-0.015em]">
-              Architecting scalable enterprise data pipelines and production Generative AI systems.
+              Turning raw data into intelligence, and human intent into living autonomous systems.
             </p>
           </div>
 
-          {/* Concise Professional Bio */}
-          <p className="text-sm sm:text-base text-zinc-400 max-w-lg leading-relaxed font-normal">
-            Data Engineer at <span className="text-zinc-200 font-medium">JMAN Group</span> developing high-throughput Databricks &amp; PySpark pipelines. Winner of the BuildAI4India Hackathon and Technical Lead at Google Developers Group.
-          </p>
+          {/* Story Hook */}
+          <div className="border-l-2 border-[#ae040d] pl-4 py-1 space-y-1">
+            <p className="text-sm sm:text-base text-zinc-300 font-normal leading-relaxed">
+              Data Engineer at <span className="text-white font-medium">JMAN Group</span> · GDG Tech Lead · Hackathon Winner.
+            </p>
+            <p className="text-xs text-zinc-500 font-mono">
+              From campus hackrooms to enterprise lakehouses — building for scale and the leap of faith.
+            </p>
+          </div>
 
           {/* Solid Refined CTAs — Spider-Verse Accent */}
           <div className="flex flex-wrap items-center gap-3 pt-2">
