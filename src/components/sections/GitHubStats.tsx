@@ -38,15 +38,15 @@ export default function GitHubStats() {
           </div>
 
           <div className="rounded-xl p-6 border border-white/5 bg-[#09090b] space-y-1.5 text-left">
-            <span className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Cadence</span>
-            <p className="text-3xl font-semibold text-white font-mono tracking-tight">Relentless</p>
-            <p className="text-xs text-zinc-400">Zero days off GitHub</p>
+            <span className="text-xs text-zinc-500 font-mono uppercase tracking-wider">State Champion</span>
+            <p className="text-3xl font-semibold text-white font-mono tracking-tight">#1 Winner</p>
+            <p className="text-xs text-zinc-400">Swecha BuildAI4India</p>
           </div>
 
           <div className="rounded-xl p-6 border border-white/5 bg-[#09090b] space-y-1.5 text-left">
-            <span className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Deployments</span>
-            <p className="text-3xl font-semibold text-white font-mono tracking-tight">Cloud &amp; Edge</p>
-            <p className="text-xs text-zinc-400">Live prod apps</p>
+            <span className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Production Uptime</span>
+            <p className="text-3xl font-semibold text-white font-mono tracking-tight">99.9%</p>
+            <p className="text-xs text-zinc-400">Zero data drop @ JMAN</p>
           </div>
         </div>
 
