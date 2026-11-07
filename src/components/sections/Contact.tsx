@@ -67,7 +67,7 @@ export default function Contact() {
         {/* Header */}
         <div className="flex flex-col items-start gap-2 text-left">
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
-            <span className="text-[#00f0ff]">//</span>
+            <span className="text-[#a855f7]">//</span>
             <span>DIRECT FREQUENCY // TRANSMIT THE SIGNAL</span>
           </p>
           <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">

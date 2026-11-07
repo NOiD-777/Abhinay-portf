@@ -88,8 +88,8 @@ export const TECH_REGISTRY: Record<string, TechMeta> = {
   "hugging face": { icon: SiHuggingface, brandColor: "#FFD21E" },
   "hugging face transformers": { icon: SiHuggingface, brandColor: "#FFD21E" },
   "prompt engineering": { icon: Brain, brandColor: "#ae040d" },
-  "rag architectures": { icon: Brain, brandColor: "#00f0ff" },
-  "rag & vector search": { icon: Brain, brandColor: "#00f0ff" },
+  "rag architectures": { icon: Brain, brandColor: "#a855f7" },
+  "rag & vector search": { icon: Brain, brandColor: "#a855f7" },
   "ai agents": { icon: Sparkles, brandColor: "#a855f7" },
   "agentic tool calling": { icon: Sparkles, brandColor: "#a855f7" },
 
@@ -115,8 +115,8 @@ export const TECH_REGISTRY: Record<string, TechMeta> = {
   "java": { icon: SiOpenjdk, brandColor: "#ED8B00" },
   "c#": { icon: TbBrandCSharp, brandColor: "#239120" },
   "c": { icon: SiC, brandColor: "#A8B9CC" },
-  "restful apis": { icon: TbApi, brandColor: "#00f0ff" },
-  "microservices": { icon: TbApi, brandColor: "#00f0ff" },
+  "restful apis": { icon: TbApi, brandColor: "#ae040d" },
+  "microservices": { icon: TbApi, brandColor: "#ae040d" },
 
   // Web & Interactive Interfaces
   "react": { icon: SiReact, brandColor: "#61DAFB" },

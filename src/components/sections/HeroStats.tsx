@@ -63,7 +63,7 @@ interface StatItem {
   numberType: "exp" | "repos" | "award";
   tags: { label: string; note?: string; color: string }[];
   accentColor: string;
-  energyGradient: string;
+  barColor: string;
 }
 
 const STATS: StatItem[] = [
@@ -74,12 +74,12 @@ const STATS: StatItem[] = [
     subtitle: "Data & AI Engineering @ JMAN Group",
     numberType: "exp",
     tags: [
-      { label: "JMAN Group", note: "(FT + Intern)", color: "text-[#00f0ff]" },
+      { label: "JMAN Group", note: "(FT + Intern)", color: "text-white" },
       { label: "AI AXISS", note: "(Intern)", color: "text-purple-400" },
-      { label: "Brihaspathi", note: "(Intern)", color: "text-pink-400" },
+      { label: "Brihaspathi", note: "(Intern)", color: "text-red-400" },
     ],
     accentColor: "#ae040d",
-    energyGradient: "from-[#ae040d] via-[#a855f7] to-[#00f0ff]",
+    barColor: "bg-[#ae040d]",
   },
   {
     id: "repos",
@@ -88,12 +88,12 @@ const STATS: StatItem[] = [
     subtitle: "Autonomous Agents, LLMs & Distributed Systems",
     numberType: "repos",
     tags: [
-      { label: "LangChain & Gemini", color: "text-cyan-300" },
-      { label: "Databricks & PySpark", color: "text-purple-300" },
-      { label: "FastAPI & Agent Swarms", color: "text-emerald-300" },
+      { label: "LangChain & Gemini", color: "text-purple-300" },
+      { label: "Databricks & PySpark", color: "text-red-400" },
+      { label: "FastAPI & Agent Swarms", color: "text-white" },
     ],
     accentColor: "#a855f7",
-    energyGradient: "from-[#a855f7] via-[#00f0ff] to-[#10b981]",
+    barColor: "bg-[#a855f7]",
   },
   {
     id: "awards",
@@ -103,11 +103,11 @@ const STATS: StatItem[] = [
     numberType: "award",
     tags: [
       { label: "Project ArtYatra", color: "text-white" },
-      { label: "AI Cultural Preservation", color: "text-[#00f0ff]" },
-      { label: "1st Place Winner", color: "text-emerald-400" },
+      { label: "AI Cultural Preservation", color: "text-purple-300" },
+      { label: "1st Place Winner", color: "text-red-400" },
     ],
-    accentColor: "#00f0ff",
-    energyGradient: "from-[#00f0ff] via-[#10b981] to-[#ae040d]",
+    accentColor: "#ffffff",
+    barColor: "bg-white",
   },
 ];
 
@@ -176,7 +176,7 @@ export default function HeroStats() {
             alt="Google Developer Groups on Campus (GDGC)"
             width={24}
             height={14}
-            className="w-full h-full object-contain filter drop-shadow-[0_0_8px_rgba(66,133,244,0.4)]"
+            className="w-full h-full object-contain filter drop-shadow-[0_0_8px_rgba(168,85,247,0.4)]"
           />
         </div>
 
@@ -213,7 +213,7 @@ export default function HeroStats() {
               <Sparkles className="w-3 h-3 animate-pulse" />
             </div>
             <span className="text-[10px] font-mono text-zinc-400 uppercase tracking-widest flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-ping" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#ae040d] animate-ping" />
               <span>LIVE TELEMETRY WINDOW</span>
             </span>
           </div>
@@ -280,7 +280,7 @@ export default function HeroStats() {
                       initial={{ width: "0%" }}
                       animate={{ width: isPaused ? undefined : "100%" }}
                       transition={{ duration: SLIDE_DURATION / 1000, ease: "linear" }}
-                      className="h-full bg-gradient-to-r from-[#ae040d] via-[#a855f7] to-[#00f0ff]"
+                      className="h-full bg-[#ae040d]"
                     />
                   )}
                 </div>
@@ -362,7 +362,7 @@ export default function HeroStats() {
                 )}
 
                 {currentStat.numberType === "award" && (
-                  <div className="flex items-baseline font-bebas text-4xl sm:text-5xl text-[#00f0ff] tracking-tight leading-none filter drop-shadow-[0_0_12px_rgba(0,240,255,0.6)]">
+                  <div className="flex items-baseline font-bebas text-4xl sm:text-5xl text-white tracking-tight leading-none filter drop-shadow-[0_0_12px_rgba(168,85,247,0.6)]">
                     <SlidingDigitReel
                       items={[0, 1]}
                       targetIndex={1}
@@ -377,7 +377,7 @@ export default function HeroStats() {
                       initial={{ opacity: 0, scale: 0.5, y: -4 }}
                       animate={{ opacity: 1, scale: 1, y: 0 }}
                       transition={{ duration: 0.3, delay: 0.4 }}
-                      className="text-2xl sm:text-3xl text-[#00f0ff] ml-0.5"
+                      className="text-2xl sm:text-3xl text-purple-400 ml-0.5"
                     >
                       st
                     </motion.span>
@@ -418,7 +418,7 @@ export default function HeroStats() {
                   initial={{ width: "0%" }}
                   animate={{ width: "100%" }}
                   transition={{ duration: 1.0, ease: "easeOut" }}
-                  className={`h-full bg-gradient-to-r ${currentStat.energyGradient}`}
+                  className={`h-full ${currentStat.barColor}`}
                 />
               </div>
             </motion.div>

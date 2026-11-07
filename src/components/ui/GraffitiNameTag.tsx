@@ -56,7 +56,7 @@ export default function GraffitiNameTag({ className = "" }: { className?: string
           </div>
 
           {/* White Sticker Body with Tagged Name "ABHINAY" in Street Brush Script */}
-          <div className="relative px-6 pt-3 pb-4 sm:px-8 sm:pt-4 sm:pb-5 bg-gradient-to-b from-[#ffffff] via-[#f7f7f9] to-[#ececed] flex items-center justify-center min-w-[240px] sm:min-w-[280px]">
+          <div className="relative px-6 pt-3 pb-4 sm:px-8 sm:pt-4 sm:pb-5 bg-white flex items-center justify-center min-w-[240px] sm:min-w-[280px]">
             {/* Background Halftone Spray Texture */}
             <div className="absolute inset-0 halftone-dots opacity-15 pointer-events-none" />
 

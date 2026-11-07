@@ -13,7 +13,7 @@ export default function About() {
         {/* Section Header */}
         <div className="flex flex-col items-start gap-2 text-left">
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
-            <span className="text-[#00f0ff]">//</span>
+            <span className="text-[#a855f7]">//</span>
             <span>ORIGIN STORY // SOL-3</span>
           </p>
           <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
@@ -35,13 +35,13 @@ export default function About() {
             className="lg:col-span-5 flex flex-col items-center gap-5 lg:sticky lg:top-28 self-start"
           >
             {/* Comic Cover Dossier Box with Antigravity Elevation */}
-            <div className="relative w-full max-w-sm rounded-2xl overflow-hidden antigravity-card shadow-[0_20px_40px_-15px_rgba(0,0,0,0.9),-3px_0_0_rgba(0,240,255,0.35),3px_0_0_rgba(174,4,13,0.55)] group">
+            <div className="relative w-full max-w-sm rounded-2xl overflow-hidden antigravity-card shadow-[0_20px_40px_-15px_rgba(0,0,0,0.9),-3px_0_0_rgba(168,85,247,0.45),3px_0_0_rgba(174,4,13,0.55)] group">
               {/* Halftone Comic Dots Pattern */}
               <div className="absolute inset-0 halftone-dots-spider opacity-25 pointer-events-none" />
 
               {/* Comic Book Header Banner */}
               <div className="relative z-10 px-4 py-2.5 bg-black/90 border-b border-white/10 flex items-center justify-between text-[11px] font-mono tracking-widest uppercase">
-                <div className="flex items-center gap-1.5 text-[#00f0ff]">
+                <div className="flex items-center gap-1.5 text-white">
                   <SpiderIcon className="w-3.5 h-3.5 text-[#ae040d]" />
                   <span className="font-spiderman tracking-[0.12em] text-white">CHRONICLES</span>
                   <span className="text-zinc-400">// ISSUE #01</span>
@@ -60,8 +60,7 @@ export default function About() {
                       fill
                       className="object-cover object-center filter contrast-105 brightness-95"
                     />
-                    <div className="absolute inset-0 halftone-dots-cyan opacity-25 pointer-events-none" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+                    <div className="absolute inset-0 halftone-dots-purple opacity-25 pointer-events-none" />
                   </div>
                   <span className="absolute -top-2 -right-2 px-1.5 py-0.5 rounded text-[10px] font-mono font-bold uppercase bg-[#ae040d] text-white shadow-md z-10">
                     SOL-3
@@ -73,7 +72,7 @@ export default function About() {
                   <h3 className="font-spiderman text-2xl text-white tracking-[0.14em] spider-glitch-hover cursor-default">
                     ABHINAY MUSKU
                   </h3>
-                  <p className="text-xs font-spiderman text-[#00f0ff] uppercase tracking-[0.14em]">
+                  <p className="text-xs font-spiderman text-[#c084fc] uppercase tracking-[0.14em]">
                     AUTONOMOUS AI ENGINEER // SYSTEMS ARCHITECT
                   </p>
                 </div>
@@ -86,7 +85,7 @@ export default function About() {
                   <p className="text-xs text-zinc-200 font-mono italic leading-relaxed">
                     &ldquo;When everyone else is following the textbook, we write our own blueprint. Multi-terabyte pipelines, zero dropped bytes, our way.&rdquo;
                   </p>
-                  <p className="text-[10px] font-mono text-[#00f0ff] uppercase pt-0.5">
+                  <p className="text-[10px] font-mono text-purple-400 uppercase pt-0.5">
                     Status: Locked In · Maximum Aura · Zero Data Drop
                   </p>
                 </div>
@@ -131,17 +130,17 @@ export default function About() {
             {/* 3 Story Panels */}
             <div className="space-y-3.5">
               {personal.storyBeats.map((beat, idx) => {
-                const isCyan = beat.accent === "cyan";
+                const isWhite = beat.accent === "white";
                 const isCrimson = beat.accent === "crimson";
 
-                const badgeStyle = isCyan
-                  ? "text-[#00f0ff] border-[#00f0ff]/40 bg-[#00f0ff]/10"
+                const badgeStyle = isWhite
+                  ? "text-white border-white/40 bg-white/10"
                   : isCrimson
                   ? "text-[#ff4d5a] border-[#ae040d]/50 bg-[#ae040d]/10"
                   : "text-[#c084fc] border-[#a855f7]/40 bg-[#a855f7]/10";
 
-                const panelBorder = isCyan
-                  ? "hover:border-[#00f0ff]/40 shadow-[-2px_0_0_rgba(0,240,255,0.25)]"
+                const panelBorder = isWhite
+                  ? "hover:border-white/40 shadow-[-2px_0_0_rgba(255,255,255,0.25)]"
                   : isCrimson
                   ? "hover:border-[#ae040d]/60 shadow-[-2px_0_0_rgba(174,4,13,0.45)]"
                   : "hover:border-[#a855f7]/50 shadow-[-2px_0_0_rgba(168,85,247,0.35)]";
@@ -198,9 +197,8 @@ export default function About() {
                             fill
                             className="object-cover object-center filter contrast-105 brightness-95 group-hover/photo:scale-[1.02] group-hover/photo:brightness-100 transition-all duration-500"
                           />
-                          {/* Spider-Verse Halftone & Cinematic Gradient Vignette */}
+                          {/* Spider-Verse Halftone Overlay */}
                           <div className="absolute inset-0 halftone-dots opacity-15 pointer-events-none" />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
 
                           {/* Top-Right Emblem */}
                           <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-black/75 backdrop-blur-md border border-white/10 text-[10px] font-mono text-zinc-300">
@@ -250,13 +248,13 @@ export default function About() {
                           <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[10px] font-mono">
                             <span className={`${
                               idx === 0
-                                ? "text-[#00f0ff] border-[#00f0ff]/30"
+                                ? "text-white border-white/30"
                                 : idx === 1
                                 ? "text-[#ef4444] border-[#ef4444]/30"
                                 : "text-[#c084fc] border-[#a855f7]/30"
                             } flex items-center gap-1.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md border`}>
                               <span className={`w-1.5 h-1.5 rounded-full ${
-                                idx === 0 ? "bg-[#00f0ff]" : idx === 1 ? "bg-[#ef4444]" : "bg-[#c084fc]"
+                                idx === 0 ? "bg-white" : idx === 1 ? "bg-[#ef4444]" : "bg-[#c084fc]"
                               } animate-pulse`} />
                               <span>{
                                 idx === 0
@@ -313,7 +311,7 @@ export default function About() {
               </div>
 
               <div className="p-4 rounded-xl border border-white/5 bg-[#09090b] flex flex-col gap-2">
-                <div className="p-1.5 rounded-md bg-[#00f0ff]/10 text-[#00f0ff] w-fit">
+                <div className="p-1.5 rounded-md bg-white/10 text-white w-fit">
                   <Code2 className="w-4 h-4" />
                 </div>
                 <h4 className="font-semibold text-white text-xs">Edge Vision &amp; Inference</h4>

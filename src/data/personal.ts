@@ -5,7 +5,7 @@ export interface StoryBeat {
   location: string;
   narrative: string;
   milestone: string;
-  accent: "cyan" | "crimson" | "purple";
+  accent: "white" | "crimson" | "purple";
   image?: string;
   imageCaption?: string;
 }
@@ -44,7 +44,7 @@ export const personal = {
       narrative:
         "Started out tinkering with code in dorm rooms, trying to figure out why systems tick. Next thing I know, I'm on stage leading GDGC MLRIT, turning 500-seat auditoriums into high-voltage hack rooms. Felt like stepping onto the main stage for the first time: terrifying, electrifying, totally locked in.",
       milestone: "Technical Lead · GDGC MLRIT (Locked In)",
-      accent: "cyan",
+      accent: "white",
       image: "/images/narrative-technical-lead.webp",
       imageCaption: "Abhinay Musku on stage presenting as Core Team Technical Lead at MLRIT auditorium",
     },

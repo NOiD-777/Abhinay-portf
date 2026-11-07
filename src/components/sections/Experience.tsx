@@ -26,8 +26,8 @@ function JmanFieldDossier() {
         {/* Header */}
         <div className="space-y-1.5 relative z-10">
           <div className="flex flex-wrap items-center justify-between gap-2">
-            <span className="text-[10px] font-mono uppercase tracking-widest text-[#00f0ff] flex items-center gap-1.5">
-              <Workflow className="w-3.5 h-3.5 text-[#00f0ff]" />
+            <span className="text-[10px] font-mono uppercase tracking-widest text-[#a855f7] flex items-center gap-1.5">
+              <Workflow className="w-3.5 h-3.5 text-[#a855f7]" />
               <span>SYSTEM BLUEPRINT // DATA FABRIC WEAPONRY</span>
             </span>
             <div className="flex items-center gap-2.5">
@@ -56,12 +56,12 @@ function JmanFieldDossier() {
         {/* 4 Connected Pipeline Stages */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 relative z-10">
           {/* Stage 1: Ingestion & Gateways */}
-          <div className="p-3.5 rounded-xl bg-black/60 border border-[#00f0ff]/20 hover:border-[#00f0ff]/40 transition-colors space-y-1.5 group">
+          <div className="p-3.5 rounded-xl bg-black/60 border border-[#a855f7]/25 hover:border-[#a855f7]/50 transition-colors space-y-1.5 group">
             <div className="flex items-center justify-between">
-              <span className="text-[10px] font-mono text-[#00f0ff] font-semibold tracking-wider flex items-center gap-1">
+              <span className="text-[10px] font-mono text-purple-400 font-semibold tracking-wider flex items-center gap-1">
                 <Cloud className="w-3 h-3" /> STAGE 01 // INGESTION
               </span>
-              <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#a855f7]" />
             </div>
             <p className="text-xs font-semibold text-zinc-100">Multi-Cloud Streaming Gateways</p>
             <p className="text-[11px] text-zinc-400 leading-snug">
@@ -118,12 +118,12 @@ function JmanFieldDossier() {
             <Zap className="w-3 h-3 text-[#ef4444]" />
             <span>+30% Query Throughput</span>
           </span>
-          <span className="px-2.5 py-1 rounded-md bg-[#00f0ff]/10 text-cyan-300 border border-[#00f0ff]/20 flex items-center gap-1.5">
-            <CheckCircle2 className="w-3 h-3 text-[#00f0ff]" />
+          <span className="px-2.5 py-1 rounded-md bg-[#a855f7]/10 text-purple-300 border border-[#a855f7]/20 flex items-center gap-1.5">
+            <CheckCircle2 className="w-3 h-3 text-[#a855f7]" />
             <span>99.9% Batch ETL Reliability</span>
           </span>
-          <span className="px-2.5 py-1 rounded-md bg-[#10b981]/10 text-emerald-300 border border-[#10b981]/20 flex items-center gap-1.5">
-            <Activity className="w-3 h-3 text-[#10b981]" />
+          <span className="px-2.5 py-1 rounded-md bg-white/10 text-white border border-white/20 flex items-center gap-1.5">
+            <Activity className="w-3 h-3 text-white" />
             <span>-40% Triage Turnaround</span>
           </span>
         </div>
@@ -249,7 +249,7 @@ export default function Experience() {
         {/* Header */}
         <div className="flex flex-col items-start gap-2 text-left">
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
-            <span className="text-[#00f0ff]">//</span>
+            <span className="text-[#a855f7]">//</span>
             <span>CHRONICLES: SOL-3</span>
           </p>
           <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
@@ -269,7 +269,7 @@ export default function Experience() {
           <div className="absolute -left-[1px] top-2 bottom-2 w-[2px] overflow-hidden pointer-events-none">
             <motion.div
               style={{ scaleY, transformOrigin: "top" }}
-              className="w-full h-full bg-gradient-to-b from-[#00f0ff] via-[#ae040d] to-[#a855f7] shadow-[0_0_10px_rgba(0,240,255,0.8),0_0_14px_rgba(174,4,13,0.9)]"
+              className="w-full h-full bg-[#ae040d] shadow-[0_0_10px_rgba(174,4,13,0.8),0_0_14px_rgba(168,85,247,0.7)]"
             />
           </div>
 
@@ -289,10 +289,10 @@ export default function Experience() {
               >
                 {/* Spider-Verse Web Node Dot */}
                 <div
-                  className="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full flex items-center justify-center bg-black border border-[#ae040d]/60 shadow-[-2px_0_0_rgba(0,240,255,0.7),2px_0_0_rgba(174,4,13,0.8)]"
+                  className="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full flex items-center justify-center bg-black border border-[#ae040d]/60 shadow-[-2px_0_0_rgba(168,85,247,0.7),2px_0_0_rgba(174,4,13,0.8)]"
                 >
                   <div
-                    className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-ping opacity-60"
+                    className="w-1.5 h-1.5 rounded-full bg-[#a855f7] animate-ping opacity-60"
                   />
                   <div
                     className="absolute w-1.5 h-1.5 rounded-full bg-[#ae040d]"
@@ -301,7 +301,7 @@ export default function Experience() {
 
                 {/* Chapter Telemetry + Company Info */}
                 <div className="space-y-2 border-b border-white/5 pb-3">
-                  <span className="text-[10px] font-mono tracking-widest text-[#00f0ff] uppercase">
+                  <span className="text-[10px] font-mono tracking-widest text-[#a855f7] uppercase">
                     {exp.chapter}
                   </span>
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
@@ -389,7 +389,7 @@ export default function Experience() {
                         <div className="space-y-2 pt-1">
                           {role.milestones.map((milestone, mIdx) => (
                             <div key={mIdx} className="flex items-start gap-2.5 text-xs text-zinc-400 font-normal leading-relaxed">
-                              <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] shrink-0 mt-1.5" />
+                              <span className="w-1.5 h-1.5 rounded-full bg-[#a855f7] shrink-0 mt-1.5" />
                               <span>{milestone}</span>
                             </div>
                           ))}

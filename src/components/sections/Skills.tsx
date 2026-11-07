@@ -55,7 +55,7 @@ export default function Skills() {
         {/* Header */}
         <div className="flex flex-col items-start gap-2 text-left">
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
-            <span className="text-[#00f0ff]">//</span>
+            <span className="text-[#a855f7]">//</span>
             <span>SYSTEMS &amp; TOOLING // CORE ARSENAL</span>
           </p>
           <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
@@ -69,7 +69,7 @@ export default function Skills() {
         {/* Continuous Tech Stack Reel */}
         <div className="relative w-full overflow-hidden rounded-2xl bg-black/60 border border-white/10 p-3.5 backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.8)]">
           <div className="flex items-center gap-2 pb-2.5 px-2 border-b border-white/5 text-[10px] font-mono uppercase tracking-widest text-zinc-400">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-ping" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#ae040d] animate-ping" />
             <span className="text-white font-semibold">VERIFIED PRODUCTION STACKS</span>
             <span className="text-zinc-600">//</span>
             <span className="text-zinc-400">TECH STACK DIRECT FROM DOSSIER</span>
@@ -125,10 +125,10 @@ export default function Skills() {
           </div>
 
           {/* Pillar 2 */}
-          <div className="space-y-1.5 p-3 rounded-xl bg-black/50 border border-[#00f0ff]/20 relative z-10">
-            <div className="flex items-center justify-between text-[10px] font-mono text-[#00f0ff]">
+          <div className="space-y-1.5 p-3 rounded-xl bg-black/50 border border-[#a855f7]/30 relative z-10">
+            <div className="flex items-center justify-between text-[10px] font-mono text-[#a855f7]">
               <span className="font-semibold tracking-wider uppercase">// PILLAR 02</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-pulse" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#a855f7] animate-pulse" />
             </div>
             <h4 className="text-sm font-semibold text-white">Autonomous AI Arsenal</h4>
             <div className="flex flex-wrap items-center gap-1.5 pt-1">
@@ -205,7 +205,7 @@ export default function Skills() {
                 className={`relative rounded-2xl p-6 antigravity-card flex flex-col justify-between gap-6 text-left group overflow-hidden ${
                   isPurple
                     ? "hover:border-[#a855f7]/60 hover:shadow-[-2px_0_0_rgba(168,85,247,0.4)]"
-                    : "hover:border-[#ae040d]/60 hover:shadow-[-2px_0_0_rgba(0,240,255,0.35),2px_0_0_rgba(174,4,13,0.5)]"
+                    : "hover:border-[#ae040d]/60 hover:shadow-[-2px_0_0_rgba(168,85,247,0.35),2px_0_0_rgba(174,4,13,0.5)]"
                 }`}
               >
                 <div className="space-y-3">

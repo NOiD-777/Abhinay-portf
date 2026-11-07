@@ -73,14 +73,14 @@ body {
 
 /* Signature RGB Split / Chromatic Aberration */
 .spider-glitch {
-  text-shadow: -2px 0 0 rgba(0, 240, 255, 0.75), 2px 0 0 rgba(174, 4, 13, 0.85);
+  text-shadow: -2px 0 0 rgba(168, 85, 247, 0.75), 2px 0 0 rgba(174, 4, 13, 0.85);
 }
 
 .spider-glitch-hover {
   transition: text-shadow 0.15s ease, transform 0.15s ease;
 }
 .spider-glitch-hover:hover {
-  text-shadow: -2px 0 0 rgba(0, 240, 255, 0.75), 2px 0 0 rgba(174, 4, 13, 0.85);
+  text-shadow: -2px 0 0 rgba(168, 85, 247, 0.75), 2px 0 0 rgba(174, 4, 13, 0.85);
   transform: translate(-1px, -1px);
 }
 
@@ -95,8 +95,8 @@ body {
   background-size: 10px 10px;
 }
 
-.halftone-dots-cyan {
-  background-image: radial-gradient(rgba(0, 240, 255, 0.15) 1px, transparent 1px);
+.halftone-dots-purple {
+  background-image: radial-gradient(rgba(168, 85, 247, 0.22) 1.2px, transparent 1.2px);
   background-size: 8px 8px;
 }
 
@@ -109,7 +109,7 @@ body {
 }
 .spider-panel:hover {
   border-color: rgba(174, 4, 13, 0.6);
-  box-shadow: -2px 0 0 rgba(0, 240, 255, 0.35), 2px 0 0 rgba(174, 4, 13, 0.5);
+  box-shadow: -2px 0 0 rgba(168, 85, 247, 0.45), 2px 0 0 rgba(174, 4, 13, 0.5);
   background: #0c0612;
   transform: translateY(-2px);
 }
@@ -178,7 +178,7 @@ body {
   border-color: rgba(174, 4, 13, 0.55);
   box-shadow: 
     0 20px 40px -15px rgba(0, 0, 0, 0.9),
-    -2px 0 0 rgba(0, 240, 255, 0.35),
+    -2px 0 0 rgba(168, 85, 247, 0.45),
     2px 0 0 rgba(174, 4, 13, 0.6),
     inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
 }

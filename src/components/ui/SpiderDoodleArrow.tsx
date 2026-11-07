@@ -135,25 +135,25 @@ export default function SpiderDoodleArrow() {
       className="absolute inset-0 w-full h-full pointer-events-none z-30 overflow-visible"
     >
       <defs>
-        {/* Glow filter for Spider-Verse chromatic effect */}
+        {/* Glow filter with purple & red shadow accents */}
         <filter id="spider-arrow-glow" x="-20%" y="-20%" width="140%" height="140%">
-          <feDropShadow dx="-2" dy="0" stdDeviation="1.5" floodColor="#00f0ff" floodOpacity="0.8" />
+          <feDropShadow dx="-2" dy="0" stdDeviation="1.5" floodColor="#a855f7" floodOpacity="0.8" />
           <feDropShadow dx="2" dy="1" stdDeviation="1.5" floodColor="#ae040d" floodOpacity="0.8" />
         </filter>
       </defs>
 
-      {/* Cyan Shadow Offset Stroke (Spider-Verse Glitch) */}
+      {/* Purple Shadow Offset Stroke */}
       <path
         d={pathD}
         fill="none"
-        stroke="#00f0ff"
+        stroke="#a855f7"
         strokeWidth={isMobile ? "2.6" : "3.0"}
         strokeLinecap="round"
         transform="translate(-2, 1)"
         opacity="0.75"
       />
 
-      {/* Red Shadow Offset Stroke (Spider-Verse Glitch) */}
+      {/* Red Shadow Offset Stroke */}
       <path
         d={pathD}
         fill="none"
@@ -174,11 +174,11 @@ export default function SpiderDoodleArrow() {
         filter="url(#spider-arrow-glow)"
       />
 
-      {/* Arrowhead Cyan Offset */}
+      {/* Arrowhead Purple Offset */}
       <path
         d={`M ${barb1X} ${barb1Y} L ${endX} ${endY} L ${barb2X} ${barb2Y}`}
         fill="none"
-        stroke="#00f0ff"
+        stroke="#a855f7"
         strokeWidth={isMobile ? "2.6" : "3.2"}
         strokeLinecap="round"
         strokeLinejoin="round"

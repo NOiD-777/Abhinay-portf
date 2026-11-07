@@ -49,7 +49,7 @@ export default function Ecosystem() {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-white/5 text-left">
           <p className="text-[11px] font-mono uppercase tracking-widest text-zinc-400 flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-[#ae040d] animate-pulse" />
-            <span className="text-[#00f0ff]">// MULTIVERSE GUILDS:</span>
+            <span className="text-[#a855f7]">// MULTIVERSE GUILDS:</span>
             <span>Allied Organizations &amp; Production Platforms</span>
           </p>
           <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-wider">

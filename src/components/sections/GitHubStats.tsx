@@ -12,7 +12,7 @@ export default function GitHubStats() {
         {/* Header */}
         <div className="flex flex-col items-start gap-2 text-left">
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
-            <span className="text-[#00f0ff]">//</span>
+            <span className="text-[#a855f7]">//</span>
             <span>TELEMETRY // SPIDER-GRID COMMITS</span>
           </p>
           <h2 className="font-spiderman text-3xl sm:text-5xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">

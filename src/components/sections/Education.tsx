@@ -11,7 +11,7 @@ export default function Education() {
         {/* Header */}
         <div className="flex flex-col items-start gap-2 text-left">
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
-            <span className="text-[#00f0ff]">//</span>
+            <span className="text-[#a855f7]">//</span>
             <span>THE ORIGIN LAB &amp; TROPHIES</span>
           </p>
           <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
@@ -89,9 +89,8 @@ export default function Education() {
                               fill
                               className="object-cover object-center filter contrast-105 group-hover:scale-105 transition-transform duration-300"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
-                            <div className="absolute bottom-1.5 left-2 flex items-center gap-1.5 text-[10px] font-mono text-[#00f0ff]">
-                              <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-pulse" />
+                            <div className="absolute bottom-1.5 left-2 flex items-center gap-1.5 text-[10px] font-mono text-white bg-black/70 px-2 py-0.5 rounded backdrop-blur-sm border border-white/10">
+                              <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
                               <span>1ST PLACE WINNERS</span>
                             </div>
                           </div>
@@ -138,8 +137,8 @@ export default function Education() {
             {/* Verified Industry Certifications // Battle Licenses directly in Origin Card */}
             <div className="space-y-3 pt-4 border-t border-white/5">
               <div className="flex items-center justify-between">
-                <p className="text-xs font-mono uppercase tracking-wider text-[#00f0ff] flex items-center gap-1.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-pulse" />
+                <p className="text-xs font-mono uppercase tracking-wider text-[#a855f7] flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#a855f7] animate-pulse" />
                   <span>VERIFIED LICENSES // SMART INTERVIEWS &amp; NPTEL</span>
                 </p>
                 <span className="text-[10px] font-mono text-zinc-500 uppercase">VERIFIED CREDENTIALS</span>
@@ -168,13 +167,13 @@ export default function Education() {
                 </div>
 
                 {/* NPTEL & Google Cloud Card */}
-                <div className="rounded-xl p-4 bg-[#0a1224] border border-cyan-500/30 hover:border-cyan-500/60 transition-colors flex items-start gap-3.5 group spider-panel">
-                  <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 p-1.5 shrink-0 flex items-center justify-center shadow-[0_2px_12px_rgba(0,240,255,0.1)] group-hover:scale-105 transition-transform">
+                <div className="rounded-xl p-4 bg-[#12081f] border border-purple-500/30 hover:border-purple-500/60 transition-colors flex items-start gap-3.5 group spider-panel">
+                  <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 p-1.5 shrink-0 flex items-center justify-center shadow-[0_2px_12px_rgba(168,85,247,0.15)] group-hover:scale-105 transition-transform">
                     <Image src="/logos/google-cloud-clean.svg" alt="Google Cloud" width={28} height={28} className="w-full h-full object-contain" />
                   </div>
                   <div className="space-y-1 text-left flex-1">
                     <div className="flex items-center justify-between gap-1.5">
-                      <span className="text-[10px] font-mono uppercase tracking-wider text-[#00f0ff] px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/20 font-semibold">
+                      <span className="text-[10px] font-mono uppercase tracking-wider text-purple-300 px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/20 font-semibold">
                         NPTEL · IIT KHARAGPUR
                       </span>
                       <span className="text-[10px] font-mono text-zinc-400">2024</span>

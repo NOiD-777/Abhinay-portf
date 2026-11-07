@@ -52,7 +52,7 @@ export default function Projects() {
         {/* Header */}
         <div className="flex flex-col items-start gap-2 text-left">
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
-            <span className="text-[#00f0ff]">//</span>
+            <span className="text-[#a855f7]">//</span>
             <span>MISSIONS &amp; DISPATCHES</span>
           </p>
           <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
@@ -102,7 +102,7 @@ export default function Projects() {
                 {/* Header row: Issue number + Category Pill + Links */}
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] font-mono tracking-widest text-[#00f0ff] uppercase">
+                    <span className="text-[10px] font-mono tracking-widest text-[#a855f7] uppercase">
                       ISSUE #0{idx + 1} //
                     </span>
                     <span className="text-[11px] font-mono uppercase tracking-wider text-zinc-400">
@@ -144,7 +144,7 @@ export default function Projects() {
                   >
                     <h3 className="font-spiderman text-2xl sm:text-3xl text-white group-hover:text-[#ff0055] transition-colors flex items-center gap-2 tracking-[0.06em] group-hover:spider-glitch">
                       <span>{project.title}</span>
-                      <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-[#00f0ff]" />
+                      <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-[#a855f7]" />
                     </h3>
                   </Link>
                   <p className="text-xs font-mono text-[#ae040d] mt-1">
@@ -153,7 +153,7 @@ export default function Projects() {
                 </div>
 
                 {/* Story Directive / Mission Question */}
-                <p className="text-xs font-mono text-zinc-400 italic border-l border-[#00f0ff]/40 pl-2.5 py-0.5">
+                <p className="text-xs font-mono text-zinc-400 italic border-l border-[#a855f7]/40 pl-2.5 py-0.5">
                   &ldquo;{project.storyDirective}&rdquo;
                 </p>
 
@@ -168,7 +168,7 @@ export default function Projects() {
                     {project.metrics.map((metric, i) => (
                       <span
                         key={i}
-                        className="px-2.5 py-1 rounded-md text-[11px] font-mono bg-[#140920] text-purple-200 border border-[#2e0e47]/70 shadow-[-1px_0_0_rgba(0,240,255,0.25),1px_0_0_rgba(174,4,13,0.35)]"
+                        className="px-2.5 py-1 rounded-md text-[11px] font-mono bg-[#140920] text-purple-200 border border-[#2e0e47]/70 shadow-[-1px_0_0_rgba(168,85,247,0.35),1px_0_0_rgba(174,4,13,0.35)]"
                       >
                         {metric}
                       </span>
@@ -180,11 +180,11 @@ export default function Projects() {
                 {PROJECT_FLOWS[project.slug] && (
                   <div className="p-3 rounded-xl bg-black/60 border border-white/5 space-y-1.5">
                     <div className="flex items-center justify-between text-[10px] font-mono">
-                      <span className="text-[#00f0ff] uppercase tracking-wider flex items-center gap-1">
-                        <Workflow className="w-3 h-3 text-[#00f0ff]" />
+                      <span className="text-[#a855f7] uppercase tracking-wider flex items-center gap-1">
+                        <Workflow className="w-3 h-3 text-[#a855f7]" />
                         <span>PIPELINE // {PROJECT_FLOWS[project.slug].badge}</span>
                       </span>
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-pulse" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#a855f7] animate-pulse" />
                     </div>
                     <div className="flex flex-wrap items-center gap-1.5 text-[10px] font-mono text-zinc-300">
                       {PROJECT_FLOWS[project.slug].steps.map((step, sIdx, arr) => (
