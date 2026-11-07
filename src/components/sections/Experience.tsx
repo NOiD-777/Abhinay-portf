@@ -1,10 +1,23 @@
 "use client";
 
+import { useRef } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 import { experiences } from "@/data/experience";
 
 export default function Experience() {
+  const timelineRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: timelineRef,
+    offset: ["start 75%", "end 60%"],
+  });
+
+  const scaleY = useSpring(scrollYProgress, {
+    stiffness: 160,
+    damping: 28,
+    restDelta: 0.001,
+  });
+
   return (
     <section id="experience" className="py-28 px-4 sm:px-6 lg:px-8 relative z-10 bg-black border-t border-white/5">
       <div className="max-w-4xl mx-auto space-y-16">
@@ -22,10 +35,18 @@ export default function Experience() {
           </p>
         </div>
 
-        {/* Timeline Web Spine */}
-        <div className="relative border-l border-white/10 ml-3 sm:ml-4 pl-6 sm:pl-8 space-y-12">
-          {/* Electrified Web Thread Overlay */}
-          <div className="absolute -left-[1px] top-2 bottom-2 w-[2px] bg-gradient-to-b from-[#00f0ff]/40 via-[#ae040d]/60 to-[#a855f7]/40 pointer-events-none opacity-60" />
+        {/* Timeline Web Spine with Dynamic Scroll-Drawn Electrified Thread */}
+        <div ref={timelineRef} className="relative border-l border-white/10 ml-3 sm:ml-4 pl-6 sm:pl-8 space-y-12">
+          {/* Base track */}
+          <div className="absolute -left-[1px] top-2 bottom-2 w-[2px] bg-white/5 pointer-events-none" />
+
+          {/* Dynamic Scroll-Drawn Electrified Web Strand */}
+          <div className="absolute -left-[1px] top-2 bottom-2 w-[2px] overflow-hidden pointer-events-none">
+            <motion.div
+              style={{ scaleY, transformOrigin: "top" }}
+              className="w-full h-full bg-gradient-to-b from-[#00f0ff] via-[#ae040d] to-[#a855f7] shadow-[0_0_10px_rgba(0,240,255,0.8),0_0_14px_rgba(174,4,13,0.9)]"
+            />
+          </div>
 
           {experiences.map((exp, expIdx) => (
             <motion.div

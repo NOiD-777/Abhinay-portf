@@ -26,13 +26,13 @@ export default function About() {
 
         {/* Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* Earth-1610 Spider-Verse Dossier Card (No Duplicate Photo) */}
+          {/* Earth-1610 Spider-Verse Dossier Card (Sticky Companion on Scroll) */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="lg:col-span-5 flex flex-col items-center gap-5"
+            className="lg:col-span-5 flex flex-col items-center gap-5 lg:sticky lg:top-28 self-start"
           >
             {/* Comic Cover Dossier Box with Antigravity Elevation */}
             <div className="relative w-full max-w-sm rounded-2xl overflow-hidden antigravity-card shadow-[0_20px_40px_-15px_rgba(0,0,0,0.9),-3px_0_0_rgba(0,240,255,0.35),3px_0_0_rgba(174,4,13,0.55)] group">

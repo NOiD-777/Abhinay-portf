@@ -1,29 +1,44 @@
 "use client";
 
+import { useRef } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowUpRight, FileDown } from "lucide-react";
 import { personal } from "@/data/personal";
 import HeroProfile from "./HeroProfile";
 
 export default function Hero() {
+  const containerRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end start"],
+  });
+
+  // Scroll Experience Parallax Layers (0.25x background, 0.5x midground)
+  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "28%"]);
+  const portraitY = useTransform(scrollYProgress, [0, 1], ["0%", "14%"]);
+  const contentFade = useTransform(scrollYProgress, [0, 0.8], [1, 0.25]);
+
   return (
-    <section
+    <motion.section
+      ref={containerRef}
       id="top"
+      style={{ opacity: contentFade }}
       className="relative min-h-[92vh] flex flex-col justify-between pt-24 sm:pt-28 pb-8 px-4 sm:px-6 lg:px-8 overflow-hidden bg-black"
     >
       {/* Background Comic Halftone Texture */}
       <div className="absolute inset-0 halftone-dots opacity-20 pointer-events-none" />
 
-      {/* Giant Background Wordmark: "PORTFOLIO" (inspired by reference composition) */}
-      <div
+      {/* Giant Background Wordmark: "PORTFOLIO" with Parallax Depth */}
+      <motion.div
+        style={{ y: bgY }}
         className="absolute top-[18%] sm:top-[16%] lg:top-[14%] left-1/2 -translate-x-1/2 w-full text-center pointer-events-none select-none z-0 overflow-hidden"
         aria-hidden="true"
       >
         <span className="font-bebas font-black tracking-[-0.01em] text-[#ae040d]/85 lg:text-[#a50b13] hero-backdrop-wordmark block whitespace-nowrap drop-shadow-[0_0_60px_rgba(174,4,13,0.3)]">
           PORTFOLIO
         </span>
-      </div>
+      </motion.div>
 
       {/* Top Framing Bar */}
       <div className="relative z-20 max-w-7xl w-full mx-auto flex items-center justify-between pb-6 border-b border-white/5">
@@ -106,10 +121,13 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* Center Column (lg:col-span-4): Cutout Portrait with Spider-Man Logo behind it */}
-        <div className="lg:col-span-4 xl:col-span-4 flex justify-center items-end order-1 lg:order-2">
+        {/* Center Column (lg:col-span-4): Cutout Portrait with Parallax Depth */}
+        <motion.div
+          style={{ y: portraitY }}
+          className="lg:col-span-4 xl:col-span-4 flex justify-center items-end order-1 lg:order-2"
+        >
           <HeroProfile />
-        </div>
+        </motion.div>
 
         {/* Right Column (lg:col-span-4): Spark Tagline & Stacked Stat Counters */}
         <motion.div
@@ -198,6 +216,6 @@ export default function Hero() {
           <span className="text-[#ae040d] group-hover:translate-x-1 transition-transform">⟶</span>
         </Link>
       </div>
-    </section>
+    </motion.section>
   );
 }
