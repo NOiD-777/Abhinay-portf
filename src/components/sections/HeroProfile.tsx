@@ -38,10 +38,10 @@ export default function HeroProfile() {
             </div>
           </div>
 
-          {/* Target Anchor for the Spider-Doodle Arrow (Positioned Directly at Top of Abhinay's Head) */}
+          {/* Target Anchor for the Spider-Doodle Arrow (Positioned to stop directly at the edge of Abhinay's head) */}
           <div
             id="hero-face-target"
-            className="absolute top-[17%] sm:top-[19%] left-[54%] sm:left-[56%] w-4 h-4 pointer-events-none z-20"
+            className="absolute top-[18%] sm:top-[20%] left-[42%] sm:left-[44%] w-4 h-4 pointer-events-none z-20"
             aria-hidden="true"
           />
 
