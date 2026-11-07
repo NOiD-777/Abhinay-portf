@@ -50,18 +50,6 @@ export const personal = {
     },
     {
       act: "ACT II",
-      codename: "THE CRUCIBLE",
-      title: "What's Up Danger // Enterprise Chaos",
-      location: "Chennai // JMAN Group",
-      narrative:
-        "Leaped straight from the sandbox into the enterprise deep end at JMAN Group. Multi-cloud financial pipelines? Big data chaos? Hand me the controls. Tamed Databricks, PySpark, and Delta Lake into a zero-data-drop beast. When production spikes hit at 3am, my instinct kicks in — and we don't drop a single byte.",
-      milestone: "Data Engineer @ JMAN Group · In the Forge",
-      accent: "crimson",
-      image: "/images/jman-abhinay.webp",
-      imageCaption: "Abhinay on-site at JMAN Group — 'Most overnight successes took a long time' (Steve Jobs)",
-    },
-    {
-      act: "ACT III",
       codename: "THE LEAP",
       title: "Leap of Faith // GenAI State Champions",
       location: "Swecha Telangana // BuildAI4India",
@@ -71,6 +59,18 @@ export const personal = {
       accent: "purple",
       image: "/images/hackathon-swecha-team.webp",
       imageCaption: "Team ArtYatra celebrating 1st Place victory at Swecha Telangana BuildAI4India Hackathon",
+    },
+    {
+      act: "ACT III",
+      codename: "THE CRUCIBLE",
+      title: "What's Up Danger // Enterprise Chaos",
+      location: "Chennai // JMAN Group",
+      narrative:
+        "Leaped straight from the sandbox into the enterprise deep end at JMAN Group. Multi-cloud financial pipelines? Big data chaos? Hand me the controls. Tamed Databricks, PySpark, and Delta Lake into a zero-data-drop beast. When production spikes hit at 3am, my instinct kicks in — and we don't drop a single byte.",
+      milestone: "Data Engineer @ JMAN Group · In the Forge",
+      accent: "crimson",
+      image: "/images/jman-abhinay.webp",
+      imageCaption: "Abhinay on-site at JMAN Group — 'Most overnight successes took a long time' (Steve Jobs)",
     },
   ] as StoryBeat[],
   stats: [

@@ -20,7 +20,7 @@ export default function About() {
             HOW I GOT HERE
           </h2>
           <p className="text-sm sm:text-base text-zinc-300 max-w-prose font-normal leading-relaxed">
-            Three defining chapters. From dorm room chaos to taming multi-terabyte enterprise pipelines and winning state hackathons. Pure main character arc.
+            Three defining chapters. From dorm room chaos to winning state hackathons and taming multi-terabyte enterprise pipelines. Pure main character arc.
           </p>
         </div>
 
