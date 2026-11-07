@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { educationList, certifications } from "@/data/education";
+import { educationList } from "@/data/education";
 
 export default function Education() {
   return (
@@ -134,59 +134,63 @@ export default function Education() {
                 })}
               </div>
             </div>
+
+            {/* Verified Industry Certifications // Battle Licenses directly in Origin Card */}
+            <div className="space-y-3 pt-4 border-t border-white/5">
+              <div className="flex items-center justify-between">
+                <p className="text-xs font-mono uppercase tracking-wider text-[#00f0ff] flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-pulse" />
+                  <span>VERIFIED LICENSES // SMART INTERVIEWS &amp; NPTEL</span>
+                </p>
+                <span className="text-[10px] font-mono text-zinc-500 uppercase">OFFICIAL CREDENTIALS</span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {/* Smart Interviews Card */}
+                <div className="rounded-xl p-4 bg-[#12081f] border border-purple-500/30 hover:border-purple-500/60 transition-colors flex items-start gap-3.5 group spider-panel">
+                  <div className="w-10 h-10 rounded-lg bg-white border border-white/20 p-1 shrink-0 flex items-center justify-center shadow-[0_2px_12px_rgba(255,255,255,0.15)] group-hover:scale-105 transition-transform">
+                    <Image src="/logos/smart-interviews.webp" alt="Smart Interviews" width={32} height={32} className="w-full h-full object-contain" />
+                  </div>
+                  <div className="space-y-1 text-left flex-1">
+                    <div className="flex items-center justify-between gap-1.5">
+                      <span className="text-[10px] font-mono uppercase tracking-wider text-[#c084fc] px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/20 font-semibold">
+                        SILVER RANK · DSA
+                      </span>
+                      <span className="text-[10px] font-mono text-zinc-400">2025</span>
+                    </div>
+                    <h4 className="text-xs sm:text-sm font-semibold text-white tracking-tight">
+                      Smart Coder DSA Certification (Silver)
+                    </h4>
+                    <p className="text-[11px] text-zinc-400 leading-snug">
+                      Smart Interviews · Advanced Data Structures, Asymptotic Analysis &amp; Competitive Coding.
+                    </p>
+                  </div>
+                </div>
+
+                {/* NPTEL & Google Cloud Card */}
+                <div className="rounded-xl p-4 bg-[#0a1224] border border-cyan-500/30 hover:border-cyan-500/60 transition-colors flex items-start gap-3.5 group spider-panel">
+                  <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 p-1.5 shrink-0 flex items-center justify-center shadow-[0_2px_12px_rgba(0,240,255,0.1)] group-hover:scale-105 transition-transform">
+                    <Image src="/logos/google-cloud-clean.svg" alt="Google Cloud" width={28} height={28} className="w-full h-full object-contain" />
+                  </div>
+                  <div className="space-y-1 text-left flex-1">
+                    <div className="flex items-center justify-between gap-1.5">
+                      <span className="text-[10px] font-mono uppercase tracking-wider text-[#00f0ff] px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/20 font-semibold">
+                        NPTEL · IIT KHARAGPUR
+                      </span>
+                      <span className="text-[10px] font-mono text-zinc-400">2024</span>
+                    </div>
+                    <h4 className="text-xs sm:text-sm font-semibold text-white tracking-tight">
+                      Google Cloud Computing Foundations
+                    </h4>
+                    <p className="text-[11px] text-zinc-400 leading-snug">
+                      NPTEL &amp; SWAYAM · Cloud Architecture Foundations, Distributed Compute &amp; Storage.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </motion.div>
         ))}
-
-        {/* Certifications Grid */}
-        <div className="space-y-3 text-left">
-          <p className="text-xs font-mono uppercase tracking-wider text-zinc-400">
-            VERIFIED CREDENTIALS // BATTLE LICENSES
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {certifications.map((cert, cIdx) => {
-              const isGCP = cert.issuer.toLowerCase().includes("nptel") || cert.name.toLowerCase().includes("google cloud");
-              const isSmartInterviews = cert.issuer.toLowerCase().includes("smart interviews");
-
-              return (
-                <motion.div
-                  key={cIdx}
-                  initial={{ opacity: 0, y: 15 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.35, delay: cIdx * 0.08 }}
-                  className="antigravity-card rounded-xl p-5 flex items-start justify-between gap-4"
-                >
-                  <div className="flex items-start gap-3.5">
-                    {isGCP ? (
-                      <div className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 p-1.5 shrink-0 flex items-center justify-center">
-                        <Image src="/logos/google-cloud-clean.svg" alt="Google Cloud" width={26} height={26} className="w-full h-full object-contain" />
-                      </div>
-                    ) : isSmartInterviews ? (
-                      <div className="w-9 h-9 rounded-lg bg-white border border-white/20 p-1 shrink-0 flex items-center justify-center shadow-[0_2px_10px_rgba(255,255,255,0.15)]">
-                        <Image src="/logos/smart-interviews.webp" alt="Smart Interviews Official Logo" width={28} height={28} className="w-full h-full object-contain" />
-                      </div>
-                    ) : (
-                      <div className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 p-1.5 shrink-0 flex items-center justify-center font-mono text-[11px] text-[#ae040d] font-bold">
-                        &lt;/&gt;
-                      </div>
-                    )}
-                    <div className="space-y-1">
-                      <h4 className="text-sm font-semibold text-white">
-                        {cert.name}
-                      </h4>
-                      <p className="text-xs text-zinc-400 font-normal">
-                        {cert.issuer} · {cert.year}
-                      </p>
-                    </div>
-                  </div>
-                  <span className="text-[10px] font-mono text-zinc-400 px-2 py-0.5 rounded bg-white/5 shrink-0">
-                    {cert.badgeText}
-                  </span>
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
       </div>
     </section>
   );

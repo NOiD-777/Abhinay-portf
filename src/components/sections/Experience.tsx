@@ -17,28 +17,20 @@ import { experiences } from "@/data/experience";
 
 function JmanFieldDossier() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 pt-1">
-      {/* Left Column: Real-World On-Site Photograph & Steve Jobs Wall Quote */}
-      <div className="lg:col-span-5 relative rounded-2xl overflow-hidden border border-white/10 bg-black/60 group/jman shadow-[0_15px_35px_-10px_rgba(0,0,0,0.9)] flex flex-col justify-between">
-        <div className="relative w-full aspect-[568/660] overflow-hidden">
-          <Image
-            src="/images/jman-abhinay.webp"
-            alt="Abhinay Musku on-site at JMAN Group office with Steve Jobs quote wall"
-            fill
-            priority
-            className="object-cover object-center filter contrast-105 brightness-95 group-hover/jman:scale-[1.02] group-hover/jman:brightness-100 transition-all duration-500"
-          />
-          {/* Halftone & Vignette Overlays */}
-          <div className="absolute inset-0 halftone-dots opacity-15 pointer-events-none" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+    <div className="w-full pt-1">
+      {/* Full-Width Medallion Data Lakehouse Architecture Schematic */}
+      <div className="w-full antigravity-card rounded-2xl p-5 sm:p-7 flex flex-col justify-between gap-5 text-left border border-white/10 bg-[#09090b]/80 relative overflow-hidden">
+        {/* Subtle grid watermark */}
+        <div className="absolute inset-0 halftone-dots opacity-15 pointer-events-none" />
 
-          {/* Top Header Telemetry & Logo */}
-          <div className="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
-            <span className="px-2.5 py-1 rounded-md bg-black/80 backdrop-blur-md border border-white/10 text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-pulse" />
-              <span>ON-SITE ARTIFACT // JMAN FORGE</span>
+        {/* Header */}
+        <div className="space-y-1.5 relative z-10">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <span className="text-[10px] font-mono uppercase tracking-widest text-[#00f0ff] flex items-center gap-1.5">
+              <Workflow className="w-3.5 h-3.5 text-[#00f0ff]" />
+              <span>SYSTEM BLUEPRINT // DATA FABRIC WEAPONRY</span>
             </span>
-            <div className="px-2.5 py-1 rounded-md bg-black/80 backdrop-blur-md border border-white/10 flex items-center">
+            <div className="flex items-center gap-2.5">
               <div className="w-12 h-3 relative flex items-center justify-center">
                 <Image
                   src="/logos/jman-logo.svg"
@@ -48,48 +40,21 @@ function JmanFieldDossier() {
                   className="w-full h-full object-contain"
                 />
               </div>
+              <span className="px-2 py-0.5 rounded text-[10px] font-mono uppercase tracking-wider bg-red-500/10 text-red-400 border border-red-500/20">
+                COOKING LIVE IN PROD
+              </span>
             </div>
           </div>
-
-          {/* Bottom Telemetry & Status Stamp (Clean overlay so Abhinay & Steve Jobs wall are 100% visible) */}
-          <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[10px] font-mono text-zinc-300">
-            <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-black/85 backdrop-blur-md border border-white/10 text-[#ef4444] font-semibold">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#ef4444] animate-pulse" />
-              <span>DATA &amp; AI ENGINEER · JMAN FORGE</span>
-            </span>
-            <span className="px-2.5 py-1 rounded-md bg-black/85 backdrop-blur-md border border-white/10 text-zinc-400">
-              MAY 2026 – PRESENT
-            </span>
-          </div>
-        </div>
-      </div>
-
-      {/* Right Column: Illustrative Medallion Data Lakehouse Architecture Schematic */}
-      <div className="lg:col-span-7 antigravity-card rounded-2xl p-5 sm:p-6 flex flex-col justify-between gap-5 text-left border border-white/10 bg-[#09090b]/80 relative overflow-hidden">
-        {/* Subtle grid watermark */}
-        <div className="absolute inset-0 halftone-dots opacity-15 pointer-events-none" />
-
-        {/* Header */}
-        <div className="space-y-1 relative z-10">
-          <div className="flex items-center justify-between gap-2">
-            <span className="text-[10px] font-mono uppercase tracking-widest text-[#00f0ff] flex items-center gap-1.5">
-              <Workflow className="w-3.5 h-3.5 text-[#00f0ff]" />
-              <span>SYSTEM BLUEPRINT // DATA FABRIC WEAPONRY</span>
-            </span>
-            <span className="px-2 py-0.5 rounded text-[10px] font-mono uppercase tracking-wider bg-red-500/10 text-red-400 border border-red-500/20">
-              COOKING LIVE IN PROD
-            </span>
-          </div>
-          <h4 className="text-base sm:text-lg font-semibold text-white tracking-tight">
+          <h4 className="text-base sm:text-xl font-semibold text-white tracking-tight">
             Multi-Cloud Medallion Lakehouse Engine
           </h4>
-          <p className="text-xs text-zinc-400 font-normal leading-relaxed">
+          <p className="text-xs sm:text-sm text-zinc-400 font-normal leading-relaxed max-w-3xl">
             Engineered to swallow high-velocity financial streams whole and spit out pristine ACID Delta Lake intelligence. Sub-second queries, zero panic.
           </p>
         </div>
 
         {/* 4 Connected Pipeline Stages */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 relative z-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 relative z-10">
           {/* Stage 1: Ingestion & Gateways */}
           <div className="p-3.5 rounded-xl bg-black/60 border border-[#00f0ff]/20 hover:border-[#00f0ff]/40 transition-colors space-y-1.5 group">
             <div className="flex items-center justify-between">
