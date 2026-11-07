@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import { motion } from "framer-motion";
 
 export default function SpiderDoodleArrow() {
   const [coords, setCoords] = useState<{
@@ -30,28 +31,29 @@ export default function SpiderDoodleArrow() {
       if (!nameTagEl || !faceTargetEl || !svgEl) return;
 
       const svgRect = svgEl.getBoundingClientRect();
-      const nameRect = nameTagEl.getBoundingClientRect();
       const faceRect = faceTargetEl.getBoundingClientRect();
       const isMobile = svgRect.width < 1024;
 
-      // End directly at the target anchor on Abhinay's head
+      // End directly at the target anchor on the outer perimeter of Abhinay's head
       const endX = faceRect.left - svgRect.left + faceRect.width / 2;
       const endY = faceRect.top - svgRect.top + faceRect.height / 2;
+
+      // Start cleanly outside the name tag card so it doesn't overlap the "Y" in ABHINAY
+      const cardEl = nameTagEl.closest(".rounded-2xl") || nameTagEl;
+      const cardRect = cardEl.getBoundingClientRect();
 
       let startX: number;
       let startY: number;
 
       if (isMobile) {
         // Mobile layout: Name Tag sits directly above Abhinay's portrait.
-        // Arrow starts from the bottom-right of the "ABHINAY" text on the sticker,
-        // making a short, compact doodle swoosh (~60-80px) pointing right into his hair.
-        startX = nameRect.right - svgRect.left - 24;
-        startY = nameRect.bottom - svgRect.top - 4;
+        // Arrow starts cleanly below the bottom-right of the sticker card.
+        startX = cardRect.right - svgRect.left - 20;
+        startY = cardRect.bottom - svgRect.top + 6;
       } else {
-        // Desktop layout: Name tag is in the left column.
-        // Start from top-right of the "ABHINAY" name tag on the sticker.
-        startX = nameRect.right - svgRect.left - (nameRect.width > 200 ? 35 : 10);
-        startY = nameRect.top - svgRect.top + 8;
+        // Desktop layout: Start cleanly outside the right edge of the card (later along the path).
+        startX = cardRect.right - svgRect.left + 12;
+        startY = cardRect.top - svgRect.top + cardRect.height * 0.42;
       }
 
       setCoords({
@@ -109,11 +111,11 @@ export default function SpiderDoodleArrow() {
     arrowAngle = Math.atan2(endY - cp2Y, endX - cp2X);
   } else {
     // Desktop layout: Face is to the right of the name tag
-    const archHeight = Math.max(35, Math.min(80, dx * 0.22));
-    cp1X = startX + dx * 0.35;
-    cp1Y = Math.min(startY, endY) - archHeight - 12;
+    const archHeight = Math.max(30, Math.min(75, dx * 0.22));
+    cp1X = startX + dx * 0.3;
+    cp1Y = Math.min(startY, endY) - archHeight - 10;
     cp2X = startX + dx * 0.75;
-    cp2Y = endY - 18;
+    cp2Y = endY - 14;
 
     arrowAngle = Math.atan2(endY - cp2Y, endX - cp2X);
   }
@@ -143,29 +145,36 @@ export default function SpiderDoodleArrow() {
       </defs>
 
       {/* Purple Shadow Offset Stroke */}
-      <path
+      <motion.path
+        initial={{ pathLength: 0, opacity: 0 }}
+        animate={{ pathLength: 1, opacity: 0.75 }}
+        transition={{ duration: 0.6, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
         d={pathD}
         fill="none"
         stroke="#a855f7"
         strokeWidth={isMobile ? "2.6" : "3.0"}
         strokeLinecap="round"
         transform="translate(-2, 1)"
-        opacity="0.75"
       />
 
       {/* Red Shadow Offset Stroke */}
-      <path
+      <motion.path
+        initial={{ pathLength: 0, opacity: 0 }}
+        animate={{ pathLength: 1, opacity: 0.85 }}
+        transition={{ duration: 0.6, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
         d={pathD}
         fill="none"
         stroke="#ae040d"
         strokeWidth={isMobile ? "2.8" : "3.2"}
         strokeLinecap="round"
         transform="translate(2, -1)"
-        opacity="0.85"
       />
 
       {/* Main Hand-Drawn Chalk White Stroke */}
-      <path
+      <motion.path
+        initial={{ pathLength: 0, opacity: 0 }}
+        animate={{ pathLength: 1, opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
         d={pathD}
         fill="none"
         stroke="#ffffff"
@@ -175,7 +184,10 @@ export default function SpiderDoodleArrow() {
       />
 
       {/* Arrowhead Purple Offset */}
-      <path
+      <motion.path
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 0.75, scale: 1 }}
+        transition={{ duration: 0.25, delay: 0.85 }}
         d={`M ${barb1X} ${barb1Y} L ${endX} ${endY} L ${barb2X} ${barb2Y}`}
         fill="none"
         stroke="#a855f7"
@@ -183,11 +195,13 @@ export default function SpiderDoodleArrow() {
         strokeLinecap="round"
         strokeLinejoin="round"
         transform="translate(-2, 1)"
-        opacity="0.75"
       />
 
       {/* Arrowhead Red Offset */}
-      <path
+      <motion.path
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 0.85, scale: 1 }}
+        transition={{ duration: 0.25, delay: 0.85 }}
         d={`M ${barb1X} ${barb1Y} L ${endX} ${endY} L ${barb2X} ${barb2Y}`}
         fill="none"
         stroke="#ae040d"
@@ -195,11 +209,13 @@ export default function SpiderDoodleArrow() {
         strokeLinecap="round"
         strokeLinejoin="round"
         transform="translate(2, -1)"
-        opacity="0.85"
       />
 
       {/* Arrowhead Main White Tip */}
-      <path
+      <motion.path
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.25, delay: 0.85 }}
         d={`M ${barb1X} ${barb1Y} L ${endX} ${endY} L ${barb2X} ${barb2Y}`}
         fill="none"
         stroke="#ffffff"

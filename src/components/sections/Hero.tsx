@@ -38,7 +38,7 @@ export default function Hero() {
       <div className="relative z-20 max-w-7xl w-full mx-auto flex items-center justify-between pb-6 border-b border-white/5">
         <div className="flex flex-col text-left">
           <span className="font-mono text-[11px] sm:text-xs font-bold text-[#ae040d] tracking-widest uppercase">
-            ABHINAY MUSKU // SOL-3 AI ENGINEER
+            ABHINAY // SOL-3 AI ENGINEER
           </span>
           <span className="font-mono text-[10px] sm:text-[11px] text-zinc-400 tracking-wider uppercase">
             DATA &amp; AI ENGINEER @ JMAN GROUP // CHENNAI
@@ -66,7 +66,7 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
             className="order-1 lg:order-none mb-2 pt-2 lg:pt-6 w-full flex justify-center lg:justify-start"
-            aria-label="Hello, I'm Abhinay Musku"
+            aria-label="Hello, I'm Abhinay"
           >
             <GraffitiNameTag />
           </motion.div>

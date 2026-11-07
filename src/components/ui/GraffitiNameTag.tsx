@@ -70,12 +70,6 @@ export default function GraffitiNameTag({ className = "" }: { className?: string
             {/* Corner Peeling Sticker Notch Effect */}
             <div className="absolute bottom-0 right-0 w-4 h-4 bg-zinc-300 border-t border-l border-black/15 shadow-inner" style={{ clipPath: "polygon(100% 0, 0 100%, 100% 100%)" }} />
           </div>
-
-          {/* Realistic Paint Drips Hanging Below Sticker */}
-          <div className="absolute -bottom-3 left-8 w-1 h-3.5 bg-black rounded-full shadow-[0_2px_4px_rgba(0,0,0,0.5)]" />
-          <div className="absolute -bottom-2 left-16 w-1 h-2.5 bg-black rounded-full" />
-          <div className="absolute -bottom-4 right-14 w-1.5 h-4.5 bg-[#ae040d] rounded-full shadow-[0_2px_4px_rgba(174,4,13,0.5)]" />
-          <div className="absolute -bottom-2 right-10 w-1 h-2 bg-black rounded-full" />
         </div>
       </motion.div>
     </div>
