@@ -14,13 +14,13 @@ export default function About() {
         <div className="flex flex-col items-start gap-2 text-left">
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
             <span className="text-[#00f0ff]">//</span>
-            <span>STORY ARC: EARTH-1610</span>
+            <span>ORIGIN STORY // EARTH-1610</span>
           </p>
           <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
-            THE STORY SO FAR
+            HOW I GOT HERE
           </h2>
           <p className="text-sm sm:text-base text-zinc-300 max-w-prose font-normal leading-relaxed">
-            Three defining acts. From campus hackrooms to enterprise data crucibles and autonomous AI frontiers.
+            Three defining chapters. From dorm room chaos to taming multi-terabyte enterprise pipelines and winning state hackathons. Pure main character arc.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export default function About() {
                     ABHINAY MUSKU
                   </h3>
                   <p className="text-xs font-spiderman text-[#00f0ff] uppercase tracking-[0.14em]">
-                    FULL-STACK &amp; AI ENGINEER
+                    DATA SLINGER // SPIDER-ENGINEER
                   </p>
                 </div>
 
@@ -75,10 +75,10 @@ export default function About() {
                     // NARRATIVE CAPTION:
                   </p>
                   <p className="text-xs text-zinc-200 font-mono italic leading-relaxed">
-                    &ldquo;That&apos;s all it is, Miles. A leap of faith.&rdquo;
+                    &ldquo;You&apos;re the one. The only Spider-Man... well, plus a bunch of distributed pipelines. We&apos;re gonna do this our way.&rdquo;
                   </p>
-                  <p className="text-[10px] font-mono text-[#ae040d] uppercase pt-0.5">
-                    Status: Active · Multi-Cloud Streaming
+                  <p className="text-[10px] font-mono text-[#00f0ff] uppercase pt-0.5">
+                    Status: Locked In · Venom Blast Armed · Zero Data Drop
                   </p>
                 </div>
               </div>
@@ -90,19 +90,19 @@ export default function About() {
                 <div className="w-14 h-4 shrink-0 flex items-center justify-center">
                   <Image src="/logos/jman-logo.svg" alt="JMAN Group" width={56} height={16} className="w-full h-full object-contain" />
                 </div>
-                <span>Data Engineer · JMAN Group</span>
+                <span>Data Slinger · JMAN Group</span>
               </div>
               <div className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-lg border border-white/5 bg-[#09090b]">
                 <div className="w-5 h-4 shrink-0 flex items-center justify-center">
                   <Image src="/logos/gdgc-mark.svg" alt="GDGC" width={20} height={16} className="w-full h-full object-contain" />
                 </div>
-                <span>GDGC on Campus MLRIT · Technical Lead</span>
+                <span>GDGC MLRIT · Spider-Campus Lead</span>
               </div>
               <div className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-lg border border-white/5 bg-[#09090b]">
                 <div className="w-4 h-4 shrink-0 flex items-center justify-center">
                   <Image src="/logos/mlrit.svg" alt="MLRIT" width={16} height={16} className="w-full h-full object-contain" />
                 </div>
-                <span>B.E. in Information Technology · MLRIT</span>
+                <span>B.Tech in IT · MLRIT Origin</span>
               </div>
               <div className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-lg border border-white/5 bg-[#09090b]">
                 <MapPin className="w-4 h-4 text-[#ae040d] shrink-0" />
@@ -253,7 +253,7 @@ export default function About() {
                               {idx === 0
                                 ? "CORE TEAM · TECHNICAL LEAD"
                                 : idx === 1
-                                ? "DATA ENGINEER · FINANCIAL LAKEHOUSE"
+                                ? "DATA SLINGER · FINANCIAL LAKEHOUSE"
                                 : "BUILDAI4INDIA · TEAM ARTYATRA"}
                             </span>
                           </div>
@@ -279,9 +279,9 @@ export default function About() {
                 <div className="p-1.5 rounded-md bg-[#ae040d]/10 text-[#ae040d] w-fit">
                   <Database className="w-4 h-4" />
                 </div>
-                <h4 className="font-semibold text-white text-xs">Enterprise Data</h4>
+                <h4 className="font-semibold text-white text-xs">Lakehouse Slinger</h4>
                 <p className="text-[11px] text-zinc-400 leading-relaxed font-normal">
-                  Databricks, PySpark &amp; Delta Lake for multi-cloud financial streaming.
+                  Databricks, PySpark &amp; Delta Lake for multi-cloud financial streaming. Zero byte loss, maximum aura.
                 </p>
               </div>
 
@@ -289,9 +289,9 @@ export default function About() {
                 <div className="p-1.5 rounded-md bg-[#a855f7]/15 text-[#c084fc] w-fit">
                   <Cpu className="w-4 h-4" />
                 </div>
-                <h4 className="font-semibold text-white text-xs">GenAI &amp; Agents</h4>
+                <h4 className="font-semibold text-white text-xs">Autonomous GenAI</h4>
                 <p className="text-[11px] text-zinc-400 leading-relaxed font-normal">
-                  Gemini API, LangChain &amp; agentic reasoning architectures.
+                  Gemini API, LangChain &amp; agentic reasoning architectures that solve queries at supersonic speed.
                 </p>
               </div>
 
@@ -299,9 +299,9 @@ export default function About() {
                 <div className="p-1.5 rounded-md bg-[#00f0ff]/10 text-[#00f0ff] w-fit">
                   <Code2 className="w-4 h-4" />
                 </div>
-                <h4 className="font-semibold text-white text-xs">Full-Stack Core</h4>
+                <h4 className="font-semibold text-white text-xs">Full-Stack Weaponry</h4>
                 <p className="text-[11px] text-zinc-400 leading-relaxed font-normal">
-                  Next.js, Angular, TypeScript &amp; high-concurrency microservices.
+                  Next.js, Angular, TypeScript &amp; high-concurrency microservices. Butter smooth 60fps feel.
                 </p>
               </div>
             </div>

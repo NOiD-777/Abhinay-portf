@@ -68,13 +68,13 @@ export default function Contact() {
         <div className="flex flex-col items-start gap-2 text-left">
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
             <span className="text-[#00f0ff]">//</span>
-            <span>NEXT CHAPTER: LEAP OF FAITH</span>
+            <span>HIT MY WEBHOUNDS // CALL THE SPIDER-SIGNAL</span>
           </p>
           <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
-            CALL THE SPIDER-SIGNAL
+            LEAP OF FAITH // LET&apos;S TALK
           </h2>
           <p className="text-zinc-300 text-sm sm:text-base max-w-prose font-normal leading-relaxed">
-            Every story needs a bold next act. When your team needs enterprise data platforms or autonomous AI systems, let&apos;s build what&apos;s next.
+            Got an insane problem to solve? Need a data pipeline that doesn&apos;t melt under load, or an autonomous GenAI agent with maximum aura? Drop a line. We don&apos;t ghost.
           </p>
         </div>
 
@@ -90,7 +90,7 @@ export default function Contact() {
           >
             <div className="antigravity-card rounded-2xl p-6 space-y-4">
               <h3 className="text-sm font-semibold text-white uppercase tracking-wider font-mono">
-                Direct Communication
+                SECURE COMMS // DIRECT LINK
               </h3>
 
               <div className="space-y-2 text-sm">
@@ -129,7 +129,7 @@ export default function Contact() {
             {/* Socials Card */}
             <div className="antigravity-card rounded-2xl p-6 space-y-3">
               <h4 className="text-xs font-semibold text-zinc-400 font-mono uppercase tracking-wider">
-                Networks
+                SPIDER-NETWORKS
               </h4>
               <div className="flex items-center gap-3">
                 <Link
@@ -166,7 +166,7 @@ export default function Contact() {
               onSubmit={handleSubmit}
               className="antigravity-card rounded-2xl p-7 sm:p-8 space-y-5"
             >
-              <h3 className="font-spiderman text-2xl text-white tracking-[0.08em]">SEND A MESSAGE</h3>
+              <h3 className="font-spiderman text-2xl text-white tracking-[0.08em]">TRANSMIT MISSION BRIEF</h3>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1.5">
@@ -180,7 +180,7 @@ export default function Contact() {
                     onChange={(e) =>
                       setFormState({ ...formState, name: e.target.value })
                     }
-                    placeholder="Jane Doe"
+                    placeholder="Peter Parker, Ganke Lee, or what you go by"
                     className="w-full px-3.5 py-2.5 rounded-lg bg-[#111115] border border-white/10 text-white text-sm placeholder:text-zinc-600 focus:outline-none focus:border-[#ae040d] transition-colors"
                   />
                 </div>
@@ -196,7 +196,7 @@ export default function Contact() {
                     onChange={(e) =>
                       setFormState({ ...formState, email: e.target.value })
                     }
-                    placeholder="jane@example.com"
+                    placeholder="miles@earth1610.spider / your best email"
                     className="w-full px-3.5 py-2.5 rounded-lg bg-[#111115] border border-white/10 text-white text-sm placeholder:text-zinc-600 focus:outline-none focus:border-[#ae040d] transition-colors"
                   />
                 </div>
@@ -213,7 +213,7 @@ export default function Contact() {
                   onChange={(e) =>
                     setFormState({ ...formState, message: e.target.value })
                   }
-                  placeholder="Tell me about your project, idea, or role..."
+                  placeholder="Tell me about the mission. What are we building? (Keep it 100)"
                   className="w-full px-3.5 py-2.5 rounded-lg bg-[#111115] border border-white/10 text-white text-sm placeholder:text-zinc-600 focus:outline-none focus:border-[#ae040d] transition-colors resize-none"
                 />
               </div>
@@ -241,12 +241,12 @@ export default function Contact() {
                 {loading ? (
                   <>
                     <Loader2 className="w-4 h-4 animate-spin" />
-                    <span>Transmitting...</span>
+                    <span>Slinging Across The Spider-Verse...</span>
                   </>
                 ) : (
                   <>
                     <Send className="w-4 h-4" />
-                    <span>Send Message</span>
+                    <span>Fire Web Signal</span>
                   </>
                 )}
               </button>

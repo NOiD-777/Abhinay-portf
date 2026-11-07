@@ -36,13 +36,13 @@ export default function Skills() {
         <div className="flex flex-col items-start gap-2 text-left">
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
             <span className="text-[#00f0ff]">//</span>
-            <span>THE SUIT &amp; ARSENAL</span>
+            <span>THE SUIT &amp; GADGETS</span>
           </p>
           <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
-            TECHNICAL STACK &amp; TOOLING
+            WHAT&apos;S IN MY WEB-SHOOTERS
           </h2>
           <p className="text-zinc-300 text-sm sm:text-base max-w-prose font-normal leading-relaxed">
-            Weapons of choice across enterprise data lakehouses, generative AI agent protocols, and high-concurrency microservices.
+            The exact tech stack I use to build scalable distributed systems, deploy autonomous AI agents, and ship without breaking production. Yeah, we cooked.
           </p>
         </div>
 
@@ -56,12 +56,12 @@ export default function Skills() {
               <span className="font-semibold tracking-wider uppercase">// PILLAR 01</span>
               <span className="w-1.5 h-1.5 rounded-full bg-[#ef4444] animate-pulse" />
             </div>
-            <h4 className="text-sm font-semibold text-white">Enterprise Data Fabric</h4>
+            <h4 className="text-sm font-semibold text-white">Enterprise Lakehouse Forge</h4>
             <p className="text-[11px] text-zinc-400">
               Databricks · PySpark · Delta Lake · Microsoft Azure · AWS Lambda
             </p>
             <div className="text-[10px] font-mono text-zinc-500 pt-1 border-t border-white/5">
-              High-throughput ACID pipelines &amp; sub-second batching
+              High-throughput ACID pipelines &amp; zero dropped records. Real heavy lifting.
             </div>
           </div>
 
@@ -71,12 +71,12 @@ export default function Skills() {
               <span className="font-semibold tracking-wider uppercase">// PILLAR 02</span>
               <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-pulse" />
             </div>
-            <h4 className="text-sm font-semibold text-white">Agentic AI Protocols</h4>
+            <h4 className="text-sm font-semibold text-white">Autonomous AI Arsenal</h4>
             <p className="text-[11px] text-zinc-400">
               Google Gemini API · LangChain · FastAPI · Pydantic · Multi-Agent
             </p>
             <div className="text-[10px] font-mono text-zinc-500 pt-1 border-t border-white/5">
-              Autonomous reasoning loops &amp; multi-tool function calling
+              Multi-agent reasoning loops &amp; function calling with maximum aura.
             </div>
           </div>
 
@@ -86,12 +86,12 @@ export default function Skills() {
               <span className="font-semibold tracking-wider uppercase">// PILLAR 03</span>
               <span className="w-1.5 h-1.5 rounded-full bg-[#a855f7] animate-pulse" />
             </div>
-            <h4 className="text-sm font-semibold text-white">Reactive Full-Stack</h4>
+            <h4 className="text-sm font-semibold text-white">Reactive Frontend &amp; APIs</h4>
             <p className="text-[11px] text-zinc-400">
               Next.js 16 · React 19 · TypeScript · Angular · Tailwind CSS
             </p>
             <div className="text-[10px] font-mono text-zinc-500 pt-1 border-t border-white/5">
-              Sub-16ms telemetry sync &amp; spatial spider-verse interfaces
+              Sub-16ms telemetry sync &amp; 60fps spatial web experiences.
             </div>
           </div>
         </div>

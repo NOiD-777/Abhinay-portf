@@ -33,10 +33,10 @@ export default function Hero() {
       <div className="relative z-20 max-w-7xl w-full mx-auto flex items-center justify-between pb-6 border-b border-white/5">
         <div className="flex flex-col text-left">
           <span className="font-mono text-[11px] sm:text-xs font-bold text-[#ae040d] tracking-widest uppercase">
-            FULL-STACK &amp; AI ENGINEER
+            EARTH-1610 SPIDER-ENGINEER
           </span>
           <span className="font-mono text-[10px] sm:text-[11px] text-zinc-400 tracking-wider uppercase">
-            DATA ENGINEER @ JMAN GROUP · HYDERABAD
+            DATA SLINGER @ JMAN GROUP // HYDERABAD
           </span>
         </div>
 
@@ -45,8 +45,8 @@ export default function Hero() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ae040d] opacity-75" />
             <span className="relative inline-flex rounded-full h-2 w-2 bg-[#ae040d]" />
           </span>
-          <span className="text-zinc-400 hidden sm:inline">AVAILABLE FOR MISSIONS</span>
-          <span className="text-zinc-400 sm:hidden">AVAILABLE</span>
+          <span className="text-zinc-400 hidden sm:inline">LOCKED IN · AVAILABLE FOR MISSIONS</span>
+          <span className="text-zinc-400 sm:hidden">LOCKED IN</span>
           <span className="text-[#ae040d] font-bold text-sm">＋</span>
         </div>
       </div>
@@ -77,7 +77,7 @@ export default function Hero() {
 
           {/* Editorial Paragraph */}
           <p className="text-xs sm:text-sm text-zinc-300 font-normal leading-relaxed max-w-sm mt-3">
-            I architect enterprise data pipelines, production Generative AI systems, and high-performance web applications with the precision of a spider-sense. Building resilient architectures that transform complex data into effortless intelligence.
+            Anyone can wear the mask — but I&apos;m out here slinging multi-terabyte Databricks pipelines with one hand and cooking autonomous GenAI agents with the other. High aura, zero data drop, and yeah... the Jordan 1s are untied. It&apos;s a choice.
           </p>
 
           {/* Location / Origin Tag */}
@@ -92,7 +92,7 @@ export default function Hero() {
               href="#projects"
               className="clip-spider-btn inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold tracking-wider uppercase text-white bg-[#ae040d] hover:bg-[#c50512] transition-all duration-150 shadow-[-2px_0_0_rgba(0,240,255,0.4),2px_0_0_rgba(225,6,0,0.6)]"
             >
-              <span>Explore Missions</span>
+              <span>Peep The Missions</span>
               <ArrowUpRight className="w-4 h-4" />
             </Link>
 
@@ -103,7 +103,7 @@ export default function Hero() {
               className="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 text-xs sm:text-sm font-medium text-zinc-300 rounded-lg bg-[#111115] hover:bg-[#18181f] border border-white/10 hover:border-white/20 hover:text-white transition-colors duration-150"
             >
               <FileDown className="w-4 h-4 text-zinc-400" />
-              <span>Resume PDF</span>
+              <span>Grab The Dossier</span>
             </Link>
           </div>
         </motion.div>
@@ -129,7 +129,7 @@ export default function Hero() {
               <span className="text-sm font-bold">✦</span>
             </div>
             <p className="text-xs sm:text-sm text-zinc-300 font-normal leading-snug">
-              Turning raw data and intent into powerful autonomous realities.
+              Spider-sense tingles whenever a pipeline fails. Good thing mine never do.
             </p>
           </div>
 
@@ -142,7 +142,7 @@ export default function Hero() {
                   2+
                 </span>
                 <span className="text-xs font-mono text-zinc-400 uppercase tracking-widest">
-                  Years Experience
+                  Years In The Forge
                 </span>
               </div>
               <p className="text-[11px] text-zinc-500 font-mono mt-0.5">
@@ -157,7 +157,7 @@ export default function Hero() {
                   16+
                 </span>
                 <span className="text-xs font-mono text-zinc-400 uppercase tracking-widest">
-                  Production Repos
+                  Battle-Tested Repos
                 </span>
               </div>
               <p className="text-[11px] text-zinc-500 font-mono mt-0.5">
@@ -172,11 +172,11 @@ export default function Hero() {
                   1st
                 </span>
                 <span className="text-xs font-mono text-zinc-400 uppercase tracking-widest">
-                  BuildAI4India Winner
+                  State Champions W
                 </span>
               </div>
               <p className="text-[11px] text-zinc-500 font-mono mt-0.5">
-                Swecha Telangana State Hackathon
+                Swecha Telangana · BuildAI4India
               </p>
             </div>
           </div>

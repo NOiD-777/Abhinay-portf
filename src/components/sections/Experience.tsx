@@ -36,7 +36,7 @@ function JmanFieldDossier() {
           <div className="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
             <span className="px-2.5 py-1 rounded-md bg-black/80 backdrop-blur-md border border-white/10 text-[10px] font-mono text-[#00f0ff] uppercase tracking-wider flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-pulse" />
-              <span>ON-SITE ARTIFACT // CHENNAI</span>
+              <span>ON-SITE ARTIFACT // JMAN FORGE</span>
             </span>
             <div className="px-2.5 py-1 rounded-md bg-black/80 backdrop-blur-md border border-white/10 flex items-center">
               <div className="w-12 h-3 relative flex items-center justify-center">
@@ -58,15 +58,15 @@ function JmanFieldDossier() {
                 &ldquo;If you really look closely, most overnight successes took a long time.&rdquo;
               </p>
               <div className="flex items-center justify-between text-[10px] font-mono pt-1 border-t border-white/10">
-                <span className="text-[#ef4444] font-semibold tracking-wider uppercase">— STEVE JOBS</span>
-                <span className="text-zinc-400">JMAN ON-SITE WALL</span>
+                <span className="text-[#ef4444] font-semibold tracking-wider uppercase">— STEVE JOBS (FACTS ONLY)</span>
+                <span className="text-zinc-400">JMAN HEADQUARTERS</span>
               </div>
             </div>
 
             <div className="flex items-center justify-between text-[10px] font-mono text-zinc-300 px-1">
               <span className="flex items-center gap-1.5 text-[#ef4444] font-semibold">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#ef4444] animate-pulse" />
-                <span>DATA ENGINEER</span>
+                <span>DATA SLINGER</span>
               </span>
               <span className="text-zinc-400">MAY 2026 – PRESENT</span>
             </div>
@@ -84,17 +84,17 @@ function JmanFieldDossier() {
           <div className="flex items-center justify-between gap-2">
             <span className="text-[10px] font-mono uppercase tracking-widest text-[#00f0ff] flex items-center gap-1.5">
               <Workflow className="w-3.5 h-3.5 text-[#00f0ff]" />
-              <span>SYSTEM SCHEMATIC // ENTERPRISE DATA FABRIC</span>
+              <span>SYSTEM BLUEPRINT // DATA FABRIC WEAPONRY</span>
             </span>
             <span className="px-2 py-0.5 rounded text-[10px] font-mono uppercase tracking-wider bg-red-500/10 text-red-400 border border-red-500/20">
-              PRODUCTION LIVE
+              COOKING LIVE IN PROD
             </span>
           </div>
           <h4 className="text-base sm:text-lg font-semibold text-white tracking-tight">
-            Multi-Cloud Medallion Data Lakehouse Architecture
+            Multi-Cloud Medallion Lakehouse Engine
           </h4>
           <p className="text-xs text-zinc-400 font-normal leading-relaxed">
-            Architected to transform high-concurrency financial transaction streams into unified ACID Delta Lake intelligence.
+            Engineered to swallow high-velocity financial streams whole and spit out pristine ACID Delta Lake intelligence. Sub-second queries, zero panic.
           </p>
         </div>
 
@@ -183,10 +183,10 @@ function AiAxissSchematic() {
       <div className="flex items-center justify-between gap-2">
         <span className="text-[10px] font-mono uppercase tracking-widest text-[#a855f7] flex items-center gap-1.5">
           <Activity className="w-3.5 h-3.5 text-[#a855f7]" />
-          <span>REACTIVE ENGINE // SUB-SECOND TELEMETRY SCHEMATIC</span>
+          <span>REACTIVE ENGINE // ZERO-LAG TELEMETRY BLUEPRINT</span>
         </span>
         <span className="text-[10px] font-mono text-purple-300 px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/20">
-          60 FPS REAL-TIME
+          BUTTER SMOOTH 60 FPS
         </span>
       </div>
 
@@ -217,10 +217,10 @@ function BrihaspathiSchematic() {
       <div className="flex items-center justify-between gap-2">
         <span className="text-[10px] font-mono uppercase tracking-widest text-[#ec4899] flex items-center gap-1.5">
           <Cpu className="w-3.5 h-3.5 text-[#ec4899]" />
-          <span>EDGE SILICON // TENSOR OPTIMIZATION SCHEMATIC</span>
+          <span>EDGE SILICON // EMBEDDED VISION BLUEPRINT</span>
         </span>
         <span className="text-[10px] font-mono text-pink-300 px-2 py-0.5 rounded bg-pink-500/10 border border-pink-500/20">
-          92% ACCURACY ON EDGE
+          92% ACCURACY · TINY SILICON
         </span>
       </div>
 
@@ -275,10 +275,10 @@ export default function Experience() {
             <span>CHRONICLES: EARTH-1610</span>
           </p>
           <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
-            THE CRUCIBLE &amp; IMPACT
+            WHERE WE COOKED IN PRODUCTION
           </h2>
           <p className="text-zinc-300 text-sm sm:text-base max-w-prose font-normal leading-relaxed">
-            Where theory meets production: architecting multi-cloud data platforms, sub-second telemetry, and edge silicon intelligence.
+            Theory is cool, but have you ever kept a multi-cloud financial pipeline alive during a traffic surge? Yeah, we don&apos;t drop bytes here. No cap.
           </p>
         </div>
 

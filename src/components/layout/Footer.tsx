@@ -59,8 +59,8 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <p className="text-xs text-zinc-600 text-center md:text-right font-normal">
-          © 2026 Abhinay Musku. Earth-1610 // Leap of Faith.
+        <p className="text-xs text-zinc-500 text-center md:text-right font-mono">
+          © 2026 Abhinay Musku · Earth-1610 // What&apos;s Up Danger? We Ball.
         </p>
       </div>
     </footer>

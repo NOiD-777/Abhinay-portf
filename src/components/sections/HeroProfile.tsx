@@ -39,12 +39,12 @@ export default function HeroProfile() {
             </div>
           </div>
 
-          {/* User Portrait Cutout with Gemini Refined Groomed Hair */}
+          {/* User Portrait Cutout */}
           <Image
             src="/profile-cutout.webp"
             alt="Abhinay Musku"
-            width={1024}
-            height={1024}
+            width={1400}
+            height={1400}
             priority
             className="relative z-10 w-auto h-full object-contain object-bottom filter contrast-105 drop-shadow-[0_15px_30px_rgba(0,0,0,0.8)] select-none pointer-events-none"
           />
@@ -71,7 +71,7 @@ export default function HeroProfile() {
               <span className="font-spiderman tracking-[0.14em] text-sm">ABHINAY</span>
               <span className="text-[10px] text-[#00f0ff] font-mono">// 1610</span>
             </p>
-            <p className="text-[10px] text-zinc-400 font-mono">Data Engineer · JMAN Group</p>
+            <p className="text-[10px] text-zinc-400 font-mono">Data Slinger · JMAN Forge</p>
           </div>
         </motion.div>
 
@@ -91,7 +91,7 @@ export default function HeroProfile() {
               className="w-full h-full object-contain"
             />
           </div>
-          <span className="font-spiderman text-sm tracking-[0.1em]">GDGC LEAD · MLRIT</span>
+          <span className="font-spiderman text-sm tracking-[0.1em]">GDGC LEAD · SPIDER-CAMPUS</span>
         </motion.div>
       </motion.div>
     </div>

@@ -18,7 +18,7 @@ export const experiences: Experience[] = [
   {
     company: "JMAN Group",
     location: "Chennai, India",
-    chapter: "CHAPTER 01 // THE ENTERPRISE FORGE",
+    chapter: "CHAPTER 01 // ENTERPRISE FORGE: WHAT'S UP DANGER",
     accentColor: "#ef4444",
     roles: [
       {
@@ -26,11 +26,11 @@ export const experiences: Experience[] = [
         type: "Full-Time",
         period: "May 2026 – Present",
         mission:
-          "Architecting high-throughput data platforms that convert high-volume financial transaction streams into unified Delta Lake intelligence.",
+          "Basically the Spider-Man of high-throughput financial data. Taking massive torrents of chaotic transactions and whipping them into disciplined Delta Lake pipelines with zero dropped records. We locked in.",
         milestones: [
-          "Optimized query throughput by 30% and guaranteed 99.9% batch ETL reliability for global financial clients using Databricks & PySpark.",
-          "Constructed resilient REST API ingestion services connecting Microsoft Azure and AWS Lambda into Delta Lake with zero data drop.",
-          "Spearheaded GenAI automation POCs using LangChain & Python for tabular schema validation, cutting manual triage turnaround by 40%.",
+          "Boosted query throughput by +30% and guaranteed 99.9% batch ETL reliability for global financial clients using Databricks & PySpark — zero data drop, no cap.",
+          "Constructed battle-tested ingestion highways bridging Microsoft Azure & AWS Lambda straight into Delta Lake with zero dropped bytes under heavy load.",
+          "Cooked up GenAI validation POCs with LangChain & Python for tabular schema sanity, slashing manual triage time by 40%.",
         ],
       },
       {
@@ -38,10 +38,10 @@ export const experiences: Experience[] = [
         type: "Internship",
         period: "Feb 2026 – Apr 2026",
         mission:
-          "Completed an intensive five-track software rotation across Data Science & AI, Full-Stack Web Development, and Cloud Platform Engineering.",
+          "Full-on multiverse rotation: speedran Data Science, Full-Stack web engineering, and Cloud Platforms without losing my head.",
         milestones: [
-          "Engineered and shipped production-ready API endpoints and React/TypeScript UI modules for internal analytics tools.",
-          "Automated tabular data quality validation checks across enterprise reporting layers.",
+          "Shipped production-ready APIs and slick React/TypeScript UI modules for internal analytics squads.",
+          "Automated data quality checks across reporting layers so nobody had to deal with bad numbers on Friday deployments.",
         ],
       },
     ],
@@ -49,7 +49,7 @@ export const experiences: Experience[] = [
   {
     company: "AI AXISS INC",
     location: "Hyderabad, India",
-    chapter: "CHAPTER 02 // REACTIVE INTERFACES",
+    chapter: "CHAPTER 02 // BUTTERY SMOOTH 60 FPS INTERFACES",
     accentColor: "#a855f7",
     roles: [
       {
@@ -57,10 +57,10 @@ export const experiences: Experience[] = [
         type: "Internship",
         period: "Oct 2025 – Jan 2026",
         mission:
-          "Engineered reactive client telemetry interfaces where real-time accuracy dictates operational decisions.",
+          "Building reactive telemetry interfaces so fast your eyes can't catch the latency. When operational decisions are on the line, every frame matters.",
         milestones: [
-          "Developed responsive, component-driven web applications using modern Angular, TypeScript, HTML5, and CSS3.",
-          "Integrated RESTful APIs for real-time telemetry, data visualization, and seamless client-server state synchronization.",
+          "Developed responsive, component-driven web apps using modern Angular, TypeScript, HTML5, and CSS3 that hit 60 FPS smoothly.",
+          "Plugged in RESTful streams for real-time telemetry, visual data maps, and seamless state sync with zero UI jitter.",
         ],
       },
     ],
@@ -68,7 +68,7 @@ export const experiences: Experience[] = [
   {
     company: "Brihaspathi Technologies Limited",
     location: "Hyderabad, India",
-    chapter: "CHAPTER 03 // EDGE SILICON",
+    chapter: "CHAPTER 03 // SQUEEZING AI ONTO TINY EDGE CHIPS",
     accentColor: "#ec4899",
     roles: [
       {
@@ -76,10 +76,10 @@ export const experiences: Experience[] = [
         type: "Internship",
         period: "Aug 2025 – Sep 2025",
         mission:
-          "Optimized computer vision models to execute real-time biometric verification directly on low-resource edge hardware.",
+          "Fitting heavy-duty computer vision models onto tiny low-resource edge silicon. It's like doing a backflip through a keyhole — pure venom blast efficiency.",
         milestones: [
-          "Engineered and deployed asynchronous Python backend microservices with FastAPI and OpenCV, achieving ~92% detection accuracy on edge chips.",
-          "Reduced CPU utilization by 35% and cut inference latency via asynchronous request batching and custom skip-frame processing.",
+          "Shipped async FastAPI & OpenCV microservices pulling ~92% biometric detection accuracy directly on constrained edge chips.",
+          "Chopped CPU load by 35% using custom skip-frame batching tricks — maximum performance, minimum silicon heat.",
         ],
       },
     ],

@@ -18,10 +18,10 @@ export const projects: Project[] = [
   {
     slug: "artyatra",
     title: "ArtYatra",
-    subtitle: "AI Cultural Heritage Platform",
-    storyDirective: "Can generative models rescue endangered cultural heritage before it's lost?",
+    subtitle: "State Hackathon Champion // Generative Art Savior",
+    storyDirective: "What if AI didn't just generate memes, but actually saved ancient endangered cultures?",
     description:
-      "Autonomous vision platform classifying 8 traditional Indian art styles with Google Gemini API, LangChain reasoning, and geospatial provenance mapping.",
+      "Won 1st place at Swecha BuildAI4India with this bad boy. Hooked Gemini Vision & LangChain to autonomously identify and preserve 8 endangered Indian art styles before they vanish into the multiverse.",
     longDescription:
       "ArtYatra is an award-winning full-stack application built to preserve and explore India's artistic heritage. It leverages Google Gemini API with structured prompt orchestration to analyze user-uploaded artwork images and accurately classify traditional art forms including Warli, Madhubani, Thanjavur, and Kalamkari. Features contextual history retrieval, confidence scoring, and interactive geographical mapping.",
     image: "/projects/artyatra.png",
@@ -38,15 +38,15 @@ export const projects: Project[] = [
     category: "ai-ml",
     githubUrl: "https://github.com/NOiD-777/ArtYatra",
     featured: true,
-    metrics: ["🏆 Swecha BuildAI4India Winner", "8 Art Styles Classified", "Sub-second Query Latency"],
+    metrics: ["🏆 1st Place State Champions", "8 Art Traditions Saved", "Sub-Second Inferences"],
   },
   {
     slug: "autonomous-career-agent",
     title: "Autonomous Career Agent",
-    subtitle: "Multi-Agent Intelligence System",
-    storyDirective: "Can autonomous agentic workflows eliminate manual friction across enterprise intelligence?",
+    subtitle: "Agentic Multiverse Intelligence Swarm",
+    storyDirective: "Why apply to opportunities manually like an NPC when an autonomous agent swarm can do it with 100x aura?",
     description:
-      "Autonomous multi-agent workflow engine in Python orchestrating tool-calling, Pydantic schemas, and LLM chains with persistent state tracking.",
+      "A squad of autonomous Python agents running tool-calling, Pydantic schemas, and multi-step prompt chains with persistent memory. Basically automated hustle on steroids.",
     longDescription:
       "Architected an autonomous multi-agent workflow engine in Python using FastAPI and LangChain. Discovers, parses, and evaluates enterprise opportunities against multi-variable constraints (compensation, experience, domain MX verification). Integrates LLM-driven prompt chains with Google Workspace APIs and python-docx to dynamically generate calibrated deliverables and execute verified email dispatches with Docker containerization.",
     image: "/projects/resumeradar.png",
@@ -54,15 +54,15 @@ export const projects: Project[] = [
     category: "ai-ml",
     githubUrl: "https://github.com/NOiD-777/ResumeRadar",
     featured: true,
-    metrics: ["Multi-Agent Orchestration", "Pydantic Structured Output", "Tool/Function Calling"],
+    metrics: ["Agent Swarm Orchestrated", "Pydantic Schemas Locked", "Zero Human Friction"],
   },
   {
     slug: "twitter-sentiment-analysis",
     title: "Twitter Sentiment Analysis",
-    subtitle: "Large-Scale NLP Pipeline",
-    storyDirective: "Extracting actionable signal from 1.6M noisy real-time social streams.",
+    subtitle: "1.6M Tweets Decoded Without Crashing",
+    storyDirective: "Digging through 1.6 million tweets of chaotic internet noise without losing my sanity.",
     description:
-      "High-throughput NLP pipeline benchmarking statistical classifiers against 1.6M unstructured tweets, achieving +25% accuracy and -20% false positives.",
+      "Trained statistical classifiers on 1.6M unfiltered tweets to detect internet sentiment trends with a +25% accuracy W. Cut out false positives like Peter B. Parker cutting carbs.",
     longDescription:
       "Engineered an end-to-end NLP sentiment pipeline for massive social streams. Applied hyperparameter tuning, refined tokenization and stemming via NLTK, and benchmarked Logistic Regression against Naive Bayes models to minimize false positive predictions by 20%. Includes interactive Google Colab notebook.",
     image: "/projects/twitter-sentiment.png",
@@ -71,15 +71,15 @@ export const projects: Project[] = [
     liveUrl: "https://colab.research.google.com/drive/1cUcBBJK-P4jtTDYgBuTLT7btmbxKqGs9?usp=sharing",
     githubUrl: "https://github.com/NOiD-777/Twitter-Sentiment-Analysis",
     featured: true,
-    metrics: ["1.6M Tweets Processed", "+25% Accuracy Gain", "-20% False Positives"],
+    metrics: ["1.6M Tweets Sifted", "+25% Accuracy Gain", "-20% False Positives"],
   },
   {
     slug: "expense-tracker-angular",
     title: "Expense Tracker (ExWise)",
-    subtitle: "Mobile-First Personal Finance App",
-    storyDirective: "Financial sovereignty with zero cloud latency and total local privacy.",
+    subtitle: "Zero-Lag Offline-First Mobile Vault",
+    storyDirective: "Where did all my money go? (Spoiler: sneakers, iced coffee, and cloud credits).",
     description:
-      "Lightning-fast personal finance manager engineered for mobile screens with local-first persistence, reactive budget alerts, and zero tracking.",
+      "Lightning-fast personal finance tracker running 100% offline with zero cloud tracking. Clean Angular UI so you can face your spending habits without lag.",
     longDescription:
       "ExWise is tailored specifically for smartphone screens, delivering lightning-fast expense tracking without cloud latency. Features monthly budget alerts, category-wise breakdowns, interactive calendar history, and dark mode UI built with Angular and Tailwind CSS.",
     image: "/projects/expense-tracker.png",
@@ -88,15 +88,15 @@ export const projects: Project[] = [
     liveUrl: "https://exwise.vercel.app/",
     githubUrl: "https://github.com/NOiD-777/Expense-tracker-angular",
     featured: true,
-    metrics: ["📱 Mobile-First UI", "100% Offline Capability", "Live on Vercel"],
+    metrics: ["📱 Zero-Lag Mobile UI", "100% Offline Vault", "Live on Vercel"],
   },
   {
     slug: "legalmind-ai",
     title: "LegalMind",
-    subtitle: "Multi-Model Contract Risk Assessment",
-    storyDirective: "Uncovering hidden contractual liabilities through multi-model consensus.",
+    subtitle: "Multi-Model Contract Risk Scanner",
+    storyDirective: "Reading 50-page legal terms of service so nobody gets trapped in a canon event.",
     description:
-      "Asynchronous legal audit engine comparing clause indemnity risks in parallel across Claude, Gemini, and Groq with FastAPI and Next.js.",
+      "Asynchronous audit engine cross-examining risky contract clauses in parallel across Claude, Gemini, and Groq. If there's a shady clause, the spider-sense sounds the alarm.",
     longDescription:
       "LegalMind automates lengthy contract reviews by ingesting legal PDFs/DOCX agreements, extracting liability and indemnification clauses, and running parallel multi-model risk evaluations to highlight red flags with high confidence.",
     image: "/projects/legalmind.png",
@@ -104,12 +104,12 @@ export const projects: Project[] = [
     category: "ai-ml",
     githubUrl: "https://github.com/NOiD-777/Legal_Mind",
     featured: false,
-    metrics: ["Multi-LLM Consensus", "FastAPI Async Engine", "Risk Red Flagging"],
+    metrics: ["Multi-LLM Consensus", "FastAPI Async Engine", "Instant Risk Flags"],
   },
   {
     slug: "face-recognition-edge",
     title: "Edge Face Recognition",
-    subtitle: "Optimized Computer Vision Deployment",
+    subtitle: "Biometric Vision on Constrained Silicon",
     storyDirective: "Pushing computer vision to real-world edge hardware with tight thermal budgets.",
     description:
       "Lightweight biometric verification engine achieving ~92% accuracy with 35% reduced CPU overhead on constrained edge hardware via skip-frame algorithms.",

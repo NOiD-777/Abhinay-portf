@@ -11,14 +11,15 @@ export default function GitHubStats() {
       <div className="max-w-6xl mx-auto space-y-12">
         {/* Header */}
         <div className="flex flex-col items-start gap-2 text-left">
-          <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d]">
-            Telemetry
+          <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
+            <span className="text-[#00f0ff]">//</span>
+            <span>TELEMETRY // SPIDER-GRID COMMITS</span>
           </p>
           <h2 className="font-spiderman text-3xl sm:text-5xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
-            CODE &amp; OPEN SOURCE ACTIVITY
+            COMMITS IN THE DARK
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base max-w-xl font-normal">
-            Continuous engineering repositories and open source tracking under @NOiD-777.
+            Midnight pushes, green squares, and zero uncommitted chaos under @NOiD-777. Locked in 24/7.
           </p>
         </div>
 
@@ -27,25 +28,25 @@ export default function GitHubStats() {
           <div className="rounded-xl p-6 border border-white/5 bg-[#09090b] space-y-1.5 text-left">
             <span className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Public Repos</span>
             <p className="text-3xl font-semibold text-white font-mono tracking-tight">16+</p>
-            <p className="text-xs text-zinc-400">Maintained repositories</p>
+            <p className="text-xs text-zinc-400">Shipped &amp; battle-tested</p>
           </div>
 
           <div className="rounded-xl p-6 border border-white/5 bg-[#09090b] space-y-1.5 text-left">
-            <span className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Languages</span>
+            <span className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Weaponry</span>
             <p className="text-3xl font-semibold text-white font-mono tracking-tight">Python / TS</p>
-            <p className="text-xs text-zinc-400">Primary development</p>
+            <p className="text-xs text-zinc-400">Full-stack lethality</p>
           </div>
 
           <div className="rounded-xl p-6 border border-white/5 bg-[#09090b] space-y-1.5 text-left">
             <span className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Cadence</span>
-            <p className="text-3xl font-semibold text-white font-mono tracking-tight">Active</p>
-            <p className="text-xs text-zinc-400">Ongoing commits</p>
+            <p className="text-3xl font-semibold text-white font-mono tracking-tight">Relentless</p>
+            <p className="text-xs text-zinc-400">Zero days off GitHub</p>
           </div>
 
           <div className="rounded-xl p-6 border border-white/5 bg-[#09090b] space-y-1.5 text-left">
             <span className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Deployments</span>
-            <p className="text-3xl font-semibold text-white font-mono tracking-tight">Vercel &amp; Colab</p>
-            <p className="text-xs text-zinc-400">Live testable apps</p>
+            <p className="text-3xl font-semibold text-white font-mono tracking-tight">Cloud &amp; Edge</p>
+            <p className="text-xs text-zinc-400">Live prod apps</p>
           </div>
         </div>
 
@@ -54,10 +55,10 @@ export default function GitHubStats() {
           <div className="space-y-1.5">
             <h3 className="text-lg font-semibold text-white flex items-center gap-2">
               <Github className="w-4 h-4 text-[#ae040d]" />
-              <span>Explore GitHub Repositories</span>
+              <span>Peek The Source Code</span>
             </h3>
             <p className="text-sm text-zinc-400 max-w-lg font-normal">
-              Inspect repositories for ArtYatra, Twitter Sentiment Analysis, Expense Tracker, and autonomous AI agents.
+              Inspect battle-tested codebases: ArtYatra, deep sentiment pipelines, autonomous AI agents, and high-frequency backends.
             </p>
           </div>
 

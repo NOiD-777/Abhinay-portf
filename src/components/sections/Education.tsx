@@ -12,13 +12,13 @@ export default function Education() {
         <div className="flex flex-col items-start gap-2 text-left">
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
             <span className="text-[#00f0ff]">//</span>
-            <span>THE GUILD &amp; ACADEMY</span>
+            <span>THE ORIGIN LAB &amp; TROPHIES</span>
           </p>
           <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
-            EDUCATION &amp; CREDENTIALS
+            WHERE THE POWERS GOT FORGED
           </h2>
           <p className="text-zinc-300 text-sm sm:text-base max-w-prose font-normal leading-relaxed">
-            Academic rigor in Information Technology, developer community stewardship, and verified cloud architecture.
+            Where the spider-powers got weaponized: Computer Science foundations at MLRIT, leading hundreds of student builders, and bagging state-level championships.
           </p>
         </div>
 
@@ -66,7 +66,7 @@ export default function Education() {
             {/* Honors & Highlights */}
             <div className="space-y-3">
               <p className="text-xs font-mono uppercase tracking-wider text-zinc-400">
-                Leadership &amp; Recognition
+                LEADERSHIP &amp; TROPHY CASE
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {edu.honors.map((honor, hIdx) => {
@@ -101,14 +101,14 @@ export default function Education() {
                                 <Image src="/logos/swecha.svg" alt="Swecha Telangana" width={32} height={16} className="w-full h-full object-contain" />
                               </div>
                               <span className="text-[10px] font-mono uppercase tracking-wider text-purple-300 px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/20">
-                                State Championship
+                                STATE CHAMPIONSHIP · BIG W
                               </span>
                             </div>
                             <p className="text-xs sm:text-sm text-white font-medium leading-relaxed">
                               {honor}
                             </p>
                             <p className="text-[11px] text-zinc-400 font-mono">
-                              Project: ArtYatra · Generative AI autonomous cultural art preservation system
+                              Project: ArtYatra · Autonomous cultural art preservation engine that blew the judges away
                             </p>
                           </div>
                         </>
@@ -140,7 +140,7 @@ export default function Education() {
         {/* Certifications Grid */}
         <div className="space-y-3 text-left">
           <p className="text-xs font-mono uppercase tracking-wider text-zinc-400">
-            Verified Certifications
+            VERIFIED CREDENTIALS // BATTLE LICENSES
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {certifications.map((cert, cIdx) => {
