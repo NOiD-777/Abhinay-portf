@@ -3,7 +3,7 @@
 import { useEffect, useState, useCallback, useRef } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Sparkles, ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
+import { Sparkles, ChevronLeft, ChevronRight, Pause, Play, ShieldCheck } from "lucide-react";
 
 /**
  * SlidingDigitReel: Smooth vertical rolling reel that animates
@@ -54,6 +54,82 @@ function SlidingDigitReel({
     </span>
   );
 }
+
+interface RoleItem {
+  id: string;
+  tabLabel: string;
+  logo: string;
+  logoAlt: string;
+  logoWidth: number;
+  logoHeight: number;
+  badgeTitle: string;
+  badgeCode: string;
+  badgeDotColor?: string;
+  roleTitle: string;
+  mission: string;
+  tags: { label: string; color: string }[];
+  accentColor: string;
+}
+
+const ROLES: RoleItem[] = [
+  {
+    id: "gdgc",
+    tabLabel: "01 // GDGC LEAD",
+    logo: "/logos/gdgc-mark.svg",
+    logoAlt: "GDGC MLRIT",
+    logoWidth: 26,
+    logoHeight: 15,
+    badgeTitle: "GDGC LEAD",
+    badgeCode: "// MLRIT",
+    badgeDotColor: "bg-[#10b981]",
+    roleTitle: "Technical Lead · Google Developer Groups",
+    mission: "Directing 500+ student builders, campus hack rooms, and developer initiatives at MLRIT.",
+    tags: [
+      { label: "Google Developer Groups", color: "text-white" },
+      { label: "GDGC MLRIT", color: "text-purple-300" },
+      { label: "Technical Lead", color: "text-red-400" },
+    ],
+    accentColor: "#ffffff",
+  },
+  {
+    id: "jman",
+    tabLabel: "02 // JMAN",
+    logo: "/logos/jman-logo.svg",
+    logoAlt: "JMAN Group",
+    logoWidth: 48,
+    logoHeight: 18,
+    badgeTitle: "ABHINAY",
+    badgeCode: "// SOL-3",
+    badgeDotColor: "bg-[#ae040d]",
+    roleTitle: "Data & AI Engineer · JMAN",
+    mission: "Orchestrating multi-cloud financial pipelines, Databricks lakehouses, and autonomous GenAI agents.",
+    tags: [
+      { label: "JMAN Group", color: "text-white" },
+      { label: "Enterprise Lakehouse", color: "text-red-400" },
+      { label: "Full-Time + Intern", color: "text-purple-300" },
+    ],
+    accentColor: "#ae040d",
+  },
+  {
+    id: "swecha",
+    tabLabel: "03 // SWECHA",
+    logo: "/logos/swecha.svg",
+    logoAlt: "Swecha Telangana",
+    logoWidth: 28,
+    logoHeight: 14,
+    badgeTitle: "STATE CHAMPION",
+    badgeCode: "// 1ST PLACE",
+    badgeDotColor: "bg-[#a855f7]",
+    roleTitle: "BuildAI4India Winner · Swecha Telangana",
+    mission: "Built ArtYatra in 24 hours — autonomous AI cultural preservation engine powered by Gemini Vision.",
+    tags: [
+      { label: "BuildAI4India", color: "text-white" },
+      { label: "Project ArtYatra", color: "text-purple-300" },
+      { label: "State Champion", color: "text-red-400" },
+    ],
+    accentColor: "#a855f7",
+  },
+];
 
 interface StatItem {
   id: string;
@@ -111,9 +187,43 @@ const STATS: StatItem[] = [
   },
 ];
 
-const SLIDE_DURATION = 4800; // ms per slide
+const STAT_SLIDE_DURATION = 4800; // ms per stat slide
+const ROLE_SLIDE_DURATION = 5200; // ms per role slide
 
 export default function HeroStats() {
+  // Upper Window: Roles & Affiliations Carousel (GDGC, JMAN, Swecha)
+  const [activeRoleIdx, setActiveRoleIdx] = useState(0);
+  const [isRolePaused, setIsRolePaused] = useState(false);
+  const [roleDirection, setRoleDirection] = useState(1);
+  const [roleTimerKey, setRoleTimerKey] = useState(0);
+
+  const nextRole = useCallback(() => {
+    setRoleDirection(1);
+    setActiveRoleIdx((prev) => (prev + 1) % ROLES.length);
+    setRoleTimerKey((k) => k + 1);
+  }, []);
+
+  const prevRole = useCallback(() => {
+    setRoleDirection(-1);
+    setActiveRoleIdx((prev) => (prev - 1 + ROLES.length) % ROLES.length);
+    setRoleTimerKey((k) => k + 1);
+  }, []);
+
+  const selectRole = useCallback((idx: number) => {
+    setRoleDirection(idx > activeRoleIdx ? 1 : -1);
+    setActiveRoleIdx(idx);
+    setRoleTimerKey((k) => k + 1);
+  }, [activeRoleIdx]);
+
+  useEffect(() => {
+    if (isRolePaused) return;
+    const timer = setInterval(() => {
+      nextRole();
+    }, ROLE_SLIDE_DURATION);
+    return () => clearInterval(timer);
+  }, [isRolePaused, nextRole, roleTimerKey]);
+
+  // Lower Window: Telemetry & Production Stats Carousel
   const [activeIdx, setActiveIdx] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [direction, setDirection] = useState(1);
@@ -139,19 +249,20 @@ export default function HeroStats() {
     setTimerKey((k) => k + 1);
   }, [activeIdx]);
 
-  // Auto-sliding interval for the single sliding window
+  // Auto-sliding interval for the lower window
   useEffect(() => {
     if (isPaused) return;
 
     timerRef.current = setInterval(() => {
       nextSlide();
-    }, SLIDE_DURATION);
+    }, STAT_SLIDE_DURATION);
 
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
   }, [isPaused, nextSlide, timerKey]);
 
+  const currentRole = ROLES[activeRoleIdx];
   const currentStat = STATS[activeIdx];
 
   return (
@@ -159,33 +270,150 @@ export default function HeroStats() {
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-      className="flex flex-col justify-end text-left pb-2 space-y-3 max-w-sm w-full mx-auto lg:mx-0"
+      className="flex flex-col justify-end text-left pb-2 space-y-3.5 max-w-sm w-full mx-auto lg:mx-0"
     >
       {/* =========================================================================
-          SECTION 1: GDGC LEAD · MLRIT PILL BADGE (Image 1)
-          Positioned on the right side of Abhinay
+          WINDOW 1 (UPPER): ROLES & AFFILIATIONS SLIDING WINDOW (GDGC, JMAN, SWECHA)
           ========================================================================= */}
-      <motion.div
-        whileHover={{ scale: 1.02, y: -2 }}
-        transition={{ type: "spring", stiffness: 400, damping: 25 }}
-        className="self-start inline-flex items-center gap-3 px-4 py-2 rounded-full bg-black/85 border border-white/15 backdrop-blur-md shadow-[0_4px_25px_rgba(0,0,0,0.8)] group cursor-default spider-glitch-hover"
+      <div
+        onMouseEnter={() => setIsRolePaused(true)}
+        onMouseLeave={() => setIsRolePaused(false)}
+        className="p-3.5 sm:p-4 rounded-2xl bg-black/80 border border-white/10 backdrop-blur-md space-y-3 shadow-[0_15px_35px_-10px_rgba(0,0,0,0.85)] relative overflow-hidden group"
       >
-        <div className="relative w-6 h-3.5 flex items-center justify-center shrink-0">
-          <Image
-            src="/logos/gdgc-mark.svg"
-            alt="Google Developer Groups on Campus (GDGC)"
-            width={24}
-            height={14}
-            className="w-full h-full object-contain filter drop-shadow-[0_0_8px_rgba(168,85,247,0.4)]"
-          />
+        {/* Ambient Halftone Texture & Accent Glow */}
+        <div className="absolute inset-0 halftone-dots opacity-15 pointer-events-none" />
+        <div
+          className="absolute -top-10 -right-10 w-28 h-28 rounded-full blur-2xl pointer-events-none transition-colors duration-500"
+          style={{
+            backgroundColor: `${currentRole.accentColor}25`,
+          }}
+        />
+
+        {/* Top Tagline Row with Shield Icon & Slide Controls */}
+        <div className="flex items-center justify-between gap-2 relative z-10">
+          <div className="flex items-center gap-2">
+            <div className="relative w-6 h-6 rounded-full bg-[#a855f7]/20 border border-[#a855f7]/40 flex items-center justify-center text-[#c084fc] shadow-[0_0_10px_rgba(168,85,247,0.4)] shrink-0">
+              <ShieldCheck className="w-3 h-3 animate-pulse" />
+            </div>
+            <span className="text-[10px] font-mono text-zinc-400 uppercase tracking-widest flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#a855f7] animate-ping" />
+              <span>CORE ROLES &amp; DISPATCH</span>
+            </span>
+          </div>
+
+          {/* Navigation Controls: Prev, Pause/Play, Next */}
+          <div className="flex items-center gap-1">
+            <button
+              type="button"
+              onClick={prevRole}
+              aria-label="Previous Role"
+              className="w-6 h-6 rounded-md bg-white/5 hover:bg-white/15 border border-white/10 flex items-center justify-center text-zinc-400 hover:text-white transition-colors"
+            >
+              <ChevronLeft className="w-3.5 h-3.5" />
+            </button>
+            <button
+              type="button"
+              onClick={() => setIsRolePaused(!isRolePaused)}
+              aria-label={isRolePaused ? "Play Auto-Slide" : "Pause Auto-Slide"}
+              className="w-6 h-6 rounded-md bg-white/5 hover:bg-white/15 border border-white/10 flex items-center justify-center text-zinc-400 hover:text-white transition-colors"
+              title={isRolePaused ? "Resume auto-slide" : "Pause auto-slide"}
+            >
+              {isRolePaused ? <Play className="w-2.5 h-2.5 fill-current" /> : <Pause className="w-2.5 h-2.5 fill-current" />}
+            </button>
+            <button
+              type="button"
+              onClick={nextRole}
+              aria-label="Next Role"
+              className="w-6 h-6 rounded-md bg-white/5 hover:bg-white/15 border border-white/10 flex items-center justify-center text-zinc-400 hover:text-white transition-colors"
+            >
+              <ChevronRight className="w-3.5 h-3.5" />
+            </button>
+          </div>
         </div>
 
-        <span className="font-mono text-xs sm:text-[13px] font-bold tracking-wider text-zinc-100 group-hover:text-white transition-colors">
-          GDGC LEAD · MLRIT
-        </span>
+        {/* 3 SLIDING TABS SWITCHER */}
+        <div className="grid grid-cols-3 gap-1.5 p-1 rounded-xl bg-black/60 border border-white/5 relative z-10">
+          {ROLES.map((r, idx) => {
+            const isActive = activeRoleIdx === idx;
+            return (
+              <button
+                key={r.id}
+                type="button"
+                onClick={() => selectRole(idx)}
+                className={`relative px-2 py-1.5 rounded-lg text-[10px] font-mono transition-all overflow-hidden flex flex-col items-center gap-1 text-center ${
+                  isActive
+                    ? "bg-white/10 text-white border border-white/20 shadow-sm"
+                    : "text-zinc-400 hover:text-zinc-200 hover:bg-white/5 border border-transparent"
+                }`}
+              >
+                <span className="font-semibold tracking-wider whitespace-nowrap">{r.tabLabel}</span>
 
-        <span className="w-1.5 h-1.5 rounded-full bg-[#10b981] animate-pulse ml-0.5" />
-      </motion.div>
+                {/* Progress bar filling over duration for active slide */}
+                <div className="w-full h-0.5 bg-white/10 rounded-full overflow-hidden">
+                  {isActive && (
+                    <motion.div
+                      key={`timer-role-${idx}-${roleTimerKey}`}
+                      initial={{ width: "0%" }}
+                      animate={{ width: isRolePaused ? undefined : "100%" }}
+                      transition={{ duration: ROLE_SLIDE_DURATION / 1000, ease: "linear" }}
+                      className="h-full bg-[#a855f7]"
+                    />
+                  )}
+                </div>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* ROLE SLIDE CONTENT */}
+        <div className="relative min-h-[92px] z-10 overflow-hidden pt-0.5">
+          <AnimatePresence mode="wait" initial={false}>
+            <motion.div
+              key={currentRole.id}
+              initial={{ opacity: 0, x: roleDirection * 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -roleDirection * 20 }}
+              transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+              className="space-y-2.5 text-left"
+            >
+              {/* Badge row matching the 2nd user photo */}
+              <div className="flex items-center gap-3">
+                <div className="relative w-14 h-8 shrink-0 flex items-center justify-center p-1 rounded-lg bg-white/5 border border-white/10">
+                  <Image
+                    src={currentRole.logo}
+                    alt={currentRole.logoAlt}
+                    width={currentRole.logoWidth}
+                    height={currentRole.logoHeight}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div className="text-left border-l border-white/10 pl-3">
+                  <p className="text-xs font-semibold text-white tracking-tight flex items-center gap-1.5">
+                    <span className="font-spiderman tracking-[0.14em] text-sm text-white">{currentRole.badgeTitle}</span>
+                    <span className="text-[10px] text-[#a855f7] font-mono">{currentRole.badgeCode}</span>
+                    {currentRole.badgeDotColor && (
+                      <span className={`w-1.5 h-1.5 rounded-full ${currentRole.badgeDotColor} animate-pulse ml-0.5`} />
+                    )}
+                  </p>
+                  <p className="text-[11px] text-zinc-300 font-mono">{currentRole.roleTitle}</p>
+                </div>
+              </div>
+
+              {/* Tag badges */}
+              <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
+                {currentRole.tags.map((t, tIdx) => (
+                  <span
+                    key={tIdx}
+                    className={`px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 border border-white/5 ${t.color}`}
+                  >
+                    {t.label}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          </AnimatePresence>
+        </div>
+      </div>
 
       {/* =========================================================================
           SECTION 2: ALL 3 STATS IN 1 COMPACT SLIDING WINDOW
@@ -279,7 +507,7 @@ export default function HeroStats() {
                       key={`timer-${idx}-${timerKey}`}
                       initial={{ width: "0%" }}
                       animate={{ width: isPaused ? undefined : "100%" }}
-                      transition={{ duration: SLIDE_DURATION / 1000, ease: "linear" }}
+                      transition={{ duration: STAT_SLIDE_DURATION / 1000, ease: "linear" }}
                       className="h-full bg-[#ae040d]"
                     />
                   )}

@@ -100,7 +100,7 @@ export default function Skills() {
               <span className="font-semibold tracking-wider uppercase">// PILLAR 01</span>
               <span className="w-1.5 h-1.5 rounded-full bg-[#ef4444] animate-pulse" />
             </div>
-            <h4 className="text-sm font-semibold text-white">Enterprise Lakehouse Forge</h4>
+            <h4 className="text-sm font-semibold text-white">Enterprise Lakehouse</h4>
             <div className="flex flex-wrap items-center gap-1.5 pt-1">
               <span className="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-300 px-2 py-0.5 rounded bg-white/5 border border-white/5">
                 <TechLogo name="Databricks" className="w-3 h-3" useBrandColor />

@@ -18,7 +18,7 @@ export const experiences: Experience[] = [
   {
     company: "JMAN Group",
     location: "Chennai, India",
-    chapter: "CHAPTER 01 // ENTERPRISE FORGE: WHAT'S UP DANGER",
+    chapter: "CHAPTER 01 // JMAN: WHAT'S UP DANGER",
     accentColor: "#ef4444",
     roles: [
       {

@@ -112,7 +112,7 @@ export const personal = {
       location: "Chennai // JMAN Group",
       narrative:
         "Leaped straight from the sandbox into the enterprise deep end at JMAN Group. Multi-cloud financial pipelines? Big data chaos? Hand me the controls. Tamed Databricks, PySpark, and Delta Lake into a zero-data-drop beast. When production spikes hit at 3am, my instinct kicks in — and we don't drop a single byte.",
-      milestone: "Data Engineer @ JMAN Group · In the Forge",
+      milestone: "Data Engineer @ JMAN Group",
       accent: "crimson",
       image: "/images/jman-abhinay.webp",
       imageCaption: "Abhinay on-site at JMAN Group — 'Most overnight successes took a long time' (Steve Jobs)",
@@ -126,7 +126,7 @@ export const personal = {
         titleColor: "text-[#ef4444]",
       },
       telemetry: {
-        status: "ENTERPRISE FORGE // CHENNAI",
+        status: "JMAN // CHENNAI",
         statusColor: "text-[#ef4444] border-[#ef4444]/30",
         dotColor: "bg-[#ef4444]",
         detail: "DATA SLINGER · FINANCIAL LAKEHOUSE",
