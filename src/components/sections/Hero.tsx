@@ -109,18 +109,18 @@ export default function Hero() {
             <div>
               <p className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Recognition</p>
               <div className="flex items-center gap-2 mt-1">
-                <div className="w-5 h-5 shrink-0 flex items-center justify-center">
+                <div className="w-8 h-4 shrink-0 flex items-center justify-center">
                   <Image
-                    src="/logos/google-cloud-clean.svg"
-                    alt="Google Cloud"
-                    width={20}
-                    height={20}
+                    src="/logos/swecha.svg"
+                    alt="Swecha Telangana"
+                    width={32}
+                    height={16}
                     className="w-full h-full object-contain"
                   />
                 </div>
                 <p className="text-sm font-semibold text-zinc-100">BuildAI4India</p>
               </div>
-              <p className="text-xs text-zinc-500 font-normal mt-0.5">Hackathon Winner</p>
+              <p className="text-xs text-zinc-500 font-normal mt-0.5">Swecha Telangana · 1st</p>
             </div>
 
             <div>

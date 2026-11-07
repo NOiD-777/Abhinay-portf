@@ -83,8 +83,8 @@ export default function Education() {
                           <Image src="/logos/gdg-mark.svg" alt="GDG" width={20} height={20} className="w-full h-full object-contain" />
                         </div>
                       ) : isBuildAI ? (
-                        <div className="w-5 h-5 shrink-0 mt-0.5 flex items-center justify-center">
-                          <Image src="/logos/google-cloud-clean.svg" alt="Google Cloud" width={20} height={20} className="w-full h-full object-contain" />
+                        <div className="w-8 h-4 shrink-0 mt-0.5 flex items-center justify-center">
+                          <Image src="/logos/swecha.svg" alt="Swecha Telangana" width={32} height={16} className="w-full h-full object-contain" />
                         </div>
                       ) : (
                         <span className="w-1.5 h-1.5 rounded-full bg-[#a855f7] shrink-0 mt-1.5" />

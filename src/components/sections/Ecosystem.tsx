@@ -23,6 +23,12 @@ const AFFILIATIONS = [
     logo: "/logos/mlrit.svg",
   },
   {
+    name: "Swecha Telangana",
+    role: "BuildAI4India Winner",
+    type: "Hackathon",
+    logo: "/logos/swecha.svg",
+  },
+  {
     name: "Databricks",
     role: "Lakehouse & PySpark",
     type: "Core Tech",

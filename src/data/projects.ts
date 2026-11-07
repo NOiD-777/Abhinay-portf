@@ -38,7 +38,7 @@ export const projects: Project[] = [
     category: "ai-ml",
     githubUrl: "https://github.com/NOiD-777/ArtYatra",
     featured: true,
-    metrics: ["🏆 BuildAI4India Winner", "8 Art Styles Classified", "Sub-second Query Latency"],
+    metrics: ["🏆 Swecha BuildAI4India Winner", "8 Art Styles Classified", "Sub-second Query Latency"],
   },
   {
     slug: "twitter-sentiment-analysis",

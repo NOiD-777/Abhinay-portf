@@ -58,10 +58,10 @@ export const personal = {
       act: "ACT III",
       codename: "THE LEAP",
       title: "Autonomous Frontiers & Cultural Legacy",
-      location: "Swecha // BuildAI4India",
+      location: "Swecha Telangana // BuildAI4India",
       narrative:
-        "Crossed dimensions into Generative AI. Built ArtYatra with Google Gemini API & LangChain to autonomously classify and preserve 8 endangered Indian art styles — taking 1st place and proving AI can safeguard living history.",
-      milestone: "Winner · BuildAI4India Hackathon",
+        "Crossed dimensions into Generative AI. Built ArtYatra with Google Gemini API & LangChain to autonomously classify and preserve 8 endangered Indian art styles — taking 1st place at Swecha Telangana's BuildAI4India Hackathon.",
+      milestone: "1st Place Winner · Swecha BuildAI4India",
       accent: "purple",
     },
   ] as StoryBeat[],

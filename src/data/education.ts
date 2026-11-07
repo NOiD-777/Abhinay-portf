@@ -25,7 +25,7 @@ export const educationList: Education[] = [
     location: "Hyderabad, India",
     honors: [
       "Technical Lead at Google Developers Group (GDG) on Campus MLRIT",
-      "Winner — BuildAI4India Hackathon, Swecha Telangana (Aug 2025) for AI-powered cultural art preservation",
+      "Winner (1st Place) — BuildAI4India Hackathon, Swecha Telangana (Aug 2025) for AI-powered cultural art preservation",
     ],
   },
 ];
