@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Bebas_Neue, Geist, Geist_Mono } from "next/font/google";
+import { Bebas_Neue, Road_Rage, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 import ScrollProgress from "@/components/ui/ScrollProgress";
@@ -16,6 +16,13 @@ const bebasNeue = Bebas_Neue({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-bebas",
+  display: "swap",
+});
+
+const roadRage = Road_Rage({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-brush",
   display: "swap",
 });
 
@@ -59,7 +66,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${spiderFont.variable} ${bebasNeue.variable} dark`}
+      className={`${geistSans.variable} ${geistMono.variable} ${spiderFont.variable} ${bebasNeue.variable} ${roadRage.variable} dark`}
     >
       <body className="bg-black text-[#ededed] font-sans antialiased selection:bg-[#ae040d]/40 selection:text-white">
         <ScrollProgress />

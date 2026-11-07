@@ -21,6 +21,11 @@ colors:
   purple-selection: "rgba(59, 7, 100, 0.55)"
   scrollbar-thumb: "#1c1c22"
 typography:
+  hero-backdrop:
+    fontFamily: "var(--font-bebas), sans-serif"
+    fontSize: "clamp(5.5rem, 19vw, 15rem)"
+    fontWeight: 900
+    lineHeight: 0.85
   display:
     fontFamily: "var(--font-geist-sans), system-ui, sans-serif"
     fontSize: "4.5rem"

@@ -45,3 +45,4 @@ When asked to build or generate UI components, default to the following stack un
 - Always write modular, reusable components.
 - Ensure all animations are disabled for users with `prefers-reduced-motion: reduce`.
 - Prioritize performance: Apply `will-change: transform` only around measured animations and remove it afterward; it does not guarantee GPU rendering. Do not animate expensive properties like `box-shadow` or `filter` continuously.
+
