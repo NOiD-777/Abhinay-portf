@@ -209,21 +209,6 @@ export default function SpiderDoodleArrow() {
         <line x1="-4" y1="2" x2="2" y2="-6" stroke="#ae040d" strokeWidth="2.4" strokeLinecap="round" />
         <line x1="4" y1="4" x2="10" y2="-4" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" />
       </g>
-
-      {/* Street Art "THAT'S ME 👆" Comic Label Badge */}
-      <foreignObject
-        x={midX - 55}
-        y={midY - 18}
-        width="110"
-        height="36"
-        className="overflow-visible pointer-events-none"
-      >
-        <div className="flex items-center justify-center">
-          <span className="font-spiderman text-[10px] sm:text-[11px] text-white tracking-widest uppercase bg-black/85 px-2.5 py-0.5 rounded-full border border-white/20 shadow-[-2px_0_0_rgba(0,240,255,0.7),2px_0_0_rgba(174,4,13,0.85)] -rotate-3 select-none">
-            THAT&apos;S ME 👆
-          </span>
-        </div>
-      </foreignObject>
     </svg>
   );
 }
