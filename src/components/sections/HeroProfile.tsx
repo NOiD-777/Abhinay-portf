@@ -55,31 +55,6 @@ export default function HeroProfile() {
             className="relative z-10 w-auto h-full object-contain object-bottom scale-[1.24] sm:scale-[1.28] origin-bottom -translate-y-8 sm:-translate-y-12 filter drop-shadow-[0_0_25px_rgba(225,6,0,0.55)] drop-shadow-[0_15px_30px_rgba(0,0,0,0.9)] select-none pointer-events-none"
           />
         </div>
-
-        {/* Floating Status Pill with JMAN Group Logo — Antigravity Levitation */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="absolute -bottom-3 left-4 sm:left-6 flex items-center gap-3 px-4 py-2.5 rounded-xl antigravity-glass spider-glitch-hover antigravity-float z-20"
-        >
-          <div className="relative w-14 h-6 shrink-0 flex items-center justify-center">
-            <Image
-              src="/logos/jman-logo.svg"
-              alt="JMAN Group"
-              width={56}
-              height={24}
-              className="w-full h-full object-contain"
-            />
-          </div>
-          <div className="text-left border-l border-white/10 pl-2.5">
-            <p className="text-xs font-semibold text-white tracking-tight flex items-center gap-1.5">
-              <span className="font-spiderman tracking-[0.14em] text-sm">ABHINAY</span>
-              <span className="text-[10px] text-[#a855f7] font-mono">// SOL-3</span>
-            </p>
-            <p className="text-[10px] text-zinc-400 font-mono">Data &amp; AI Engineer · JMAN Forge</p>
-          </div>
-        </motion.div>
       </motion.div>
     </div>
   );
