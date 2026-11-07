@@ -76,49 +76,59 @@ export default function Education() {
                   return (
                     <div
                       key={hIdx}
-                      className={`rounded-xl bg-[#12081f] border border-[#2e0e47]/60 spider-panel overflow-hidden ${
-                        isBuildAI ? "sm:col-span-2 p-4 sm:p-5 flex flex-col md:flex-row items-center gap-5" : "p-3.5 flex items-start gap-2.5"
-                      }`}
+                      className="rounded-xl p-4 bg-[#12081f] border border-[#2e0e47]/60 spider-panel flex items-start gap-3.5 group"
                     >
                       {isBuildAI ? (
                         <>
-                          <div className="relative w-full md:w-56 aspect-[865/587] rounded-lg overflow-hidden shrink-0 border border-purple-500/20 group">
+                          <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 p-1.5 shrink-0 flex items-center justify-center shadow-[0_2px_12px_rgba(168,85,247,0.15)] group-hover:scale-105 transition-transform">
                             <Image
-                              src="/images/hackathon-swecha-team.webp"
-                              alt="BuildAI4India Hackathon Winners"
-                              fill
-                              className="object-cover object-center filter contrast-105 group-hover:scale-105 transition-transform duration-300"
+                              src="/logos/swecha.svg"
+                              alt="Swecha Telangana"
+                              width={32}
+                              height={16}
+                              className="w-full h-full object-contain"
                             />
-                            <div className="absolute bottom-1.5 left-2 flex items-center gap-1.5 text-[10px] font-mono text-white bg-black/70 px-2 py-0.5 rounded backdrop-blur-sm border border-white/10">
-                              <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
-                              <span>1ST PLACE WINNERS</span>
-                            </div>
                           </div>
-                          <div className="space-y-2 text-left flex-1">
-                            <div className="flex items-center gap-2">
-                              <div className="w-8 h-4 shrink-0 flex items-center justify-center">
-                                <Image src="/logos/swecha.svg" alt="Swecha Telangana" width={32} height={16} className="w-full h-full object-contain" />
-                              </div>
-                              <span className="text-[10px] font-mono uppercase tracking-wider text-purple-300 px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/20">
-                                STATE CHAMPIONSHIP · BIG W
+                          <div className="space-y-1 text-left flex-1">
+                            <div className="flex items-center justify-between gap-1.5">
+                              <span className="text-[10px] font-mono uppercase tracking-wider text-purple-300 px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/20 font-semibold">
+                                1ST PLACE · STATE WINNER
                               </span>
+                              <span className="text-[10px] font-mono text-zinc-400">2025</span>
                             </div>
-                            <p className="text-xs sm:text-sm text-white font-medium leading-relaxed">
-                              {honor}
-                            </p>
-                            <p className="text-[11px] text-zinc-400 font-mono">
-                              Project: ArtYatra · Autonomous cultural art preservation engine that blew the judges away
+                            <h4 className="text-xs sm:text-sm font-semibold text-white tracking-tight">
+                              BuildAI4India Hackathon Winner
+                            </h4>
+                            <p className="text-[11px] text-zinc-400 leading-snug">
+                              Swecha Telangana · 1st Place for Project ArtYatra, an autonomous AI cultural art preservation engine.
                             </p>
                           </div>
                         </>
                       ) : isGDG ? (
                         <>
-                          <div className="w-6 h-5 shrink-0 mt-0.5 flex items-center justify-center">
-                            <Image src="/logos/gdgc-mark.svg" alt="GDGC" width={24} height={20} className="w-full h-full object-contain" />
+                          <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 p-1.5 shrink-0 flex items-center justify-center shadow-[0_2px_12px_rgba(168,85,247,0.15)] group-hover:scale-105 transition-transform">
+                            <Image
+                              src="/logos/gdgc-mark.svg"
+                              alt="GDGC"
+                              width={28}
+                              height={28}
+                              className="w-full h-full object-contain"
+                            />
                           </div>
-                          <span className="text-xs text-zinc-300 leading-relaxed font-normal">
-                            {honor}
-                          </span>
+                          <div className="space-y-1 text-left flex-1">
+                            <div className="flex items-center justify-between gap-1.5">
+                              <span className="text-[10px] font-mono uppercase tracking-wider text-[#c084fc] px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/20 font-semibold">
+                                GDGC LEAD · MLRIT
+                              </span>
+                              <span className="text-[10px] font-mono text-zinc-400">2024–25</span>
+                            </div>
+                            <h4 className="text-xs sm:text-sm font-semibold text-white tracking-tight">
+                              Technical Lead · GDGC MLRIT
+                            </h4>
+                            <p className="text-[11px] text-zinc-400 leading-snug">
+                              Google Developer Groups on Campus · Mentored student builders and architected AI/ML workshops.
+                            </p>
+                          </div>
                         </>
                       ) : (
                         <>
