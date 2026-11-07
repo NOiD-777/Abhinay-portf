@@ -46,14 +46,14 @@ export default function HeroProfile() {
             aria-hidden="true"
           />
 
-          {/* User Portrait Cutout (Brought up & enlarged with heroic swagger) */}
+          {/* User Portrait Cutout (Comic Stylized: Black & White with Red Outline) */}
           <Image
-            src="/profile-pointing.webp"
+            src="/profile-pointing-comic.webp"
             alt="Abhinay Musku"
             width={1024}
             height={973}
             priority
-            className="relative z-10 w-auto h-full object-contain object-bottom scale-[1.24] sm:scale-[1.28] origin-bottom -translate-y-8 sm:-translate-y-12 filter contrast-105 drop-shadow-[0_15px_30px_rgba(0,0,0,0.8)] select-none pointer-events-none"
+            className="relative z-10 w-auto h-full object-contain object-bottom scale-[1.24] sm:scale-[1.28] origin-bottom -translate-y-8 sm:-translate-y-12 filter drop-shadow-[0_0_25px_rgba(225,6,0,0.55)] drop-shadow-[0_15px_30px_rgba(0,0,0,0.9)] select-none pointer-events-none"
           />
         </div>
 
