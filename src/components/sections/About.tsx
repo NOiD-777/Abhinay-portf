@@ -174,7 +174,15 @@ export default function About() {
                     {/* Verified Real-World Field Photograph */}
                     {beat.image && (
                       <div className="relative mt-2 rounded-xl overflow-hidden border border-white/10 group/photo bg-black/60 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.8)]">
-                        <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] overflow-hidden">
+                        <div
+                          className={`relative w-full ${
+                            idx === 1
+                              ? "aspect-[568/660]"
+                              : idx === 0
+                              ? "aspect-[835/568]"
+                              : "aspect-[865/587]"
+                          } overflow-hidden`}
+                        >
                           <Image
                             src={beat.image}
                             alt={beat.imageCaption || beat.title}
@@ -183,7 +191,7 @@ export default function About() {
                           />
                           {/* Spider-Verse Halftone & Cinematic Gradient Vignette */}
                           <div className="absolute inset-0 halftone-dots opacity-15 pointer-events-none" />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent pointer-events-none" />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
 
                           {/* Top-Right Official Emblem */}
                           <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-black/75 backdrop-blur-md border border-white/10 text-[10px] font-mono text-zinc-300">

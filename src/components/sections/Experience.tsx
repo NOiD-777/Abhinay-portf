@@ -20,17 +20,17 @@ function JmanFieldDossier() {
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 pt-1">
       {/* Left Column: Real-World On-Site Photograph & Steve Jobs Wall Quote */}
       <div className="lg:col-span-5 relative rounded-2xl overflow-hidden border border-white/10 bg-black/60 group/jman shadow-[0_15px_35px_-10px_rgba(0,0,0,0.9)] flex flex-col justify-between">
-        <div className="relative w-full aspect-[4/5] sm:aspect-[4/4.5] lg:aspect-[4/5] overflow-hidden">
+        <div className="relative w-full aspect-[568/660] overflow-hidden">
           <Image
             src="/images/jman-abhinay.webp"
             alt="Abhinay Musku on-site at JMAN Group office with Steve Jobs quote wall"
             fill
             priority
-            className="object-cover object-top filter contrast-105 brightness-95 group-hover/jman:scale-[1.02] group-hover/jman:brightness-100 transition-all duration-500"
+            className="object-cover object-center filter contrast-105 brightness-95 group-hover/jman:scale-[1.02] group-hover/jman:brightness-100 transition-all duration-500"
           />
           {/* Halftone & Vignette Overlays */}
-          <div className="absolute inset-0 halftone-dots opacity-20 pointer-events-none" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/35 to-black/30 pointer-events-none" />
+          <div className="absolute inset-0 halftone-dots opacity-15 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
 
           {/* Top Header Telemetry & Logo */}
           <div className="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
@@ -51,25 +51,15 @@ function JmanFieldDossier() {
             </div>
           </div>
 
-          {/* Bottom Steve Jobs Quote Callout & Role Stamp */}
-          <div className="absolute bottom-3 left-3 right-3 space-y-2 text-left">
-            <div className="p-3 rounded-xl bg-black/85 backdrop-blur-md border border-white/10 space-y-1.5 shadow-[0_4px_20px_rgba(0,0,0,0.8)]">
-              <p className="text-xs sm:text-sm text-zinc-100 font-medium italic leading-snug">
-                &ldquo;If you really look closely, most overnight successes took a long time.&rdquo;
-              </p>
-              <div className="flex items-center justify-between text-[10px] font-mono pt-1 border-t border-white/10">
-                <span className="text-[#ef4444] font-semibold tracking-wider uppercase">— STEVE JOBS (FACTS ONLY)</span>
-                <span className="text-zinc-400">JMAN HEADQUARTERS</span>
-              </div>
-            </div>
-
-            <div className="flex items-center justify-between text-[10px] font-mono text-zinc-300 px-1">
-              <span className="flex items-center gap-1.5 text-[#ef4444] font-semibold">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#ef4444] animate-pulse" />
-                <span>DATA SLINGER</span>
-              </span>
-              <span className="text-zinc-400">MAY 2026 – PRESENT</span>
-            </div>
+          {/* Bottom Telemetry & Status Stamp (Clean overlay so Abhinay & Steve Jobs wall are 100% visible) */}
+          <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[10px] font-mono text-zinc-300">
+            <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-black/85 backdrop-blur-md border border-white/10 text-[#ef4444] font-semibold">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#ef4444] animate-pulse" />
+              <span>DATA SLINGER · JMAN FORGE</span>
+            </span>
+            <span className="px-2.5 py-1 rounded-md bg-black/85 backdrop-blur-md border border-white/10 text-zinc-400">
+              MAY 2026 – PRESENT
+            </span>
           </div>
         </div>
       </div>

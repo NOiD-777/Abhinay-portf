@@ -82,7 +82,7 @@ export default function Education() {
                     >
                       {isBuildAI ? (
                         <>
-                          <div className="relative w-full md:w-56 aspect-[16/10] rounded-lg overflow-hidden shrink-0 border border-purple-500/20 group">
+                          <div className="relative w-full md:w-56 aspect-[865/587] rounded-lg overflow-hidden shrink-0 border border-purple-500/20 group">
                             <Image
                               src="/images/hackathon-swecha-team.webp"
                               alt="BuildAI4India Hackathon Winners"
