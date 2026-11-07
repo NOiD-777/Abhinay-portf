@@ -142,7 +142,7 @@ export default function Education() {
                   <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-pulse" />
                   <span>VERIFIED LICENSES // SMART INTERVIEWS &amp; NPTEL</span>
                 </p>
-                <span className="text-[10px] font-mono text-zinc-500 uppercase">OFFICIAL CREDENTIALS</span>
+                <span className="text-[10px] font-mono text-zinc-500 uppercase">VERIFIED CREDENTIALS</span>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

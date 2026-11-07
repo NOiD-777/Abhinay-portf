@@ -41,7 +41,7 @@ import { VscAzure } from "react-icons/vsc";
 import { TbBrandCSharp, TbBrandCss3, TbApi } from "react-icons/tb";
 import { Brain, Sparkles, Database } from "lucide-react";
 
-/** Official Delta Lake SVG */
+/** Delta Lake SVG */
 export function DeltaLakeLogo({ className = "w-4 h-4" }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
@@ -51,7 +51,7 @@ export function DeltaLakeLogo({ className = "w-4 h-4" }: { className?: string })
   );
 }
 
-/** Official Power BI SVG */
+/** Power BI SVG */
 export function PowerBILogo({ className = "w-4 h-4" }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
@@ -62,7 +62,7 @@ export function PowerBILogo({ className = "w-4 h-4" }: { className?: string }) {
   );
 }
 
-/** Official Matplotlib SVG */
+/** Matplotlib SVG */
 export function MatplotlibLogo({ className = "w-4 h-4" }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>

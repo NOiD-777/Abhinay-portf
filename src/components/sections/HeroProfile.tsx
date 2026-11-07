@@ -56,7 +56,7 @@ export default function HeroProfile() {
           />
         </div>
 
-        {/* Floating Status Pill with Official JMAN Group Vector Logo — Antigravity Levitation */}
+        {/* Floating Status Pill with JMAN Group Logo — Antigravity Levitation */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -66,7 +66,7 @@ export default function HeroProfile() {
           <div className="relative w-14 h-6 shrink-0 flex items-center justify-center">
             <Image
               src="/logos/jman-logo.svg"
-              alt="JMAN Group Official Logo"
+              alt="JMAN Group"
               width={56}
               height={24}
               className="w-full h-full object-contain"

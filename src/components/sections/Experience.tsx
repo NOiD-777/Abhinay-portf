@@ -310,7 +310,7 @@ export default function Experience() {
                         <div className="w-20 h-9 rounded-lg bg-white/5 border border-white/10 px-2 py-1 shrink-0 flex items-center justify-center">
                           <Image
                             src="/logos/jman-logo.svg"
-                            alt="JMAN Group Official Logo"
+                            alt="JMAN Group"
                             width={72}
                             height={32}
                             className="w-full h-full object-contain"
@@ -320,7 +320,7 @@ export default function Experience() {
                         <div className="w-9 h-9 rounded-lg overflow-hidden border border-purple-500/30 p-0.5 shrink-0 flex items-center justify-center shadow-[0_0_12px_rgba(168,85,247,0.25)] bg-[#0e1b2f]">
                           <Image
                             src="/logos/aiaxiss.webp"
-                            alt="AI AXISS INC Official Logo"
+                            alt="AI AXISS INC"
                             width={36}
                             height={36}
                             className="w-full h-full object-contain rounded-md"
@@ -330,7 +330,7 @@ export default function Experience() {
                         <div className="w-24 sm:w-28 h-9 rounded-lg bg-white/95 border border-white/20 px-2 py-1 shrink-0 flex items-center justify-center shadow-[0_2px_12px_rgba(255,255,255,0.12)]">
                           <Image
                             src="/logos/brihaspathi.webp"
-                            alt="Brihaspathi Technologies Limited Official Logo"
+                            alt="Brihaspathi Technologies Limited"
                             width={100}
                             height={28}
                             className="w-full h-full object-contain"

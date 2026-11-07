@@ -93,7 +93,7 @@ export default function About() {
               </div>
             </div>
 
-            {/* Quick Metadata with Real Brand Vector Logos */}
+            {/* Quick Metadata */}
             <div className="w-full max-w-sm flex flex-col gap-2 text-xs text-zinc-400">
               <div className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-lg border border-white/5 bg-[#09090b]">
                 <div className="w-14 h-4 shrink-0 flex items-center justify-center">
@@ -202,7 +202,7 @@ export default function About() {
                           <div className="absolute inset-0 halftone-dots opacity-15 pointer-events-none" />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
 
-                          {/* Top-Right Official Emblem */}
+                          {/* Top-Right Emblem */}
                           <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-black/75 backdrop-blur-md border border-white/10 text-[10px] font-mono text-zinc-300">
                             {idx === 0 ? (
                               <>

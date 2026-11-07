@@ -56,23 +56,23 @@ export default function Skills() {
         <div className="flex flex-col items-start gap-2 text-left">
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
             <span className="text-[#00f0ff]">//</span>
-            <span>SYSTEMS &amp; TOOLING // OFFICIAL ARSENAL</span>
+            <span>SYSTEMS &amp; TOOLING // CORE ARSENAL</span>
           </p>
           <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
             WHAT&apos;S IN THE ARSENAL
           </h2>
           <p className="text-zinc-300 text-sm sm:text-base max-w-prose font-normal leading-relaxed">
-            Every technology in my arsenal, backed by production code and battle-tested pipelines. Featuring official vector emblems for every stack from my dossier.
+            Every technology in my arsenal, backed by production code and battle-tested pipelines across cloud, AI, and distributed systems.
           </p>
         </div>
 
-        {/* Continuous Official Tech Stack Reel */}
+        {/* Continuous Tech Stack Reel */}
         <div className="relative w-full overflow-hidden rounded-2xl bg-black/60 border border-white/10 p-3.5 backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.8)]">
           <div className="flex items-center gap-2 pb-2.5 px-2 border-b border-white/5 text-[10px] font-mono uppercase tracking-widest text-zinc-400">
             <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-ping" />
             <span className="text-white font-semibold">VERIFIED PRODUCTION STACKS</span>
             <span className="text-zinc-600">//</span>
-            <span className="text-zinc-400">OFFICIAL LOGOS DIRECT FROM DOSSIER</span>
+            <span className="text-zinc-400">TECH STACK DIRECT FROM DOSSIER</span>
           </div>
 
           <div className="flex flex-wrap items-center gap-2 pt-2.5">
@@ -234,7 +234,7 @@ export default function Skills() {
                   </div>
                 </div>
 
-                {/* Skills Badges with Official Vector Tech Logos */}
+                {/* Skills Badges with Tech Logos */}
                 <div className="flex flex-wrap gap-2 pt-3 border-t border-white/5">
                   {category.skills.map((skill) => (
                     <span
