@@ -11,10 +11,10 @@ const AFFILIATIONS = [
     logo: "/logos/jman-logo.svg",
   },
   {
-    name: "Google Developer Groups",
+    name: "GDGC MLRIT",
     role: "Technical Lead",
     type: "Leadership",
-    logo: "/logos/gdg-mark.svg",
+    logo: "/logos/gdgc-mark.svg",
   },
   {
     name: "MLRIT",
@@ -39,12 +39,6 @@ const AFFILIATIONS = [
     role: "Cloud & Vertex AI",
     type: "Cloud Platform",
     logo: "/logos/google-cloud-clean.svg",
-  },
-  {
-    name: "Microsoft Azure",
-    role: "Enterprise Data Stack",
-    type: "Cloud Infrastructure",
-    logo: "/logos/azure-clean.svg",
   },
 ];
 
