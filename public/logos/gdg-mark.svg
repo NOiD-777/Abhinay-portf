@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 52" fill="none">
+  <!-- Left Bracket < -->
+  <path d="M22.5 7.5L6.8 23.2C5.7 24.3 5.7 26.1 6.8 27.2L22.5 42.9" stroke="#4285F4" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14.6 35L6.8 27.2C5.7 26.1 5.7 24.3 6.8 23.2" stroke="#34A853" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Center Slash / -->
+  <line x1="31" y1="44" x2="41" y2="6" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round"/>
+
+  <!-- Right Bracket > -->
+  <path d="M49.5 7.5L65.2 23.2C66.3 24.3 66.3 26.1 65.2 27.2L49.5 42.9" stroke="#EA4335" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M57.4 35L65.2 27.2C66.3 26.1 66.3 24.3 65.2 23.2" stroke="#FBBC05" stroke-width="7" stroke-linecap="round"/>
+</svg>

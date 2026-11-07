@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 48" fill="none">
+  <!-- Databricks 4-Tier Red Chevron Stack -->
+  <g transform="translate(4, 6)">
+    <!-- Layer 1 (top) -->
+    <path d="M18 4L28 9.5L18 15L8 9.5L18 4Z" fill="#FF3621"/>
+    <!-- Layer 2 -->
+    <path d="M18 11.5L28 17L18 22.5L8 17L18 11.5Z" fill="#FF3621" opacity="0.85"/>
+    <!-- Layer 3 -->
+    <path d="M18 19L28 24.5L18 30L8 24.5L18 19Z" fill="#FF3621" opacity="0.7"/>
+    <!-- Layer 4 (bottom) -->
+    <path d="M18 26.5L28 32L18 37.5L8 32L18 26.5Z" fill="#FF3621" opacity="0.55"/>
+  </g>
+  <!-- Databricks Wordmark -->
+  <text x="44" y="29" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" letter-spacing="-0.03em">databricks</text>
+</svg>

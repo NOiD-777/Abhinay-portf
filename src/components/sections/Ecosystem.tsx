@@ -8,43 +8,37 @@ const AFFILIATIONS = [
     name: "JMAN Group",
     role: "Data Engineer",
     type: "Current Employer",
-    logo: "/logos/jman.png",
-    isPng: true,
+    logo: "/logos/jman-logo.svg",
   },
   {
     name: "Google Developer Groups",
     role: "Technical Lead",
     type: "Leadership",
-    logo: "/logos/gdg.svg",
-    isPng: false,
+    logo: "/logos/gdg-mark.svg",
   },
   {
     name: "MLRIT",
     role: "B.E. Information Technology",
     type: "Alma Mater",
     logo: "/logos/mlrit.svg",
-    isPng: false,
   },
   {
     name: "Databricks",
     role: "Lakehouse & PySpark",
     type: "Core Tech",
-    logo: "/logos/databricks.png",
-    isPng: true,
+    logo: "/logos/databricks.svg",
   },
   {
     name: "Google Cloud",
     role: "Cloud & Vertex AI",
     type: "Cloud Platform",
-    logo: "/logos/google-cloud.svg",
-    isPng: false,
+    logo: "/logos/google-cloud-clean.svg",
   },
   {
     name: "Microsoft Azure",
     role: "Enterprise Data Stack",
     type: "Cloud Infrastructure",
-    logo: "/logos/azure.svg",
-    isPng: false,
+    logo: "/logos/azure-clean.svg",
   },
 ];
 
@@ -72,12 +66,12 @@ export default function Ecosystem() {
               transition={{ duration: 0.3, delay: idx * 0.05 }}
               className="spider-panel rounded-xl p-4 flex flex-col items-center justify-center text-center gap-2.5 group"
             >
-              <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 p-1.5 flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+              <div className="w-20 h-10 rounded-lg bg-white/5 border border-white/10 px-2.5 py-1.5 flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
                 <Image
                   src={item.logo}
                   alt={item.name}
-                  width={36}
-                  height={36}
+                  width={72}
+                  height={32}
                   className="w-full h-full object-contain filter contrast-110"
                 />
               </div>
@@ -97,3 +91,4 @@ export default function Ecosystem() {
     </section>
   );
 }
+

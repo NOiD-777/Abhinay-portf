@@ -45,11 +45,11 @@ export default function Experience() {
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-3">
                 <div className="flex items-center gap-3">
                   {exp.company.includes("JMAN") ? (
-                    <div className="w-8 h-8 rounded-lg overflow-hidden bg-white/5 border border-white/10 p-1 shrink-0 flex items-center justify-center">
+                    <div className="w-20 h-9 rounded-lg bg-white/5 border border-white/10 px-2 py-1 shrink-0 flex items-center justify-center">
                       <Image
-                        src="/logos/jman.png"
-                        alt="JMAN Group"
-                        width={32}
+                        src="/logos/jman-logo.svg"
+                        alt="JMAN Group Official Logo"
+                        width={72}
                         height={32}
                         className="w-full h-full object-contain"
                       />

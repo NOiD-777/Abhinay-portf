@@ -41,23 +41,23 @@ export default function HeroProfile() {
           />
         </div>
 
-        {/* Floating Status Pill with Official JMAN Group Logo */}
+        {/* Floating Status Pill with Official JMAN Group Vector Logo */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="absolute -bottom-3 left-4 sm:left-6 flex items-center gap-3 px-3.5 py-2 rounded-xl bg-[#09090b] border border-white/10 shadow-2xl spider-glitch-hover"
+          className="absolute -bottom-3 left-4 sm:left-6 flex items-center gap-3 px-4 py-2.5 rounded-xl bg-[#09090b] border border-white/10 shadow-2xl spider-glitch-hover"
         >
-          <div className="relative w-8 h-8 rounded-lg overflow-hidden bg-white/5 border border-white/10 p-1 shrink-0 flex items-center justify-center">
+          <div className="relative w-14 h-6 shrink-0 flex items-center justify-center">
             <Image
-              src="/logos/jman.png"
-              alt="JMAN Group"
-              width={32}
-              height={32}
+              src="/logos/jman-logo.svg"
+              alt="JMAN Group Official Logo"
+              width={56}
+              height={24}
               className="w-full h-full object-contain"
             />
           </div>
-          <div className="text-left">
+          <div className="text-left border-l border-white/10 pl-2.5">
             <p className="text-xs font-semibold text-white tracking-tight flex items-center gap-1.5">
               <span>Abhinay Musku</span>
               <span className="text-[10px] text-[#00f0ff] font-mono">// 1610</span>
@@ -66,19 +66,19 @@ export default function HeroProfile() {
           </div>
         </motion.div>
 
-        {/* Floating Leadership Pill with Official GDG Logo */}
+        {/* Floating Leadership Pill with Official GDG Vector Logo */}
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="absolute -top-3 right-4 sm:right-6 hidden sm:flex items-center gap-2.5 px-3.5 py-1.5 rounded-xl bg-[#140824] border border-[#3b0764] shadow-[-2px_0_0_rgba(0,240,255,0.3),2px_0_0_rgba(174,4,13,0.5)] text-[11px] font-mono text-purple-200 spider-glitch-hover"
+          className="absolute -top-3 right-4 sm:right-6 hidden sm:flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-[#140824] border border-[#3b0764] shadow-[-2px_0_0_rgba(0,240,255,0.3),2px_0_0_rgba(174,4,13,0.5)] text-[11px] font-mono text-purple-200 spider-glitch-hover"
         >
-          <div className="relative w-5 h-5 shrink-0 flex items-center justify-center">
+          <div className="relative w-6 h-4 shrink-0 flex items-center justify-center">
             <Image
-              src="/logos/gdg.svg"
-              alt="Google Developer Groups"
-              width={20}
-              height={20}
+              src="/logos/gdg-mark.svg"
+              alt="Google Developer Groups Official Logo"
+              width={24}
+              height={16}
               className="w-full h-full object-contain"
             />
           </div>

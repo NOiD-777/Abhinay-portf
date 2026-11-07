@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Mail,
   Phone,
@@ -143,6 +144,30 @@ export default function Contact() {
                   <span>LinkedIn</span>
                 </Link>
               </div>
+            </div>
+
+            {/* Creation Motif — Human Agency × AI */}
+            <div className="relative rounded-2xl p-6 border border-white/5 bg-[#09090b] overflow-hidden group spider-panel">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-[10px] font-mono uppercase tracking-widest text-[#ae040d]">
+                  // HUMAN AGENCY × AI
+                </span>
+                <span className="text-[10px] font-mono text-zinc-500">
+                  LEAP OF FAITH
+                </span>
+              </div>
+              <div className="relative w-full h-32 rounded-xl overflow-hidden bg-black flex items-center justify-center border border-white/5">
+                <Image
+                  src="/images/creation-adam-red.png"
+                  alt="Creation of Adam — Blood Red & Black"
+                  width={285}
+                  height={205}
+                  className="w-full h-full object-contain filter drop-shadow-[0_0_12px_rgba(174,4,13,0.35)] group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <p className="mt-3 text-xs text-zinc-400 font-normal leading-relaxed">
+                Engineering autonomous agents and enterprise data systems where human intuition sparks artificial intelligence.
+              </p>
             </div>
           </div>
 

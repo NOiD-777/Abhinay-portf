@@ -75,12 +75,12 @@ export default function Education() {
                       className="p-3.5 rounded-lg bg-[#12081f] border border-[#2e0e47]/60 flex items-start gap-2.5 spider-panel"
                     >
                       {isGDG ? (
-                        <div className="w-4 h-4 shrink-0 mt-0.5">
-                          <Image src="/logos/gdg.svg" alt="GDG" width={16} height={16} className="w-full h-full object-contain" />
+                        <div className="w-5 h-5 shrink-0 mt-0.5 flex items-center justify-center">
+                          <Image src="/logos/gdg-mark.svg" alt="GDG" width={20} height={20} className="w-full h-full object-contain" />
                         </div>
                       ) : isBuildAI ? (
-                        <div className="w-4 h-4 shrink-0 mt-0.5">
-                          <Image src="/logos/google-cloud.svg" alt="Google Cloud" width={16} height={16} className="w-full h-full object-contain" />
+                        <div className="w-5 h-5 shrink-0 mt-0.5 flex items-center justify-center">
+                          <Image src="/logos/google-cloud-clean.svg" alt="Google Cloud" width={20} height={20} className="w-full h-full object-contain" />
                         </div>
                       ) : (
                         <span className="w-1.5 h-1.5 rounded-full bg-[#a855f7] shrink-0 mt-1.5" />
@@ -102,28 +102,42 @@ export default function Education() {
             Verified Certifications
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {certifications.map((cert, cIdx) => (
-              <motion.div
-                key={cIdx}
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.35, delay: cIdx * 0.08 }}
-                className="rounded-xl p-5 border border-white/5 bg-[#09090b] flex items-start justify-between gap-4"
-              >
-                <div className="space-y-1">
-                  <h4 className="text-sm font-semibold text-white">
-                    {cert.name}
-                  </h4>
-                  <p className="text-xs text-zinc-400 font-normal">
-                    {cert.issuer} · {cert.year}
-                  </p>
-                </div>
-                <span className="text-[10px] font-mono text-zinc-400 px-2 py-0.5 rounded bg-white/5 shrink-0">
-                  {cert.badgeText}
-                </span>
-              </motion.div>
-            ))}
+            {certifications.map((cert, cIdx) => {
+              const isGCP = cert.issuer.toLowerCase().includes("nptel") || cert.name.toLowerCase().includes("google cloud");
+              return (
+                <motion.div
+                  key={cIdx}
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.35, delay: cIdx * 0.08 }}
+                  className="rounded-xl p-5 border border-white/5 bg-[#09090b] flex items-start justify-between gap-4 spider-panel"
+                >
+                  <div className="flex items-start gap-3.5">
+                    {isGCP ? (
+                      <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 p-1.5 shrink-0 flex items-center justify-center">
+                        <Image src="/logos/google-cloud-clean.svg" alt="Google Cloud" width={24} height={24} className="w-full h-full object-contain" />
+                      </div>
+                    ) : (
+                      <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 p-1.5 shrink-0 flex items-center justify-center font-mono text-[11px] text-[#ae040d] font-bold">
+                        &lt;/&gt;
+                      </div>
+                    )}
+                    <div className="space-y-1">
+                      <h4 className="text-sm font-semibold text-white">
+                        {cert.name}
+                      </h4>
+                      <p className="text-xs text-zinc-400 font-normal">
+                        {cert.issuer} · {cert.year}
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-[10px] font-mono text-zinc-400 px-2 py-0.5 rounded bg-white/5 shrink-0">
+                    {cert.badgeText}
+                  </span>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </div>

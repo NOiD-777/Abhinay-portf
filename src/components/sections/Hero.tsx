@@ -70,11 +70,11 @@ export default function Hero() {
             <div>
               <p className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Current</p>
               <div className="flex items-center gap-2 mt-1">
-                <div className="w-5 h-5 rounded overflow-hidden bg-white/5 p-0.5 shrink-0 flex items-center justify-center">
+                <div className="w-10 h-5 shrink-0 flex items-center justify-center">
                   <Image
-                    src="/logos/jman.png"
+                    src="/logos/jman-logo.svg"
                     alt="JMAN Group"
-                    width={20}
+                    width={40}
                     height={20}
                     className="w-full h-full object-contain"
                   />
@@ -87,12 +87,12 @@ export default function Hero() {
             <div>
               <p className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Leadership</p>
               <div className="flex items-center gap-2 mt-1">
-                <div className="w-5 h-5 shrink-0 flex items-center justify-center">
+                <div className="w-5 h-4 shrink-0 flex items-center justify-center">
                   <Image
-                    src="/logos/gdg.svg"
-                    alt="GDG"
+                    src="/logos/gdg-mark.svg"
+                    alt="Google Developer Groups"
                     width={20}
-                    height={20}
+                    height={16}
                     className="w-full h-full object-contain"
                   />
                 </div>
@@ -106,10 +106,10 @@ export default function Hero() {
               <div className="flex items-center gap-2 mt-1">
                 <div className="w-5 h-5 shrink-0 flex items-center justify-center">
                   <Image
-                    src="/logos/google-cloud.svg"
+                    src="/logos/google-cloud-clean.svg"
                     alt="Google Cloud"
-                    width={18}
-                    height={18}
+                    width={20}
+                    height={20}
                     className="w-full h-full object-contain"
                   />
                 </div>
