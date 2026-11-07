@@ -31,9 +31,9 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-40 flex justify-center px-4 pt-4 sm:pt-6 transition-all duration-300">
       <nav
-        className={`w-full max-w-6xl mx-auto flex items-center justify-between px-5 py-3 rounded-xl transition-all duration-200 ${
+        className={`w-full max-w-6xl mx-auto flex items-center justify-between px-5 py-3 rounded-2xl transition-all duration-300 ${
           scrolled
-            ? "bg-black/90 backdrop-blur-md border border-white/10 shadow-lg"
+            ? "bg-black/80 backdrop-blur-xl border border-white/10 shadow-[0_12px_32px_-8px_rgba(0,0,0,0.8),inset_0_1px_0_0_rgba(255,255,255,0.08)]"
             : "bg-transparent border border-transparent"
         }`}
       >

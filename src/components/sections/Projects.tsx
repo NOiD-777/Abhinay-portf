@@ -32,16 +32,16 @@ export default function Projects() {
           </p>
         </div>
 
-        {/* Filter Tabs */}
+        {/* Filter Tabs with Antigravity Glass */}
         <div className="flex flex-wrap gap-2">
           {projectCategories.map((cat) => (
             <button
               key={cat.id}
               onClick={() => setActiveCategory(cat.id)}
-              className={`px-3.5 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+              className={`px-4 py-2 rounded-xl text-xs font-medium transition-all duration-200 ${
                 activeCategory === cat.id
-                  ? "bg-[#ae040d] text-white"
-                  : "bg-[#0c0c0e] text-zinc-400 hover:text-white border border-white/5"
+                  ? "bg-[#ae040d] text-white shadow-[0_0_15px_rgba(174,4,13,0.5)]"
+                  : "bg-[#0c0c0e]/80 text-zinc-400 hover:text-white border border-white/5 hover:border-white/15"
               }`}
             >
               {cat.label}
@@ -62,7 +62,7 @@ export default function Projects() {
                 delay: idx * 0.07,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="spider-panel rounded-2xl p-7 flex flex-col justify-between gap-6 text-left group overflow-hidden"
+              className="antigravity-card rounded-2xl p-7 sm:p-8 flex flex-col justify-between gap-6 text-left group overflow-hidden"
             >
               {/* Subtle Comic Halftone Texture */}
               <div className="absolute inset-0 halftone-dots opacity-20 group-hover:opacity-35 transition-opacity duration-300 pointer-events-none" />

@@ -90,10 +90,10 @@ export default function Skills() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.4, delay: idx * 0.06, ease: [0.16, 1, 0.3, 1] }}
-                className={`relative rounded-xl p-6 border bg-[#09090b] flex flex-col justify-between gap-6 text-left transition-all duration-200 group overflow-hidden ${
+                className={`relative rounded-2xl p-6 antigravity-card flex flex-col justify-between gap-6 text-left group overflow-hidden ${
                   isPurple
-                    ? "border-white/5 hover:border-[#3b0764] hover:bg-[#0c0715] hover:shadow-[-2px_0_0_rgba(168,85,247,0.35)]"
-                    : "border-white/5 hover:border-[#ae040d]/50 hover:bg-[#0f0709] hover:shadow-[-2px_0_0_rgba(0,240,255,0.3),2px_0_0_rgba(174,4,13,0.4)]"
+                    ? "hover:border-[#a855f7]/60 hover:shadow-[-2px_0_0_rgba(168,85,247,0.4)]"
+                    : "hover:border-[#ae040d]/60 hover:shadow-[-2px_0_0_rgba(0,240,255,0.35),2px_0_0_rgba(174,4,13,0.5)]"
                 }`}
               >
                 <div className="space-y-3">

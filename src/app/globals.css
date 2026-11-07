@@ -136,3 +136,83 @@ body {
 .tabular-data {
   font-variant-numeric: tabular-nums;
 }
+
+/* =========================================================================
+   Antigravity Design: Spatial Depth, Glassmorphism & Weightless Levitation
+   ========================================================================= */
+
+/* Spatial 3D Perspective Context */
+.perspective-container {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
+/* Weightless Antigravity Floating Surface with Deep Shadow & Rim Specular */
+.antigravity-card {
+  background: rgba(9, 9, 11, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    0 10px 30px -10px rgba(0, 0, 0, 0.8),
+    0 20px 40px -15px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.antigravity-card:hover {
+  transform: translateY(-4px) scale(1.008);
+  border-color: rgba(174, 4, 13, 0.55);
+  box-shadow: 
+    0 20px 40px -15px rgba(0, 0, 0, 0.9),
+    -2px 0 0 rgba(0, 240, 255, 0.35),
+    2px 0 0 rgba(174, 4, 13, 0.6),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+}
+
+/* Weightless Levitating Float Animation (Smooth Organic Antigravity) */
+@keyframes antigravity-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.4deg);
+  }
+}
+
+@keyframes antigravity-float-delayed {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(-0.5deg);
+  }
+}
+
+.antigravity-float {
+  animation: antigravity-float 6s ease-in-out infinite;
+}
+
+.antigravity-float-delayed {
+  animation: antigravity-float-delayed 7s ease-in-out infinite;
+  animation-delay: -3s;
+}
+
+/* Glassmorphism Pill */
+.antigravity-glass {
+  background: rgba(9, 9, 11, 0.8);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.7), inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Disabled for users with reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .antigravity-float,
+  .antigravity-float-delayed {
+    animation: none !important;
+  }
+}

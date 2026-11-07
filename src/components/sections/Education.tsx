@@ -30,7 +30,7 @@ export default function Education() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.45 }}
-            className="rounded-2xl p-7 border border-white/5 bg-[#09090b] space-y-5 text-left"
+            className="antigravity-card rounded-2xl p-7 sm:p-8 space-y-5 text-left"
           >
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/5 pb-4">
               <div className="flex items-center gap-3.5">
@@ -115,7 +115,7 @@ export default function Education() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.35, delay: cIdx * 0.08 }}
-                  className="rounded-xl p-5 border border-white/5 bg-[#09090b] flex items-start justify-between gap-4 spider-panel"
+                  className="antigravity-card rounded-xl p-5 flex items-start justify-between gap-4"
                 >
                   <div className="flex items-start gap-3.5">
                     {isGCP ? (

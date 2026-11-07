@@ -49,12 +49,12 @@ export default function HeroProfile() {
           />
         </div>
 
-        {/* Floating Status Pill with Official JMAN Group Vector Logo */}
+        {/* Floating Status Pill with Official JMAN Group Vector Logo — Antigravity Levitation */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="absolute -bottom-3 left-4 sm:left-6 flex items-center gap-3 px-4 py-2.5 rounded-xl bg-[#09090b] border border-white/10 shadow-2xl spider-glitch-hover"
+          className="absolute -bottom-3 left-4 sm:left-6 flex items-center gap-3 px-4 py-2.5 rounded-xl antigravity-glass spider-glitch-hover antigravity-float z-20"
         >
           <div className="relative w-14 h-6 shrink-0 flex items-center justify-center">
             <Image
@@ -74,12 +74,12 @@ export default function HeroProfile() {
           </div>
         </motion.div>
 
-        {/* Floating Leadership Pill with Official GDG Vector Logo */}
+        {/* Floating Leadership Pill with Official GDG Vector Logo — Antigravity Levitation */}
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="absolute -top-3 right-4 sm:right-6 hidden sm:flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-[#140824] border border-[#3b0764] shadow-[-2px_0_0_rgba(0,240,255,0.3),2px_0_0_rgba(174,4,13,0.5)] text-[11px] font-mono text-purple-200 spider-glitch-hover"
+          className="absolute -top-3 right-4 sm:right-6 hidden sm:flex items-center gap-2.5 px-3.5 py-2 rounded-xl antigravity-glass border border-[#3b0764]/70 shadow-[-2px_0_0_rgba(0,240,255,0.3),2px_0_0_rgba(174,4,13,0.5)] text-[11px] font-mono text-purple-200 spider-glitch-hover antigravity-float-delayed z-20"
         >
           <div className="relative w-6 h-4 shrink-0 flex items-center justify-center">
             <Image
@@ -90,7 +90,7 @@ export default function HeroProfile() {
               className="w-full h-full object-contain"
             />
           </div>
-          <span>GDG LEAD · MLRIT</span>
+          <span className="font-bebas text-sm tracking-wider">GDG LEAD · MLRIT</span>
         </motion.div>
       </motion.div>
     </div>

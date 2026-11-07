@@ -34,8 +34,8 @@ export default function About() {
             transition={{ duration: 0.5 }}
             className="lg:col-span-5 flex flex-col items-center gap-5"
           >
-            {/* Comic Cover Dossier Box */}
-            <div className="relative w-full max-w-sm rounded-2xl overflow-hidden border border-white/10 bg-[#09090b] shadow-[-3px_0_0_rgba(0,240,255,0.35),3px_0_0_rgba(174,4,13,0.55)] group">
+            {/* Comic Cover Dossier Box with Antigravity Elevation */}
+            <div className="relative w-full max-w-sm rounded-2xl overflow-hidden antigravity-card shadow-[0_20px_40px_-15px_rgba(0,0,0,0.9),-3px_0_0_rgba(0,240,255,0.35),3px_0_0_rgba(174,4,13,0.55)] group">
               {/* Halftone Comic Dots Pattern */}
               <div className="absolute inset-0 halftone-dots-spider opacity-25 pointer-events-none" />
 
@@ -148,7 +148,7 @@ export default function About() {
                       delay: idx * 0.09,
                       ease: [0.16, 1, 0.3, 1],
                     }}
-                    className={`relative rounded-xl p-5 border border-white/5 bg-[#09090b] space-y-2.5 transition-all duration-200 spider-panel ${panelBorder} group`}
+                    className={`relative rounded-2xl p-6 antigravity-card space-y-3 group ${panelBorder}`}
                   >
                     <div className="absolute inset-0 halftone-dots opacity-0 group-hover:opacity-20 transition-opacity duration-300 pointer-events-none rounded-xl" />
                     {/* Chapter Header */}

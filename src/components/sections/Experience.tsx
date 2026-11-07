@@ -85,7 +85,7 @@ export default function Experience() {
                 {exp.roles.map((role, roleIdx) => (
                   <div
                     key={roleIdx}
-                    className="spider-panel rounded-xl p-6 border border-white/5 bg-[#09090b] space-y-4"
+                    className="antigravity-card rounded-2xl p-6 sm:p-7 space-y-4"
                   >
                     <div className="flex flex-wrap items-center justify-between gap-2">
                       <div className="flex items-center gap-2.5">

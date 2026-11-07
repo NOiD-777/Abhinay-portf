@@ -99,7 +99,7 @@ export default function Contact() {
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-5 space-y-4"
           >
-            <div className="rounded-2xl p-6 border border-white/5 bg-[#09090b] space-y-4">
+            <div className="antigravity-card rounded-2xl p-6 space-y-4">
               <h3 className="text-sm font-semibold text-white uppercase tracking-wider font-mono">
                 Direct Communication
               </h3>
@@ -138,7 +138,7 @@ export default function Contact() {
             </div>
 
             {/* Socials Card */}
-            <div className="rounded-2xl p-6 border border-white/5 bg-[#09090b] space-y-3">
+            <div className="antigravity-card rounded-2xl p-6 space-y-3">
               <h4 className="text-xs font-semibold text-zinc-400 font-mono uppercase tracking-wider">
                 Networks
               </h4>
@@ -218,7 +218,7 @@ export default function Contact() {
           >
             <form
               onSubmit={handleSubmit}
-              className="rounded-2xl p-7 sm:p-8 border border-white/5 bg-[#09090b] space-y-5"
+              className="antigravity-card rounded-2xl p-7 sm:p-8 space-y-5"
             >
               <h3 className="font-bebas text-2xl text-white tracking-wide">SEND A MESSAGE</h3>
 
