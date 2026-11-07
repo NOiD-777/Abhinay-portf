@@ -8,8 +8,6 @@ export default function SpiderDoodleArrow() {
     startY: number;
     endX: number;
     endY: number;
-    midX: number;
-    midY: number;
     isMobile: boolean;
     visible: boolean;
   }>({
@@ -17,8 +15,6 @@ export default function SpiderDoodleArrow() {
     startY: 0,
     endX: 0,
     endY: 0,
-    midX: 0,
-    midY: 0,
     isMobile: false,
     visible: false,
   });
@@ -58,17 +54,11 @@ export default function SpiderDoodleArrow() {
         startY = nameRect.top - svgRect.top + 8;
       }
 
-      // Midpoint along the flight path for the comic energy action lines
-      const midX = isMobile ? (startX + endX) / 2 + 10 : (startX + endX) / 2;
-      const midY = isMobile ? (startY + endY) / 2 : Math.min(startY, endY) - 32;
-
       setCoords({
         startX,
         startY,
         endX,
         endY,
-        midX,
-        midY,
         isMobile,
         visible: true,
       });
@@ -101,7 +91,7 @@ export default function SpiderDoodleArrow() {
     );
   }
 
-  const { startX, startY, endX, endY, midX, midY, isMobile } = coords;
+  const { startX, startY, endX, endY, isMobile } = coords;
   const dx = endX - startX;
   const dy = endY - startY;
 
@@ -218,16 +208,6 @@ export default function SpiderDoodleArrow() {
         strokeLinejoin="round"
         filter="url(#spider-arrow-glow)"
       />
-
-      {/* Comic Energy Action Ticks (//) along the curve */}
-      <g
-        transform={`translate(${midX}, ${midY + (isMobile ? 0 : 14)}) ${isMobile ? "scale(0.85)" : ""}`}
-        opacity="0.9"
-      >
-        <line x1="-12" y1="0" x2="-6" y2="-8" stroke="#00f0ff" strokeWidth="2.2" strokeLinecap="round" />
-        <line x1="-4" y1="2" x2="2" y2="-6" stroke="#ae040d" strokeWidth="2.4" strokeLinecap="round" />
-        <line x1="4" y1="4" x2="10" y2="-4" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" />
-      </g>
     </svg>
   );
 }
