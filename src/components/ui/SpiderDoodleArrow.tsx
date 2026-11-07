@@ -39,9 +39,9 @@ export default function SpiderDoodleArrow() {
       const startX = nameRect.right - svgRect.left - (nameRect.width > 200 ? 35 : 10);
       const startY = nameRect.top - svgRect.top + 8;
 
-      // End directly at the left edge of Abhinay's face in the cutout portrait
-      const endX = faceRect.left - svgRect.left + 2;
-      const endY = faceRect.top - svgRect.top + 4;
+      // End directly at the target anchor on Abhinay's head
+      const endX = faceRect.left - svgRect.left + faceRect.width / 2;
+      const endY = faceRect.top - svgRect.top + faceRect.height / 2;
 
       // Midpoint along the flight path for the comic sticker badge
       const midX = (startX + endX) / 2;

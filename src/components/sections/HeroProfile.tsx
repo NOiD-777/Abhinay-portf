@@ -24,10 +24,10 @@ export default function HeroProfile() {
         className="relative z-10 w-full flex flex-col items-center"
       >
         {/* Cutout Portrait Image with Charminar Architectural Emblem in Background */}
-        <div className="relative w-[300px] sm:w-[360px] lg:w-[420px] h-[400px] sm:h-[460px] lg:h-[520px] flex items-end justify-center overflow-hidden">
+        <div className="relative w-[320px] sm:w-[380px] lg:w-[440px] h-[420px] sm:h-[480px] lg:h-[540px] flex items-end justify-center overflow-hidden">
           {/* Front-Facing Charminar Architectural Emblem Behind User */}
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none -translate-y-6 z-0">
-            <div className="relative w-[290px] sm:w-[350px] lg:w-[390px] h-[350px] sm:h-[420px] lg:h-[470px] opacity-75 sm:opacity-90">
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none -translate-y-8 z-0">
+            <div className="relative w-[280px] sm:w-[340px] lg:w-[380px] h-[340px] sm:h-[400px] lg:h-[450px] opacity-70 sm:opacity-85">
               <Image
                 src="/logos/charminar-hero.webp"
                 alt="Charminar Architectural Emblem"
@@ -39,21 +39,21 @@ export default function HeroProfile() {
             </div>
           </div>
 
-          {/* Target Anchor for the Spider-Doodle Arrow (Positioned Directly at Abhinay's Face) */}
+          {/* Target Anchor for the Spider-Doodle Arrow (Positioned Directly at Abhinay's Head / Hair) */}
           <div
             id="hero-face-target"
-            className="absolute top-[28%] left-[60%] w-4 h-4 pointer-events-none z-20"
+            className="absolute top-[31%] left-[45%] w-4 h-4 pointer-events-none z-20"
             aria-hidden="true"
           />
 
-          {/* User Portrait Cutout (High-swag pointing pose) */}
+          {/* User Portrait Cutout (Brought up & enlarged with heroic swagger) */}
           <Image
             src="/profile-pointing.webp"
             alt="Abhinay Musku"
             width={1024}
             height={973}
             priority
-            className="relative z-10 w-auto h-full object-contain object-bottom filter contrast-105 drop-shadow-[0_15px_30px_rgba(0,0,0,0.8)] select-none pointer-events-none"
+            className="relative z-10 w-auto h-full object-contain object-bottom scale-[1.24] sm:scale-[1.28] origin-bottom -translate-y-8 sm:-translate-y-12 filter contrast-105 drop-shadow-[0_15px_30px_rgba(0,0,0,0.8)] select-none pointer-events-none"
           />
         </div>
 
