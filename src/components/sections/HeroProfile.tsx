@@ -23,15 +23,29 @@ export default function HeroProfile() {
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         className="relative z-10 w-full flex flex-col items-center"
       >
-        {/* Cutout Portrait Image with Refined Studio Dropshadow */}
+        {/* Cutout Portrait Image with Spider-Man Logo in Background */}
         <div className="relative w-[300px] sm:w-[360px] lg:w-[400px] h-[380px] sm:h-[440px] lg:h-[480px] flex items-end justify-center overflow-hidden">
+          {/* Spider-Man Emblem Behind User */}
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none -translate-y-8 z-0">
+            <div className="relative w-[280px] sm:w-[330px] lg:w-[360px] aspect-square opacity-35 sm:opacity-45">
+              <Image
+                src="/logos/spiderman-miles.svg"
+                alt="Spider-Man Insignia"
+                fill
+                className="object-contain filter drop-shadow-[0_0_25px_rgba(174,4,13,0.9)] drop-shadow-[-2px_0_0_rgba(0,240,255,0.7)] animate-pulse"
+                style={{ animationDuration: "4s" }}
+              />
+            </div>
+          </div>
+
+          {/* User Portrait Cutout */}
           <Image
             src="/profile-cutout.webp"
             alt="Abhinay Musku"
             width={1400}
             height={1400}
             priority
-            className="w-auto h-full object-contain object-bottom filter contrast-105 drop-shadow-[0_15px_30px_rgba(0,0,0,0.8)] drop-shadow-[-2px_0_0_rgba(0,240,255,0.2)] drop-shadow-[2px_0_0_rgba(174,4,13,0.3)] select-none pointer-events-none"
+            className="relative z-10 w-auto h-full object-contain object-bottom filter contrast-105 drop-shadow-[0_15px_30px_rgba(0,0,0,0.8)] select-none pointer-events-none"
           />
         </div>
 

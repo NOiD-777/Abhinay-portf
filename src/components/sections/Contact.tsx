@@ -63,8 +63,18 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-28 px-4 sm:px-6 lg:px-8 relative z-10 bg-black border-t border-white/5">
-      <div className="max-w-6xl mx-auto space-y-16">
+    <section id="contact" className="py-28 px-4 sm:px-6 lg:px-8 relative z-10 bg-black border-t border-white/5 overflow-hidden">
+      {/* Atmospheric Michelangelo Hands Background Silhouette */}
+      <div className="absolute -right-20 top-20 w-[500px] lg:w-[700px] h-[350px] lg:h-[450px] opacity-[0.06] pointer-events-none select-none blur-[0.5px]">
+        <Image
+          src="/images/creation-of-adam-transparent.png"
+          alt=""
+          fill
+          className="object-contain filter invert contrast-200"
+        />
+      </div>
+
+      <div className="max-w-6xl mx-auto space-y-16 relative z-10">
         {/* Header */}
         <div className="flex flex-col items-start gap-2 text-left">
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
@@ -154,28 +164,47 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Creation Motif — Human Agency × AI */}
-            <div className="relative rounded-2xl p-6 border border-white/5 bg-[#09090b] overflow-hidden group spider-panel">
-              <div className="flex items-center justify-between mb-3">
-                <span className="text-[10px] font-mono uppercase tracking-widest text-[#ae040d]">
-                  // HUMAN AGENCY × AI
+            {/* Creation of Adam Motif — The Spark of Connection */}
+            <div className="relative rounded-2xl p-6 border border-white/10 bg-[#09090b] overflow-hidden group spider-panel shadow-[-2px_0_0_rgba(0,240,255,0.25),2px_0_0_rgba(174,4,13,0.4)]">
+              {/* Halftone subtle background */}
+              <div className="absolute inset-0 halftone-dots opacity-20 pointer-events-none" />
+
+              <div className="relative z-10 flex items-center justify-between mb-3">
+                <span className="text-[11px] font-mono uppercase tracking-widest text-[#00f0ff] flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#ae040d] animate-pulse" />
+                  <span>THE SPARK OF CONNECTION</span>
                 </span>
-                <span className="text-[10px] font-mono text-zinc-500">
-                  LEAP OF FAITH
+                <span className="text-[10px] font-mono text-zinc-400">
+                  CREATION OF ADAM
                 </span>
               </div>
-              <div className="relative w-full h-32 rounded-xl overflow-hidden bg-black flex items-center justify-center border border-white/5">
+
+              {/* Reaching Hands with Synaptic Energy Spark */}
+              <div className="relative w-full h-44 sm:h-48 rounded-xl overflow-hidden bg-black/80 flex items-center justify-center border border-white/5">
                 <Image
-                  src="/images/creation-adam-red.png"
-                  alt="Creation of Adam — Blood Red & Black"
-                  width={285}
-                  height={205}
-                  className="w-full h-full object-contain filter drop-shadow-[0_0_12px_rgba(174,4,13,0.35)] group-hover:scale-105 transition-transform duration-500"
+                  src="/images/creation-of-adam-connect.webp"
+                  alt="Creation of Adam — Human Agency & AI"
+                  width={1140}
+                  height={820}
+                  className="w-full h-full object-contain filter drop-shadow-[0_0_16px_rgba(174,4,13,0.45)] group-hover:scale-105 transition-transform duration-700"
                 />
+
+                {/* Animated Quantum Spark at the exact fingertip contact point (48%, 45.2%) */}
+                <div className="absolute left-[48%] top-[45.2%] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                  <span className="absolute -inset-2 rounded-full bg-[#00f0ff]/40 blur-sm animate-ping" />
+                  <span className="absolute -inset-4 rounded-full bg-[#ae040d]/30 blur-md animate-pulse" />
+                  <span className="relative block w-2 h-2 rounded-full bg-white shadow-[0_0_10px_#00f0ff,0_0_20px_#ae040d]" />
+                </div>
               </div>
-              <p className="mt-3 text-xs text-zinc-400 font-normal leading-relaxed">
-                Engineering autonomous agents and enterprise data systems where human intuition sparks artificial intelligence.
-              </p>
+
+              <div className="relative z-10 mt-3.5 space-y-1">
+                <h4 className="font-bebas text-lg sm:text-xl text-white tracking-wide">
+                  WHERE HUMAN INTUITION SPARKS ARTIFICIAL INTELLIGENCE
+                </h4>
+                <p className="text-xs text-zinc-300 font-normal leading-relaxed">
+                  Engineering enterprise data lakehouses and autonomous agent workflows. Reach across the dimension — let&apos;s build what&apos;s next.
+                </p>
+              </div>
             </div>
           </motion.div>
 
