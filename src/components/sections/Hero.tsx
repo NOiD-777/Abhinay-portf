@@ -100,7 +100,7 @@ export default function Hero() {
             <div className="flex flex-wrap items-center gap-3 pt-5 w-full">
               <Link
                 href="#projects"
-                className="clip-spider-btn inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold tracking-wider uppercase text-white bg-[#ae040d] hover:bg-[#c50512] transition-all duration-150 shadow-[-2px_0_0_rgba(0,240,255,0.4),2px_0_0_rgba(225,6,0,0.6)]"
+                className="clip-spider-btn inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold tracking-wider uppercase text-white bg-[#ae040d] hover:bg-[#c50512] transition-all duration-150 shadow-[-2px_0_0_rgba(168,85,247,0.4),2px_0_0_rgba(225,6,0,0.6)]"
               >
                 <span>Peep The Missions</span>
                 <ArrowUpRight className="w-4 h-4" />
