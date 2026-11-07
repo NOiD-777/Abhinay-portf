@@ -169,14 +169,25 @@ function AiAxissSchematic() {
 function BrihaspathiSchematic() {
   return (
     <div className="p-4 sm:p-5 rounded-2xl bg-[#09090b]/80 border border-pink-500/20 text-left space-y-3">
-      <div className="flex items-center justify-between gap-2">
+      <div className="flex flex-wrap items-center justify-between gap-2">
         <span className="text-[10px] font-mono uppercase tracking-widest text-[#ec4899] flex items-center gap-1.5">
           <Cpu className="w-3.5 h-3.5 text-[#ec4899]" />
           <span>EDGE SILICON // CCTV CRIMINAL DETECTION SCHEMATIC</span>
         </span>
-        <span className="text-[10px] font-mono text-pink-300 px-2 py-0.5 rounded bg-pink-500/10 border border-pink-500/20">
-          92% ACCURACY · TINY SILICON
-        </span>
+        <div className="flex items-center gap-2.5">
+          <div className="w-16 h-4 px-1 rounded bg-white/95 border border-white/20 flex items-center justify-center">
+            <Image
+              src="/logos/brihaspathi.webp"
+              alt="Brihaspathi Technologies"
+              width={64}
+              height={18}
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <span className="text-[10px] font-mono text-pink-300 px-2 py-0.5 rounded bg-pink-500/10 border border-pink-500/20">
+            92% ACCURACY · TINY SILICON
+          </span>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
@@ -291,6 +302,16 @@ export default function Experience() {
                             alt="JMAN Group Official Logo"
                             width={72}
                             height={32}
+                            className="w-full h-full object-contain"
+                          />
+                        </div>
+                      ) : isBrihaspathi ? (
+                        <div className="w-24 sm:w-28 h-9 rounded-lg bg-white/95 border border-white/20 px-2 py-1 shrink-0 flex items-center justify-center shadow-[0_2px_12px_rgba(255,255,255,0.12)]">
+                          <Image
+                            src="/logos/brihaspathi.webp"
+                            alt="Brihaspathi Technologies Limited Official Logo"
+                            width={100}
+                            height={28}
                             className="w-full h-full object-contain"
                           />
                         </div>
