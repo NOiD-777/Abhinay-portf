@@ -39,22 +39,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Abhinay Musku — Full-Stack & AI Engineer",
+  title: "Abhinay Musku — Autonomous AI & Data Engineer",
   description:
-    "Data Engineer @ JMAN Group. Architecting enterprise data pipelines and production Generative AI applications.",
+    "Data & AI Engineer @ JMAN Group. Architecting autonomous GenAI agents, enterprise lakehouse pipelines, and edge computer vision systems.",
   authors: [{ name: "Abhinay Musku", url: "https://github.com/NOiD-777" }],
   openGraph: {
-    title: "Abhinay Musku — Full-Stack & AI Engineer",
+    title: "Abhinay Musku — Autonomous AI & Data Engineer",
     description:
-      "Data Engineer @ JMAN Group. Architecting enterprise data pipelines and production Generative AI applications.",
+      "Data & AI Engineer @ JMAN Group. Architecting autonomous GenAI agents, enterprise lakehouse pipelines, and edge computer vision systems.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Abhinay Musku — Full-Stack & AI Engineer",
+    title: "Abhinay Musku — Autonomous AI & Data Engineer",
     description:
-      "Data Engineer @ JMAN Group. Architecting enterprise data pipelines and production Generative AI applications.",
+      "Data & AI Engineer @ JMAN Group. Architecting autonomous GenAI agents, enterprise lakehouse pipelines, and edge computer vision systems.",
   },
 };
 

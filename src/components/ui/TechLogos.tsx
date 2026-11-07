@@ -118,7 +118,7 @@ export const TECH_REGISTRY: Record<string, TechMeta> = {
   "restful apis": { icon: TbApi, brandColor: "#00f0ff" },
   "microservices": { icon: TbApi, brandColor: "#00f0ff" },
 
-  // Full-Stack & Web
+  // Web & Interactive Interfaces
   "react": { icon: SiReact, brandColor: "#61DAFB" },
   "react.js": { icon: SiReact, brandColor: "#61DAFB" },
   "next.js": { icon: SiNextdotjs, brandColor: "#FFFFFF" },

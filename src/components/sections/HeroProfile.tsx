@@ -77,7 +77,7 @@ export default function HeroProfile() {
               <span className="font-spiderman tracking-[0.14em] text-sm">ABHINAY</span>
               <span className="text-[10px] text-[#00f0ff] font-mono">// SOL-3</span>
             </p>
-            <p className="text-[10px] text-zinc-400 font-mono">Data Slinger · JMAN Forge</p>
+            <p className="text-[10px] text-zinc-400 font-mono">Data &amp; AI Engineer · JMAN Forge</p>
           </div>
         </motion.div>
       </motion.div>

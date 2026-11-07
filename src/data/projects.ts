@@ -23,7 +23,7 @@ export const projects: Project[] = [
     description:
       "Won 1st place at Swecha BuildAI4India with this bad boy. Hooked Gemini Vision & LangChain to autonomously identify and preserve 8 endangered Indian art styles before they vanish into the multiverse.",
     longDescription:
-      "ArtYatra is an award-winning full-stack application built to preserve and explore India's artistic heritage. It leverages Google Gemini API with structured prompt orchestration to analyze user-uploaded artwork images and accurately classify traditional art forms including Warli, Madhubani, Thanjavur, and Kalamkari. Features contextual history retrieval, confidence scoring, and interactive geographical mapping.",
+      "ArtYatra is an award-winning AI vision application built to preserve and explore India's artistic heritage. It leverages Google Gemini API with structured prompt orchestration to analyze user-uploaded artwork images and accurately classify traditional art forms including Warli, Madhubani, Thanjavur, and Kalamkari. Features contextual history retrieval, confidence scoring, and interactive geographical mapping.",
     image: "/projects/artyatra.png",
     tech: [
       "React",
@@ -125,7 +125,7 @@ export const projects: Project[] = [
 
 export const projectCategories = [
   { id: "all", label: "All Missions" },
-  { id: "ai-ml", label: "AI & Machine Learning" },
-  { id: "web", label: "Web & Full-Stack" },
-  { id: "data", label: "Data & Systems" },
+  { id: "ai-ml", label: "Autonomous AI & Vision" },
+  { id: "data", label: "Lakehouse & Big Data" },
+  { id: "web", label: "AI Client & Web Apps" },
 ];

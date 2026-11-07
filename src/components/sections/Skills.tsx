@@ -160,27 +160,27 @@ export default function Skills() {
               <span className="font-semibold tracking-wider uppercase">// PILLAR 03</span>
               <span className="w-1.5 h-1.5 rounded-full bg-[#a855f7] animate-pulse" />
             </div>
-            <h4 className="text-sm font-semibold text-white">Reactive Frontend &amp; APIs</h4>
+            <h4 className="text-sm font-semibold text-white">Edge AI &amp; Neural Vision</h4>
             <div className="flex flex-wrap items-center gap-1.5 pt-1">
               <span className="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-300 px-2 py-0.5 rounded bg-white/5 border border-white/5">
-                <TechLogo name="Next.js" className="w-3 h-3" useBrandColor />
-                <span>Next.js</span>
+                <TechLogo name="OpenCV" className="w-3 h-3" useBrandColor />
+                <span>OpenCV</span>
               </span>
               <span className="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-300 px-2 py-0.5 rounded bg-white/5 border border-white/5">
-                <TechLogo name="React.js" className="w-3 h-3" useBrandColor />
-                <span>React</span>
+                <TechLogo name="Scikit-learn" className="w-3 h-3" useBrandColor />
+                <span>Scikit-learn</span>
               </span>
               <span className="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-300 px-2 py-0.5 rounded bg-white/5 border border-white/5">
-                <TechLogo name="TypeScript" className="w-3 h-3" useBrandColor />
-                <span>TypeScript</span>
+                <TechLogo name="Python" className="w-3 h-3" useBrandColor />
+                <span>Python</span>
               </span>
               <span className="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-300 px-2 py-0.5 rounded bg-white/5 border border-white/5">
-                <TechLogo name="Angular" className="w-3 h-3" useBrandColor />
-                <span>Angular</span>
+                <TechLogo name="FastAPI" className="w-3 h-3" useBrandColor />
+                <span>FastAPI</span>
               </span>
             </div>
             <div className="text-[10px] font-mono text-zinc-500 pt-1 border-t border-white/5">
-              Sub-16ms telemetry sync &amp; 60fps spatial web experiences.
+              Real-time edge computer vision, biometric streams &amp; low-latency model microservices.
             </div>
           </div>
         </div>
@@ -192,7 +192,7 @@ export default function Skills() {
             const isPurple =
               category.title.includes("Data") ||
               category.title.includes("Cloud") ||
-              category.title.includes("Full-Stack") ||
+              category.title.includes("Web") ||
               category.title.includes("Databases");
 
             return (

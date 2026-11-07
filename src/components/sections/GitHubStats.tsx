@@ -34,7 +34,7 @@ export default function GitHubStats() {
           <div className="rounded-xl p-6 border border-white/5 bg-[#09090b] space-y-1.5 text-left">
             <span className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Weaponry</span>
             <p className="text-3xl font-semibold text-white font-mono tracking-tight">Python / TS</p>
-            <p className="text-xs text-zinc-400">Full-stack lethality</p>
+            <p className="text-xs text-zinc-400">AI systems velocity</p>
           </div>
 
           <div className="rounded-xl p-6 border border-white/5 bg-[#09090b] space-y-1.5 text-left">

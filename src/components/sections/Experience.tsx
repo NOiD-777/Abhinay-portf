@@ -55,7 +55,7 @@ function JmanFieldDossier() {
           <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[10px] font-mono text-zinc-300">
             <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-black/85 backdrop-blur-md border border-white/10 text-[#ef4444] font-semibold">
               <span className="w-1.5 h-1.5 rounded-full bg-[#ef4444] animate-pulse" />
-              <span>DATA SLINGER · JMAN FORGE</span>
+              <span>DATA &amp; AI ENGINEER · JMAN FORGE</span>
             </span>
             <span className="px-2.5 py-1 rounded-md bg-black/85 backdrop-blur-md border border-white/10 text-zinc-400">
               MAY 2026 – PRESENT
@@ -236,8 +236,9 @@ function BrihaspathiSchematic() {
 }
 
 const TECH_TAGS: Record<string, string[]> = {
+  "Data & AI Engineer": ["Databricks", "PySpark", "Delta Lake", "Azure", "AWS Lambda", "LangChain"],
   "Data Engineer": ["Databricks", "PySpark", "Delta Lake", "Azure", "AWS Lambda", "LangChain"],
-  "Software Engineer Intern": ["Full-Stack", "React", "TypeScript", "Data Quality", "REST APIs"],
+  "Software Engineer Intern": ["AI Pipelines", "React", "TypeScript", "Data Quality", "REST APIs"],
   "Angular Developer Intern": ["Angular", "TypeScript", "RxJS", "RESTful APIs", "WebSocket Telemetry"],
   "Software Developer Intern — AI & ML": ["Python", "FastAPI", "OpenCV", "Edge Silicon", "Biometrics"],
 };

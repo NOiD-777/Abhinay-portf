@@ -74,7 +74,7 @@ export default function About() {
                     ABHINAY MUSKU
                   </h3>
                   <p className="text-xs font-spiderman text-[#00f0ff] uppercase tracking-[0.14em]">
-                    DATA SLINGER // SYSTEMS ARCHITECT
+                    AUTONOMOUS AI ENGINEER // SYSTEMS ARCHITECT
                   </p>
                 </div>
 
@@ -99,7 +99,7 @@ export default function About() {
                 <div className="w-14 h-4 shrink-0 flex items-center justify-center">
                   <Image src="/logos/jman-logo.svg" alt="JMAN Group" width={56} height={16} className="w-full h-full object-contain" />
                 </div>
-                <span>Data Slinger · JMAN Group</span>
+                <span>Data &amp; AI Engineer · JMAN Group</span>
               </div>
               <div className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-lg border border-white/5 bg-[#09090b]">
                 <div className="w-5 h-4 shrink-0 flex items-center justify-center">
@@ -316,9 +316,9 @@ export default function About() {
                 <div className="p-1.5 rounded-md bg-[#00f0ff]/10 text-[#00f0ff] w-fit">
                   <Code2 className="w-4 h-4" />
                 </div>
-                <h4 className="font-semibold text-white text-xs">Full-Stack Weaponry</h4>
+                <h4 className="font-semibold text-white text-xs">Edge Vision &amp; Inference</h4>
                 <p className="text-[11px] text-zinc-400 leading-relaxed font-normal">
-                  Next.js, Angular, TypeScript &amp; high-concurrency microservices. Butter smooth 60fps feel.
+                  OpenCV, edge silicon &amp; async FastAPI microservices. Real-time vision pipelines with sub-50ms latency.
                 </p>
               </div>
             </div>

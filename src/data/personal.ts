@@ -14,15 +14,15 @@ export const personal = {
   name: "Abhinay Musku",
   firstName: "Abhinay",
   lastName: "Musku",
-  title: "Sol-3 Systems Architect",
+  title: "Sol-3 Autonomous AI Engineer",
   roles: [
-    "Full-Stack & AI Engineer",
+    "Autonomous AI Engineer",
+    "GenAI Agent Architect",
     "Data Slinger @ JMAN Group",
-    "GenAI Agent Orchestrator",
-    "Sol-3 Glitch Hunter & Builder",
+    "Edge Vision Systems Engineer",
   ],
   tagline:
-    "By day, wrestling multi-terabyte data lakehouses at JMAN Group. By night, slinging autonomous GenAI agents across the multiverse. Untied Jordan 1s? Yeah, it's a choice.",
+    "By day, orchestrating enterprise GenAI agents and multi-terabyte lakehouses at JMAN Group. By night, pushing multi-modal AI frontiers across the multiverse. Untied Jordan 1s? Yeah, it's a choice.",
   storyMotto:
     "anyone can write code — but not everyone can tame a PySpark cluster at 3am with zero data drop.",
   location: "Hyderabad / Chennai, India",
@@ -32,7 +32,7 @@ export const personal = {
   github: "https://github.com/NOiD-777",
   resumeUrl: "/resume.pdf",
   bio: [
-    "Look, nobody told me getting hooked on distributed systems would mean juggling Delta Lake pipelines with one hand while training agentic LLMs with the other. But here we are, and honestly? We ball.",
+    "Look, nobody told me stepping into AI engineering would mean orchestrating autonomous multi-agent reasoning chains with one hand while anchoring enterprise Delta Lake pipelines with the other. But here we are, and honestly? We ball.",
     "From turning campus auditoriums upside down as GDGC Lead to shipping enterprise-grade financial data engines at JMAN Group, I treat production like a high-stakes sprint through Brooklyn and Hyderabad. High aura, zero data drop, maximum impact.",
   ],
   storyBeats: [

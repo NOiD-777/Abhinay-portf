@@ -22,7 +22,7 @@ export const experiences: Experience[] = [
     accentColor: "#ef4444",
     roles: [
       {
-        title: "Data Engineer",
+        title: "Data & AI Engineer",
         type: "Full-Time",
         period: "May 2026 – Present",
         mission:
@@ -38,9 +38,9 @@ export const experiences: Experience[] = [
         type: "Internship",
         period: "Feb 2026 – Apr 2026",
         mission:
-          "Full-on multiverse rotation: speedran Data Science, Full-Stack web engineering, and Cloud Platforms without losing my head.",
+          "Enterprise rotation: speedran Data Engineering, AI model prototyping, and Cloud Platforms without losing my head.",
         milestones: [
-          "Shipped production-ready APIs and slick React/TypeScript UI modules for internal analytics squads.",
+          "Shipped production-ready inference APIs and interactive analytics modules for internal intelligence squads.",
           "Automated data quality checks across reporting layers so nobody had to deal with bad numbers on Friday deployments.",
         ],
       },
