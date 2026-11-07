@@ -100,11 +100,11 @@ export default function SpiderDoodleArrow() {
   let arrowAngle: number;
 
   if (isMobile) {
-    // Mobile layout: Short, crisp downward swoosh (~60-85px) pointing right to Abhinay's hair
-    cp1X = startX + (dx < 0 ? 12 : -12);
+    // Mobile layout: Short, crisp downward swoosh pointing directly to top of Abhinay's head
+    cp1X = startX + (dx < 0 ? -8 : 8);
     cp1Y = startY + dy * 0.35;
-    cp2X = endX + (dx < 0 ? 16 : -16);
-    cp2Y = endY - Math.min(22, Math.max(12, dy * 0.3));
+    cp2X = endX + (dx < 0 ? 14 : -14);
+    cp2Y = endY - Math.min(20, Math.max(12, dy * 0.28));
 
     arrowAngle = Math.atan2(endY - cp2Y, endX - cp2X);
   } else {
