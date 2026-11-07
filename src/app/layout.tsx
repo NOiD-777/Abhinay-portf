@@ -4,7 +4,6 @@ import { Bebas_Neue, Road_Rage, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 import ScrollProgress from "@/components/ui/ScrollProgress";
-import Cursor from "@/components/ui/Cursor";
 
 const spiderFont = localFont({
   src: "../../public/fonts/Spider-Man-TFonts1.woff2",
@@ -70,7 +69,6 @@ export default function RootLayout({
     >
       <body className="bg-black text-[#ededed] font-sans antialiased selection:bg-[#ae040d]/40 selection:text-white">
         <ScrollProgress />
-        <Cursor />
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
