@@ -22,23 +22,29 @@ export default function Experience() {
           </p>
         </div>
 
-        {/* Timeline Spine */}
+        {/* Timeline Web Spine */}
         <div className="relative border-l border-white/10 ml-3 sm:ml-4 pl-6 sm:pl-8 space-y-12">
+          {/* Electrified Web Thread Overlay */}
+          <div className="absolute -left-[1px] top-2 bottom-2 w-[2px] bg-gradient-to-b from-[#00f0ff]/40 via-[#ae040d]/60 to-[#a855f7]/40 pointer-events-none opacity-60" />
+
           {experiences.map((exp, expIdx) => (
             <motion.div
               key={exp.company}
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.45, delay: expIdx * 0.08 }}
+              initial={{ opacity: 0, x: -10 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-40px" }}
+              transition={{ duration: 0.45, delay: expIdx * 0.1 }}
               className="relative text-left space-y-6"
             >
-              {/* Timeline Node Dot */}
+              {/* Spider-Verse Web Node Dot */}
               <div
-                className="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full flex items-center justify-center bg-black border border-white/20"
+                className="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full flex items-center justify-center bg-black border border-[#ae040d]/60 shadow-[-2px_0_0_rgba(0,240,255,0.7),2px_0_0_rgba(174,4,13,0.8)]"
               >
                 <div
-                  className="w-1.5 h-1.5 rounded-full bg-[#ae040d]"
+                  className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-ping opacity-60"
+                />
+                <div
+                  className="absolute w-1.5 h-1.5 rounded-full bg-[#ae040d]"
                 />
               </div>
 

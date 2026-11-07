@@ -88,12 +88,12 @@ export default function Skills() {
                 key={category.title}
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.35, delay: idx * 0.05 }}
-                className={`rounded-xl p-6 border bg-[#09090b] flex flex-col justify-between gap-6 text-left transition-all duration-200 ${
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.4, delay: idx * 0.06, ease: [0.16, 1, 0.3, 1] }}
+                className={`relative rounded-xl p-6 border bg-[#09090b] flex flex-col justify-between gap-6 text-left transition-all duration-200 group overflow-hidden ${
                   isPurple
-                    ? "border-white/5 hover:border-[#3b0764] hover:bg-[#0c0715]"
-                    : "border-white/5 hover:border-[#ae040d]/40 hover:bg-[#0f0709]"
+                    ? "border-white/5 hover:border-[#3b0764] hover:bg-[#0c0715] hover:shadow-[-2px_0_0_rgba(168,85,247,0.35)]"
+                    : "border-white/5 hover:border-[#ae040d]/50 hover:bg-[#0f0709] hover:shadow-[-2px_0_0_rgba(0,240,255,0.3),2px_0_0_rgba(174,4,13,0.4)]"
                 }`}
               >
                 <div className="space-y-3">

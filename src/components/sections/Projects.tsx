@@ -54,14 +54,18 @@ export default function Projects() {
           {filteredProjects.map((project, idx) => (
             <motion.div
               key={project.slug}
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: idx * 0.06 }}
+              initial={{ opacity: 0, y: 20, scale: 0.98 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: true, margin: "-40px" }}
+              transition={{
+                duration: 0.45,
+                delay: idx * 0.07,
+                ease: [0.16, 1, 0.3, 1],
+              }}
               className="spider-panel rounded-2xl p-7 flex flex-col justify-between gap-6 text-left group overflow-hidden"
             >
               {/* Subtle Comic Halftone Texture */}
-              <div className="absolute inset-0 halftone-dots opacity-20 pointer-events-none" />
+              <div className="absolute inset-0 halftone-dots opacity-20 group-hover:opacity-35 transition-opacity duration-300 pointer-events-none" />
 
               <div className="space-y-4 relative z-10">
                 {/* Header row: Issue number + Category Pill + Links */}

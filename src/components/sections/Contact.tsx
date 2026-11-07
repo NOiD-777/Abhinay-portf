@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   Mail,
   Phone,
@@ -81,7 +82,13 @@ export default function Contact() {
         {/* Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 text-left">
           {/* Direct Channels */}
-          <div className="lg:col-span-5 space-y-4">
+          <motion.div
+            initial={{ opacity: 0, x: -15 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-5 space-y-4"
+          >
             <div className="rounded-2xl p-6 border border-white/5 bg-[#09090b] space-y-4">
               <h3 className="text-sm font-semibold text-white uppercase tracking-wider font-mono">
                 Direct Communication
@@ -170,10 +177,16 @@ export default function Contact() {
                 Engineering autonomous agents and enterprise data systems where human intuition sparks artificial intelligence.
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Clean Form */}
-          <div className="lg:col-span-7">
+          <motion.div
+            initial={{ opacity: 0, x: 15 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-7"
+          >
             <form
               onSubmit={handleSubmit}
               className="rounded-2xl p-7 sm:p-8 border border-white/5 bg-[#09090b] space-y-5"
@@ -263,7 +276,7 @@ export default function Contact() {
                 )}
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

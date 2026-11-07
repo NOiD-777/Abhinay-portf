@@ -139,12 +139,17 @@ export default function About() {
                 return (
                   <motion.div
                     key={beat.act}
-                    initial={{ opacity: 0, y: 12 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: idx * 0.08 }}
-                    className={`relative rounded-xl p-5 border border-white/5 bg-[#09090b] space-y-2.5 transition-all duration-200 spider-panel ${panelBorder}`}
+                    initial={{ opacity: 0, x: 15 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true, margin: "-40px" }}
+                    transition={{
+                      duration: 0.45,
+                      delay: idx * 0.09,
+                      ease: [0.16, 1, 0.3, 1],
+                    }}
+                    className={`relative rounded-xl p-5 border border-white/5 bg-[#09090b] space-y-2.5 transition-all duration-200 spider-panel ${panelBorder} group`}
                   >
+                    <div className="absolute inset-0 halftone-dots opacity-0 group-hover:opacity-20 transition-opacity duration-300 pointer-events-none rounded-xl" />
                     {/* Chapter Header */}
                     <div className="flex flex-wrap items-center justify-between gap-2">
                       <div className="flex items-center gap-2">
