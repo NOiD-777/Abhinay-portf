@@ -39,12 +39,12 @@ export default function HeroProfile() {
             </div>
           </div>
 
-          {/* User Portrait Cutout */}
+          {/* User Portrait Cutout with Gemini Refined Groomed Hair */}
           <Image
             src="/profile-cutout.webp"
             alt="Abhinay Musku"
-            width={1400}
-            height={1400}
+            width={1024}
+            height={1024}
             priority
             className="relative z-10 w-auto h-full object-contain object-bottom filter contrast-105 drop-shadow-[0_15px_30px_rgba(0,0,0,0.8)] select-none pointer-events-none"
           />
