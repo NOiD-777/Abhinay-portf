@@ -87,7 +87,7 @@ export default function Hero() {
 
             {/* Editorial Paragraph */}
             <p className="text-xs sm:text-sm text-zinc-300 font-normal leading-relaxed max-w-sm mt-3">
-              Talk is cheap — I&apos;m out here engineering autonomous GenAI agent swarms with one hand and taming multi-terabyte Databricks lakehouses with the other. High aura, zero data drop, and yeah... the Jordan 1s are untied. It&apos;s a choice.
+              Talk is cheap — I&apos;m out here engineering autonomous GenAI agent swarms with one hand and taming multi-terabyte Databricks lakehouses with the other. High aura, zero data drop, and yeah... the shoes are untied. It&apos;s a choice.
             </p>
 
             {/* Location / Origin Tag */}

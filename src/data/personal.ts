@@ -22,7 +22,7 @@ export const personal = {
     "Edge Vision Systems Engineer",
   ],
   tagline:
-    "By day, orchestrating enterprise GenAI agents and multi-terabyte lakehouses at JMAN Group. By night, pushing multi-modal AI frontiers across the multiverse. Untied Jordan 1s? Yeah, it's a choice.",
+    "By day, orchestrating enterprise GenAI agents and multi-terabyte lakehouses at JMAN Group. By night, pushing multi-modal AI frontiers across the multiverse. Untied shoes? Yeah, it's a choice.",
   storyMotto:
     "anyone can write code — but not everyone can tame a PySpark cluster at 3am with zero data drop.",
   location: "Hyderabad / Chennai, India",
