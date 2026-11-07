@@ -21,6 +21,17 @@ export default function Hero() {
   const portraitY = useTransform(scrollYProgress, [0, 1], ["0%", "14%"]);
   const contentFade = useTransform(scrollYProgress, [0, 0.8], [1, 0.25]);
 
+  const scrollToProjects = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const el = document.getElementById("projects");
+    if (!el) return;
+    if (typeof window !== "undefined" && (window as any).lenis) {
+      (window as any).lenis.scrollTo(el, { offset: -40, duration: 1.2 });
+    } else {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <motion.section
       ref={containerRef}
@@ -98,22 +109,27 @@ export default function Hero() {
 
             {/* Superhero CTA Buttons */}
             <div className="flex flex-wrap items-center gap-3 pt-5 w-full">
-              <Link
+              <a
                 href="#projects"
-                className="clip-spider-btn inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold tracking-wider uppercase text-white bg-[#ae040d] hover:bg-[#c50512] transition-all duration-150 shadow-[-2px_0_0_rgba(168,85,247,0.4),2px_0_0_rgba(225,6,0,0.6)]"
+                onClick={scrollToProjects}
+                className="clip-spider-btn inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold tracking-wider uppercase text-white bg-[#ae040d] hover:bg-[#c50512] transition-all duration-150 shadow-[-2px_0_0_rgba(168,85,247,0.4),2px_0_0_rgba(225,6,0,0.6)] cursor-pointer"
               >
                 <span>Peep The Missions</span>
                 <ArrowUpRight className="w-4 h-4" />
-              </Link>
+              </a>
 
               <Link
                 href={personal.resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 text-xs sm:text-sm font-medium text-zinc-300 rounded-lg bg-[#111115] hover:bg-[#18181f] border border-white/10 hover:border-white/20 hover:text-white transition-colors duration-150"
+                title="View &amp; Download Resume (PDF)"
+                className="group/resume inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 text-xs sm:text-sm font-medium text-zinc-300 rounded-lg bg-[#111115] hover:bg-[#18181f] border border-white/10 hover:border-[#ae040d]/40 hover:text-white transition-all duration-150 shadow-[0_4px_12px_rgba(0,0,0,0.4)]"
               >
-                <FileDown className="w-4 h-4 text-zinc-400" />
+                <FileDown className="w-4 h-4 text-[#ae040d] group-hover/resume:scale-110 transition-transform duration-150" />
                 <span>Grab The Dossier</span>
+                <span className="px-1.5 py-0.5 rounded text-[10px] font-mono font-bold tracking-wider uppercase bg-white/5 text-zinc-400 group-hover/resume:text-white group-hover/resume:bg-[#ae040d]/20 group-hover/resume:border-[#ae040d]/40 border border-white/10 transition-colors">
+                  RESUME
+                </span>
               </Link>
             </div>
           </motion.div>
@@ -145,13 +161,14 @@ export default function Hero() {
           </span>
         </div>
 
-        <Link
+        <a
           href="#projects"
-          className="group inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors"
+          onClick={scrollToProjects}
+          className="group inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors cursor-pointer"
         >
           <span className="tracking-wider uppercase text-[11px] sm:text-xs">VIEW ALL PROJECTS</span>
           <span className="text-[#ae040d] group-hover:translate-x-1 transition-transform">⟶</span>
-        </Link>
+        </a>
       </div>
     </motion.section>
   );

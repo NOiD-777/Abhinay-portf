@@ -20,6 +20,10 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
       wheelMultiplier: 1.0,
     });
 
+    if (typeof window !== "undefined") {
+      (window as any).lenis = lenis;
+    }
+
     let animationFrameId: number;
     function raf(time: number) {
       lenis.raf(time);
@@ -29,6 +33,9 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
 
     return () => {
       cancelAnimationFrame(animationFrameId);
+      if (typeof window !== "undefined") {
+        delete (window as any).lenis;
+      }
       lenis.destroy();
     };
   }, []);
