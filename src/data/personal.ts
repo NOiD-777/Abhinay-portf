@@ -8,6 +8,21 @@ export interface StoryBeat {
   accent: "white" | "crimson" | "purple";
   image?: string;
   imageCaption?: string;
+  aspectRatio?: string;
+  badge?: {
+    logo: string;
+    logoAlt: string;
+    logoWidth: number;
+    logoHeight: number;
+    title: string;
+    titleColor: string;
+  };
+  telemetry?: {
+    status: string;
+    statusColor: string;
+    dotColor: string;
+    detail: string;
+  };
 }
 
 export const personal = {
@@ -47,6 +62,21 @@ export const personal = {
       accent: "white",
       image: "/images/narrative-technical-lead.webp",
       imageCaption: "Abhinay Musku on stage presenting as Core Team Technical Lead at MLRIT auditorium",
+      aspectRatio: "aspect-[835/568]",
+      badge: {
+        logo: "/logos/gdgc-mark.svg",
+        logoAlt: "GDGC MLRIT",
+        logoWidth: 16,
+        logoHeight: 10,
+        title: "GDGC MLRIT",
+        titleColor: "text-white",
+      },
+      telemetry: {
+        status: "FIELD LOG // STAGE PRESENTATION",
+        statusColor: "text-white border-white/30",
+        dotColor: "bg-white",
+        detail: "CORE TEAM · TECHNICAL LEAD",
+      },
     },
     {
       act: "ACT II",
@@ -59,6 +89,21 @@ export const personal = {
       accent: "purple",
       image: "/images/hackathon-swecha-team.webp",
       imageCaption: "Team ArtYatra celebrating 1st Place victory at Swecha Telangana BuildAI4India Hackathon",
+      aspectRatio: "aspect-[865/587]",
+      badge: {
+        logo: "/logos/swecha.svg",
+        logoAlt: "Swecha Telangana",
+        logoWidth: 24,
+        logoHeight: 12,
+        title: "SWECHA TELANGANA",
+        titleColor: "text-[#c084fc]",
+      },
+      telemetry: {
+        status: "CHAMPIONSHIP // 1ST PLACE WINNER",
+        statusColor: "text-[#c084fc] border-[#a855f7]/30",
+        dotColor: "bg-[#c084fc]",
+        detail: "BUILDAI4INDIA · TEAM ARTYATRA",
+      },
     },
     {
       act: "ACT III",
@@ -71,6 +116,21 @@ export const personal = {
       accent: "crimson",
       image: "/images/jman-abhinay.webp",
       imageCaption: "Abhinay on-site at JMAN Group — 'Most overnight successes took a long time' (Steve Jobs)",
+      aspectRatio: "aspect-[568/660]",
+      badge: {
+        logo: "/logos/jman-logo.svg",
+        logoAlt: "JMAN Group",
+        logoWidth: 48,
+        logoHeight: 12,
+        title: "JMAN GROUP",
+        titleColor: "text-[#ef4444]",
+      },
+      telemetry: {
+        status: "ENTERPRISE FORGE // CHENNAI",
+        statusColor: "text-[#ef4444] border-[#ef4444]/30",
+        dotColor: "bg-[#ef4444]",
+        detail: "DATA SLINGER · FINANCIAL LAKEHOUSE",
+      },
     },
   ] as StoryBeat[],
   stats: [

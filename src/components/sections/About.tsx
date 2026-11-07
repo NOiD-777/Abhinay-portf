@@ -184,94 +184,67 @@ export default function About() {
                       <div className="relative mt-2 rounded-xl overflow-hidden border border-white/10 group/photo bg-black/60 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.8)]">
                         <div
                           className={`relative w-full ${
-                            idx === 1
-                              ? "aspect-[568/660]"
-                              : idx === 0
+                            beat.aspectRatio ||
+                            (idx === 0
                               ? "aspect-[835/568]"
-                              : "aspect-[865/587]"
-                          } overflow-hidden`}
+                              : idx === 1
+                              ? "aspect-[865/587]"
+                              : "aspect-[568/660]")
+                          } overflow-hidden bg-black`}
+                          style={{
+                            aspectRatio: beat.aspectRatio
+                              ? beat.aspectRatio
+                                  .replace("aspect-[", "")
+                                  .replace("]", "")
+                                  .replace("/", " / ")
+                              : idx === 0
+                              ? "835 / 568"
+                              : idx === 1
+                              ? "865 / 587"
+                              : "568 / 660",
+                          }}
                         >
                           <Image
                             src={beat.image}
                             alt={beat.imageCaption || beat.title}
                             fill
-                            className="object-cover object-center filter contrast-105 brightness-95 group-hover/photo:scale-[1.02] group-hover/photo:brightness-100 transition-all duration-500"
+                            sizes="(max-width: 768px) 100vw, 650px"
+                            className="object-cover object-center filter contrast-105 brightness-95 group-hover/photo:brightness-100 transition-all duration-300"
                           />
                           {/* Spider-Verse Halftone Overlay */}
                           <div className="absolute inset-0 halftone-dots opacity-15 pointer-events-none" />
 
                           {/* Top-Right Emblem */}
-                          <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-black/75 backdrop-blur-md border border-white/10 text-[10px] font-mono text-zinc-300">
-                            {idx === 0 ? (
-                              <>
-                                <div className="w-4 h-2.5 relative flex items-center justify-center">
-                                  <Image
-                                    src="/logos/gdgc-mark.svg"
-                                    alt="GDGC"
-                                    width={16}
-                                    height={10}
-                                    className="w-full h-full object-contain"
-                                  />
-                                </div>
-                                <span className="font-semibold text-white">GDGC MLRIT</span>
-                              </>
-                            ) : idx === 1 ? (
-                              <>
-                                <div className="w-12 h-3 relative flex items-center justify-center">
-                                  <Image
-                                    src="/logos/jman-logo.svg"
-                                    alt="JMAN Group"
-                                    width={48}
-                                    height={12}
-                                    className="w-full h-full object-contain"
-                                  />
-                                </div>
-                                <span className="font-semibold text-[#ef4444]">JMAN GROUP</span>
-                              </>
-                            ) : (
-                              <>
-                                <div className="w-6 h-3 relative flex items-center justify-center">
-                                  <Image
-                                    src="/logos/swecha.svg"
-                                    alt="Swecha"
-                                    width={24}
-                                    height={12}
-                                    className="w-full h-full object-contain"
-                                  />
-                                </div>
-                                <span className="font-semibold text-[#c084fc]">SWECHA TELANGANA</span>
-                              </>
-                            )}
-                          </div>
+                          {beat.badge && (
+                            <div className="absolute top-2.5 right-2.5 z-10 flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-black/75 backdrop-blur-md border border-white/10 text-[10px] font-mono text-zinc-300">
+                              <div
+                                className="relative flex items-center justify-center shrink-0"
+                                style={{ width: beat.badge.logoWidth, height: beat.badge.logoHeight }}
+                              >
+                                <Image
+                                  src={beat.badge.logo}
+                                  alt={beat.badge.logoAlt}
+                                  width={beat.badge.logoWidth}
+                                  height={beat.badge.logoHeight}
+                                  className="w-full h-full object-contain"
+                                />
+                              </div>
+                              <span className={`font-semibold ${beat.badge.titleColor}`}>{beat.badge.title}</span>
+                            </div>
+                          )}
 
                           {/* Bottom Telemetry Caption Bar */}
-                          <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[10px] font-mono">
-                            <span className={`${
-                              idx === 0
-                                ? "text-white border-white/30"
-                                : idx === 1
-                                ? "text-[#ef4444] border-[#ef4444]/30"
-                                : "text-[#c084fc] border-[#a855f7]/30"
-                            } flex items-center gap-1.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md border`}>
-                              <span className={`w-1.5 h-1.5 rounded-full ${
-                                idx === 0 ? "bg-white" : idx === 1 ? "bg-[#ef4444]" : "bg-[#c084fc]"
-                              } animate-pulse`} />
-                              <span>{
-                                idx === 0
-                                  ? "FIELD LOG // STAGE PRESENTATION"
-                                  : idx === 1
-                                  ? "ENTERPRISE FORGE // CHENNAI"
-                                  : "CHAMPIONSHIP // 1ST PLACE WINNER"
-                              }</span>
-                            </span>
-                            <span className="text-zinc-300 hidden sm:inline px-2 py-0.5 rounded bg-black/80 backdrop-blur-md border border-white/10">
-                              {idx === 0
-                                ? "CORE TEAM · TECHNICAL LEAD"
-                                : idx === 1
-                                ? "DATA SLINGER · FINANCIAL LAKEHOUSE"
-                                : "BUILDAI4INDIA · TEAM ARTYATRA"}
-                            </span>
-                          </div>
+                          {beat.telemetry && (
+                            <div className="absolute bottom-2.5 left-3 right-3 z-10 flex items-center justify-between text-[10px] font-mono">
+                              <span className={`${beat.telemetry.statusColor} flex items-center gap-1.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md border`}>
+                                <span className={`w-1.5 h-1.5 rounded-full ${beat.telemetry.dotColor} animate-pulse`} />
+                                <span>{beat.telemetry.status}</span>
+                              </span>
+                              <span className="text-zinc-300 hidden sm:inline px-2 py-0.5 rounded bg-black/80 backdrop-blur-md border border-white/10">
+                                {beat.telemetry.detail}
+                              </span>
+                            </div>
+                          )}
                         </div>
                       </div>
                     )}
