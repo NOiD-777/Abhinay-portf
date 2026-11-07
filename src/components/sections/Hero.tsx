@@ -1,8 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight, FileDown, ArrowDown } from "lucide-react";
+import { GithubIcon as Github } from "@/components/ui/Icons";
 import { personal } from "@/data/personal";
 import HeroProfile from "./HeroProfile";
 
@@ -63,27 +65,68 @@ export default function Hero() {
             </Link>
           </div>
 
-          {/* Grounded Career Footprint */}
+          {/* Grounded Career Footprint with Official Logos */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-6 border-t border-white/10 w-full text-left">
             <div>
               <p className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Current</p>
-              <p className="text-sm font-medium text-zinc-200 mt-1">JMAN Group</p>
-              <p className="text-xs text-zinc-500 font-normal">Data Engineer</p>
+              <div className="flex items-center gap-2 mt-1">
+                <div className="w-5 h-5 rounded overflow-hidden bg-white/5 p-0.5 shrink-0 flex items-center justify-center">
+                  <Image
+                    src="/logos/jman.png"
+                    alt="JMAN Group"
+                    width={20}
+                    height={20}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm font-semibold text-zinc-100">JMAN Group</p>
+              </div>
+              <p className="text-xs text-zinc-500 font-normal mt-0.5">Data Engineer</p>
             </div>
+
             <div>
               <p className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Leadership</p>
-              <p className="text-sm font-medium text-zinc-200 mt-1">GDG MLRIT</p>
-              <p className="text-xs text-zinc-500 font-normal">Technical Lead</p>
+              <div className="flex items-center gap-2 mt-1">
+                <div className="w-5 h-5 shrink-0 flex items-center justify-center">
+                  <Image
+                    src="/logos/gdg.svg"
+                    alt="GDG"
+                    width={20}
+                    height={20}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm font-semibold text-zinc-100">GDG MLRIT</p>
+              </div>
+              <p className="text-xs text-zinc-500 font-normal mt-0.5">Technical Lead</p>
             </div>
+
             <div>
               <p className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Recognition</p>
-              <p className="text-sm font-medium text-zinc-200 mt-1">BuildAI4India</p>
-              <p className="text-xs text-zinc-500 font-normal">Hackathon Winner</p>
+              <div className="flex items-center gap-2 mt-1">
+                <div className="w-5 h-5 shrink-0 flex items-center justify-center">
+                  <Image
+                    src="/logos/google-cloud.svg"
+                    alt="Google Cloud"
+                    width={18}
+                    height={18}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm font-semibold text-zinc-100">BuildAI4India</p>
+              </div>
+              <p className="text-xs text-zinc-500 font-normal mt-0.5">Hackathon Winner</p>
             </div>
+
             <div>
               <p className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Open Source</p>
-              <p className="text-sm font-medium text-zinc-200 mt-1">16+ Repos</p>
-              <p className="text-xs text-zinc-500 font-normal">@NOiD-777</p>
+              <div className="flex items-center gap-2 mt-1">
+                <div className="w-5 h-5 rounded overflow-hidden bg-white/5 p-0.5 shrink-0 flex items-center justify-center text-zinc-400">
+                  <Github className="w-3.5 h-3.5" />
+                </div>
+                <p className="text-sm font-semibold text-zinc-100">16+ Repos</p>
+              </div>
+              <p className="text-xs text-zinc-500 font-normal mt-0.5">@NOiD-777</p>
             </div>
           </div>
         </motion.div>

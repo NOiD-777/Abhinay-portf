@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { educationList, certifications } from "@/data/education";
 
@@ -27,14 +28,25 @@ export default function Education() {
             transition={{ duration: 0.45 }}
             className="rounded-2xl p-7 border border-white/5 bg-[#09090b] space-y-5 text-left"
           >
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-4">
-              <div>
-                <p className="text-xs font-mono text-[#ae040d]">
-                  {edu.degree} in {edu.field}
-                </p>
-                <h3 className="text-xl sm:text-2xl font-semibold text-white mt-0.5">
-                  {edu.institution}
-                </h3>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/5 pb-4">
+              <div className="flex items-center gap-3.5">
+                <div className="w-10 h-10 rounded-xl overflow-hidden bg-white/5 border border-white/10 p-1 shrink-0 flex items-center justify-center">
+                  <Image
+                    src="/logos/mlrit.svg"
+                    alt="MLRIT Logo"
+                    width={40}
+                    height={40}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div>
+                  <p className="text-xs font-mono text-[#ae040d]">
+                    {edu.degree} in {edu.field}
+                  </p>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-white mt-0.5">
+                    {edu.institution}
+                  </h3>
+                </div>
               </div>
 
               <div className="flex flex-col sm:items-end">
@@ -53,17 +65,32 @@ export default function Education() {
                 Leadership &amp; Recognition
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {edu.honors.map((honor, hIdx) => (
-                  <div
-                    key={hIdx}
-                    className="p-3.5 rounded-lg bg-[#12081f] border border-[#2e0e47]/60 flex items-start gap-2.5"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#a855f7] shrink-0 mt-1.5" />
-                    <span className="text-xs text-zinc-300 leading-relaxed font-normal">
-                      {honor}
-                    </span>
-                  </div>
-                ))}
+                {edu.honors.map((honor, hIdx) => {
+                  const isGDG = honor.toLowerCase().includes("gdg") || honor.toLowerCase().includes("google developer");
+                  const isBuildAI = honor.toLowerCase().includes("buildai4india") || honor.toLowerCase().includes("hackathon");
+
+                  return (
+                    <div
+                      key={hIdx}
+                      className="p-3.5 rounded-lg bg-[#12081f] border border-[#2e0e47]/60 flex items-start gap-2.5 spider-panel"
+                    >
+                      {isGDG ? (
+                        <div className="w-4 h-4 shrink-0 mt-0.5">
+                          <Image src="/logos/gdg.svg" alt="GDG" width={16} height={16} className="w-full h-full object-contain" />
+                        </div>
+                      ) : isBuildAI ? (
+                        <div className="w-4 h-4 shrink-0 mt-0.5">
+                          <Image src="/logos/google-cloud.svg" alt="Google Cloud" width={16} height={16} className="w-full h-full object-contain" />
+                        </div>
+                      ) : (
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#a855f7] shrink-0 mt-1.5" />
+                      )}
+                      <span className="text-xs text-zinc-300 leading-relaxed font-normal">
+                        {honor}
+                      </span>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </motion.div>

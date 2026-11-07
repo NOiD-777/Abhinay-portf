@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { experiences } from "@/data/experience";
 
@@ -41,10 +42,27 @@ export default function Experience() {
               </div>
 
               {/* Company Info */}
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-b border-white/5 pb-2">
-                <h3 className="text-xl sm:text-2xl font-semibold text-white">
-                  {exp.company}
-                </h3>
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-3">
+                <div className="flex items-center gap-3">
+                  {exp.company.includes("JMAN") ? (
+                    <div className="w-8 h-8 rounded-lg overflow-hidden bg-white/5 border border-white/10 p-1 shrink-0 flex items-center justify-center">
+                      <Image
+                        src="/logos/jman.png"
+                        alt="JMAN Group"
+                        width={32}
+                        height={32}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-8 h-8 rounded-lg bg-[#140824] border border-[#3b0764]/70 shrink-0 flex items-center justify-center text-xs font-mono font-bold text-purple-300">
+                      {exp.company.slice(0, 2).toUpperCase()}
+                    </div>
+                  )}
+                  <h3 className="text-xl sm:text-2xl font-semibold text-white">
+                    {exp.company}
+                  </h3>
+                </div>
                 <span className="text-xs text-zinc-400 font-mono">
                   {exp.location}
                 </span>

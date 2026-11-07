@@ -45,19 +45,29 @@ export default function About() {
               </div>
             </div>
 
-            {/* Quick Metadata */}
+            {/* Quick Metadata with Real Logos */}
             <div className="w-full max-w-sm flex flex-col gap-2 text-xs text-zinc-400">
               <div className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-lg border border-white/5 bg-[#09090b]">
-                <MapPin className="w-4 h-4 text-[#ae040d] shrink-0" />
-                <span>{personal.location}</span>
+                <div className="w-4 h-4 shrink-0 flex items-center justify-center">
+                  <Image src="/logos/jman.png" alt="JMAN Group" width={16} height={16} className="w-full h-full object-contain" />
+                </div>
+                <span>Data Engineer · JMAN Group</span>
               </div>
               <div className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-lg border border-white/5 bg-[#09090b]">
-                <GraduationCap className="w-4 h-4 text-[#ae040d] shrink-0" />
+                <div className="w-4 h-4 shrink-0 flex items-center justify-center">
+                  <Image src="/logos/gdg.svg" alt="GDG" width={16} height={16} className="w-full h-full object-contain" />
+                </div>
+                <span>GDG on Campus MLRIT · Technical Lead</span>
+              </div>
+              <div className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-lg border border-white/5 bg-[#09090b]">
+                <div className="w-4 h-4 shrink-0 flex items-center justify-center">
+                  <Image src="/logos/mlrit.svg" alt="MLRIT" width={16} height={16} className="w-full h-full object-contain" />
+                </div>
                 <span>B.E. in Information Technology · MLRIT</span>
               </div>
               <div className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-lg border border-white/5 bg-[#09090b]">
-                <Users className="w-4 h-4 text-[#ae040d] shrink-0" />
-                <span>GDG on Campus · Technical Lead</span>
+                <MapPin className="w-4 h-4 text-[#ae040d] shrink-0" />
+                <span>{personal.location}</span>
               </div>
             </div>
           </motion.div>
