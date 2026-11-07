@@ -11,17 +11,18 @@ export default function About() {
       <div className="max-w-6xl mx-auto space-y-16">
         {/* Section Header */}
         <div className="flex flex-col items-start gap-2 text-left">
-          <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d]">
-            About
+          <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
+            <span className="text-[#00f0ff]">//</span>
+            <span>Origin Story</span>
           </p>
-          <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em]">
+          <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em] spider-glitch-hover cursor-default">
             Background &amp; Engineering Focus
           </h2>
         </div>
 
         {/* Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* Portrait Photo Frame */}
+          {/* Portrait Photo Frame with Spider-Verse Comic Panel */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -29,7 +30,7 @@ export default function About() {
             transition={{ duration: 0.5 }}
             className="lg:col-span-5 flex flex-col items-center gap-6"
           >
-            <div className="relative w-72 sm:w-80 aspect-square rounded-2xl overflow-hidden border border-white/10 bg-[#09090b]">
+            <div className="relative w-72 sm:w-80 aspect-square rounded-2xl overflow-hidden border border-white/10 bg-[#09090b] shadow-[-3px_0_0_rgba(0,240,255,0.3),3px_0_0_rgba(174,4,13,0.5)]">
               <Image
                 src="/profile.webp"
                 alt="Abhinay Musku"

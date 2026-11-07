@@ -16,6 +16,8 @@ colors:
   text-secondary: "#d4d4d8"
   text-muted: "#a1a1aa"
   text-dim: "#52525b"
+  multiverse-cyan: "#00f0ff"
+  spider-crimson: "#ff0055"
   purple-selection: "rgba(59, 7, 100, 0.55)"
   scrollbar-thumb: "#1c1c22"
 typography:

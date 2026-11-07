@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Mail, ArrowUp } from "lucide-react";
-import { GithubIcon as Github, LinkedinIcon as Linkedin } from "@/components/ui/Icons";
+import { GithubIcon as Github, LinkedinIcon as Linkedin, SpiderIcon } from "@/components/ui/Icons";
 import { personal } from "@/data/personal";
 
 export default function Footer() {
@@ -11,9 +11,11 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Brand & Tagline */}
         <div className="flex flex-col items-center md:items-start gap-1">
-          <Link href="/" className="flex items-center gap-1 font-semibold text-base text-white">
+          <Link href="/" className="flex items-center gap-1.5 font-semibold text-base text-white spider-glitch-hover">
+            <SpiderIcon className="w-3.5 h-3.5 text-[#ae040d]" />
             <span>Abhinay</span>
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ae040d]" />
+            <span className="ml-1 text-[10px] font-mono text-[#00f0ff]">// 1610</span>
           </Link>
           <p className="text-xs text-zinc-500 font-normal">
             {personal.title} · {personal.location}

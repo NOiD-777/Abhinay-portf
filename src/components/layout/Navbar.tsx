@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowUpRight, Mail } from "lucide-react";
-import { GithubIcon as Github, LinkedinIcon as Linkedin } from "@/components/ui/Icons";
+import { GithubIcon as Github, LinkedinIcon as Linkedin, SpiderIcon } from "@/components/ui/Icons";
 import { personal } from "@/data/personal";
 
 const NAV_ITEMS = [
@@ -37,13 +37,17 @@ export default function Navbar() {
             : "bg-transparent border border-transparent"
         }`}
       >
-        {/* Typographic Wordmark with Solid Red Dot */}
+        {/* Typographic Wordmark with Spider-Verse Glitch & Dimension Identifier */}
         <Link
           href="/"
-          className="group flex items-center gap-1 font-semibold text-lg tracking-tight text-white focus:outline-none"
+          className="group flex items-center gap-1.5 font-semibold text-lg tracking-tight text-white focus:outline-none spider-glitch-hover"
         >
+          <SpiderIcon className="w-4 h-4 text-[#ae040d] transition-transform duration-200 group-hover:scale-125" />
           <span>Abhinay</span>
           <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ae040d]" />
+          <span className="ml-2 hidden lg:inline-block px-2 py-0.5 rounded text-[10px] font-mono tracking-widest text-zinc-500 bg-white/5 border border-white/5">
+            EARTH-1610
+          </span>
         </Link>
 
         {/* Desktop Nav Links */}

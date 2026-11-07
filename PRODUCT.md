@@ -68,3 +68,4 @@ Evaluators access the site from resumes, LinkedIn (`linkedin.com/in/abhinay-musk
 - Semantic HTML5 landmark structure (`header`, `main`, `section`, `footer`).
 - Full keyboard navigability and visible focus rings.
 - Proper image alt descriptions for portrait and iconography.
+

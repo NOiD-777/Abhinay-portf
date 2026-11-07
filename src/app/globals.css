@@ -60,3 +60,59 @@ body {
   background: #0e0717;
   transform: translateY(-2px);
 }
+
+/* =========================================================================
+   Spider-Man: Into the Spider-Verse Theme Utilities
+   Chromatic Aberration, Ben-Day Halftone Dots & Multiverse Telemetry
+   ========================================================================= */
+
+/* Signature RGB Split / Chromatic Aberration */
+.spider-glitch {
+  text-shadow: -2px 0 0 rgba(0, 240, 255, 0.75), 2px 0 0 rgba(174, 4, 13, 0.85);
+}
+
+.spider-glitch-hover {
+  transition: text-shadow 0.15s ease, transform 0.15s ease;
+}
+.spider-glitch-hover:hover {
+  text-shadow: -2px 0 0 rgba(0, 240, 255, 0.75), 2px 0 0 rgba(174, 4, 13, 0.85);
+  transform: translate(-1px, -1px);
+}
+
+/* Ben-Day Comic Halftone Dots */
+.halftone-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 8px 8px;
+}
+
+.halftone-dots-spider {
+  background-image: radial-gradient(rgba(174, 4, 13, 0.22) 1.2px, transparent 1.2px);
+  background-size: 10px 10px;
+}
+
+.halftone-dots-cyan {
+  background-image: radial-gradient(rgba(0, 240, 255, 0.15) 1px, transparent 1px);
+  background-size: 8px 8px;
+}
+
+/* Comic Panel Card with Chromatic Rim on Hover */
+.spider-panel {
+  position: relative;
+  background: #09090b;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.spider-panel:hover {
+  border-color: rgba(174, 4, 13, 0.6);
+  box-shadow: -2px 0 0 rgba(0, 240, 255, 0.35), 2px 0 0 rgba(174, 4, 13, 0.5);
+  background: #0c0612;
+  transform: translateY(-2px);
+}
+
+/* Stylized Spider-Verse Tag */
+.spider-tag {
+  font-family: var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}

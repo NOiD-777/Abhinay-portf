@@ -57,14 +57,22 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.06 }}
-              className="rounded-2xl p-7 border border-white/5 bg-[#09090b] hover:border-[#ae040d]/40 flex flex-col justify-between gap-6 text-left transition-all duration-200 group"
+              className="spider-panel rounded-2xl p-7 flex flex-col justify-between gap-6 text-left group overflow-hidden"
             >
-              <div className="space-y-4">
-                {/* Header row: Category Pill + Links */}
+              {/* Subtle Comic Halftone Texture */}
+              <div className="absolute inset-0 halftone-dots opacity-20 pointer-events-none" />
+
+              <div className="space-y-4 relative z-10">
+                {/* Header row: Issue number + Category Pill + Links */}
                 <div className="flex items-center justify-between">
-                  <span className="text-[11px] font-mono uppercase tracking-wider text-zinc-400">
-                    {project.category}
-                  </span>
+                  <div className="flex items-center gap-2">
+                    <span className="text-[10px] font-mono tracking-widest text-[#00f0ff] uppercase">
+                      ISSUE #0{idx + 1} //
+                    </span>
+                    <span className="text-[11px] font-mono uppercase tracking-wider text-zinc-400">
+                      {project.category}
+                    </span>
+                  </div>
 
                   <div className="flex items-center gap-2">
                     {project.githubUrl && (
@@ -98,9 +106,9 @@ export default function Projects() {
                     href={`/projects/${project.slug}`}
                     className="group-hover:text-[#ae040d] transition-colors"
                   >
-                    <h3 className="text-xl sm:text-2xl font-semibold text-white group-hover:text-[#ff3b47] transition-colors flex items-center gap-2 tracking-[-0.02em]">
+                    <h3 className="text-xl sm:text-2xl font-semibold text-white group-hover:text-[#ff0055] transition-colors flex items-center gap-2 tracking-[-0.02em] group-hover:spider-glitch">
                       <span>{project.title}</span>
-                      <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-[#ae040d]" />
+                      <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-[#00f0ff]" />
                     </h3>
                   </Link>
                   <p className="text-xs font-mono text-[#ae040d] mt-1">
@@ -119,7 +127,7 @@ export default function Projects() {
                     {project.metrics.map((metric, i) => (
                       <span
                         key={i}
-                        className="px-2.5 py-1 rounded-md text-[11px] font-mono bg-[#140920] text-purple-200 border border-[#2e0e47]/70"
+                        className="px-2.5 py-1 rounded-md text-[11px] font-mono bg-[#140920] text-purple-200 border border-[#2e0e47]/70 shadow-[-1px_0_0_rgba(0,240,255,0.25),1px_0_0_rgba(174,4,13,0.35)]"
                       >
                         {metric}
                       </span>

@@ -28,3 +28,18 @@ export function LinkedinIcon({ className = "w-4 h-4" }: { className?: string }) 
   );
 }
 
+export function SpiderIcon({ className = "w-4 h-4" }: { className?: string }) {
+  return (
+    <svg
+      role="img"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {/* Miles Morales Spider-Verse Stylized Spray Spider */}
+      <path d="M12 2a2 2 0 0 0-2 2c0 .4.12.78.33 1.1L8.5 7.5l-3.2-1.6a1 1 0 0 0-1.4 1.3l2.8 4.2-3.8 1.9a1 1 0 0 0 .9 1.8l4.1-2.1L9 15.5l-3.9 3.9a1 1 0 1 0 1.4 1.4l4.2-4.2.3 3.4a2 2 0 1 0 2 0l.3-3.4 4.2 4.2a1 1 0 0 0 1.4-1.4L15 15.5l1.1-2.5 4.1 2.1a1 1 0 0 0 .9-1.8l-3.8-1.9 2.8-4.2a1 1 0 0 0-1.4-1.3L15.5 7.5 13.67 5.1c.21-.32.33-.7.33-1.1a2 2 0 0 0-2-2zm-1.5 5.5h3l1 2.5h-5l1-2.5zm-.5 3.5h4l.8 3.5h-5.6l.8-3.5z" />
+    </svg>
+  );
+}
+

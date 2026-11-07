@@ -20,15 +20,16 @@ export default function Hero() {
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           className="lg:col-span-7 flex flex-col items-start gap-6 text-left"
         >
-          {/* Subtle Role Tag */}
+          {/* Spider-Verse Role Tag */}
           <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#ae040d]">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#ae040d]" />
-            <span>Full-Stack &amp; AI Engineer</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-[#ae040d] animate-pulse" />
+            <span className="text-zinc-500">EARTH-1610 //</span>
+            <span className="text-white font-semibold">Full-Stack &amp; AI Engineer</span>
           </div>
 
-          {/* Crisp, Strong Name */}
+          {/* Crisp, Strong Name with Spider-Verse Glitch Hover */}
           <div className="space-y-3">
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-semibold tracking-[-0.035em] text-white leading-[1.05]">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-semibold tracking-[-0.035em] text-white leading-[1.05] spider-glitch-hover cursor-default">
               Abhinay Musku
             </h1>
             <p className="text-xl sm:text-2xl text-zinc-300 font-normal leading-snug max-w-xl tracking-[-0.015em]">
@@ -41,11 +42,11 @@ export default function Hero() {
             Data Engineer at <span className="text-zinc-200 font-medium">JMAN Group</span> developing high-throughput Databricks &amp; PySpark pipelines. Winner of the BuildAI4India Hackathon and Technical Lead at Google Developers Group.
           </p>
 
-          {/* Solid Refined CTAs — No Gradients */}
+          {/* Solid Refined CTAs — Spider-Verse Accent */}
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <Link
               href="#projects"
-              className="inline-flex items-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-medium text-white rounded-lg bg-[#ae040d] hover:bg-[#c50512] transition-colors duration-150"
+              className="inline-flex items-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-medium text-white rounded-lg bg-[#ae040d] hover:bg-[#c50512] transition-all duration-150 shadow-[-2px_0_0_rgba(0,240,255,0.4),2px_0_0_rgba(225,6,0,0.6)]"
             >
               <span>Explore Projects</span>
               <ArrowUpRight className="w-4 h-4" />

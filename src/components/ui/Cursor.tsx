@@ -60,12 +60,12 @@ export default function Cursor() {
           y: mouseY,
         }}
       />
-      {/* Trailing ring with crimson glow */}
+      {/* Trailing ring with Spider-Sense chromatic aberration on interactive hover */}
       <motion.div
-        className={`fixed top-0 left-0 rounded-full border border-[#ae040d]/60 pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2 transition-all duration-150 ${
+        className={`fixed top-0 left-0 rounded-full pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2 transition-all duration-150 ${
           isPointer
-            ? "w-10 h-10 bg-[#ae040d]/15 border-[#d60815] shadow-[0_0_24px_rgba(174,4,13,0.6)]"
-            : "w-7 h-7"
+            ? "w-10 h-10 bg-[#ae040d]/15 border border-[#ae040d] shadow-[-2px_0_0_rgba(0,240,255,0.75),2px_0_0_rgba(225,6,0,0.85)] scale-110"
+            : "w-7 h-7 border border-[#ae040d]/40"
         }`}
         style={{
           x: trailingX,
