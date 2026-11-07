@@ -46,6 +46,56 @@ export default function Skills() {
           </p>
         </div>
 
+        {/* Illustrative Ecosystem Blueprint Pillars */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-5 rounded-2xl bg-[#09090b]/80 border border-white/10 text-left relative overflow-hidden">
+          <div className="absolute inset-0 halftone-dots opacity-10 pointer-events-none" />
+
+          {/* Pillar 1 */}
+          <div className="space-y-1.5 p-3 rounded-xl bg-black/50 border border-[#ef4444]/20 relative z-10">
+            <div className="flex items-center justify-between text-[10px] font-mono text-[#ef4444]">
+              <span className="font-semibold tracking-wider uppercase">// PILLAR 01</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#ef4444] animate-pulse" />
+            </div>
+            <h4 className="text-sm font-semibold text-white">Enterprise Data Fabric</h4>
+            <p className="text-[11px] text-zinc-400">
+              Databricks · PySpark · Delta Lake · Microsoft Azure · AWS Lambda
+            </p>
+            <div className="text-[10px] font-mono text-zinc-500 pt-1 border-t border-white/5">
+              High-throughput ACID pipelines &amp; sub-second batching
+            </div>
+          </div>
+
+          {/* Pillar 2 */}
+          <div className="space-y-1.5 p-3 rounded-xl bg-black/50 border border-[#00f0ff]/20 relative z-10">
+            <div className="flex items-center justify-between text-[10px] font-mono text-[#00f0ff]">
+              <span className="font-semibold tracking-wider uppercase">// PILLAR 02</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-pulse" />
+            </div>
+            <h4 className="text-sm font-semibold text-white">Agentic AI Protocols</h4>
+            <p className="text-[11px] text-zinc-400">
+              Google Gemini API · LangChain · FastAPI · Pydantic · Multi-Agent
+            </p>
+            <div className="text-[10px] font-mono text-zinc-500 pt-1 border-t border-white/5">
+              Autonomous reasoning loops &amp; multi-tool function calling
+            </div>
+          </div>
+
+          {/* Pillar 3 */}
+          <div className="space-y-1.5 p-3 rounded-xl bg-black/50 border border-[#a855f7]/20 relative z-10">
+            <div className="flex items-center justify-between text-[10px] font-mono text-[#a855f7]">
+              <span className="font-semibold tracking-wider uppercase">// PILLAR 03</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#a855f7] animate-pulse" />
+            </div>
+            <h4 className="text-sm font-semibold text-white">Reactive Full-Stack</h4>
+            <p className="text-[11px] text-zinc-400">
+              Next.js 16 · React 19 · TypeScript · Angular · Tailwind CSS
+            </p>
+            <div className="text-[10px] font-mono text-zinc-500 pt-1 border-t border-white/5">
+              Sub-16ms telemetry sync &amp; spatial spider-verse interfaces
+            </div>
+          </div>
+        </div>
+
         {/* Category Tabs */}
         <div className="flex flex-wrap gap-2 pt-1">
           <button

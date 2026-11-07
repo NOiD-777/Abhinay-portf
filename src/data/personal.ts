@@ -57,6 +57,8 @@ export const personal = {
         "Left the sandbox behind to architect mission-critical financial pipelines. Harnessing Databricks and PySpark, transforming multi-cloud ingestion streams into high-throughput Delta Lake intelligence with zero data drop.",
       milestone: "Data Engineer · Enterprise Scale",
       accent: "crimson",
+      image: "/images/jman-abhinay.webp",
+      imageCaption: "Abhinay on-site at JMAN Group — 'Most overnight successes took a long time' (Steve Jobs)",
     },
     {
       act: "ACT III",

@@ -3,9 +3,36 @@
 import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ExternalLink, ArrowUpRight } from "lucide-react";
+import { ExternalLink, ArrowUpRight, Workflow } from "lucide-react";
 import { GithubIcon as Github } from "@/components/ui/Icons";
 import { projects, projectCategories } from "@/data/projects";
+
+const PROJECT_FLOWS: Record<string, { steps: string[]; badge: string }> = {
+  artyatra: {
+    badge: "VISION PIPELINE",
+    steps: ["Artwork Upload", "Gemini Vision API", "LangChain Reasoning", "8 Art Forms Mapped"],
+  },
+  "autonomous-career-agent": {
+    badge: "AGENTIC WORKFLOW",
+    steps: ["Opportunity Telemetry", "Tool Calling", "Pydantic Schemas", "Automated Dispatch"],
+  },
+  "twitter-sentiment-analysis": {
+    badge: "NLP CLASSIFIER",
+    steps: ["Social Ingestion", "Tokenization", "RoBERTa Inference", "Real-Time Sentiment"],
+  },
+  "upi-offline-vault": {
+    badge: "CRYPTOGRAPHIC PROTOCOL",
+    steps: ["USSD Payload", "AES Handshake", "Local SQLite Vault", "Offline Settlement"],
+  },
+  "portfolio-miles-morales": {
+    badge: "SPATIAL INTERFACE",
+    steps: ["Next.js 16", "Turbopack", "GSAP & Motion", "Earth-1610 Glitch"],
+  },
+  "edge-biometric-vision": {
+    badge: "EDGE SILICON",
+    steps: ["Camera Sensor", "Skip-Frame Queue", "FastAPI Engine", "Edge Chip @ 92%"],
+  },
+};
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState<string>("all");
@@ -142,6 +169,31 @@ export default function Projects() {
                         {metric}
                       </span>
                     ))}
+                  </div>
+                )}
+
+                {/* Illustrative Micro Architecture Pipeline */}
+                {PROJECT_FLOWS[project.slug] && (
+                  <div className="p-3 rounded-xl bg-black/60 border border-white/5 space-y-1.5">
+                    <div className="flex items-center justify-between text-[10px] font-mono">
+                      <span className="text-[#00f0ff] uppercase tracking-wider flex items-center gap-1">
+                        <Workflow className="w-3 h-3 text-[#00f0ff]" />
+                        <span>PIPELINE // {PROJECT_FLOWS[project.slug].badge}</span>
+                      </span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-pulse" />
+                    </div>
+                    <div className="flex flex-wrap items-center gap-1.5 text-[10px] font-mono text-zinc-300">
+                      {PROJECT_FLOWS[project.slug].steps.map((step, sIdx, arr) => (
+                        <div key={step} className="flex items-center gap-1.5">
+                          <span className="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-zinc-200">
+                            {step}
+                          </span>
+                          {sIdx < arr.length - 1 && (
+                            <span className="text-[#ae040d] font-bold">→</span>
+                          )}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>

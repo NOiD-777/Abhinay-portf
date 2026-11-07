@@ -200,6 +200,19 @@ export default function About() {
                                 </div>
                                 <span className="font-semibold text-white">GDGC MLRIT</span>
                               </>
+                            ) : idx === 1 ? (
+                              <>
+                                <div className="w-12 h-3 relative flex items-center justify-center">
+                                  <Image
+                                    src="/logos/jman-logo.svg"
+                                    alt="JMAN Group"
+                                    width={48}
+                                    height={12}
+                                    className="w-full h-full object-contain"
+                                  />
+                                </div>
+                                <span className="font-semibold text-[#ef4444]">JMAN GROUP</span>
+                              </>
                             ) : (
                               <>
                                 <div className="w-6 h-3 relative flex items-center justify-center">
@@ -218,12 +231,30 @@ export default function About() {
 
                           {/* Bottom Telemetry Caption Bar */}
                           <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[10px] font-mono">
-                            <span className={`${idx === 0 ? "text-[#00f0ff] border-[#00f0ff]/30" : "text-[#c084fc] border-[#a855f7]/30"} flex items-center gap-1.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md border`}>
-                              <span className={`w-1.5 h-1.5 rounded-full ${idx === 0 ? "bg-[#00f0ff]" : "bg-[#c084fc]"} animate-pulse`} />
-                              <span>{idx === 0 ? "FIELD LOG // STAGE PRESENTATION" : "CHAMPIONSHIP // 1ST PLACE WINNER"}</span>
+                            <span className={`${
+                              idx === 0
+                                ? "text-[#00f0ff] border-[#00f0ff]/30"
+                                : idx === 1
+                                ? "text-[#ef4444] border-[#ef4444]/30"
+                                : "text-[#c084fc] border-[#a855f7]/30"
+                            } flex items-center gap-1.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md border`}>
+                              <span className={`w-1.5 h-1.5 rounded-full ${
+                                idx === 0 ? "bg-[#00f0ff]" : idx === 1 ? "bg-[#ef4444]" : "bg-[#c084fc]"
+                              } animate-pulse`} />
+                              <span>{
+                                idx === 0
+                                  ? "FIELD LOG // STAGE PRESENTATION"
+                                  : idx === 1
+                                  ? "ENTERPRISE FORGE // CHENNAI"
+                                  : "CHAMPIONSHIP // 1ST PLACE WINNER"
+                              }</span>
                             </span>
                             <span className="text-zinc-300 hidden sm:inline px-2 py-0.5 rounded bg-black/80 backdrop-blur-md border border-white/10">
-                              {idx === 0 ? "CORE TEAM · TECHNICAL LEAD" : "BUILDAI4INDIA · TEAM ARTYATRA"}
+                              {idx === 0
+                                ? "CORE TEAM · TECHNICAL LEAD"
+                                : idx === 1
+                                ? "DATA ENGINEER · FINANCIAL LAKEHOUSE"
+                                : "BUILDAI4INDIA · TEAM ARTYATRA"}
                             </span>
                           </div>
                         </div>
