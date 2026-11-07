@@ -76,22 +76,59 @@ export default function Education() {
                   return (
                     <div
                       key={hIdx}
-                      className="p-3.5 rounded-lg bg-[#12081f] border border-[#2e0e47]/60 flex items-start gap-2.5 spider-panel"
+                      className={`rounded-xl bg-[#12081f] border border-[#2e0e47]/60 spider-panel overflow-hidden ${
+                        isBuildAI ? "sm:col-span-2 p-4 sm:p-5 flex flex-col md:flex-row items-center gap-5" : "p-3.5 flex items-start gap-2.5"
+                      }`}
                     >
-                      {isGDG ? (
-                        <div className="w-6 h-5 shrink-0 mt-0.5 flex items-center justify-center">
-                          <Image src="/logos/gdgc-mark.svg" alt="GDGC" width={24} height={20} className="w-full h-full object-contain" />
-                        </div>
-                      ) : isBuildAI ? (
-                        <div className="w-8 h-4 shrink-0 mt-0.5 flex items-center justify-center">
-                          <Image src="/logos/swecha.svg" alt="Swecha Telangana" width={32} height={16} className="w-full h-full object-contain" />
-                        </div>
+                      {isBuildAI ? (
+                        <>
+                          <div className="relative w-full md:w-56 aspect-[16/10] rounded-lg overflow-hidden shrink-0 border border-purple-500/20 group">
+                            <Image
+                              src="/images/hackathon-swecha-team.webp"
+                              alt="BuildAI4India Hackathon Winners"
+                              fill
+                              className="object-cover object-center filter contrast-105 group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
+                            <div className="absolute bottom-1.5 left-2 flex items-center gap-1.5 text-[10px] font-mono text-[#00f0ff]">
+                              <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-pulse" />
+                              <span>1ST PLACE WINNERS</span>
+                            </div>
+                          </div>
+                          <div className="space-y-2 text-left flex-1">
+                            <div className="flex items-center gap-2">
+                              <div className="w-8 h-4 shrink-0 flex items-center justify-center">
+                                <Image src="/logos/swecha.svg" alt="Swecha Telangana" width={32} height={16} className="w-full h-full object-contain" />
+                              </div>
+                              <span className="text-[10px] font-mono uppercase tracking-wider text-purple-300 px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/20">
+                                State Championship
+                              </span>
+                            </div>
+                            <p className="text-xs sm:text-sm text-white font-medium leading-relaxed">
+                              {honor}
+                            </p>
+                            <p className="text-[11px] text-zinc-400 font-mono">
+                              Project: ArtYatra · Generative AI autonomous cultural art preservation system
+                            </p>
+                          </div>
+                        </>
+                      ) : isGDG ? (
+                        <>
+                          <div className="w-6 h-5 shrink-0 mt-0.5 flex items-center justify-center">
+                            <Image src="/logos/gdgc-mark.svg" alt="GDGC" width={24} height={20} className="w-full h-full object-contain" />
+                          </div>
+                          <span className="text-xs text-zinc-300 leading-relaxed font-normal">
+                            {honor}
+                          </span>
+                        </>
                       ) : (
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#a855f7] shrink-0 mt-1.5" />
+                        <>
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#a855f7] shrink-0 mt-1.5" />
+                          <span className="text-xs text-zinc-300 leading-relaxed font-normal">
+                            {honor}
+                          </span>
+                        </>
                       )}
-                      <span className="text-xs text-zinc-300 leading-relaxed font-normal">
-                        {honor}
-                      </span>
                     </div>
                   );
                 })}

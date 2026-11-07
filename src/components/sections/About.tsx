@@ -185,28 +185,45 @@ export default function About() {
                           <div className="absolute inset-0 halftone-dots opacity-15 pointer-events-none" />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent pointer-events-none" />
 
-                          {/* Top-Right Official Google Developer Groups Emblem */}
+                          {/* Top-Right Official Emblem */}
                           <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-black/75 backdrop-blur-md border border-white/10 text-[10px] font-mono text-zinc-300">
-                            <div className="w-4 h-2.5 relative flex items-center justify-center">
-                              <Image
-                                src="/logos/gdgc-mark.svg"
-                                alt="GDGC"
-                                width={16}
-                                height={10}
-                                className="w-full h-full object-contain"
-                              />
-                            </div>
-                            <span className="font-semibold text-white">GDGC MLRIT</span>
+                            {idx === 0 ? (
+                              <>
+                                <div className="w-4 h-2.5 relative flex items-center justify-center">
+                                  <Image
+                                    src="/logos/gdgc-mark.svg"
+                                    alt="GDGC"
+                                    width={16}
+                                    height={10}
+                                    className="w-full h-full object-contain"
+                                  />
+                                </div>
+                                <span className="font-semibold text-white">GDGC MLRIT</span>
+                              </>
+                            ) : (
+                              <>
+                                <div className="w-6 h-3 relative flex items-center justify-center">
+                                  <Image
+                                    src="/logos/swecha.svg"
+                                    alt="Swecha"
+                                    width={24}
+                                    height={12}
+                                    className="w-full h-full object-contain"
+                                  />
+                                </div>
+                                <span className="font-semibold text-[#c084fc]">SWECHA TELANGANA</span>
+                              </>
+                            )}
                           </div>
 
                           {/* Bottom Telemetry Caption Bar */}
                           <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[10px] font-mono">
-                            <span className="text-[#00f0ff] flex items-center gap-1.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md border border-[#00f0ff]/30">
-                              <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-pulse" />
-                              <span>FIELD LOG // STAGE PRESENTATION</span>
+                            <span className={`${idx === 0 ? "text-[#00f0ff] border-[#00f0ff]/30" : "text-[#c084fc] border-[#a855f7]/30"} flex items-center gap-1.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md border`}>
+                              <span className={`w-1.5 h-1.5 rounded-full ${idx === 0 ? "bg-[#00f0ff]" : "bg-[#c084fc]"} animate-pulse`} />
+                              <span>{idx === 0 ? "FIELD LOG // STAGE PRESENTATION" : "CHAMPIONSHIP // 1ST PLACE WINNER"}</span>
                             </span>
                             <span className="text-zinc-300 hidden sm:inline px-2 py-0.5 rounded bg-black/80 backdrop-blur-md border border-white/10">
-                              CORE TEAM · TECHNICAL LEAD
+                              {idx === 0 ? "CORE TEAM · TECHNICAL LEAD" : "BUILDAI4INDIA · TEAM ARTYATRA"}
                             </span>
                           </div>
                         </div>

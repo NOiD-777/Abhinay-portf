@@ -67,6 +67,8 @@ export const personal = {
         "Crossed dimensions into Generative AI. Built ArtYatra with Google Gemini API & LangChain to autonomously classify and preserve 8 endangered Indian art styles — taking 1st place at Swecha Telangana's BuildAI4India Hackathon.",
       milestone: "1st Place Winner · Swecha BuildAI4India",
       accent: "purple",
+      image: "/images/hackathon-swecha-team.webp",
+      imageCaption: "Team ArtYatra celebrating 1st Place victory at Swecha Telangana BuildAI4India Hackathon",
     },
   ] as StoryBeat[],
   stats: [

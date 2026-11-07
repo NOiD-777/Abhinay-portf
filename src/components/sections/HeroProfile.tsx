@@ -23,17 +23,18 @@ export default function HeroProfile() {
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         className="relative z-10 w-full flex flex-col items-center"
       >
-        {/* Cutout Portrait Image with Spider-Man Logo in Background */}
+        {/* Cutout Portrait Image with Charminar Architectural Emblem in Background */}
         <div className="relative w-[300px] sm:w-[360px] lg:w-[420px] h-[400px] sm:h-[460px] lg:h-[520px] flex items-end justify-center overflow-hidden">
-          {/* Spider-Man Emblem Behind User */}
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none -translate-y-8 z-0">
-            <div className="relative w-[280px] sm:w-[340px] lg:w-[380px] aspect-square opacity-40 sm:opacity-50">
+          {/* Front-Facing Charminar Architectural Emblem Behind User */}
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none -translate-y-6 z-0">
+            <div className="relative w-[290px] sm:w-[350px] lg:w-[390px] h-[350px] sm:h-[420px] lg:h-[470px] opacity-75 sm:opacity-90">
               <Image
-                src="/logos/spiderman-miles.svg"
-                alt="Spider-Man Insignia"
+                src="/logos/charminar-hero.webp"
+                alt="Charminar Architectural Emblem"
                 fill
-                className="object-contain filter drop-shadow-[0_0_25px_rgba(174,4,13,0.9)] drop-shadow-[-2px_0_0_rgba(0,240,255,0.7)] animate-pulse"
-                style={{ animationDuration: "4s" }}
+                priority
+                className="object-contain filter drop-shadow-[0_0_35px_rgba(174,4,13,0.9)] drop-shadow-[-3px_0_0_rgba(0,240,255,0.75)] animate-pulse"
+                style={{ animationDuration: "5s" }}
               />
             </div>
           </div>
