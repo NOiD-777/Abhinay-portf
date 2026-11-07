@@ -26,7 +26,7 @@ const PROJECT_FLOWS: Record<string, { steps: string[]; badge: string }> = {
   },
   "portfolio-miles-morales": {
     badge: "SPATIAL INTERFACE",
-    steps: ["Next.js 16", "Turbopack", "GSAP & Motion", "Earth-1610 Glitch"],
+    steps: ["Next.js 16", "Turbopack", "GSAP & Motion", "Sol-3 Glitch"],
   },
   "face-recognition-edge": {
     badge: "CCTV SURVEILLANCE",

@@ -196,7 +196,7 @@ export default function Contact() {
                     onChange={(e) =>
                       setFormState({ ...formState, email: e.target.value })
                     }
-                    placeholder="miles@earth1610.spider / your best email"
+                    placeholder="miles@sol3.spider / your best email"
                     className="w-full px-3.5 py-2.5 rounded-lg bg-[#111115] border border-white/10 text-white text-sm placeholder:text-zinc-600 focus:outline-none focus:border-[#ae040d] transition-colors"
                   />
                 </div>

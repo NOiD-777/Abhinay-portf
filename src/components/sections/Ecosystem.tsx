@@ -53,7 +53,7 @@ export default function Ecosystem() {
             <span>Allied Organizations &amp; Production Platforms</span>
           </p>
           <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-wider">
-            EARTH-1610 VERIFIED TELEMETRY
+            SOL-3 VERIFIED TELEMETRY
           </span>
         </div>
 

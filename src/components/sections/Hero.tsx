@@ -37,7 +37,7 @@ export default function Hero() {
       <div className="relative z-20 max-w-7xl w-full mx-auto flex items-center justify-between pb-6 border-b border-white/5">
         <div className="flex flex-col text-left">
           <span className="font-mono text-[11px] sm:text-xs font-bold text-[#ae040d] tracking-widest uppercase">
-            ABHINAY MUSKU // EARTH-1610 SPIDER-ENGINEER
+            ABHINAY MUSKU // SOL-3 SPIDER-ENGINEER
           </span>
           <span className="font-mono text-[10px] sm:text-[11px] text-zinc-400 tracking-wider uppercase">
             DATA SLINGER @ JMAN GROUP // HYDERABAD
@@ -84,7 +84,7 @@ export default function Hero() {
           {/* Location / Origin Tag */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#ae040d]/40 bg-[#ae040d]/10 text-[10px] sm:text-[11px] font-mono text-[#ff4d5a] mt-4">
             <span className="w-1.5 h-1.5 rounded-full bg-[#ae040d] animate-pulse" />
-            <span>#BEYOURSELF · EARTH-1610 · HYDERABAD</span>
+            <span>#BEYOURSELF · SOL-3 · HYDERABAD</span>
           </div>
 
           {/* Miles Morales Inspired Superhero CTA Buttons */}

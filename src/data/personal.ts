@@ -14,12 +14,12 @@ export const personal = {
   name: "Abhinay Musku",
   firstName: "Abhinay",
   lastName: "Musku",
-  title: "Earth-1610 Spider-Engineer",
+  title: "Sol-3 Spider-Engineer",
   roles: [
     "Full-Stack & AI Engineer",
     "Data Slinger @ JMAN Group",
     "GenAI Agent Orchestrator",
-    "Earth-1610 Multiverse Glitch Hunter",
+    "Sol-3 Multiverse Glitch Hunter",
   ],
   tagline:
     "By day, wrestling multi-terabyte data lakehouses at JMAN Group. By night, slinging autonomous GenAI agents across the multiverse. Untied Jordan 1s? Yeah, it's a choice.",

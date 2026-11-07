@@ -48,7 +48,7 @@ export default function Navbar() {
           <span className="font-spiderman text-base sm:text-lg tracking-[0.16em] text-white">ABHINAY MUSKU</span>
           <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ae040d]" />
           <span className="ml-1 hidden lg:inline-block px-2 py-0.5 rounded text-[10px] font-mono tracking-widest text-zinc-400 bg-white/5 border border-white/5">
-            EARTH-1610
+            SOL-3
           </span>
         </Link>
 

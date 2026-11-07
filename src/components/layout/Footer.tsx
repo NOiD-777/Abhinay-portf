@@ -15,7 +15,7 @@ export default function Footer() {
             <SpiderIcon className="w-4 h-4 text-[#ae040d]" />
             <span className="font-spiderman tracking-[0.16em] text-base">ABHINAY</span>
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ae040d]" />
-            <span className="ml-1 text-[10px] font-mono text-[#00f0ff]">// 1610</span>
+            <span className="ml-1 text-[10px] font-mono text-[#00f0ff]">// SOL-3</span>
           </Link>
           <p className="text-xs text-zinc-500 font-normal">
             {personal.title} · {personal.location}
@@ -60,7 +60,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="text-xs text-zinc-500 text-center md:text-right font-mono">
-          © 2026 Abhinay Musku · Earth-1610 // What&apos;s Up Danger? We Ball.
+          © 2026 Abhinay Musku · Sol-3 // What&apos;s Up Danger? We Ball.
         </p>
       </div>
     </footer>

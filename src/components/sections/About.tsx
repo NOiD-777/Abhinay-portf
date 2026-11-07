@@ -14,7 +14,7 @@ export default function About() {
         <div className="flex flex-col items-start gap-2 text-left">
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
             <span className="text-[#00f0ff]">//</span>
-            <span>ORIGIN STORY // EARTH-1610</span>
+            <span>ORIGIN STORY // SOL-3</span>
           </p>
           <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
             HOW I GOT HERE
@@ -26,7 +26,7 @@ export default function About() {
 
         {/* Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* Earth-1610 Spider-Verse Dossier Card (Sticky Companion on Scroll) */}
+          {/* Sol-3 Spider-Verse Dossier Card (Sticky Companion on Scroll) */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -55,7 +55,7 @@ export default function About() {
                   <div className="absolute inset-0 rounded-2xl halftone-dots-cyan opacity-40 pointer-events-none" />
                   <SpiderIcon className="w-14 h-14 text-[#ae040d] filter drop-shadow-[0_0_12px_rgba(225,6,0,0.8)] spider-glitch" />
                   <span className="absolute -top-2 -right-2 px-1.5 py-0.5 rounded text-[10px] font-mono font-bold uppercase bg-[#ae040d] text-white">
-                    1610
+                    SOL-3
                   </span>
                 </div>
 

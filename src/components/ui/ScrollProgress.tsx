@@ -41,7 +41,7 @@ export default function ScrollProgress() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setActiveChapter(CHAPTERS[entry.target.id] || "EARTH-1610");
+            setActiveChapter(CHAPTERS[entry.target.id] || "SOL-3");
           }
         });
       },
