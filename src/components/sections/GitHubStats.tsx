@@ -1,11 +1,48 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, RefreshCw } from "lucide-react";
 import { GithubIcon as Github } from "@/components/ui/Icons";
 import { personal } from "@/data/personal";
 
+const DEV_MEMES = [
+  {
+    category: "Code Review",
+    headline: "👉 👈",
+    caption: "Me reviewing my 3 AM commits",
+  },
+  {
+    category: "Local Runtime",
+    headline: "100%",
+    caption: "Works on my machine ¯\\_(ツ)_/¯",
+  },
+  {
+    category: "QA Protocol",
+    headline: "Prod Tested",
+    caption: "Real users are the best unit tests",
+  },
+  {
+    category: "Merge Strategy",
+    headline: "--force",
+    caption: "git push & pray to prod",
+  },
+  {
+    category: "Bug Resolution",
+    headline: "Feature™",
+    caption: "Undocumented autonomous behavior",
+  },
+];
+
 export default function GitHubStats() {
+  const [memeIndex, setMemeIndex] = useState(0);
+
+  const nextMeme = () => {
+    setMemeIndex((prev) => (prev + 1) % DEV_MEMES.length);
+  };
+
+  const currentMeme = DEV_MEMES[memeIndex];
+
   return (
     <section className="py-28 px-4 sm:px-6 lg:px-8 relative z-10 bg-black border-t border-white/5">
       <div className="max-w-6xl mx-auto space-y-12">
@@ -43,11 +80,28 @@ export default function GitHubStats() {
             <p className="text-xs text-zinc-400">Swecha BuildAI4India</p>
           </div>
 
-          <div className="rounded-xl p-6 border border-white/5 bg-[#09090b] space-y-1.5 text-left">
-            <span className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Production Uptime</span>
-            <p className="text-3xl font-semibold text-white font-mono tracking-tight">99.9%</p>
-            <p className="text-xs text-zinc-400">Zero data drop @ JMAN</p>
-          </div>
+          <button
+            type="button"
+            onClick={nextMeme}
+            className="group relative rounded-xl p-6 border border-white/5 bg-[#09090b] hover:border-[#ae040d]/40 space-y-1.5 text-left transition-all duration-200 cursor-pointer overflow-hidden focus:outline-none focus:ring-1 focus:ring-[#ae040d]"
+            title="Click to roll next dev meme"
+          >
+            <div className="flex items-center justify-between">
+              <span className="text-xs text-zinc-500 font-mono uppercase tracking-wider group-hover:text-[#ae040d] transition-colors">
+                {currentMeme.category}
+              </span>
+              <span className="text-[10px] font-mono text-zinc-600 group-hover:text-zinc-400 flex items-center gap-1 transition-colors">
+                <RefreshCw className="w-2.5 h-2.5 transition-transform duration-300 group-hover:rotate-180" />
+                <span>reroll</span>
+              </span>
+            </div>
+            <p className="text-3xl font-semibold text-white font-mono tracking-tight group-hover:scale-105 transition-transform duration-200 origin-left">
+              {currentMeme.headline}
+            </p>
+            <p className="text-xs text-zinc-400 group-hover:text-zinc-300 transition-colors">
+              {currentMeme.caption}
+            </p>
+          </button>
         </div>
 
         {/* GitHub External Banner */}
