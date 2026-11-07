@@ -9,8 +9,10 @@ import {
   Code,
   Eye,
   Database,
+  Layers,
 } from "lucide-react";
 import { skillCategories } from "@/data/skills";
+import { TechLogo, TECH_REGISTRY } from "@/components/ui/TechLogos";
 
 const ICON_MAP: Record<string, React.ElementType> = {
   Brain,
@@ -20,6 +22,32 @@ const ICON_MAP: Record<string, React.ElementType> = {
   Eye,
   Database,
 };
+
+// Key tech logos to showcase in the top continuous armory reel
+const SHOWCASE_TECHS = [
+  "Gemini API",
+  "OpenAI",
+  "LangChain",
+  "Databricks",
+  "PySpark",
+  "Delta Lake",
+  "Microsoft Azure",
+  "AWS (EC2, ECS, Lambda)",
+  "Google Cloud (GCP)",
+  "Python",
+  "FastAPI",
+  "PostgreSQL",
+  "React.js",
+  "Next.js",
+  "TypeScript",
+  "Angular",
+  "Tailwind CSS",
+  "OpenCV",
+  "TensorFlow",
+  "MongoDB Atlas",
+  "Git",
+  "Power BI",
+];
 
 export default function Skills() {
   const [activeCategory, setActiveCategory] = useState<string>("all");
@@ -36,14 +64,38 @@ export default function Skills() {
         <div className="flex flex-col items-start gap-2 text-left">
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d] flex items-center gap-1.5">
             <span className="text-[#00f0ff]">//</span>
-            <span>THE SUIT &amp; GADGETS</span>
+            <span>THE SUIT &amp; GADGETS // OFFICIAL ARSENAL</span>
           </p>
           <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
             WHAT&apos;S IN MY WEB-SHOOTERS
           </h2>
           <p className="text-zinc-300 text-sm sm:text-base max-w-prose font-normal leading-relaxed">
-            The exact tech stack I use to build scalable distributed systems, deploy autonomous AI agents, and ship without breaking production. Yeah, we cooked.
+            Every technology in my arsenal, backed by production code and battle-tested pipelines. Featuring official vector emblems for every stack from my dossier.
           </p>
+        </div>
+
+        {/* Continuous Official Tech Stack Reel */}
+        <div className="relative w-full overflow-hidden rounded-2xl bg-black/60 border border-white/10 p-3.5 backdrop-blur-md shadow-[0_10px_30px_rgba(0,0,0,0.8)]">
+          <div className="flex items-center gap-2 pb-2.5 px-2 border-b border-white/5 text-[10px] font-mono uppercase tracking-widest text-zinc-400">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-ping" />
+            <span className="text-white font-semibold">VERIFIED PRODUCTION STACKS</span>
+            <span className="text-zinc-600">//</span>
+            <span className="text-zinc-400">OFFICIAL LOGOS DIRECT FROM DOSSIER</span>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2 pt-2.5">
+            {SHOWCASE_TECHS.map((tech) => (
+              <div
+                key={tech}
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 transition-all duration-200 group/pill cursor-default"
+              >
+                <TechLogo name={tech} className="w-3.5 h-3.5" useBrandColor />
+                <span className="text-xs font-mono text-zinc-300 group-hover/pill:text-white transition-colors">
+                  {tech}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Illustrative Ecosystem Blueprint Pillars */}
@@ -57,9 +109,24 @@ export default function Skills() {
               <span className="w-1.5 h-1.5 rounded-full bg-[#ef4444] animate-pulse" />
             </div>
             <h4 className="text-sm font-semibold text-white">Enterprise Lakehouse Forge</h4>
-            <p className="text-[11px] text-zinc-400">
-              Databricks · PySpark · Delta Lake · Microsoft Azure · AWS Lambda
-            </p>
+            <div className="flex flex-wrap items-center gap-1.5 pt-1">
+              <span className="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-300 px-2 py-0.5 rounded bg-white/5 border border-white/5">
+                <TechLogo name="Databricks" className="w-3 h-3" useBrandColor />
+                <span>Databricks</span>
+              </span>
+              <span className="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-300 px-2 py-0.5 rounded bg-white/5 border border-white/5">
+                <TechLogo name="PySpark" className="w-3 h-3" useBrandColor />
+                <span>PySpark</span>
+              </span>
+              <span className="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-300 px-2 py-0.5 rounded bg-white/5 border border-white/5">
+                <TechLogo name="Delta Lake" className="w-3 h-3" useBrandColor />
+                <span>Delta Lake</span>
+              </span>
+              <span className="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-300 px-2 py-0.5 rounded bg-white/5 border border-white/5">
+                <TechLogo name="Microsoft Azure" className="w-3 h-3" useBrandColor />
+                <span>Azure</span>
+              </span>
+            </div>
             <div className="text-[10px] font-mono text-zinc-500 pt-1 border-t border-white/5">
               High-throughput ACID pipelines &amp; zero dropped records. Real heavy lifting.
             </div>
@@ -72,9 +139,24 @@ export default function Skills() {
               <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-pulse" />
             </div>
             <h4 className="text-sm font-semibold text-white">Autonomous AI Arsenal</h4>
-            <p className="text-[11px] text-zinc-400">
-              Google Gemini API · LangChain · FastAPI · Pydantic · Multi-Agent
-            </p>
+            <div className="flex flex-wrap items-center gap-1.5 pt-1">
+              <span className="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-300 px-2 py-0.5 rounded bg-white/5 border border-white/5">
+                <TechLogo name="Gemini API" className="w-3 h-3" useBrandColor />
+                <span>Gemini API</span>
+              </span>
+              <span className="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-300 px-2 py-0.5 rounded bg-white/5 border border-white/5">
+                <TechLogo name="OpenAI" className="w-3 h-3" useBrandColor />
+                <span>OpenAI</span>
+              </span>
+              <span className="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-300 px-2 py-0.5 rounded bg-white/5 border border-white/5">
+                <TechLogo name="LangChain" className="w-3 h-3" useBrandColor />
+                <span>LangChain</span>
+              </span>
+              <span className="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-300 px-2 py-0.5 rounded bg-white/5 border border-white/5">
+                <TechLogo name="FastAPI" className="w-3 h-3" useBrandColor />
+                <span>FastAPI</span>
+              </span>
+            </div>
             <div className="text-[10px] font-mono text-zinc-500 pt-1 border-t border-white/5">
               Multi-agent reasoning loops &amp; function calling with maximum aura.
             </div>
@@ -87,9 +169,24 @@ export default function Skills() {
               <span className="w-1.5 h-1.5 rounded-full bg-[#a855f7] animate-pulse" />
             </div>
             <h4 className="text-sm font-semibold text-white">Reactive Frontend &amp; APIs</h4>
-            <p className="text-[11px] text-zinc-400">
-              Next.js 16 · React 19 · TypeScript · Angular · Tailwind CSS
-            </p>
+            <div className="flex flex-wrap items-center gap-1.5 pt-1">
+              <span className="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-300 px-2 py-0.5 rounded bg-white/5 border border-white/5">
+                <TechLogo name="Next.js" className="w-3 h-3" useBrandColor />
+                <span>Next.js</span>
+              </span>
+              <span className="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-300 px-2 py-0.5 rounded bg-white/5 border border-white/5">
+                <TechLogo name="React.js" className="w-3 h-3" useBrandColor />
+                <span>React</span>
+              </span>
+              <span className="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-300 px-2 py-0.5 rounded bg-white/5 border border-white/5">
+                <TechLogo name="TypeScript" className="w-3 h-3" useBrandColor />
+                <span>TypeScript</span>
+              </span>
+              <span className="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-300 px-2 py-0.5 rounded bg-white/5 border border-white/5">
+                <TechLogo name="Angular" className="w-3 h-3" useBrandColor />
+                <span>Angular</span>
+              </span>
+            </div>
             <div className="text-[10px] font-mono text-zinc-500 pt-1 border-t border-white/5">
               Sub-16ms telemetry sync &amp; 60fps spatial web experiences.
             </div>
@@ -100,25 +197,25 @@ export default function Skills() {
         <div className="flex flex-wrap gap-2 pt-1">
           <button
             onClick={() => setActiveCategory("all")}
-            className={`px-3.5 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+            className={`px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium transition-all ${
               activeCategory === "all"
-                ? "bg-[#ae040d] text-white"
-                : "bg-[#0c0c0e] text-zinc-400 hover:text-white border border-white/5"
+                ? "bg-[#ae040d] text-white shadow-[-2px_0_0_rgba(0,240,255,0.4),2px_0_0_rgba(174,4,13,0.6)]"
+                : "bg-[#0c0c0e] text-zinc-400 hover:text-white border border-white/5 hover:border-white/15"
             }`}
           >
-            All Categories
+            All Arsenal ({skillCategories.reduce((acc, cat) => acc + cat.skills.length, 0)})
           </button>
           {skillCategories.map((cat) => (
             <button
               key={cat.title}
               onClick={() => setActiveCategory(cat.title)}
-              className={`px-3.5 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+              className={`px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium transition-all ${
                 activeCategory === cat.title
-                  ? "bg-[#ae040d] text-white"
-                  : "bg-[#0c0c0e] text-zinc-400 hover:text-white border border-white/5"
+                  ? "bg-[#ae040d] text-white shadow-[-2px_0_0_rgba(0,240,255,0.4),2px_0_0_rgba(174,4,13,0.6)]"
+                : "bg-[#0c0c0e] text-zinc-400 hover:text-white border border-white/5 hover:border-white/15"
               }`}
             >
-              {cat.title}
+              {cat.title} ({cat.skills.length})
             </button>
           ))}
         </div>
@@ -158,7 +255,7 @@ export default function Skills() {
                       <IconComponent className="w-4 h-4" />
                     </div>
                     <span className="text-[11px] font-mono text-zinc-600">
-                      0{idx + 1}
+                      0{idx + 1} // {category.skills.length} STACKS
                     </span>
                   </div>
 
@@ -172,23 +269,17 @@ export default function Skills() {
                   </div>
                 </div>
 
-                {/* Skills Badges */}
-                <div className="flex flex-wrap gap-1.5 pt-3 border-t border-white/5">
+                {/* Skills Badges with Official Vector Tech Logos */}
+                <div className="flex flex-wrap gap-2 pt-3 border-t border-white/5">
                   {category.skills.map((skill) => (
                     <span
                       key={skill.name}
-                      className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-mono text-zinc-300 transition-colors ${
-                        isPurple
-                          ? "bg-[#130a1e] border border-[#2a0e44]/60 hover:text-white hover:border-[#4c1d95]"
-                          : "bg-[#14080a] border border-[#3b0d12]/60 hover:text-white hover:border-[#ae040d]/40"
-                      }`}
+                      className="group/skill inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-mono text-zinc-200 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/25 transition-all duration-150 cursor-default shadow-sm hover:shadow-md hover:scale-[1.03]"
                     >
-                      <span
-                        className={`w-1 h-1 rounded-full ${
-                          isPurple ? "bg-[#a855f7]" : "bg-[#ae040d]"
-                        }`}
-                      />
-                      <span>{skill.name}</span>
+                      <TechLogo name={skill.name} className="w-3.5 h-3.5" useBrandColor />
+                      <span className="group-hover/skill:text-white transition-colors">
+                        {skill.name}
+                      </span>
                     </span>
                   ))}
                 </div>
