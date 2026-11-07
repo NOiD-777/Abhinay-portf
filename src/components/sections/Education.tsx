@@ -70,7 +70,7 @@ export default function Education() {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {edu.honors.map((honor, hIdx) => {
-                  const isGDG = honor.toLowerCase().includes("gdg") || honor.toLowerCase().includes("google developer");
+                  const isGDG = honor.toLowerCase().includes("gdgc") || honor.toLowerCase().includes("gdg") || honor.toLowerCase().includes("google developer");
                   const isBuildAI = honor.toLowerCase().includes("buildai4india") || honor.toLowerCase().includes("hackathon");
 
                   return (
@@ -79,8 +79,8 @@ export default function Education() {
                       className="p-3.5 rounded-lg bg-[#12081f] border border-[#2e0e47]/60 flex items-start gap-2.5 spider-panel"
                     >
                       {isGDG ? (
-                        <div className="w-5 h-5 shrink-0 mt-0.5 flex items-center justify-center">
-                          <Image src="/logos/gdg-mark.svg" alt="GDG" width={20} height={20} className="w-full h-full object-contain" />
+                        <div className="w-6 h-5 shrink-0 mt-0.5 flex items-center justify-center">
+                          <Image src="/logos/gdgc-mark.svg" alt="GDGC" width={24} height={20} className="w-full h-full object-contain" />
                         </div>
                       ) : isBuildAI ? (
                         <div className="w-8 h-4 shrink-0 mt-0.5 flex items-center justify-center">

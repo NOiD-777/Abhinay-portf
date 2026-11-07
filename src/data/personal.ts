@@ -31,7 +31,7 @@ export const personal = {
   resumeUrl: "/resume.pdf",
   bio: [
     "From campus hackathons to enterprise data lakehouses, every breakthrough begins with one question: how far can we push the system?",
-    "At JMAN Group, I engineer high-throughput Databricks & PySpark pipelines. At GDG MLRIT, I mobilize builders. In hackathons, I prove that autonomous AI can bridge cultural legacy with tomorrow's web.",
+    "At JMAN Group, I engineer high-throughput Databricks & PySpark pipelines. At GDGC MLRIT, I mobilize builders. In hackathons, I prove that autonomous AI can bridge cultural legacy with tomorrow's web.",
   ],
   storyBeats: [
     {
@@ -40,8 +40,8 @@ export const personal = {
       title: "From Curiosity to Community Catalyst",
       location: "Hyderabad // MLRIT Campus",
       narrative:
-        "Started with a drive to understand systems from the metal up. Stepped up to lead Google Developer Groups on Campus MLRIT, turning classrooms into hackrooms and rallying hundreds of student builders.",
-      milestone: "Technical Lead · Google Developers Group",
+        "Started with a drive to understand systems from the metal up. Stepped up to lead Google Developer Groups on Campus (GDGC) MLRIT, turning classrooms into hackrooms and rallying hundreds of student builders.",
+      milestone: "Technical Lead · Google Developer Groups on Campus (GDGC)",
       accent: "cyan",
     },
     {

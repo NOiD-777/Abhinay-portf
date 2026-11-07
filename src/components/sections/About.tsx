@@ -93,10 +93,10 @@ export default function About() {
                 <span>Data Engineer · JMAN Group</span>
               </div>
               <div className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-lg border border-white/5 bg-[#09090b]">
-                <div className="w-4 h-4 shrink-0 flex items-center justify-center">
-                  <Image src="/logos/gdg-mark.svg" alt="GDG" width={16} height={16} className="w-full h-full object-contain" />
+                <div className="w-5 h-4 shrink-0 flex items-center justify-center">
+                  <Image src="/logos/gdgc-mark.svg" alt="GDGC" width={20} height={16} className="w-full h-full object-contain" />
                 </div>
-                <span>GDG on Campus MLRIT · Technical Lead</span>
+                <span>GDGC on Campus MLRIT · Technical Lead</span>
               </div>
               <div className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-lg border border-white/5 bg-[#09090b]">
                 <div className="w-4 h-4 shrink-0 flex items-center justify-center">
