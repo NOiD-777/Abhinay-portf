@@ -22,7 +22,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 30);
+      setScrolled(window.scrollY > 25);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -31,19 +31,19 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-40 flex justify-center px-4 pt-4 sm:pt-6 transition-all duration-300">
       <nav
-        className={`w-full max-w-6xl mx-auto flex items-center justify-between px-5 py-3 rounded-2xl transition-all duration-300 ${
+        className={`w-full max-w-6xl mx-auto flex items-center justify-between px-5 py-3 rounded-xl transition-all duration-200 ${
           scrolled
-            ? "glass-card shadow-[0_8px_32px_rgba(0,0,0,0.85)] border-[#ae040d]/25 bg-black/85"
+            ? "bg-black/90 backdrop-blur-md border border-white/10 shadow-lg"
             : "bg-transparent border border-transparent"
         }`}
       >
-        {/* Typographic Wordmark with Crimson Dot */}
+        {/* Typographic Wordmark with Solid Red Dot */}
         <Link
           href="/"
-          className="group flex items-center gap-1 font-bold text-xl tracking-tight text-white focus:outline-none"
+          className="group flex items-center gap-1 font-semibold text-lg tracking-tight text-white focus:outline-none"
         >
           <span>Abhinay</span>
-          <span className="inline-block w-2 h-2 rounded-full bg-gradient-to-r from-[#d60815] to-[#770007] shadow-[0_0_12px_rgba(174,4,13,1)] transition-transform duration-300 group-hover:scale-150" />
+          <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ae040d]" />
         </Link>
 
         {/* Desktop Nav Links */}
@@ -52,10 +52,10 @@ export default function Navbar() {
             <Link
               key={item.label}
               href={item.href}
-              className="text-sm font-medium text-zinc-400 hover:text-white transition-colors duration-200 relative group py-1"
+              className="text-xs font-medium text-zinc-400 hover:text-white transition-colors duration-150 relative group py-1 tracking-wide"
             >
               {item.label}
-              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-gradient-to-r from-[#d60815] to-[#770007] transition-all duration-300 group-hover:w-full" />
+              <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#ae040d] transition-all duration-200 group-hover:w-full" />
             </Link>
           ))}
         </div>
@@ -66,7 +66,7 @@ export default function Navbar() {
             href={personal.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 rounded-lg text-zinc-400 hover:text-[#d60815] hover:bg-white/5 transition-all"
+            className="p-1.5 rounded-md text-zinc-400 hover:text-white hover:bg-white/5 transition-colors"
             aria-label="GitHub Profile"
           >
             <Github className="w-4 h-4" />
@@ -75,14 +75,14 @@ export default function Navbar() {
             href={personal.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 rounded-lg text-zinc-400 hover:text-[#d60815] hover:bg-white/5 transition-all"
+            className="p-1.5 rounded-md text-zinc-400 hover:text-white hover:bg-white/5 transition-colors"
             aria-label="LinkedIn Profile"
           >
             <Linkedin className="w-4 h-4" />
           </Link>
           <Link
             href="/#contact"
-            className="relative inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-white rounded-xl bg-gradient-to-r from-[#770007]/50 to-[#ae040d]/40 border border-[#ae040d]/40 hover:border-[#d60815] hover:shadow-[0_0_24px_rgba(174,4,13,0.45)] transition-all duration-300"
+            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-medium text-white rounded-lg bg-[#121215] border border-white/10 hover:border-[#ae040d] hover:text-[#ff3b47] transition-colors"
           >
             <span>Let&apos;s Connect</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
@@ -92,10 +92,10 @@ export default function Navbar() {
         {/* Mobile Hamburger Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 rounded-lg text-zinc-300 hover:text-white focus:outline-none"
+          className="md:hidden p-1.5 rounded-md text-zinc-400 hover:text-white focus:outline-none"
           aria-label="Toggle navigation menu"
         >
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
       </nav>
 
@@ -103,51 +103,51 @@ export default function Navbar() {
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.2 }}
-            className="md:hidden fixed inset-x-4 top-20 rounded-2xl glass-card p-6 shadow-2xl border-[#ae040d]/30 bg-black/95 z-50 flex flex-col gap-5"
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.15 }}
+            className="md:hidden fixed inset-x-4 top-20 rounded-xl bg-[#09090b] p-6 border border-white/10 z-50 flex flex-col gap-5 shadow-2xl"
           >
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-2">
               {NAV_ITEMS.map((item) => (
                 <Link
                   key={item.label}
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-lg font-medium text-zinc-300 hover:text-white py-2 border-b border-white/5"
+                  className="text-base font-medium text-zinc-300 hover:text-white py-2 border-b border-white/5"
                 >
                   {item.label}
                 </Link>
               ))}
             </div>
             <div className="flex items-center justify-between pt-2">
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2">
                 <Link
                   href={personal.github}
                   target="_blank"
-                  className="p-2.5 rounded-lg text-zinc-400 hover:text-white bg-white/5"
+                  className="p-2 rounded-md text-zinc-400 hover:text-white bg-white/5"
                 >
-                  <Github className="w-5 h-5" />
+                  <Github className="w-4 h-4" />
                 </Link>
                 <Link
                   href={personal.linkedin}
                   target="_blank"
-                  className="p-2.5 rounded-lg text-zinc-400 hover:text-white bg-white/5"
+                  className="p-2 rounded-md text-zinc-400 hover:text-white bg-white/5"
                 >
-                  <Linkedin className="w-5 h-5" />
+                  <Linkedin className="w-4 h-4" />
                 </Link>
                 <Link
                   href={`mailto:${personal.email}`}
-                  className="p-2.5 rounded-lg text-zinc-400 hover:text-white bg-white/5"
+                  className="p-2 rounded-md text-zinc-400 hover:text-white bg-white/5"
                 >
-                  <Mail className="w-5 h-5" />
+                  <Mail className="w-4 h-4" />
                 </Link>
               </div>
               <Link
                 href="/#contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-4 py-2.5 text-xs font-semibold text-white rounded-xl bg-gradient-to-r from-[#ae040d] to-[#770007]"
+                className="px-4 py-2 text-xs font-medium text-white rounded-lg bg-[#ae040d]"
               >
                 Let&apos;s Connect
               </Link>

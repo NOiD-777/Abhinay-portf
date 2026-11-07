@@ -10,8 +10,8 @@ import { personal } from "@/data/personal";
 const HeroScene = dynamic(() => import("@/components/three/HeroScene"), {
   ssr: false,
   loading: () => (
-    <div className="w-full h-[400px] sm:h-[480px] lg:h-[550px] flex items-center justify-center">
-      <div className="w-8 h-8 rounded-full border border-white/10 border-t-[#ae040d] animate-spin" />
+    <div className="w-full h-[380px] sm:h-[460px] lg:h-[520px] flex items-center justify-center">
+      <div className="w-6 h-6 rounded-full border border-white/10 border-t-[#ae040d] animate-spin" />
     </div>
   ),
 });
@@ -20,19 +20,19 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative min-h-[92vh] flex items-center justify-center pt-28 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-black"
+      className="relative min-h-[90vh] flex items-center justify-center pt-28 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-black"
     >
       <div className="max-w-6xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         {/* Left Column: Authoritative Editorial Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           className="lg:col-span-7 flex flex-col items-start gap-6 text-left"
         >
           {/* Subtle Role Tag */}
           <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#ae040d]">
-            <span className="w-2 h-2 rounded-full bg-[#ae040d]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#ae040d]" />
             <span>Full-Stack &amp; AI Engineer</span>
           </div>
 
@@ -51,11 +51,11 @@ export default function Hero() {
             Data Engineer at <span className="text-zinc-200 font-medium">JMAN Group</span> developing high-throughput Databricks &amp; PySpark pipelines. Winner of the BuildAI4India Hackathon and Technical Lead at Google Developers Group.
           </p>
 
-          {/* Refined CTAs */}
+          {/* Solid Refined CTAs — No Gradients */}
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <Link
               href="#projects"
-              className="inline-flex items-center gap-2 px-6 py-3 text-xs sm:text-sm font-medium text-white rounded-lg bg-[#ae040d] hover:bg-[#c50512] transition-colors duration-200"
+              className="inline-flex items-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-medium text-white rounded-lg bg-[#ae040d] hover:bg-[#c50512] transition-colors duration-150"
             >
               <span>Explore Projects</span>
               <ArrowUpRight className="w-4 h-4" />
@@ -65,7 +65,7 @@ export default function Hero() {
               href={personal.resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 text-xs sm:text-sm font-medium text-zinc-300 rounded-lg bg-[#111115] hover:bg-[#18181f] border border-white/10 hover:border-white/20 hover:text-white transition-all duration-200"
+              className="inline-flex items-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-medium text-zinc-300 rounded-lg bg-[#111115] hover:bg-[#18181f] border border-white/10 hover:border-white/20 hover:text-white transition-colors duration-150"
             >
               <FileDown className="w-4 h-4 text-zinc-400" />
               <span>Resume PDF</span>
@@ -77,22 +77,22 @@ export default function Hero() {
             <div>
               <p className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Current</p>
               <p className="text-sm font-medium text-zinc-200 mt-1">JMAN Group</p>
-              <p className="text-xs text-zinc-500">Data Engineer</p>
+              <p className="text-xs text-zinc-500 font-normal">Data Engineer</p>
             </div>
             <div>
               <p className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Leadership</p>
               <p className="text-sm font-medium text-zinc-200 mt-1">GDG MLRIT</p>
-              <p className="text-xs text-zinc-500">Technical Lead</p>
+              <p className="text-xs text-zinc-500 font-normal">Technical Lead</p>
             </div>
             <div>
               <p className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Recognition</p>
               <p className="text-sm font-medium text-zinc-200 mt-1">BuildAI4India</p>
-              <p className="text-xs text-zinc-500">Hackathon Winner</p>
+              <p className="text-xs text-zinc-500 font-normal">Hackathon Winner</p>
             </div>
             <div>
               <p className="text-xs text-zinc-500 font-mono uppercase tracking-wider">Open Source</p>
               <p className="text-sm font-medium text-zinc-200 mt-1">16+ Repos</p>
-              <p className="text-xs text-zinc-500">@NOiD-777</p>
+              <p className="text-xs text-zinc-500 font-normal">@NOiD-777</p>
             </div>
           </div>
         </motion.div>
@@ -101,7 +101,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.15 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
           className="lg:col-span-5 flex justify-center items-center"
         >
           <HeroScene />
