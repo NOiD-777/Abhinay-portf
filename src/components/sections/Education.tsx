@@ -56,9 +56,9 @@ export default function Education() {
                 {edu.honors.map((honor, hIdx) => (
                   <div
                     key={hIdx}
-                    className="p-3.5 rounded-lg bg-[#111115] border border-white/5 flex items-start gap-2.5"
+                    className="p-3.5 rounded-lg bg-[#12081f] border border-[#2e0e47]/60 flex items-start gap-2.5"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#ae040d] shrink-0 mt-1.5" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#a855f7] shrink-0 mt-1.5" />
                     <span className="text-xs text-zinc-300 leading-relaxed font-normal">
                       {honor}
                     </span>

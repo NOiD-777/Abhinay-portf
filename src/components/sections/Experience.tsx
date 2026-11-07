@@ -62,7 +62,7 @@ export default function Experience() {
                         <h4 className="text-base font-semibold text-zinc-100">
                           {role.title}
                         </h4>
-                        <span className="px-2 py-0.5 rounded text-[10px] font-mono uppercase tracking-wider bg-white/5 text-zinc-400 border border-white/5">
+                        <span className="px-2 py-0.5 rounded text-[10px] font-mono uppercase tracking-wider bg-[#130a1e] text-purple-300 border border-[#2e0e47]/60">
                           {role.type}
                         </span>
                       </div>

@@ -76,6 +76,12 @@ export default function Skills() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {filteredCategories.map((category, idx) => {
             const IconComponent = ICON_MAP[category.iconName] || Brain;
+            const isPurple =
+              category.title.includes("Data") ||
+              category.title.includes("Cloud") ||
+              category.title.includes("Full-Stack") ||
+              category.title.includes("Databases");
+
             return (
               <motion.div
                 key={category.title}
@@ -83,12 +89,22 @@ export default function Skills() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.35, delay: idx * 0.05 }}
-                className="rounded-xl p-6 border border-white/5 bg-[#09090b] hover:border-[#ae040d]/40 flex flex-col justify-between gap-6 text-left transition-colors duration-200"
+                className={`rounded-xl p-6 border bg-[#09090b] flex flex-col justify-between gap-6 text-left transition-all duration-200 ${
+                  isPurple
+                    ? "border-white/5 hover:border-[#3b0764] hover:bg-[#0c0715]"
+                    : "border-white/5 hover:border-[#ae040d]/40 hover:bg-[#0f0709]"
+                }`}
               >
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
-                    <div className="p-2 rounded-md bg-white/5 text-zinc-300">
-                      <IconComponent className="w-4 h-4 text-[#ae040d]" />
+                    <div
+                      className={`p-2 rounded-md ${
+                        isPurple
+                          ? "bg-[#180a26] text-[#c084fc]"
+                          : "bg-[#200508] text-[#ae040d]"
+                      }`}
+                    >
+                      <IconComponent className="w-4 h-4" />
                     </div>
                     <span className="text-[11px] font-mono text-zinc-600">
                       0{idx + 1}
@@ -110,9 +126,17 @@ export default function Skills() {
                   {category.skills.map((skill) => (
                     <span
                       key={skill.name}
-                      className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#121215] border border-white/5 text-xs font-mono text-zinc-300 hover:text-white hover:border-[#ae040d]/40 transition-colors"
+                      className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-mono text-zinc-300 transition-colors ${
+                        isPurple
+                          ? "bg-[#130a1e] border border-[#2a0e44]/60 hover:text-white hover:border-[#4c1d95]"
+                          : "bg-[#14080a] border border-[#3b0d12]/60 hover:text-white hover:border-[#ae040d]/40"
+                      }`}
                     >
-                      <span className="w-1 h-1 rounded-full bg-[#ae040d]" />
+                      <span
+                        className={`w-1 h-1 rounded-full ${
+                          isPurple ? "bg-[#a855f7]" : "bg-[#ae040d]"
+                        }`}
+                      />
                       <span>{skill.name}</span>
                     </span>
                   ))}

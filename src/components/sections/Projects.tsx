@@ -119,7 +119,7 @@ export default function Projects() {
                     {project.metrics.map((metric, i) => (
                       <span
                         key={i}
-                        className="px-2.5 py-1 rounded-md text-[11px] font-mono bg-[#141418] text-zinc-300 border border-white/5"
+                        className="px-2.5 py-1 rounded-md text-[11px] font-mono bg-[#140920] text-purple-200 border border-[#2e0e47]/70"
                       >
                         {metric}
                       </span>

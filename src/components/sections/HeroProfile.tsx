@@ -34,7 +34,7 @@ export default function HeroProfile() {
             width={1200}
             height={1200}
             priority
-            className="w-auto h-full object-contain object-bottom filter contrast-105 drop-shadow-[0_20px_35px_rgba(174,4,13,0.3)] select-none pointer-events-none"
+            className="w-auto h-full object-contain object-bottom filter contrast-105 drop-shadow-[0_20px_35px_rgba(59,7,100,0.4)] drop-shadow-[0_10px_20px_rgba(174,4,13,0.25)] select-none pointer-events-none"
           />
         </div>
 
@@ -55,14 +55,14 @@ export default function HeroProfile() {
           </div>
         </motion.div>
 
-        {/* Floating Leadership Pill */}
+        {/* Floating Leadership Pill with Dark Royal Purple */}
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="absolute -top-3 right-4 sm:right-6 hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#09090b] border border-white/10 shadow-2xl text-[11px] font-mono text-zinc-300"
+          className="absolute -top-3 right-4 sm:right-6 hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#140824] border border-[#3b0764] shadow-2xl text-[11px] font-mono text-purple-200"
         >
-          <Sparkles className="w-3.5 h-3.5 text-[#ae040d]" />
+          <Sparkles className="w-3.5 h-3.5 text-[#a855f7]" />
           <span>GDG Lead · MLRIT</span>
         </motion.div>
       </motion.div>
