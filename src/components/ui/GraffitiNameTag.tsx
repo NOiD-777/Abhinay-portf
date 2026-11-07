@@ -60,7 +60,7 @@ export default function GraffitiNameTag({ className = "" }: { className?: string
           <div className="bg-[#ae040d] px-5 py-2.5 sm:px-6 sm:py-3 flex items-center justify-between gap-4 border-b-2 border-black/10">
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-white animate-ping" />
-              <span className="font-bebas text-white text-lg sm:text-2xl tracking-[0.2em] uppercase font-black drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]">
+              <span className="font-spiderman text-white text-lg sm:text-2xl tracking-[0.16em] uppercase font-black drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]">
                 HELLO. I&apos;M
               </span>
             </div>

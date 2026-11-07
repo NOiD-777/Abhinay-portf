@@ -38,7 +38,7 @@ export default function Skills() {
             <span className="text-[#00f0ff]">//</span>
             <span>THE SUIT &amp; ARSENAL</span>
           </p>
-          <h2 className="font-bebas text-4xl sm:text-6xl text-white tracking-wider spider-glitch-hover cursor-default">
+          <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
             TECHNICAL STACK &amp; TOOLING
           </h2>
           <p className="text-zinc-300 text-sm sm:text-base max-w-prose font-normal leading-relaxed">
@@ -113,7 +113,7 @@ export default function Skills() {
                   </div>
 
                   <div>
-                    <h3 className="font-bebas text-xl sm:text-2xl text-white tracking-wide">
+                    <h3 className="font-spiderman text-xl sm:text-2xl text-white tracking-[0.06em]">
                       {category.title}
                     </h3>
                     <p className="text-xs text-zinc-400 mt-1 leading-relaxed">

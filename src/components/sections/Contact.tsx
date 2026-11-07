@@ -70,7 +70,7 @@ export default function Contact() {
             <span className="text-[#00f0ff]">//</span>
             <span>NEXT CHAPTER: LEAP OF FAITH</span>
           </p>
-          <h2 className="font-bebas text-4xl sm:text-6xl text-white tracking-wider spider-glitch-hover cursor-default">
+          <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
             CALL THE SPIDER-SIGNAL
           </h2>
           <p className="text-zinc-300 text-sm sm:text-base max-w-prose font-normal leading-relaxed">
@@ -166,7 +166,7 @@ export default function Contact() {
               onSubmit={handleSubmit}
               className="antigravity-card rounded-2xl p-7 sm:p-8 space-y-5"
             >
-              <h3 className="font-bebas text-2xl text-white tracking-wide">SEND A MESSAGE</h3>
+              <h3 className="font-spiderman text-2xl text-white tracking-[0.08em]">SEND A MESSAGE</h3>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1.5">

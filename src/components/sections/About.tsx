@@ -16,7 +16,7 @@ export default function About() {
             <span className="text-[#00f0ff]">//</span>
             <span>STORY ARC: EARTH-1610</span>
           </p>
-          <h2 className="font-bebas text-4xl sm:text-6xl text-white tracking-wider spider-glitch-hover cursor-default">
+          <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
             THE STORY SO FAR
           </h2>
           <p className="text-sm sm:text-base text-zinc-300 max-w-prose font-normal leading-relaxed">
@@ -64,7 +64,7 @@ export default function About() {
                   <h3 className="font-spiderman text-2xl text-white tracking-[0.14em] spider-glitch-hover cursor-default">
                     ABHINAY MUSKU
                   </h3>
-                  <p className="text-xs font-bebas text-[#00f0ff] uppercase tracking-widest">
+                  <p className="text-xs font-spiderman text-[#00f0ff] uppercase tracking-[0.14em]">
                     FULL-STACK &amp; AI ENGINEER
                   </p>
                 </div>
@@ -157,7 +157,7 @@ export default function About() {
                         <span className={`px-2 py-0.5 rounded text-[10px] font-mono uppercase tracking-widest border ${badgeStyle}`}>
                           {beat.act} · {beat.codename}
                         </span>
-                        <h3 className="font-bebas text-lg sm:text-xl text-white tracking-wide">
+                        <h3 className="font-spiderman text-lg sm:text-xl text-white tracking-[0.06em]">
                           {beat.title}
                         </h3>
                       </div>

@@ -14,7 +14,7 @@ export default function Education() {
             <span className="text-[#00f0ff]">//</span>
             <span>THE GUILD &amp; ACADEMY</span>
           </p>
-          <h2 className="font-bebas text-4xl sm:text-6xl text-white tracking-wider spider-glitch-hover cursor-default">
+          <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
             EDUCATION &amp; CREDENTIALS
           </h2>
           <p className="text-zinc-300 text-sm sm:text-base max-w-prose font-normal leading-relaxed">
@@ -47,7 +47,7 @@ export default function Education() {
                   <p className="text-xs font-mono text-[#ae040d]">
                     {edu.degree} in {edu.field}
                   </p>
-                  <h3 className="font-bebas text-2xl sm:text-3xl text-white tracking-wide mt-0.5">
+                  <h3 className="font-spiderman text-2xl sm:text-3xl text-white tracking-[0.06em] mt-0.5">
                     {edu.institution}
                   </h3>
                 </div>

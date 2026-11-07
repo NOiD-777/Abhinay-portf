@@ -27,7 +27,7 @@ export default function Experience() {
             <span className="text-[#00f0ff]">//</span>
             <span>CHRONICLES: EARTH-1610</span>
           </p>
-          <h2 className="font-bebas text-4xl sm:text-6xl text-white tracking-wider spider-glitch-hover cursor-default">
+          <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
             THE CRUCIBLE &amp; IMPACT
           </h2>
           <p className="text-zinc-300 text-sm sm:text-base max-w-prose font-normal leading-relaxed">

@@ -14,8 +14,8 @@ export default function GitHubStats() {
           <p className="text-xs font-mono uppercase tracking-widest text-[#ae040d]">
             Telemetry
           </p>
-          <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-[-0.03em]">
-            Code &amp; Open Source Activity
+          <h2 className="font-spiderman text-3xl sm:text-5xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
+            CODE &amp; OPEN SOURCE ACTIVITY
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base max-w-xl font-normal">
             Continuous engineering repositories and open source tracking under @NOiD-777.

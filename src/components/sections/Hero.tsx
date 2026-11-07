@@ -67,10 +67,10 @@ export default function Hero() {
 
           {/* Surname & Super Hero Architect Wordmark */}
           <div className="space-y-1">
-            <h1 className="font-bebas text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-[0.02em] leading-[0.85] uppercase spider-glitch-hover cursor-default">
+            <h1 className="font-spiderman text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-[0.06em] leading-[0.88] uppercase spider-glitch-hover cursor-default">
               MUSKU
             </h1>
-            <p className="font-bebas text-base sm:text-lg md:text-xl text-[#ae040d] tracking-widest uppercase font-bold">
+            <p className="font-spiderman text-base sm:text-lg md:text-xl text-[#ae040d] tracking-[0.12em] uppercase font-bold">
               FULL-STACK &amp; AI ARCHITECT
             </p>
           </div>
@@ -186,7 +186,7 @@ export default function Hero() {
       {/* Bottom Section Framing Bar: Connects to Next Section */}
       <div className="relative z-20 max-w-7xl w-full mx-auto pt-6 border-t border-white/10 flex items-center justify-between text-xs font-mono text-zinc-400">
         <div className="flex items-center gap-3">
-          <span className="font-bebas text-base sm:text-lg text-white tracking-widest uppercase">
+          <span className="font-spiderman text-base sm:text-lg text-white tracking-[0.14em] uppercase">
             SELECTED PROJECTS
           </span>
           <span className="hidden sm:inline-block w-16 h-[1px] bg-white/15" />

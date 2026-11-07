@@ -7,7 +7,7 @@ import ScrollProgress from "@/components/ui/ScrollProgress";
 import Cursor from "@/components/ui/Cursor";
 
 const spiderFont = localFont({
-  src: "../../public/fonts/spiderman.woff2",
+  src: "../../public/fonts/Spider-Man-TFonts1.woff2",
   variable: "--font-spiderman",
   display: "swap",
 });

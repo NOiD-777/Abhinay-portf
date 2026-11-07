@@ -90,7 +90,7 @@ export default function HeroProfile() {
               className="w-full h-full object-contain"
             />
           </div>
-          <span className="font-bebas text-sm tracking-wider">GDGC LEAD · MLRIT</span>
+          <span className="font-spiderman text-sm tracking-[0.1em]">GDGC LEAD · MLRIT</span>
         </motion.div>
       </motion.div>
     </div>
