@@ -159,7 +159,7 @@ export default function HeroStats() {
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-      className="lg:col-span-4 xl:col-span-4 flex flex-col justify-end text-left order-3 pb-2 space-y-3 max-w-sm w-full"
+      className="flex flex-col justify-end text-left pb-2 space-y-3 max-w-sm w-full mx-auto lg:mx-0"
     >
       {/* =========================================================================
           SECTION 1: GDGC LEAD · MLRIT PILL BADGE (Image 1)

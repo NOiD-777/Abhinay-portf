@@ -58,68 +58,79 @@ export default function Hero() {
 
       {/* Main 3-Column Content Grid */}
       <div className="relative z-10 max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-end my-auto py-4">
-        {/* Left Column (lg:col-span-4): Bio & Identity */}
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="lg:col-span-4 xl:col-span-4 flex flex-col items-start text-left order-2 lg:order-1"
-        >
-          {/* Spider-Verse Graffiti "HELLO. I'M" Name Tag Badge (inspired by Into the Spider-Verse) */}
-          <div className="mb-2 pt-6" aria-label="Hello, I'm Abhinay Musku">
+        {/* Left Column (lg:col-span-4): Bio & Identity. On mobile, contents allows Name Tag to be order-1 and Bio to be order-3 */}
+        <div className="contents lg:flex lg:flex-col lg:col-span-4 xl:col-span-4 lg:items-start lg:text-left lg:order-1">
+          {/* Graffiti "HELLO. I'M" Name Tag Badge: Order-1 on mobile so it comes first before portrait */}
+          <motion.div
+            initial={{ opacity: 0, x: -15 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            className="order-1 lg:order-none mb-2 pt-2 lg:pt-6 w-full flex justify-center lg:justify-start"
+            aria-label="Hello, I'm Abhinay Musku"
+          >
             <GraffitiNameTag />
-          </div>
+          </motion.div>
 
-          {/* Super Hero Architect Wordmark (Removed giant MUSKU per user directive) */}
-          <div className="space-y-1 mt-2">
-            <h1 className="font-spiderman text-2xl sm:text-3xl lg:text-4xl text-[#ae040d] tracking-[0.12em] uppercase font-bold spider-glitch-hover cursor-default">
-              AUTONOMOUS AI ENGINEER
-            </h1>
-          </div>
+          {/* Bio, Title, Location & CTA Buttons: Order-3 on mobile (after the portrait) */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+            className="order-3 lg:order-none flex flex-col items-start text-left w-full"
+          >
+            {/* Super Hero Architect Wordmark (Removed giant MUSKU per user directive) */}
+            <div className="space-y-1 mt-2">
+              <h1 className="font-spiderman text-2xl sm:text-3xl lg:text-4xl text-[#ae040d] tracking-[0.12em] uppercase font-bold spider-glitch-hover cursor-default">
+                AUTONOMOUS AI ENGINEER
+              </h1>
+            </div>
 
-          {/* Editorial Paragraph */}
-          <p className="text-xs sm:text-sm text-zinc-300 font-normal leading-relaxed max-w-sm mt-3">
-            Talk is cheap — I&apos;m out here engineering autonomous GenAI agent swarms with one hand and taming multi-terabyte Databricks lakehouses with the other. High aura, zero data drop, and yeah... the Jordan 1s are untied. It&apos;s a choice.
-          </p>
+            {/* Editorial Paragraph */}
+            <p className="text-xs sm:text-sm text-zinc-300 font-normal leading-relaxed max-w-sm mt-3">
+              Talk is cheap — I&apos;m out here engineering autonomous GenAI agent swarms with one hand and taming multi-terabyte Databricks lakehouses with the other. High aura, zero data drop, and yeah... the Jordan 1s are untied. It&apos;s a choice.
+            </p>
 
-          {/* Location / Origin Tag */}
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#ae040d]/40 bg-[#ae040d]/10 text-[10px] sm:text-[11px] font-mono text-[#ff4d5a] mt-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#ae040d] animate-pulse" />
-            <span>#BEYOURSELF · SOL-3 · HYDERABAD</span>
-          </div>
+            {/* Location / Origin Tag */}
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#ae040d]/40 bg-[#ae040d]/10 text-[10px] sm:text-[11px] font-mono text-[#ff4d5a] mt-4">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#ae040d] animate-pulse" />
+              <span>#BEYOURSELF · SOL-3 · HYDERABAD</span>
+            </div>
 
-          {/* Miles Morales Inspired Superhero CTA Buttons */}
-          <div className="flex flex-wrap items-center gap-3 pt-5 w-full">
-            <Link
-              href="#projects"
-              className="clip-spider-btn inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold tracking-wider uppercase text-white bg-[#ae040d] hover:bg-[#c50512] transition-all duration-150 shadow-[-2px_0_0_rgba(0,240,255,0.4),2px_0_0_rgba(225,6,0,0.6)]"
-            >
-              <span>Peep The Missions</span>
-              <ArrowUpRight className="w-4 h-4" />
-            </Link>
+            {/* Superhero CTA Buttons */}
+            <div className="flex flex-wrap items-center gap-3 pt-5 w-full">
+              <Link
+                href="#projects"
+                className="clip-spider-btn inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold tracking-wider uppercase text-white bg-[#ae040d] hover:bg-[#c50512] transition-all duration-150 shadow-[-2px_0_0_rgba(0,240,255,0.4),2px_0_0_rgba(225,6,0,0.6)]"
+              >
+                <span>Peep The Missions</span>
+                <ArrowUpRight className="w-4 h-4" />
+              </Link>
 
-            <Link
-              href={personal.resumeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 text-xs sm:text-sm font-medium text-zinc-300 rounded-lg bg-[#111115] hover:bg-[#18181f] border border-white/10 hover:border-white/20 hover:text-white transition-colors duration-150"
-            >
-              <FileDown className="w-4 h-4 text-zinc-400" />
-              <span>Grab The Dossier</span>
-            </Link>
-          </div>
-        </motion.div>
+              <Link
+                href={personal.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 text-xs sm:text-sm font-medium text-zinc-300 rounded-lg bg-[#111115] hover:bg-[#18181f] border border-white/10 hover:border-white/20 hover:text-white transition-colors duration-150"
+              >
+                <FileDown className="w-4 h-4 text-zinc-400" />
+                <span>Grab The Dossier</span>
+              </Link>
+            </div>
+          </motion.div>
+        </div>
 
-        {/* Center Column (lg:col-span-4): Cutout Portrait with Parallax Depth */}
+        {/* Center Column (lg:col-span-4): Cutout Portrait with Parallax Depth (Order-2 on mobile) */}
         <motion.div
           style={{ y: portraitY }}
-          className="lg:col-span-4 xl:col-span-4 flex justify-center items-end order-1 lg:order-2"
+          className="lg:col-span-4 xl:col-span-4 flex justify-center items-end order-2 lg:order-2"
         >
           <HeroProfile />
         </motion.div>
 
-        {/* Right Column (lg:col-span-4): Animated Interactive Telemetry & Stat Stack */}
-        <HeroStats />
+        {/* Right Column (lg:col-span-4): Animated Interactive Telemetry & Stat Stack (Order-4 on mobile) */}
+        <div className="order-4 lg:order-3 lg:col-span-4 xl:col-span-4 w-full">
+          <HeroStats />
+        </div>
       </div>
 
       {/* Bottom Section Framing Bar: Connects to Next Section */}
