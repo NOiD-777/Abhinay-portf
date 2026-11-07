@@ -17,8 +17,8 @@ const PROJECT_FLOWS: Record<string, { steps: string[]; badge: string }> = {
     steps: ["Opportunity Telemetry", "Tool Calling", "Pydantic Schemas", "Automated Dispatch"],
   },
   "twitter-sentiment-analysis": {
-    badge: "NLP CLASSIFIER",
-    steps: ["Social Ingestion", "Tokenization", "RoBERTa Inference", "Real-Time Sentiment"],
+    badge: "SPIDER-RADAR // NLP",
+    steps: ["1.6M Social Stream", "NLTK Tokenizer", "Classifier Benchmark", "City Sentiment Decoded"],
   },
   "upi-offline-vault": {
     badge: "CRYPTOGRAPHIC PROTOCOL",
@@ -28,9 +28,13 @@ const PROJECT_FLOWS: Record<string, { steps: string[]; badge: string }> = {
     badge: "SPATIAL INTERFACE",
     steps: ["Next.js 16", "Turbopack", "GSAP & Motion", "Earth-1610 Glitch"],
   },
+  "face-recognition-edge": {
+    badge: "CCTV SURVEILLANCE",
+    steps: ["Live CCTV Stream", "Skip-Frame Queue", "FastAPI Engine", "Identify Criminals @ 92%"],
+  },
   "edge-biometric-vision": {
-    badge: "EDGE SILICON",
-    steps: ["Camera Sensor", "Skip-Frame Queue", "FastAPI Engine", "Edge Chip @ 92%"],
+    badge: "CCTV SURVEILLANCE",
+    steps: ["Live CCTV Stream", "Skip-Frame Queue", "FastAPI Engine", "Identify Criminals @ 92%"],
   },
 };
 
@@ -52,10 +56,10 @@ export default function Projects() {
             <span>MISSIONS &amp; DISPATCHES</span>
           </p>
           <h2 className="font-spiderman text-4xl sm:text-6xl text-white tracking-[0.06em] spider-glitch-hover cursor-default">
-            FEATURED SYSTEMS &amp; CASE STUDIES
+            THE MISSIONS &amp; TROPHIES
           </h2>
           <p className="text-zinc-300 text-sm sm:text-base max-w-prose font-normal leading-relaxed">
-            Every project is a mission to solve what matters: cultural preservation with AI, high-throughput social telemetry, and offline-first finance.
+            Real battle-tested systems shipped to production: 1st place state hackathons, Databricks financial lakehouses, CCTV criminal detection, and autonomous AI swarms with maximum aura.
           </p>
         </div>
 

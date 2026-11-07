@@ -39,6 +39,13 @@ export default function HeroProfile() {
             </div>
           </div>
 
+          {/* Target Anchor for the Spider-Doodle Arrow (Positioned Directly at Abhinay's Face) */}
+          <div
+            id="hero-face-target"
+            className="absolute top-[22%] left-[45%] w-4 h-4 pointer-events-none z-20"
+            aria-hidden="true"
+          />
+
           {/* User Portrait Cutout */}
           <Image
             src="/profile-cutout.webp"

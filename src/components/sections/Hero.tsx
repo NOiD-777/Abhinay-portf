@@ -7,6 +7,7 @@ import { ArrowUpRight, FileDown } from "lucide-react";
 import { personal } from "@/data/personal";
 import HeroProfile from "./HeroProfile";
 import GraffitiNameTag from "@/components/ui/GraffitiNameTag";
+import SpiderDoodleArrow from "@/components/ui/SpiderDoodleArrow";
 
 export default function Hero() {
   const containerRef = useRef<HTMLElement>(null);
@@ -29,11 +30,14 @@ export default function Hero() {
       {/* Background Comic Halftone Texture */}
       <div className="absolute inset-0 halftone-dots opacity-20 pointer-events-none" />
 
+      {/* Spider-Verse Hand-Drawn Doodle Arrow: Arches directly from "ABHINAY" name tag to Abhinay's Face */}
+      <SpiderDoodleArrow />
+
       {/* Top Framing Bar */}
       <div className="relative z-20 max-w-7xl w-full mx-auto flex items-center justify-between pb-6 border-b border-white/5">
         <div className="flex flex-col text-left">
           <span className="font-mono text-[11px] sm:text-xs font-bold text-[#ae040d] tracking-widest uppercase">
-            EARTH-1610 SPIDER-ENGINEER
+            ABHINAY MUSKU // EARTH-1610 SPIDER-ENGINEER
           </span>
           <span className="font-mono text-[10px] sm:text-[11px] text-zinc-400 tracking-wider uppercase">
             DATA SLINGER @ JMAN GROUP // HYDERABAD
@@ -61,18 +65,15 @@ export default function Hero() {
           className="lg:col-span-4 xl:col-span-4 flex flex-col items-start text-left order-2 lg:order-1"
         >
           {/* Spider-Verse Graffiti "HELLO. I'M" Name Tag Badge (inspired by Into the Spider-Verse) */}
-          <div className="mb-3 pt-6" aria-label="Hello, I'm Abhinay Musku">
+          <div className="mb-2 pt-6" aria-label="Hello, I'm Abhinay Musku">
             <GraffitiNameTag />
           </div>
 
-          {/* Surname & Super Hero Architect Wordmark */}
-          <div className="space-y-1">
-            <h1 className="font-spiderman text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-[0.06em] leading-[0.88] uppercase spider-glitch-hover cursor-default">
-              MUSKU
-            </h1>
-            <p className="font-spiderman text-base sm:text-lg md:text-xl text-[#ae040d] tracking-[0.12em] uppercase font-bold">
+          {/* Super Hero Architect Wordmark (Removed giant MUSKU per user directive) */}
+          <div className="space-y-1 mt-2">
+            <h1 className="font-spiderman text-2xl sm:text-3xl lg:text-4xl text-[#ae040d] tracking-[0.12em] uppercase font-bold spider-glitch-hover cursor-default">
               FULL-STACK &amp; AI ARCHITECT
-            </p>
+            </h1>
           </div>
 
           {/* Editorial Paragraph */}

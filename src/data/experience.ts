@@ -68,7 +68,7 @@ export const experiences: Experience[] = [
   {
     company: "Brihaspathi Technologies Limited",
     location: "Hyderabad, India",
-    chapter: "CHAPTER 03 // SQUEEZING AI ONTO TINY EDGE CHIPS",
+    chapter: "CHAPTER 03 // CCTV SURVEILLANCE & EDGE CRIMINAL DETECTION",
     accentColor: "#ec4899",
     roles: [
       {
@@ -76,10 +76,10 @@ export const experiences: Experience[] = [
         type: "Internship",
         period: "Aug 2025 – Sep 2025",
         mission:
-          "Fitting heavy-duty computer vision models onto tiny low-resource edge silicon. It's like doing a backflip through a keyhole — pure venom blast efficiency.",
+          "Turning standard CCTV cameras into spider-vision: building real-time biometric and computer vision pipelines on edge hardware to identify criminals and keep the streets safe.",
         milestones: [
-          "Shipped async FastAPI & OpenCV microservices pulling ~92% biometric detection accuracy directly on constrained edge chips.",
-          "Chopped CPU load by 35% using custom skip-frame batching tricks — maximum performance, minimum silicon heat.",
+          "Shipped async FastAPI & OpenCV surveillance microservices pulling ~92% accuracy directly on constrained edge chips to identify criminals in real-time.",
+          "Chopped CPU load by 35% using custom skip-frame batching tricks — maximum detection speed, zero hardware melting.",
         ],
       },
     ],

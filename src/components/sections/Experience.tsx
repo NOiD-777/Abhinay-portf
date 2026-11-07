@@ -217,7 +217,7 @@ function BrihaspathiSchematic() {
       <div className="flex items-center justify-between gap-2">
         <span className="text-[10px] font-mono uppercase tracking-widest text-[#ec4899] flex items-center gap-1.5">
           <Cpu className="w-3.5 h-3.5 text-[#ec4899]" />
-          <span>EDGE SILICON // EMBEDDED VISION BLUEPRINT</span>
+          <span>EDGE SILICON // CCTV CRIMINAL DETECTION SCHEMATIC</span>
         </span>
         <span className="text-[10px] font-mono text-pink-300 px-2 py-0.5 rounded bg-pink-500/10 border border-pink-500/20">
           92% ACCURACY · TINY SILICON
@@ -226,9 +226,9 @@ function BrihaspathiSchematic() {
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
         <div className="p-3 rounded-xl bg-black/60 border border-white/5 space-y-1">
-          <p className="font-mono text-[10px] text-zinc-400 uppercase">Camera Sensor Stream</p>
-          <p className="font-semibold text-white text-xs">Real-Time Optical Feed</p>
-          <p className="text-[11px] text-zinc-400">Continuous video input capturing live biometric verification targets</p>
+          <p className="font-mono text-[10px] text-zinc-400 uppercase">CCTV Camera Sensor Feed</p>
+          <p className="font-semibold text-white text-xs">Real-Time Street Optical Feed</p>
+          <p className="text-[11px] text-zinc-400">Continuous video input capturing live perimeter feeds to scan for criminals and threats</p>
         </div>
         <div className="p-3 rounded-xl bg-black/60 border border-pink-500/20 space-y-1">
           <p className="font-mono text-[10px] text-[#ec4899] uppercase">Inference Engine</p>
@@ -237,7 +237,7 @@ function BrihaspathiSchematic() {
         </div>
         <div className="p-3 rounded-xl bg-black/60 border border-white/5 space-y-1">
           <p className="font-mono text-[10px] text-zinc-400 uppercase">Edge Silicon Deployment</p>
-          <p className="font-semibold text-white text-xs">Embedded Biometric Verification</p>
+          <p className="font-semibold text-white text-xs">Target &amp; Criminal Flagging</p>
           <p className="text-[11px] text-zinc-400">~92% detection accuracy executing purely on constrained local chips</p>
         </div>
       </div>

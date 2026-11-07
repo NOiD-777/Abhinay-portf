@@ -19,29 +19,6 @@ export default function GraffitiNameTag({ className = "" }: { className?: string
         </div>
       </div>
 
-      {/* Doodled Street-Art Curved Arrow & Splatters */}
-      <div className="absolute -top-7 left-24 sm:left-28 pointer-events-none z-20">
-        <svg width="68" height="32" viewBox="0 0 68 32" fill="none" className="text-white">
-          {/* Curved Graffiti Arrow */}
-          <path
-            d="M2 14 C18 4, 38 4, 58 18"
-            stroke="currentColor"
-            strokeWidth="3.2"
-            strokeLinecap="round"
-          />
-          <path
-            d="M48 20 L58 18 L55 8"
-            stroke="currentColor"
-            strokeWidth="3.2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          {/* Action / Energy Accent Lines */}
-          <path d="M12 2 L18 6" stroke="#00f0ff" strokeWidth="2" strokeLinecap="round" />
-          <path d="M26 0 L30 5" stroke="#ae040d" strokeWidth="2.2" strokeLinecap="round" />
-        </svg>
-      </div>
-
       {/* Spray Splatter Droplets (Top Right & Edges) */}
       <div className="absolute -top-3 -right-4 sm:-right-6 flex flex-col gap-1 pointer-events-none z-0">
         <span className="w-2.5 h-2.5 rounded-full bg-black border border-white/20 shadow-[0_0_6px_rgba(0,0,0,0.8)]" />
@@ -84,7 +61,7 @@ export default function GraffitiNameTag({ className = "" }: { className?: string
             <div className="absolute inset-0 halftone-dots opacity-15 pointer-events-none" />
 
             {/* Street Tagged Name */}
-            <div className="relative z-10 text-center">
+            <div id="hero-name-tag" className="relative z-10 text-center">
               <span className="font-brush text-4xl sm:text-5xl md:text-6xl text-black font-black tracking-wider block -rotate-2 select-none filter drop-shadow-[2px_3px_0px_rgba(174,4,13,0.35)]">
                 ABHINAY
               </span>

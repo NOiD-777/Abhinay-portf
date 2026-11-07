@@ -59,19 +59,19 @@ export const projects: Project[] = [
   {
     slug: "twitter-sentiment-analysis",
     title: "Twitter Sentiment Analysis",
-    subtitle: "1.6M Tweets Decoded Without Crashing",
-    storyDirective: "Digging through 1.6 million tweets of chaotic internet noise without losing my sanity.",
+    subtitle: "Spider-Radar // Tracking What The City Thinks About Me",
+    storyDirective: "Is the city vibing with Spider-Man or is J. Jonah Jameson running slander campaigns? Tapped into 1.6M tweets to understand what people actually think about me.",
     description:
-      "Trained statistical classifiers on 1.6M unfiltered tweets to detect internet sentiment trends with a +25% accuracy W. Cut out false positives like Peter B. Parker cutting carbs.",
+      "Trained NLP statistical classifiers on 1.6M unfiltered tweets to understand what people think about me in real-time. Whether the city is hyping up my latest save or cooking me in the comments, I know the exact public sentiment with +25% higher accuracy and zero cap.",
     longDescription:
-      "Engineered an end-to-end NLP sentiment pipeline for massive social streams. Applied hyperparameter tuning, refined tokenization and stemming via NLTK, and benchmarked Logistic Regression against Naive Bayes models to minimize false positive predictions by 20%. Includes interactive Google Colab notebook.",
+      "Engineered an end-to-end NLP sentiment pipeline for massive social streams to measure public perception, sentiment shifts, and city discourse in real-time. Applied hyperparameter tuning, refined tokenization and stemming via NLTK, and benchmarked Logistic Regression against Naive Bayes models to minimize false positive predictions by 20%. Includes interactive Google Colab notebook.",
     image: "/projects/twitter-sentiment.png",
     tech: ["Python", "Pandas", "NLTK", "Scikit-learn", "Tweepy", "Google Colab"],
     category: "ai-ml",
     liveUrl: "https://colab.research.google.com/drive/1cUcBBJK-P4jtTDYgBuTLT7btmbxKqGs9?usp=sharing",
     githubUrl: "https://github.com/NOiD-777/Twitter-Sentiment-Analysis",
     featured: true,
-    metrics: ["1.6M Tweets Sifted", "+25% Accuracy Gain", "-20% False Positives"],
+    metrics: ["1.6M Tweets Decoded", "City Perception Decoded", "+25% Accuracy W"],
   },
   {
     slug: "expense-tracker-angular",
@@ -108,18 +108,18 @@ export const projects: Project[] = [
   },
   {
     slug: "face-recognition-edge",
-    title: "Edge Face Recognition",
-    subtitle: "Biometric Vision on Constrained Silicon",
-    storyDirective: "Pushing computer vision to real-world edge hardware with tight thermal budgets.",
+    title: "Edge CCTV Criminal Detection",
+    subtitle: "Spider-Vision // Scanning The Streets To Identify Criminals",
+    storyDirective: "Gotta keep the streets safe — tapping into live CCTV camera feeds to scan the perimeter and identify criminals before they do damage.",
     description:
-      "Lightweight biometric verification engine achieving ~92% accuracy with 35% reduced CPU overhead on constrained edge hardware via skip-frame algorithms.",
+      "Spider-vision for the city. Built lightweight computer vision models deployed on CCTV cameras and edge silicon to identify criminals and flagged targets in real-time with ~92% accuracy while chopping CPU overhead by 35%.",
     longDescription:
-      "Engineered during internship at Brihaspathi Technologies. Deployed on constrained edge devices using OpenCV and FastAPI. Implemented custom frame-skipping and resolution downscaling algorithms to ensure reliable real-time face verification with minimal compute overhead.",
+      "Engineered during internship at Brihaspathi Technologies. Tapped into live camera and CCTV video feeds to perform real-time biometric detection and threat identification for security surveillance, helping pinpoint criminals on constrained edge hardware. Optimized using OpenCV frame-skipping algorithms and asynchronous FastAPI microservices.",
     image: "/projects/face-recognition.png",
-    tech: ["Python", "FastAPI", "OpenCV", "NumPy", "Edge Compute"],
+    tech: ["Python", "FastAPI", "OpenCV", "NumPy", "Edge Compute", "CCTV Surveillance"],
     category: "ai-ml",
     featured: false,
-    metrics: ["92% Detection Accuracy", "35% CPU Overhead Reduction", "Edge Verified"],
+    metrics: ["92% Criminal Detection", "-35% CPU Overhead", "Real-Time CCTV Stream"],
   },
 ];
 
