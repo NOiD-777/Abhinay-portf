@@ -145,6 +145,8 @@ export default function Education() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {certifications.map((cert, cIdx) => {
               const isGCP = cert.issuer.toLowerCase().includes("nptel") || cert.name.toLowerCase().includes("google cloud");
+              const isSmartInterviews = cert.issuer.toLowerCase().includes("smart interviews");
+
               return (
                 <motion.div
                   key={cIdx}
@@ -156,11 +158,15 @@ export default function Education() {
                 >
                   <div className="flex items-start gap-3.5">
                     {isGCP ? (
-                      <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 p-1.5 shrink-0 flex items-center justify-center">
-                        <Image src="/logos/google-cloud-clean.svg" alt="Google Cloud" width={24} height={24} className="w-full h-full object-contain" />
+                      <div className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 p-1.5 shrink-0 flex items-center justify-center">
+                        <Image src="/logos/google-cloud-clean.svg" alt="Google Cloud" width={26} height={26} className="w-full h-full object-contain" />
+                      </div>
+                    ) : isSmartInterviews ? (
+                      <div className="w-9 h-9 rounded-lg bg-white border border-white/20 p-1 shrink-0 flex items-center justify-center shadow-[0_2px_10px_rgba(255,255,255,0.15)]">
+                        <Image src="/logos/smart-interviews.webp" alt="Smart Interviews Official Logo" width={28} height={28} className="w-full h-full object-contain" />
                       </div>
                     ) : (
-                      <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 p-1.5 shrink-0 flex items-center justify-center font-mono text-[11px] text-[#ae040d] font-bold">
+                      <div className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 p-1.5 shrink-0 flex items-center justify-center font-mono text-[11px] text-[#ae040d] font-bold">
                         &lt;/&gt;
                       </div>
                     )}
