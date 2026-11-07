@@ -6,6 +6,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowUpRight, FileDown } from "lucide-react";
 import { personal } from "@/data/personal";
 import HeroProfile from "./HeroProfile";
+import GraffitiNameTag from "@/components/ui/GraffitiNameTag";
 
 export default function Hero() {
   const containerRef = useRef<HTMLElement>(null);
@@ -71,22 +72,20 @@ export default function Hero() {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="lg:col-span-4 xl:col-span-4 flex flex-col items-start text-left order-2 lg:order-1"
         >
-          {/* Cursive / Brush Script Greeting */}
-          <div className="mb-1">
-            <span className="font-brush text-3xl sm:text-4xl text-zinc-100 tracking-wider inline-block -rotate-3 select-none">
-              Hello, I&apos;m
-            </span>
+          {/* Spider-Verse Graffiti "HELLO. I'M" Name Tag Badge (inspired by Into the Spider-Verse) */}
+          <div className="mb-3 pt-6" aria-label="Hello, I'm Abhinay Musku">
+            <GraffitiNameTag />
           </div>
 
-          {/* Stacked Giant Name */}
-          <h1 className="font-bebas text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-[0.02em] leading-[0.88] uppercase spider-glitch-hover cursor-default">
-            ABHINAY<br />MUSKU
-          </h1>
-
-          {/* Subtitle Role Tag */}
-          <p className="font-bebas text-base sm:text-lg md:text-xl text-[#ae040d] tracking-widest uppercase font-bold mt-2">
-            FULL-STACK &amp; AI ARCHITECT
-          </p>
+          {/* Surname & Super Hero Architect Wordmark */}
+          <div className="space-y-1">
+            <h1 className="font-bebas text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white tracking-[0.02em] leading-[0.85] uppercase spider-glitch-hover cursor-default">
+              MUSKU
+            </h1>
+            <p className="font-bebas text-base sm:text-lg md:text-xl text-[#ae040d] tracking-widest uppercase font-bold">
+              FULL-STACK &amp; AI ARCHITECT
+            </p>
+          </div>
 
           {/* Editorial Paragraph */}
           <p className="text-xs sm:text-sm text-zinc-300 font-normal leading-relaxed max-w-sm mt-3">
