@@ -135,14 +135,25 @@ function JmanFieldDossier() {
 function AiAxissSchematic() {
   return (
     <div className="p-4 sm:p-5 rounded-2xl bg-[#09090b]/80 border border-purple-500/20 text-left space-y-3">
-      <div className="flex items-center justify-between gap-2">
+      <div className="flex flex-wrap items-center justify-between gap-2">
         <span className="text-[10px] font-mono uppercase tracking-widest text-[#a855f7] flex items-center gap-1.5">
           <Activity className="w-3.5 h-3.5 text-[#a855f7]" />
           <span>REACTIVE ENGINE // ZERO-LAG TELEMETRY BLUEPRINT</span>
         </span>
-        <span className="text-[10px] font-mono text-purple-300 px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/20">
-          BUTTER SMOOTH 60 FPS
-        </span>
+        <div className="flex items-center gap-2.5">
+          <div className="w-4 h-4 rounded overflow-hidden flex items-center justify-center">
+            <Image
+              src="/logos/aiaxiss.webp"
+              alt="AI AXISS"
+              width={16}
+              height={16}
+              className="w-full h-full object-contain rounded-sm"
+            />
+          </div>
+          <span className="text-[10px] font-mono text-purple-300 px-2 py-0.5 rounded bg-purple-500/10 border border-purple-500/20">
+            BUTTER SMOOTH 60 FPS
+          </span>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
@@ -303,6 +314,16 @@ export default function Experience() {
                             width={72}
                             height={32}
                             className="w-full h-full object-contain"
+                          />
+                        </div>
+                      ) : isAiAxiss ? (
+                        <div className="w-9 h-9 rounded-lg overflow-hidden border border-purple-500/30 p-0.5 shrink-0 flex items-center justify-center shadow-[0_0_12px_rgba(168,85,247,0.25)] bg-[#0e1b2f]">
+                          <Image
+                            src="/logos/aiaxiss.webp"
+                            alt="AI AXISS INC Official Logo"
+                            width={36}
+                            height={36}
+                            className="w-full h-full object-contain rounded-md"
                           />
                         </div>
                       ) : isBrihaspathi ? (
