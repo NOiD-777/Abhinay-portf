@@ -171,6 +171,48 @@ export default function About() {
                       {beat.narrative}
                     </p>
 
+                    {/* Verified Real-World Field Photograph */}
+                    {beat.image && (
+                      <div className="relative mt-2 rounded-xl overflow-hidden border border-white/10 group/photo bg-black/60 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.8)]">
+                        <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] overflow-hidden">
+                          <Image
+                            src={beat.image}
+                            alt={beat.imageCaption || beat.title}
+                            fill
+                            className="object-cover object-center filter contrast-105 brightness-95 group-hover/photo:scale-[1.02] group-hover/photo:brightness-100 transition-all duration-500"
+                          />
+                          {/* Spider-Verse Halftone & Cinematic Gradient Vignette */}
+                          <div className="absolute inset-0 halftone-dots opacity-15 pointer-events-none" />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent pointer-events-none" />
+
+                          {/* Top-Right Official Google Developer Groups Emblem */}
+                          <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-black/75 backdrop-blur-md border border-white/10 text-[10px] font-mono text-zinc-300">
+                            <div className="w-4 h-2.5 relative flex items-center justify-center">
+                              <Image
+                                src="/logos/gdgc-mark.svg"
+                                alt="GDGC"
+                                width={16}
+                                height={10}
+                                className="w-full h-full object-contain"
+                              />
+                            </div>
+                            <span className="font-semibold text-white">GDGC MLRIT</span>
+                          </div>
+
+                          {/* Bottom Telemetry Caption Bar */}
+                          <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[10px] font-mono">
+                            <span className="text-[#00f0ff] flex items-center gap-1.5 px-2 py-0.5 rounded bg-black/80 backdrop-blur-md border border-[#00f0ff]/30">
+                              <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-pulse" />
+                              <span>FIELD LOG // STAGE PRESENTATION</span>
+                            </span>
+                            <span className="text-zinc-300 hidden sm:inline px-2 py-0.5 rounded bg-black/80 backdrop-blur-md border border-white/10">
+                              CORE TEAM · TECHNICAL LEAD
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
                     {/* Milestone Chip */}
                     <div className="pt-2 border-t border-white/5 flex items-center justify-between">
                       <span className="text-[11px] font-mono text-zinc-400 flex items-center gap-1.5">

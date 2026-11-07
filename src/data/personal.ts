@@ -6,6 +6,8 @@ export interface StoryBeat {
   narrative: string;
   milestone: string;
   accent: "cyan" | "crimson" | "purple";
+  image?: string;
+  imageCaption?: string;
 }
 
 export const personal = {
@@ -40,9 +42,11 @@ export const personal = {
       title: "From Curiosity to Community Catalyst",
       location: "Hyderabad // MLRIT Campus",
       narrative:
-        "Started with a drive to understand systems from the metal up. Stepped up to lead Google Developer Groups on Campus (GDGC) MLRIT, turning classrooms into hackrooms and rallying hundreds of student builders.",
+        "Started with a drive to understand systems from the metal up. Stepped up as Technical Lead for Google Developer Groups on Campus (GDGC) MLRIT, turning auditoriums into hackrooms and rallying hundreds of student builders across campus.",
       milestone: "Technical Lead · Google Developer Groups on Campus (GDGC)",
       accent: "cyan",
+      image: "/images/narrative-technical-lead.webp",
+      imageCaption: "Abhinay Musku on stage presenting as Core Team Technical Lead at MLRIT auditorium",
     },
     {
       act: "ACT II",
