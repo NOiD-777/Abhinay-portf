@@ -21,6 +21,7 @@ export default function Contact() {
     email: "",
     message: "",
   });
+  const [honeypot, setHoneypot] = useState("");
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const [statusMessage, setStatusMessage] = useState("");
@@ -40,7 +41,7 @@ export default function Contact() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formState),
+        body: JSON.stringify({ ...formState, honeypot }),
       });
 
       const data = await res.json();
@@ -49,6 +50,7 @@ export default function Contact() {
         setStatus("success");
         setStatusMessage(data.message || "Message sent successfully!");
         setFormState({ name: "", email: "", message: "" });
+        setHoneypot("");
       } else {
         setStatus("error");
         setStatusMessage(data.error || "Failed to send message.");
@@ -217,6 +219,18 @@ export default function Contact() {
                   className="w-full px-3.5 py-2.5 rounded-lg bg-[#111115] border border-white/10 text-white text-sm placeholder:text-zinc-600 focus:outline-none focus:border-[#ae040d] transition-colors resize-none"
                 />
               </div>
+
+              {/* Bot Honeypot (Hidden) */}
+              <input
+                type="text"
+                name="b_url"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                value={honeypot}
+                onChange={(e) => setHoneypot(e.target.value)}
+                className="hidden"
+              />
 
               {/* Status Banner */}
               {status === "success" && (
